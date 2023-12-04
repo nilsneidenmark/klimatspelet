@@ -1,0 +1,21 @@
+// Fonts
+
+// Colors
+$primary: blue;
+$secondary: gray;
+// Spacing
+$Xsmall: 0.25rem;
+$small: 0.5rem;
+$medium: 1rem;
+$large: 2rem;
+$XLarge: 5rem;
+// Borders and shadows
+$borderRadiusLarge: 24px;
+$borderRadiusSmall: 12px;
+// Functions
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
