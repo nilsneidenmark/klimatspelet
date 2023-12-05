@@ -1,3 +1,5 @@
+// Startsida för utloggade
+
 export default function Home() {
   return (
     <section>
