@@ -8,8 +8,8 @@ import {
 import Layout from "./routes/Layout";
 import Home from "./routes/Home";
 import AuthRequired from "./routes/AuthRequired";
-import Profile from "./routes/Profile";
-import Quiz from "./routes/Quiz";
+import Profile from "./routes/Profile/Profile";
+import Quiz from "./routes/Quiz/Quiz";
 
 function App() {
   const router = createBrowserRouter(
