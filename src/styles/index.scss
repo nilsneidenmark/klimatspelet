@@ -1,7 +1,14 @@
 @import "./variables";
 @import "./reset";
 @import "./globals";
-
-h1 {
-  color: green;
-}
+@import "../routes/profile";
+@import "../routes/quiz";
+@import "../components/about";
+@import "../components/categories";
+@import "../components/header";
+@import "../components/footer";
+@import "../components/helpContact";
+@import "../components/leaderboard";
+@import "../components/register";
+@import "../components/settings";
+@import "../components/signup";
