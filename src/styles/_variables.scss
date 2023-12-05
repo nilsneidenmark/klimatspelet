@@ -1,21 +1,35 @@
 // Fonts
 
 // Colors
-$primary: blue;
-$secondary: gray;
+$primary: #2176ff;
+$secondary: #4f4f4f;
+$background: #eeeeee;
+$opacity: 50%;
+
 // Spacing
 $Xsmall: 0.25rem;
 $small: 0.5rem;
 $medium: 1rem;
 $large: 2rem;
-$XLarge: 5rem;
+$XLarge: 4rem;
+$XXLarge: 6rem;
+
 // Borders and shadows
 $borderRadiusLarge: 24px;
 $borderRadiusSmall: 12px;
-// Functions
+
+// Mixins
 @mixin flex($direction, $justify, $align) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+}
+
+@mixin glass() {
+  background: rgba(255, 255, 255, 0.31);
+  border-radius: $borderRadiusLarge;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.4px);
+  -webkit-backdrop-filter: blur(9.4px);
 }

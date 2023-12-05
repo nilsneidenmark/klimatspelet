@@ -1,0 +1,9 @@
+main {
+  border: 2px solid red;
+  @include flex(row, center, center);
+  height: 100dvh;
+  > section {
+    @include glass();
+    padding: $large;
+  }
+}
