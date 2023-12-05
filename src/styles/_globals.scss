@@ -1,4 +1,5 @@
 main {
+  background-color: rgb(146, 146, 209);
   border: 2px solid red;
   @include flex(row, center, center);
   height: 100dvh;

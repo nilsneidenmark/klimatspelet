@@ -1,9 +1,10 @@
 // Startsida för utloggade
+import HelpContact from "../components/HelpContact/HelpContact";
 
 export default function Home() {
   return (
     <section>
-      <h1 className="header">Home</h1>
+      <HelpContact/>
     </section>
   );
 }
