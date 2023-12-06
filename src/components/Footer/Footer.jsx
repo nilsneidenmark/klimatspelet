@@ -1,9 +1,14 @@
-import styles from "../Footer/footer.module.scss";
+import "../Footer/footer.module.scss";
 
 export default function Footer() {
   return (
-    <div>
-      <h2>Footer</h2>
-    </div>
+    <footer>
+      <h2>EcoExplorer</h2>
+      <ul>
+        <li>Hjälp & kontakt</li>
+        <li>Behandling av personuppgifter</li>
+        <li>Hantering av kakor</li>
+      </ul>
+    </footer>
   );
 }

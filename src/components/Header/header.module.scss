@@ -6,20 +6,19 @@ header {
   @include glass();
   border-radius: 0;
   > h2 {
-    color: rgb(0, 128, 38);
+    color: $primary;
+    cursor: pointer;
   }
-
   > div {
+    > button {
+      color: $white;
+    }
     > :first-child {
       margin-right: $medium;
     }
+    > :last-child {
+      background-color: $primary;
+      font-weight: 700;
+    }
   }
 }
-
-// <header>
-//       <h2 className={styles.header}>EcoExplorer</h2>
-//       <div>
-//         <button>Skapa konto</button>
-//         <button>Logga in</button>
-//       </div>
-//     </header>

@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(164, 252, 186);
+}
+
 main {
   background-color: rgb(146, 146, 209);
   border: 2px solid red;
@@ -10,25 +14,25 @@ main {
   }
 }
 
-.header {
-  color: orange;
-  font-size: 24px;
-}
-
 button {
   border-radius: 6px;
   border: none;
   padding: $small;
+  background-color: $secondary;
 }
 
 // h1 h3 h3 h4
 
-// p
+p {
+  font-size: 1rem;
+}
 
-// small
+small {
+  font-size: 0.75rem;
+}
 
-// strong
-
-// button
+strong {
+  font-weight: 700;
+}
 
 // @include button(small, secondary)

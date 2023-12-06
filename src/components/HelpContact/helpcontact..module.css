@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+body {
+  background-color: rgb(164, 252, 186);
+}
+
 main {
   background-color: rgb(146, 146, 209);
   border: 2px solid red;
@@ -25,15 +29,23 @@ main > section {
   border: 3px rgb(255, 0, 200) solid;
 }
 
-.header {
-  color: orange;
-  font-size: 24px;
-}
-
 button {
   border-radius: 6px;
   border: none;
   padding: 0.5rem;
+  background-color: #4f4f4f;
+}
+
+p {
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+strong {
+  font-weight: 700;
 }
 
 section {
