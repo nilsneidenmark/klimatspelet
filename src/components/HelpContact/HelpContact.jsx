@@ -22,7 +22,7 @@ export default function HelpContact() {
                     <Accordion className={styles.accordion}>
 
                         <Accordion.Item eventKey="0">
-                            <Accordion.Header>Detta är en vanlig fråga?</Accordion.Header>
+                            <Accordion.Header>Hur byter jag avatar?</Accordion.Header>
                                 <Accordion.Body>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -35,7 +35,7 @@ export default function HelpContact() {
                         </Accordion.Item>
 
                     <Accordion.Item eventKey="1">
-                        <Accordion.Header>Detta är en vanlig fråga?</Accordion.Header>
+                        <Accordion.Header>Var ser jag mina poäng?</Accordion.Header>
                             <Accordion.Body>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -48,7 +48,7 @@ export default function HelpContact() {
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="2">
-                        <Accordion.Header>Detta är en vanlig fråga?</Accordion.Header>
+                        <Accordion.Header>Kan jag byta lösenord?</Accordion.Header>
                             <Accordion.Body>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -61,7 +61,7 @@ export default function HelpContact() {
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="3">
-                        <Accordion.Header>Detta är en vanlig fråga?</Accordion.Header>
+                        <Accordion.Header>Kan jag göra om ett quiz och få bättre poäng?</Accordion.Header>
                             <Accordion.Body>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
