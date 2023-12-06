@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+body {
+  background-color: rgb(36, 36, 36);
+}
+
 main {
   background-color: rgb(146, 146, 209);
   border: 2px solid red;
@@ -16,7 +20,7 @@ main {
   height: 100dvh;
 }
 main > section {
-  background: rgba(255, 255, 255, 0.31);
+  background: rgba(77, 77, 77, 0.31);
   border-radius: 24px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.4px);
@@ -25,9 +29,23 @@ main > section {
   border: 3px rgb(255, 0, 200) solid;
 }
 
-.header {
-  color: orange;
-  font-size: 24px;
+button {
+  border-radius: 6px;
+  border: none;
+  padding: 0.5rem;
+  background-color: #7d7c7c;
+}
+
+p {
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+strong {
+  font-weight: 700;
 }
 
 section {

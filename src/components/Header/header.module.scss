@@ -1,3 +1,24 @@
-.header {
-  color: green;
+@import "../../styles/index.scss";
+
+header {
+  @include flex(row, space-between, center);
+  padding: $medium;
+  @include glass();
+  border-radius: 0;
+  > h2 {
+    color: $primary;
+    cursor: pointer;
+  }
+  > div {
+    > button {
+      color: $white;
+    }
+    > :first-child {
+      margin-right: $medium;
+    }
+    > :last-child {
+      background-color: $primary;
+      font-weight: 700;
+    }
+  }
 }

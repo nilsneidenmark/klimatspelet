@@ -1,9 +1,13 @@
-import styles from "../Header/header.module.scss";
+import "../Header/header.module.scss";
 
 export default function Header() {
   return (
-    <>
-      <h2 className={styles.header}>Header</h2>
-    </>
+    <header>
+      <h2>EcoExplorer</h2>
+      <div>
+        <button>Skapa konto</button>
+        <button>Logga in</button>
+      </div>
+    </header>
   );
 }
