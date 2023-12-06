@@ -84,9 +84,9 @@ export default function HelpContact() {
 
             <div className={styles.flowRight}>
                 <div>
-                    <p>Placeholder för ikon av avatar</p>
-                    <p>Placeholder för ikon av avatar</p>
-                    <p>Placeholder för ikon av avatar</p>
+                    <div className={styles.avatarLeft}><img src={"/src/assets/avatar_bear.webp"} alt="avatar" /></div>
+                    <div className={styles.avatarMiddle}><img src={"/src/assets/avatar_rabbit.webp"} alt="avatar" /></div>
+                    <div className={styles.avatarRight}><img src={"/src/assets/avatar_gorilla.webp"} alt="avatar" /></div>
                 </div>
             </div>
 

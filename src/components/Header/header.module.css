@@ -11,7 +11,10 @@ body {
 }
 
 main {
-  background-color: rgb(146, 146, 209);
+  background-image: url(/src/assets/bg_forest.webp);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   border: 2px solid red;
   display: flex;
   flex-direction: row;
@@ -26,7 +29,6 @@ main > section {
   backdrop-filter: blur(9.4px);
   -webkit-backdrop-filter: blur(9.4px);
   padding: 2rem;
-  border: 3px rgb(255, 0, 200) solid;
 }
 
 button {

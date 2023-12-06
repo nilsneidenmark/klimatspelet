@@ -3,14 +3,16 @@ body {
 }
 
 main {
-  background-color: rgb(146, 146, 209);
+  background-image: url(/src/assets/bg_forest.webp);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   border: 2px solid red;
   @include flex(row, center, center);
   height: 100dvh;
   > section {
     @include glass();
     padding: $large;
-    border: 3px rgb(255, 0, 200) solid;
   }
 }
 
