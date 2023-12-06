@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Intro />
-      <HelpContact />
+      {/* <HelpContact /> */}
     </>
   );
 }

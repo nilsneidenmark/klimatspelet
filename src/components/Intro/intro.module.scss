@@ -8,9 +8,11 @@
     background-color: $white;
     border-radius: $large;
     padding: $large;
+    max-width: 100%;
     > div {
       @include flex(row, center, center);
-      gap: $XLarge;
+      flex-wrap: wrap;
+      gap: $large;
       > div {
         @include flex(column, center, center);
         padding: $medium;
@@ -33,6 +35,6 @@
     }
   }
   > button {
-    width: 80%;
+    width: 100%;
   }
 }

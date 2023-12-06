@@ -16,12 +16,12 @@ main {
   gap: $XLarge;
   @include flex(column, center, center);
   min-height: 80dvh;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   > section {
     @include glass();
     padding: $large;
-    width: auto;
+    width: 80%;
   }
 }
 
