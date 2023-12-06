@@ -6,23 +6,31 @@
   text-decoration: none;
 }
 
-body {
-  background-color: rgb(36, 36, 36);
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-main {
+body {
+  background-color: rgb(36, 36, 36);
   background-image: url(/src/assets/bg_forest.webp);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  border: 2px solid red;
+  background-attachment: fixed;
+  max-width: 1288px;
+}
+
+main {
   padding: 4rem;
   gap: 4rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
+  min-height: 80dvh;
 }
 main > section {
   background: rgba(77, 77, 77, 0.31);
@@ -31,6 +39,7 @@ main > section {
   backdrop-filter: blur(9.4px);
   -webkit-backdrop-filter: blur(9.4px);
   padding: 2rem;
+  width: auto;
 }
 
 button {
@@ -39,6 +48,7 @@ button {
   padding: 0.5rem;
   background-color: #7d7c7c;
   color: #eeeeee;
+  min-width: 125px;
 }
 button:hover {
   opacity: 50%;
@@ -76,7 +86,6 @@ strong {
   background-color: #eeeeee;
   border-radius: 2rem;
   padding: 2rem;
-  width: 80%;
 }
 .intro > .container > div {
   display: flex;

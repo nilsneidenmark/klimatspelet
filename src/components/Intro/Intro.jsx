@@ -1,6 +1,6 @@
 import sea from "../../assets/category_ocean.webp";
 import mangrove from "../../assets/category_mangrove.webp";
-import forest from "../../assets/category_forest.webp";
+import forest from "../../assets/category_pine-tree.webp";
 import styles from "./intro.module.scss";
 
 export default function Intro() {

@@ -8,7 +8,6 @@
     background-color: $white;
     border-radius: $large;
     padding: $large;
-    width: 80%;
     > div {
       @include flex(row, center, center);
       gap: $XLarge;

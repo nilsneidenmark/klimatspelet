@@ -1,20 +1,25 @@
+html {
+  @include flex(column, center, center);
+}
 body {
   background-color: rgb(36, 36, 36);
-}
-
-main {
   background-image: url(/src/assets/bg_forest.webp);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  border: 2px solid red;
+  background-attachment: fixed;
+  max-width: 1288px;
+}
+
+main {
   padding: $XLarge;
   gap: $XLarge;
-  @include flex(row, center, center);
-  height: 100dvh;
+  @include flex(column, center, center);
+  min-height: 80dvh;
   > section {
     @include glass();
     padding: $large;
+    width: auto;
   }
 }
 
@@ -24,6 +29,7 @@ button {
   padding: $small;
   background-color: $secondary;
   color: $white;
+  min-width: 125px;
   &:hover {
     opacity: $opacity;
   }
