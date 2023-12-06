@@ -3,11 +3,15 @@ body {
 }
 
 main {
-  background-color: rgb(146, 146, 209);
+  background-image: url(/src/assets/bg_forest.webp);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  border: 2px solid red;
   padding: $XLarge;
   gap: $XLarge;
-  @include flex(column, center, center);
-  min-height: 80dvh;
+  @include flex(row, center, center);
+  height: 100dvh;
   > section {
     @include glass();
     padding: $large;

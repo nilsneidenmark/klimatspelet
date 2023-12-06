@@ -1,4 +1,6 @@
-import dog from "../../assets/dog.png";
+import sea from "../../assets/category_ocean.webp";
+import mangrove from "../../assets/category_mangrove.webp";
+import forest from "../../assets/category_forest.webp";
 import styles from "./intro.module.scss";
 
 export default function Intro() {
@@ -8,17 +10,17 @@ export default function Intro() {
       <div className={styles.container}>
         <div>
           <div>
-            <img src={dog} width="125px" />
+            <img src={sea} width="125px" />
             <p>Varldens hav</p>
             <small>0/12</small>
           </div>
           <div>
-            <img src={dog} width="125px" />
+            <img src={mangrove} width="125px" />
             <p>Varldens hav</p>
             <small>0/12</small>
           </div>
           <div>
-            <img src={dog} width="125px" />
+            <img src={forest} width="125px" />
             <p>Varldens hav</p>
             <small>0/12</small>
           </div>

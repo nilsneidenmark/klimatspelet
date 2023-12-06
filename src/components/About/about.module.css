@@ -11,14 +11,18 @@ body {
 }
 
 main {
-  background-color: rgb(146, 146, 209);
+  background-image: url(/src/assets/bg_forest.webp);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  border: 2px solid red;
   padding: 4rem;
   gap: 4rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-height: 80dvh;
+  height: 100dvh;
 }
 main > section {
   background: rgba(77, 77, 77, 0.31);

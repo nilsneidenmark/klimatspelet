@@ -95,9 +95,32 @@ export default function HelpContact() {
         </div>
       </div>
 
+<<<<<<< HEAD
       <div>
         <CloseButton />
       </div>
+=======
+                </Accordion>
+                </article>
+
+                <article className={styles.contact}>
+                    <h3>Kontakt</h3>
+                    <p>Behöver du mer hjälp eller undrar du över något når du oss på <a href="mailto:mailadress@email.se"> mailadress@email.se</a></p>
+                </article>
+            </div>
+
+            <div className={styles.flowRight}>
+                <div>
+                    <div className={styles.avatarLeft}><img src={"/src/assets/avatar_bear.webp"} alt="avatar" /></div>
+                    <div className={styles.avatarMiddle}><img src={"/src/assets/avatar_rabbit.webp"} alt="avatar" /></div>
+                    <div className={styles.avatarRight}><img src={"/src/assets/avatar_gorilla.webp"} alt="avatar" /></div>
+                </div>
+            </div>
+
+            <div>
+                <CloseButton /> 
+            </div>
+>>>>>>> 4a312bd8620637f6a8f160989132a73bd025fbb3
     </section>
   );
 }
