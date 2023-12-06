@@ -3,7 +3,7 @@
 
 section {
     @include flex(row, center, right);
-    width: 70%;
+    width: 40%;
     > .flowRight {
         margin: $XXLarge;
     }
