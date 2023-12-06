@@ -1,8 +1,8 @@
 // Fonts
 
 // Colors
-$primary: #2176ff;
-$secondary: #4f4f4f;
+$primary: #a0ce71;
+$secondary: #7d7c7c;
 $white: #eeeeee;
 $opacity: 50%;
 
@@ -27,7 +27,7 @@ $borderRadiusSmall: 12px;
 }
 
 @mixin glass() {
-  background: rgba(223, 54, 54, 0.31);
+  background: rgba(77, 77, 77, 0.31);
   border-radius: $borderRadiusLarge;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.4px);
