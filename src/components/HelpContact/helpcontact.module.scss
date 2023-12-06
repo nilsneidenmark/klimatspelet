@@ -1,30 +1,73 @@
 @import "../../styles/index.scss";
 
-
-section {
-    @include flex(row, center, right);
-    width: 40%;
-    > .flowRight {
-        margin: $medium 0 auto $XXLarge;
+.helpContact {
+  @include flex(row, center, space-between);
+  gap: $XLarge;
+  > div {
+    max-width: 75%;
+    > div {
+      > img {
+        width: 100px;
+      }
     }
+    > div {
+      margin-top: $large;
+
+      > div {
+        position: relative;
+        margin-bottom: $large;
+        > p {
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 2rem;
+          margin-top: -15px;
+          font-weight: 600;
+        }
+      }
+      .bearAvatar {
+        transform: rotate(-20deg);
+        > img {
+          width: 100px;
+        }
+      }
+      > .rabbitAvatar {
+        transform: rotate(20deg);
+        > img {
+          width: 115px;
+        }
+        > p {
+          left: 0;
+          font-size: 2.5rem;
+          margin-left: 10px;
+        }
+      }
+      > .gorillaAvatar {
+        transform: rotate(-10deg);
+        > img {
+          width: 85px;
+        }
+      }
+    }
+  }
 }
 
 article {
-    padding: $small 0;
+  padding: $small 0;
 }
 
 .avatarLeft img {
-    width: 100px;
-    transform: rotate(-0.05turn);
+  width: 100px;
+  transform: rotate(-0.05turn);
 }
 
 .avatarMiddle img {
-    width: 90px;
-    transform: rotate(0.05turn);
-    margin: $medium 0 auto $XXLarge;
+  width: 90px;
+  transform: rotate(0.05turn);
+  margin: $medium 0 auto $XXLarge;
 }
 
 .avatarRight img {
-    width: 80px;
-    margin: $medium 0 auto $small;
+  width: 80px;
+  margin: $medium 0 auto $small;
 }

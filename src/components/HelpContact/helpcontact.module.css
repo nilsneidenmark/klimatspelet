@@ -101,15 +101,56 @@ form button {
   background-color: #7d7c7c;
 }
 
-section {
+.helpContact {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: right;
-  width: 40%;
+  align-items: space-between;
+  gap: 4rem;
 }
-section > .flowRight {
-  margin: 1rem 0 auto 6rem;
+.helpContact > div {
+  max-width: 75%;
+}
+.helpContact > div > div > img {
+  width: 100px;
+}
+.helpContact > div > div {
+  margin-top: 2rem;
+}
+.helpContact > div > div > div {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.helpContact > div > div > div > p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  margin-top: -15px;
+  font-weight: 600;
+}
+.helpContact > div > div .bearAvatar {
+  transform: rotate(-20deg);
+}
+.helpContact > div > div .bearAvatar > img {
+  width: 100px;
+}
+.helpContact > div > div > .rabbitAvatar {
+  transform: rotate(20deg);
+}
+.helpContact > div > div > .rabbitAvatar > img {
+  width: 115px;
+}
+.helpContact > div > div > .rabbitAvatar > p {
+  left: 0;
+  font-size: 2.5rem;
+  margin-left: 10px;
+}
+.helpContact > div > div > .gorillaAvatar {
+  transform: rotate(-10deg);
+}
+.helpContact > div > div > .gorillaAvatar > img {
+  width: 85px;
 }
 
 article {

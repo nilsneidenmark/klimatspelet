@@ -1,5 +1,8 @@
 import styles from "./helpcontact.module.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import bearAvatar from "../../assets/avatar_bear.webp";
+import rabbitAvatar from "../../assets/avatar_rabbit.webp";
+import gorillaAvatar from "../../assets/avatar_gorilla.webp";
 
 // Imports for icons from React bootstrap
 import CloseButton from "react-bootstrap/CloseButton";
@@ -7,8 +10,8 @@ import Accordion from "react-bootstrap/Accordion";
 
 export default function HelpContact() {
   return (
-    <section>
-      <div className={styles.flowLeft}>
+    <section className={styles.helpContact}>
+      <div>
         <article>
           <h1>Hjälp & kontakt</h1>
           <p>
@@ -17,10 +20,8 @@ export default function HelpContact() {
             <a href="mailto:mailadress@email.se"> mailadress@email.se</a>{" "}
           </p>
         </article>
-
         <article className={styles.faq}>
           <h2>Vanliga frågor</h2>
-
           <Accordion className={styles.accordion}>
             <Accordion.Item eventKey="0">
               <Accordion.Header>Hur byter jag avatar?</Accordion.Header>
@@ -87,11 +88,20 @@ export default function HelpContact() {
         </article>
       </div>
 
-      <div className={styles.flowRight}>
+      <div>
         <div>
-          <p>Placeholder för ikon av avatar</p>
-          <p>Placeholder för ikon av avatar</p>
-          <p>Placeholder för ikon av avatar</p>
+          <div className={styles.bearAvatar}>
+            <img src={bearAvatar} />
+            <p>???</p>
+          </div>
+          <div className={styles.rabbitAvatar}>
+            <img src={rabbitAvatar} />
+            <p>?</p>
+          </div>
+          <div className={styles.gorillaAvatar}>
+            <img src={gorillaAvatar} />
+            <p>??</p>
+          </div>
         </div>
       </div>
     </section>
