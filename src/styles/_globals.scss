@@ -4,13 +4,13 @@ body {
 
 main {
   background-color: rgb(146, 146, 209);
-  border: 2px solid red;
-  @include flex(row, center, center);
-  height: 100dvh;
+  padding: $XLarge;
+  gap: $XLarge;
+  @include flex(column, center, center);
+  min-height: 80dvh;
   > section {
     @include glass();
     padding: $large;
-    border: 3px rgb(255, 0, 200) solid;
   }
 }
 
@@ -19,6 +19,15 @@ button {
   border: none;
   padding: $small;
   background-color: $secondary;
+  color: $white;
+  &:hover {
+    opacity: $opacity;
+  }
+}
+
+.primarybtn {
+  font-weight: 700;
+  background-color: $primary;
 }
 
 // h1 h3 h3 h4

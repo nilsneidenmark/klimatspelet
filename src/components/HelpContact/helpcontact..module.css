@@ -14,10 +14,10 @@ main {
   background-color: rgb(146, 146, 209);
   border: 2px solid red;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
+  min-height: 80dvh;
 }
 main > section {
   background: rgba(77, 77, 77, 0.31);

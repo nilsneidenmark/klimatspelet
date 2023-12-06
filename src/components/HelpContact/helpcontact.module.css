@@ -55,4 +55,19 @@ small {
 
 strong {
   font-weight: 700;
-}/*# sourceMappingURL=index.css.map */
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: right;
+  width: 70%;
+}
+section > .flowRight {
+  margin: 6rem;
+}
+
+article {
+  padding: 2% 0;
+}/*# sourceMappingURL=helpcontact.module.css.map */

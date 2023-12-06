@@ -1,0 +1,39 @@
+@import "../../styles/index.scss";
+
+.intro {
+  @include flex(column, center, center);
+  gap: $medium;
+  > .container {
+    @include flex(column, center, center);
+    background-color: $white;
+    border-radius: $large;
+    padding: $large;
+    width: 80%;
+    > div {
+      @include flex(row, center, center);
+      gap: $XLarge;
+      > div {
+        @include flex(column, center, center);
+        padding: $medium;
+        gap: $small;
+        > p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  > .circles {
+    @include flex(row, center, center);
+    gap: $medium;
+    margin: 2.5% 0% 5% 0%;
+    > div {
+      border-radius: 50%;
+      height: 25px;
+      width: 25px;
+      background-color: $secondary;
+    }
+  }
+  > button {
+    width: 80%;
+  }
+}

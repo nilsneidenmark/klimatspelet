@@ -12,12 +12,13 @@ body {
 
 main {
   background-color: rgb(146, 146, 209);
-  border: 2px solid red;
+  padding: 4rem;
+  gap: 4rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
+  min-height: 80dvh;
 }
 main > section {
   background: rgba(77, 77, 77, 0.31);
@@ -26,7 +27,6 @@ main > section {
   backdrop-filter: blur(9.4px);
   -webkit-backdrop-filter: blur(9.4px);
   padding: 2rem;
-  border: 3px rgb(255, 0, 200) solid;
 }
 
 button {
@@ -34,6 +34,15 @@ button {
   border: none;
   padding: 0.5rem;
   background-color: #7d7c7c;
+  color: #eeeeee;
+}
+button:hover {
+  opacity: 50%;
+}
+
+.primarybtn {
+  font-weight: 700;
+  background-color: #a0ce71;
 }
 
 p {
@@ -70,8 +79,4 @@ header > div > button {
 }
 header > div > :first-child {
   margin-right: 1rem;
-}
-header > div > :last-child {
-  background-color: #a0ce71;
-  font-weight: 700;
 }/*# sourceMappingURL=header.module.css.map */

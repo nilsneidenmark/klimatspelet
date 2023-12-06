@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import Layout from "./routes/Layout";
-import Home from "./routes/Home";
+import Home from "./routes/Home/Home";
 import AuthRequired from "./routes/AuthRequired";
 import Profile from "./routes/Profile/Profile";
 import Quiz from "./routes/Quiz/Quiz";
