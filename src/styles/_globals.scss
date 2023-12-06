@@ -4,24 +4,12 @@ html {
 body {
   background-color: rgb(36, 36, 36);
   background-image: url(/src/assets/bg_forest.webp);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
-
-// header:before,
-// footer:before {
-//   content: "";
-//   position: absolute;
-//   height: 100%;
-//   width: 98.8vw;
-//   left: 50%;
-//   top: 0;
-//   transform: translate(-50%, 0px);
-//   z-index: -1;
-//   // overflow: hidden;
-// }
 
 main {
   padding: $XLarge;
