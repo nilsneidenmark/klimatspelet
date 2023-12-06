@@ -3,38 +3,45 @@
 .intro {
   @include flex(column, center, center);
   gap: $medium;
-  > .container {
+  > div:first-child {
     @include flex(column, center, center);
-    background-color: $white;
-    border-radius: $large;
-    padding: $large;
-    max-width: 100%;
-    > div {
-      @include flex(row, center, center);
-      flex-wrap: wrap;
-      gap: $large;
+    > .container {
+      @include flex(column, center, center);
+      background-color: $white;
+      border-radius: $large;
+      padding: $large;
+      max-width: 100%;
       > div {
-        @include flex(column, center, center);
-        padding: $medium;
-        gap: $small;
-        > p {
-          margin-bottom: 0;
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+        gap: $large;
+        > div {
+          @include flex(column, center, center);
+          padding: $medium;
+          gap: $small;
+          > p {
+            margin-bottom: 0;
+          }
         }
       }
     }
   }
-  > .circles {
+  > button {
+    width: 100%;
+  }
+  .circles {
     @include flex(row, center, center);
     gap: $medium;
     margin: 2.5% 0% 5% 0%;
-    > div {
+    > button {
       border-radius: 50%;
       height: 25px;
       width: 25px;
       background-color: $secondary;
+      opacity: $opacity;
     }
-  }
-  > button {
-    width: 100%;
+    > .active {
+      opacity: 100%;
+    }
   }
 }
