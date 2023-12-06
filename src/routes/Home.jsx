@@ -2,9 +2,5 @@
 import HelpContact from "../components/HelpContact/HelpContact";
 
 export default function Home() {
-  return (
-    <section>
-      <HelpContact/>
-    </section>
-  );
+  return <HelpContact />;
 }
