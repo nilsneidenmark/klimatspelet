@@ -1,12 +1,6 @@
-import sea from "../../assets/category_ocean.webp";
-import mangrove from "../../assets/category_mangrove.webp";
-import forest from "../../assets/category_pine-tree.webp";
-import desert from "../../assets/category_desert.webp";
-import glacier from "../../assets/category_glacier.webp";
-import buildings from "../../assets/category_buildings.webp";
-import mountain from "../../assets/category_mountain.webp";
-import river from "../../assets/category_river.webp";
-import ocean from "../../assets/category_ocean.webp";
+import img1 from "../../assets/bg_forest.webp";
+import img2 from "../../assets/bg_water.webp";
+import img3 from "../../assets/woods.jpg";
 import styles from "./intro.module.scss";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -70,28 +64,12 @@ const Slideshow = ({ children }) => {
 };
 
 // Markup for each slide
-const Slide = ({ header, text, img1, img2, img3 }) => {
+const Slide = ({ header, text, img }) => {
   return (
     <>
       <h1>{header}</h1>
       <div className={styles.container}>
-        <div>
-          <div>
-            <img src={img1} width="125px" />
-            <p>Varldens hav</p>
-            <small>0/12</small>
-          </div>
-          <div>
-            <img src={img2} width="125px" />
-            <p>Varldens hav</p>
-            <small>0/12</small>
-          </div>
-          <div>
-            <img src={img3} width="125px" />
-            <p>Varldens hav</p>
-            <small>0/12</small>
-          </div>
-        </div>
+        <img src={img} width="300px" height="250px" />
         <p>{text}</p>
       </div>
     </>
@@ -104,23 +82,17 @@ export default function Intro() {
       <Slideshow>
         <Slide
           header="Lär dig om klimatforändringar"
-          img1={sea}
-          img2={mangrove}
-          img3={forest}
+          img={img1}
           text="Välj en kategori på mina sidor för att göra ett quiz."
         />
         <Slide
           header="Svara pa frågor"
-          img1={desert}
-          img2={glacier}
-          img3={buildings}
+          img={img2}
           text="Lär dig genom att kolla på grafer, videos och mycker mer!"
         />
         <Slide
           header="Tavla mot dina vanner"
-          img1={river}
-          img2={mountain}
-          img3={ocean}
+          img={img3}
           text="Vem av dina vänner vet mest?"
         />
       </Slideshow>

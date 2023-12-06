@@ -56,4 +56,24 @@ strong {
   font-weight: 700;
 }
 
+form {
+  width: 100%;
+  @include flex(column, center, flex-start);
+  > input {
+    width: 100%;
+    margin-bottom: $medium;
+    border: 0;
+    border-radius: $small;
+    padding: $small;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: $secondary;
+}
 // @include button(small, secondary)

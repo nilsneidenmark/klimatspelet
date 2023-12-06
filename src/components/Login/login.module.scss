@@ -1,0 +1,21 @@
+@import "../../styles/index.scss";
+
+.login {
+  @include flex(column, center, flex-start);
+  gap: $medium;
+  max-width: 600px;
+  > div {
+    width: 100%;
+    @include flex(row, space-between, flex-start);
+    > div > input {
+      margin-right: $small;
+    }
+  }
+  > small {
+    margin: 0 auto;
+  }
+  > button {
+    width: 100%;
+    margin-bottom: $small;
+  }
+}
