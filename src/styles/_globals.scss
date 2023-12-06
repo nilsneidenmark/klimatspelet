@@ -8,14 +8,28 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   background-attachment: fixed;
-  max-width: 1288px;
 }
+
+// header:before,
+// footer:before {
+//   content: "";
+//   position: absolute;
+//   height: 100%;
+//   width: 98.8vw;
+//   left: 50%;
+//   top: 0;
+//   transform: translate(-50%, 0px);
+//   z-index: -1;
+//   // overflow: hidden;
+// }
 
 main {
   padding: $XLarge;
   gap: $XLarge;
   @include flex(column, center, center);
   min-height: 80dvh;
+  max-width: 1280px;
+  margin: 0 auto;
   > section {
     @include glass();
     padding: $large;

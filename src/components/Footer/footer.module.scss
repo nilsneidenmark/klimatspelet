@@ -1,20 +1,25 @@
 @import "../../styles/index.scss";
 
 footer {
-  @include flex(row, space-between, center);
-  padding: $medium;
   @include glass();
   border-radius: 0;
-  > h2 {
-    color: $primary;
-    cursor: pointer;
-  }
-  > ul {
-    > li {
-      text-decoration: underline;
-      padding: $Xsmall;
+  width: 100vw;
+  > div {
+    @include flex(row, space-between, center);
+    padding: $medium;
+    margin: 0 auto;
+    max-width: 1280px;
+    > h2 {
+      color: $primary;
       cursor: pointer;
-      color: $white;
+    }
+    > ul {
+      > li {
+        text-decoration: underline;
+        padding: $Xsmall;
+        cursor: pointer;
+        color: $white;
+      }
     }
   }
 }

@@ -20,7 +20,6 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   background-attachment: fixed;
-  max-width: 1288px;
 }
 
 main {
@@ -31,6 +30,8 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 80dvh;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 main > section {
   background: rgba(77, 77, 77, 0.31);
