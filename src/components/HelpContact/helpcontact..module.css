@@ -22,6 +22,7 @@ main > section {
   backdrop-filter: blur(9.4px);
   -webkit-backdrop-filter: blur(9.4px);
   padding: 2rem;
+  border: 3px rgb(255, 0, 200) solid;
 }
 
 .header {
@@ -34,11 +35,13 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: right;
+  width: 70%;
 }
-section > .FlowRight {
+section > .flowRight {
   margin: 6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  align-items: right;
+}
+
+article {
+  padding: 20px 0;
+  background-color: aquamarine;
 }/*# sourceMappingURL=helpcontact..module.css.map */

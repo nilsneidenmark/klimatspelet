@@ -22,6 +22,7 @@ main > section {
   backdrop-filter: blur(9.4px);
   -webkit-backdrop-filter: blur(9.4px);
   padding: 2rem;
+  border: 3px rgb(255, 0, 200) solid;
 }
 
 .header {

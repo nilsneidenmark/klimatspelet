@@ -2,8 +2,13 @@
 
 section {
     @include flex(row, center, right);
-    > .FlowRight {
+    width: 70%;
+    > .flowRight {
         margin: $XXLarge;
-        @include flex(column, right, right);
     }
+}
+
+article {
+    padding: 20px 0;
+    background-color: aquamarine;
 }
