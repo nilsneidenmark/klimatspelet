@@ -1,5 +1,6 @@
 @import "../../styles/index.scss";
 
+
 section {
     @include flex(row, center, right);
     width: 70%;
