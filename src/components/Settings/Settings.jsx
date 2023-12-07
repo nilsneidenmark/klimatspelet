@@ -45,7 +45,11 @@ const SettingsFont = () => {
 
   return (
     <>
-      <div className={styles.fontSection}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 0.75 } }}
+        className={styles.fontSection}
+      >
         <div>
           <div>
             <p>Typsnitt</p>
@@ -135,7 +139,7 @@ const SettingsFont = () => {
             <small>Fraga 1/10</small>
           </div>
         </div>
-      </div>
+      </motion.div>
       <button className={styles.primarybtn}>Spara</button>
     </>
   );
@@ -144,7 +148,11 @@ const SettingsFont = () => {
 const SettingsProfile = () => {
   return (
     <>
-      <div className={styles.settingsProfile}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 0.75 } }}
+        className={styles.settingsProfile}
+      >
         <form>
           <label htmlFor="name">Användarnamn</label>
           <div>
@@ -183,7 +191,7 @@ const SettingsProfile = () => {
             </button>
           </div>
         </div>
-      </div>
+      </motion.div>
       <button className={styles.primarybtn}>Spara</button>
     </>
   );
@@ -194,7 +202,11 @@ export default function Settings() {
 
   return (
     <>
-      <motion.section className={styles.settingsSection}>
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 0.75 } }}
+        className={styles.settingsSection}
+      >
         <h2>Settings</h2>
         <div className={styles.toggle}>
           <button
