@@ -1,0 +1,9 @@
+import styles from "./settings.module.scss";
+
+export default function Settings() {
+  return (
+    <section>
+      <h2>Settings</h2>
+    </section>
+  );
+}
