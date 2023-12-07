@@ -90,6 +90,7 @@ export default function HelpContact() {
 
       <div>
         <div>
+            <CloseButton />
           <div className={styles.bearAvatar}>
             <img src={bearAvatar} />
             <p>???</p>
@@ -103,7 +104,6 @@ export default function HelpContact() {
             <p>??</p>
           </div>
         </div>
-        <CloseButton />;
       </div>
     </section>
   );
