@@ -103,6 +103,7 @@ export default function HelpContact() {
             <p>??</p>
           </div>
         </div>
+        <CloseButton />;
       </div>
     </section>
   );
