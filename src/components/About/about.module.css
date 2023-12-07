@@ -40,6 +40,11 @@ main > section {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(9.4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   padding: 2rem;
   width: 80%;
 }
@@ -48,7 +53,7 @@ button {
   border-radius: 6px;
   border: none;
   padding: 0.5rem;
-  background-color: #7d7c7c;
+  background-color: #4f4f4f;
   color: #eeeeee;
   width: 125px;
 }
@@ -58,7 +63,7 @@ button:hover {
 
 .primarybtn {
   font-weight: 700;
-  background-color: #a0ce71;
+  background-color: #08594a;
 }
 
 h2 {
@@ -77,6 +82,10 @@ strong {
   font-weight: 700;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 form {
   width: 100%;
   display: flex;
@@ -84,19 +93,20 @@ form {
   justify-content: center;
   align-items: flex-start;
 }
-form > input {
+form button {
+  width: 100%;
+}
+
+input {
   width: 100%;
   margin-bottom: 1rem;
   border: 0;
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
-form button {
-  width: 100%;
-}
 
 .divider {
   width: 100%;
   height: 1px;
-  background-color: #7d7c7c;
+  background-color: #4f4f4f;
 }/*# sourceMappingURL=about.module.css.map */

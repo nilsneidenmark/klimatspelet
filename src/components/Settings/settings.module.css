@@ -1,1 +1,259 @@
-/*# sourceMappingURL=settings.module.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: rgb(36, 36, 36);
+  background-image: url(/src/assets/bg_forest.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 4rem;
+  gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80dvh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main > section {
+  background: rgba(255, 255, 255, 0.31);
+  border-radius: 24px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(9.4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  width: 80%;
+}
+
+button {
+  border-radius: 6px;
+  border: none;
+  padding: 0.5rem;
+  background-color: #4f4f4f;
+  color: #eeeeee;
+  width: 125px;
+}
+button:hover {
+  opacity: 50%;
+}
+
+.primarybtn {
+  font-weight: 700;
+  background-color: #08594a;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+form button {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #4f4f4f;
+}
+
+.settingsSection > div > button {
+  float: right;
+}
+.settingsSection > div > .fontSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.settingsSection > div > .fontSection > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 45%;
+  min-width: 300px;
+}
+.settingsSection > div > .fontSection > div > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.settingsSection > div > .fontSection > div > div > div > button {
+  opacity: 50%;
+  border-radius: 50px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.settingsSection > div > .fontSection > .test {
+  gap: 0.5rem;
+}
+.settingsSection > div > .fontSection > .test > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+}
+.settingsSection > div > .fontSection > .test > div > button {
+  width: 45%;
+}
+.settingsSection > .toggle {
+  border-radius: 50px;
+  display: flex;
+  width: 350px;
+  height: 80px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #b5b2a7;
+}
+.settingsSection > .toggle > button {
+  width: 50%;
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: transparent;
+  z-index: 1;
+}
+.settingsSection > .toggle > .active {
+  font-weight: 600;
+}
+.settingsSection .slideBackground {
+  position: absolute;
+  background-color: #4f4f4f;
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 0;
+  transition: transform 0.3s ease;
+}
+.settingsSection .slideBackground.font {
+  transform: translateX(0%);
+}
+.settingsSection .slideBackground.profile {
+  transform: translateX(100%);
+}
+
+.active {
+  opacity: 100% !important;
+}
+
+.settingsProfile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.settingsProfile > * {
+  width: 45%;
+  min-width: 300px;
+}
+.settingsProfile > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.settingsProfile > form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.settingsProfile > form > div > input {
+  min-width: 200px;
+}
+.settingsProfile > form > button {
+  width: 275px;
+}
+.settingsProfile > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.settingsProfile > div > p {
+  margin: 0;
+}
+.settingsProfile > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.settingsProfile > div > div > button {
+  width: 50px;
+  background-color: transparent;
+  padding: 0;
+}/*# sourceMappingURL=settings.module.css.map */
