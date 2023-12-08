@@ -1,7 +1,8 @@
 import "../About/about.module.scss";
 
 export default function About() {
-    <section>
+    return (
+        <section>
         <div>
             <h2>Om ExoExplorer</h2>
             <p>Quisque sit amet felis non neque consectetur lobortis. Donec hendrerit blandit ex, id congue nulla viverra eu.  
@@ -9,4 +10,5 @@ export default function About() {
             </p>
         </div>
     </section>
+    ); 
 }

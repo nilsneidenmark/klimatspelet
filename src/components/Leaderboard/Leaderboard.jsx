@@ -1,7 +1,8 @@
 import "../Leaderboard/leaderboard.module.scss";
 
 export default function Leaderboard() {
-    <section>
+    return (
+        <section>
         <div>
             <h2>Min placering</h2>
             <p>5</p>
@@ -16,4 +17,5 @@ export default function Leaderboard() {
             </ol>
         </div>
     </section>
+    );
 }
