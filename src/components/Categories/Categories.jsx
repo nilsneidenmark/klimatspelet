@@ -1,16 +1,20 @@
 import styles from "./categories.module.scss";
+import ocean from "../../assets/category_ocean.webp";
 
 export default function Categories() {
     return (
-        <section className={styles.categories}>
-        <div>
-            <img src="../../assets/category_ocean.webp" alt="Category Ocean" />
-            <img src="../../assets/category_ocean.webp" alt="Category Ocean" />
-            <img src="../../assets/category_ocean.webp" alt="Category Ocean" />
-            <img src="../../assets/category_ocean.webp" alt="Category Ocean" />
-            <img src="../../assets/category_ocean.webp" alt="Category Ocean" />
-            <img src="../../assets/category_ocean.webp" alt="Category Ocean" />
-        </div>
-    </section>
+        <section>
+            <div className={styles.categories}>
+                <img src={ocean} />
+                <img src={ocean} />
+                <img src={ocean} />
+            </div>
+
+            <div className={styles.categories}>
+                <img src={ocean} />
+                <img src={ocean} />
+                <img src={ocean} />
+            </div>
+        </section>
     );
 }

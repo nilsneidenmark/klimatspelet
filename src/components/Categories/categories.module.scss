@@ -1,7 +1,8 @@
 @import "../../styles/index.scss";
 
 .categories {
-    > img{
-        width: 70px;
+    @include flex(row, space-around, center);
+    > img{ 
+        width: 80px;
     }
 }
