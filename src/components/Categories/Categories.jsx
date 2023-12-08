@@ -1,0 +1,1 @@
+import "../Categories/categories.module.scss";

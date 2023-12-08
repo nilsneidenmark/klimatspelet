@@ -1,3 +1,5 @@
+import "../Leaderboard/leaderboard.module.scss";
+
 export default function Leaderboard() {
     <section>
         <div>
