@@ -26,39 +26,21 @@ export default function HelpContact() {
             <Accordion.Item eventKey="0">
               <Accordion.Header>Hur byter jag avatar?</Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                En meny visas om du trycker på din avatar i höger hörn. Under inställningar finns knappen profilinställning hittar du olika avatarer.
               </Accordion.Body>
             </Accordion.Item>
 
             <Accordion.Item eventKey="1">
               <Accordion.Header>Var ser jag mina poäng?</Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Du ser dina poäng uppe till höger bredvid din avatar. Du kan även se dina poäng i topplistan på “mina sidor”.
               </Accordion.Body>
             </Accordion.Item>
 
             <Accordion.Item eventKey="2">
               <Accordion.Header>Kan jag byta lösenord?</Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Du kan byta lösenord på inställningar. Detta hittar du under menyn i din avatar.
               </Accordion.Body>
             </Accordion.Item>
 
@@ -67,13 +49,7 @@ export default function HelpContact() {
                 Kan jag göra om ett quiz och få bättre poäng?
               </Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Ja, det kan du. Du kan göra om ett quiz hur många gånger du vill.
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
