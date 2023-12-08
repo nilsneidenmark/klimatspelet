@@ -11,7 +11,7 @@
       }
     }
     > div {
-      margin-top: $large;
+      margin-top: $XLarge;
 
       > div {
         position: relative;
@@ -70,4 +70,8 @@ article {
 .avatarRight img {
   width: 80px;
   margin: $medium 0 auto $small;
+}
+
+.closeBTN {
+  float: right !important;
 }
