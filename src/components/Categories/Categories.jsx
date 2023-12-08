@@ -2,14 +2,14 @@ import "../Categories/categories.module.scss";
 
 export default function Categories() {
     return (
-        <section>
+        <section className={styles.categories}>
         <div>
-            <p>image</p>
-            <p>image</p>
-            <p>image</p>
-            <p>image</p>
-            <p>image</p>
-            <p>image</p>
+            <img src="../../assets/category_ocean.webp" alt="Category Ocean" />
+            <img src="../../assets/category_ocean.webp" alt="Category Ocean" />
+            <img src="../../assets/category_ocean.webp" alt="Category Ocean" />
+            <img src="../../assets/category_ocean.webp" alt="Category Ocean" />
+            <img src="../../assets/category_ocean.webp" alt="Category Ocean" />
+            <img src="../../assets/category_ocean.webp" alt="Category Ocean" />
         </div>
     </section>
     );
