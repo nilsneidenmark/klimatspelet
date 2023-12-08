@@ -92,6 +92,7 @@ export default function HelpContact() {
         
       <CloseButton className={styles.closeBTN} />
         <div>
+          <CloseButton />
           <div className={styles.bearAvatar}>
             <img src={bearAvatar} />
             <p>???</p>

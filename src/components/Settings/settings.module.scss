@@ -1,0 +1,133 @@
+@import "../../styles/index.scss";
+
+.settingsSection {
+  > div {
+    > button {
+      float: right;
+    }
+    // border: 2px solid red;
+    > .fontSection {
+      // border: 2px solid blue;
+      @include flex(row, space-between, flex-start);
+      flex-wrap: wrap;
+      > div {
+        @include flex(column, space-between, flex-start);
+        gap: $large;
+        // border: 2px solid green;
+        width: 45%;
+        min-width: 300px;
+        > div {
+          // border: 1px solid red;
+          > div {
+            // border: 1px solid blue;
+            @include flex(row, flex-start, center);
+            gap: $medium;
+            flex-wrap: wrap;
+            > button {
+              opacity: $opacity;
+              border-radius: 50px;
+              height: 35px;
+              @include flex(row, center, center);
+            }
+          }
+        }
+      }
+      > .test {
+        gap: $small;
+        > div {
+          @include flex(row, space-between, center);
+          flex-wrap: wrap;
+          gap: $small;
+          width: 100%;
+          > button {
+            width: 45%;
+          }
+        }
+      }
+    }
+  }
+  > .toggle {
+    border-radius: 50px;
+    display: flex;
+    width: 350px;
+    height: 80px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #b5b2a7;
+    > button {
+      width: 50%;
+      border-radius: 50px;
+      font-size: 18px;
+      background-color: transparent;
+      z-index: 1;
+    }
+    > .active {
+      font-weight: 600;
+    }
+  }
+  .slideBackground {
+    position: absolute;
+    background-color: $secondary;
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .slideBackground.font {
+    transform: translateX(0%);
+  }
+
+  .slideBackground.profile {
+    transform: translateX(100%);
+  }
+}
+
+.active {
+  opacity: 100% !important;
+}
+
+.settingsProfile {
+  // border: 2px solid red;
+  @include flex(row, center, flex-start);
+  flex-wrap: wrap;
+  > * {
+    // border: 2px solid blue;
+    width: 45%;
+    min-width: 300px;
+  }
+  > form {
+    @include flex(column, flex-start, flex-start);
+    gap: $small;
+    > div {
+      @include flex(row, flex-start, flex-start);
+      gap: $medium;
+      > input {
+        min-width: 200px;
+      }
+    }
+    > button {
+      width: 275px;
+    }
+  }
+  > div {
+    @include flex(column, flex-start, flex-start);
+    gap: $small;
+    > p {
+      margin: 0;
+    }
+    > div {
+      @include flex(row, flex-start, flex-start);
+      flex-wrap: wrap;
+      gap: $medium;
+      > button {
+        width: 50px;
+        background-color: transparent;
+        padding: 0;
+      }
+    }
+  }
+}
