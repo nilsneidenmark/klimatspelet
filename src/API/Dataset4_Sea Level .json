@@ -1,0 +1,672 @@
+[
+  {
+    "Medelhavsnivå": -158.7,
+    "Medelhavsnivå uncertainty": 24.2,
+    "Time": "1880-03-15"
+  },
+  {
+    "Medelhavsnivå": -153.1,
+    "Medelhavsnivå uncertainty": 24.2,
+    "Time": "1881-03-15"
+  },
+  {
+    "Medelhavsnivå": -169.9,
+    "Medelhavsnivå uncertainty": 23.0,
+    "Time": "1882-03-15"
+  },
+  {
+    "Medelhavsnivå": -164.6,
+    "Medelhavsnivå uncertainty": 22.8,
+    "Time": "1883-03-15"
+  },
+  {
+    "Medelhavsnivå": -143.7,
+    "Medelhavsnivå uncertainty": 22.2,
+    "Time": "1884-03-15"
+  },
+  {
+    "Medelhavsnivå": -145.2,
+    "Medelhavsnivå uncertainty": 21.9,
+    "Time": "1885-03-15"
+  },
+  {
+    "Medelhavsnivå": -147.6,
+    "Medelhavsnivå uncertainty": 20.8,
+    "Time": "1886-03-15"
+  },
+  {
+    "Medelhavsnivå": -153.2,
+    "Medelhavsnivå uncertainty": 20.8,
+    "Time": "1887-03-15"
+  },
+  {
+    "Medelhavsnivå": -151.1,
+    "Medelhavsnivå uncertainty": 20.8,
+    "Time": "1888-03-15"
+  },
+  {
+    "Medelhavsnivå": -149.5,
+    "Medelhavsnivå uncertainty": 20.8,
+    "Time": "1889-03-15"
+  },
+  {
+    "Medelhavsnivå": -147.5,
+    "Medelhavsnivå uncertainty": 20.7,
+    "Time": "1890-03-15"
+  },
+  {
+    "Medelhavsnivå": -149.2,
+    "Medelhavsnivå uncertainty": 20.7,
+    "Time": "1891-03-15"
+  },
+  {
+    "Medelhavsnivå": -146.0,
+    "Medelhavsnivå uncertainty": 20.7,
+    "Time": "1892-03-15"
+  },
+  {
+    "Medelhavsnivå": -141.3,
+    "Medelhavsnivå uncertainty": 20.3,
+    "Time": "1893-03-15"
+  },
+  {
+    "Medelhavsnivå": -151.0,
+    "Medelhavsnivå uncertainty": 21.6,
+    "Time": "1894-03-15"
+  },
+  {
+    "Medelhavsnivå": -139.2,
+    "Medelhavsnivå uncertainty": 21.6,
+    "Time": "1895-03-15"
+  },
+  {
+    "Medelhavsnivå": -146.8,
+    "Medelhavsnivå uncertainty": 21.2,
+    "Time": "1896-03-15"
+  },
+  {
+    "Medelhavsnivå": -141.6,
+    "Medelhavsnivå uncertainty": 20.8,
+    "Time": "1897-03-15"
+  },
+  {
+    "Medelhavsnivå": -132.2,
+    "Medelhavsnivå uncertainty": 19.7,
+    "Time": "1898-03-15"
+  },
+  {
+    "Medelhavsnivå": -124.7,
+    "Medelhavsnivå uncertainty": 19.4,
+    "Time": "1899-03-15"
+  },
+  {
+    "Medelhavsnivå": -130.1,
+    "Medelhavsnivå uncertainty": 18.3,
+    "Time": "1900-03-15"
+  },
+  {
+    "Medelhavsnivå": -130.5,
+    "Medelhavsnivå uncertainty": 17.6,
+    "Time": "1901-03-15"
+  },
+  {
+    "Medelhavsnivå": -125.9,
+    "Medelhavsnivå uncertainty": 17.3,
+    "Time": "1902-03-15"
+  },
+  {
+    "Medelhavsnivå": -117.9,
+    "Medelhavsnivå uncertainty": 17.0,
+    "Time": "1903-03-15"
+  },
+  {
+    "Medelhavsnivå": -128.2,
+    "Medelhavsnivå uncertainty": 16.9,
+    "Time": "1904-03-15"
+  },
+  {
+    "Medelhavsnivå": -133.7,
+    "Medelhavsnivå uncertainty": 15.4,
+    "Time": "1905-03-15"
+  },
+  {
+    "Medelhavsnivå": -126.9,
+    "Medelhavsnivå uncertainty": 14.7,
+    "Time": "1906-03-15"
+  },
+  {
+    "Medelhavsnivå": -128.3,
+    "Medelhavsnivå uncertainty": 14.9,
+    "Time": "1907-03-15"
+  },
+  {
+    "Medelhavsnivå": -130.8,
+    "Medelhavsnivå uncertainty": 14.5,
+    "Time": "1908-03-15"
+  },
+  {
+    "Medelhavsnivå": -126.3,
+    "Medelhavsnivå uncertainty": 14.6,
+    "Time": "1909-03-15"
+  },
+  {
+    "Medelhavsnivå": -126.4,
+    "Medelhavsnivå uncertainty": 14.6,
+    "Time": "1910-03-15"
+  },
+  {
+    "Medelhavsnivå": -118.1,
+    "Medelhavsnivå uncertainty": 14.2,
+    "Time": "1911-03-15"
+  },
+  {
+    "Medelhavsnivå": -121.2,
+    "Medelhavsnivå uncertainty": 14.2,
+    "Time": "1912-03-15"
+  },
+  {
+    "Medelhavsnivå": -119.4,
+    "Medelhavsnivå uncertainty": 14.1,
+    "Time": "1913-03-15"
+  },
+  {
+    "Medelhavsnivå": -113.1,
+    "Medelhavsnivå uncertainty": 13.8,
+    "Time": "1914-03-15"
+  },
+  {
+    "Medelhavsnivå": -105.2,
+    "Medelhavsnivå uncertainty": 13.6,
+    "Time": "1915-03-15"
+  },
+  {
+    "Medelhavsnivå": -107.1,
+    "Medelhavsnivå uncertainty": 13.0,
+    "Time": "1916-03-15"
+  },
+  {
+    "Medelhavsnivå": -111.6,
+    "Medelhavsnivå uncertainty": 12.8,
+    "Time": "1917-03-15"
+  },
+  {
+    "Medelhavsnivå": -113.2,
+    "Medelhavsnivå uncertainty": 12.7,
+    "Time": "1918-03-15"
+  },
+  {
+    "Medelhavsnivå": -111.6,
+    "Medelhavsnivå uncertainty": 12.7,
+    "Time": "1919-03-15"
+  },
+  {
+    "Medelhavsnivå": -110.3,
+    "Medelhavsnivå uncertainty": 13.0,
+    "Time": "1920-03-15"
+  },
+  {
+    "Medelhavsnivå": -108.2,
+    "Medelhavsnivå uncertainty": 13.1,
+    "Time": "1921-03-15"
+  },
+  {
+    "Medelhavsnivå": -109.1,
+    "Medelhavsnivå uncertainty": 13.2,
+    "Time": "1922-03-15"
+  },
+  {
+    "Medelhavsnivå": -107.9,
+    "Medelhavsnivå uncertainty": 13.0,
+    "Time": "1923-03-15"
+  },
+  {
+    "Medelhavsnivå": -115.2,
+    "Medelhavsnivå uncertainty": 13.1,
+    "Time": "1924-03-15"
+  },
+  {
+    "Medelhavsnivå": -113.2,
+    "Medelhavsnivå uncertainty": 13.6,
+    "Time": "1925-03-15"
+  },
+  {
+    "Medelhavsnivå": -106.7,
+    "Medelhavsnivå uncertainty": 13.7,
+    "Time": "1926-03-15"
+  },
+  {
+    "Medelhavsnivå": -107.8,
+    "Medelhavsnivå uncertainty": 12.9,
+    "Time": "1927-03-15"
+  },
+  {
+    "Medelhavsnivå": -111.7,
+    "Medelhavsnivå uncertainty": 12.3,
+    "Time": "1928-03-15"
+  },
+  {
+    "Medelhavsnivå": -110.3,
+    "Medelhavsnivå uncertainty": 12.1,
+    "Time": "1929-03-15"
+  },
+  {
+    "Medelhavsnivå": -106.3,
+    "Medelhavsnivå uncertainty": 12.0,
+    "Time": "1930-03-15"
+  },
+  {
+    "Medelhavsnivå": -106.7,
+    "Medelhavsnivå uncertainty": 12.2,
+    "Time": "1931-03-15"
+  },
+  {
+    "Medelhavsnivå": -101.0,
+    "Medelhavsnivå uncertainty": 11.9,
+    "Time": "1932-03-15"
+  },
+  {
+    "Medelhavsnivå": -96.7,
+    "Medelhavsnivå uncertainty": 11.8,
+    "Time": "1933-03-15"
+  },
+  {
+    "Medelhavsnivå": -102.1,
+    "Medelhavsnivå uncertainty": 11.9,
+    "Time": "1934-03-15"
+  },
+  {
+    "Medelhavsnivå": -96.5,
+    "Medelhavsnivå uncertainty": 11.9,
+    "Time": "1935-03-15"
+  },
+  {
+    "Medelhavsnivå": -100.4,
+    "Medelhavsnivå uncertainty": 11.8,
+    "Time": "1936-03-15"
+  },
+  {
+    "Medelhavsnivå": -94.7,
+    "Medelhavsnivå uncertainty": 11.8,
+    "Time": "1937-03-15"
+  },
+  {
+    "Medelhavsnivå": -92.1,
+    "Medelhavsnivå uncertainty": 11.8,
+    "Time": "1938-03-15"
+  },
+  {
+    "Medelhavsnivå": -86.9,
+    "Medelhavsnivå uncertainty": 12.2,
+    "Time": "1939-03-15"
+  },
+  {
+    "Medelhavsnivå": -92.2,
+    "Medelhavsnivå uncertainty": 11.1,
+    "Time": "1940-03-15"
+  },
+  {
+    "Medelhavsnivå": -80.0,
+    "Medelhavsnivå uncertainty": 10.8,
+    "Time": "1941-03-15"
+  },
+  {
+    "Medelhavsnivå": -80.0,
+    "Medelhavsnivå uncertainty": 10.8,
+    "Time": "1942-03-15"
+  },
+  {
+    "Medelhavsnivå": -80.0,
+    "Medelhavsnivå uncertainty": 10.8,
+    "Time": "1943-03-15"
+  },
+  {
+    "Medelhavsnivå": -86.4,
+    "Medelhavsnivå uncertainty": 10.7,
+    "Time": "1944-03-15"
+  },
+  {
+    "Medelhavsnivå": -83.6,
+    "Medelhavsnivå uncertainty": 10.7,
+    "Time": "1945-03-15"
+  },
+  {
+    "Medelhavsnivå": -76.1,
+    "Medelhavsnivå uncertainty": 10.6,
+    "Time": "1946-03-15"
+  },
+  {
+    "Medelhavsnivå": -73.0,
+    "Medelhavsnivå uncertainty": 9.6,
+    "Time": "1947-03-15"
+  },
+  {
+    "Medelhavsnivå": -68.2,
+    "Medelhavsnivå uncertainty": 9.3,
+    "Time": "1948-03-15"
+  },
+  {
+    "Medelhavsnivå": -69.5,
+    "Medelhavsnivå uncertainty": 8.4,
+    "Time": "1949-03-15"
+  },
+  {
+    "Medelhavsnivå": -67.3,
+    "Medelhavsnivå uncertainty": 7.9,
+    "Time": "1950-03-15"
+  },
+  {
+    "Medelhavsnivå": -57.8,
+    "Medelhavsnivå uncertainty": 7.8,
+    "Time": "1951-03-15"
+  },
+  {
+    "Medelhavsnivå": -60.4,
+    "Medelhavsnivå uncertainty": 7.7,
+    "Time": "1952-03-15"
+  },
+  {
+    "Medelhavsnivå": -56.0,
+    "Medelhavsnivå uncertainty": 7.5,
+    "Time": "1953-03-15"
+  },
+  {
+    "Medelhavsnivå": -58.9,
+    "Medelhavsnivå uncertainty": 7.3,
+    "Time": "1954-03-15"
+  },
+  {
+    "Medelhavsnivå": -58.0,
+    "Medelhavsnivå uncertainty": 7.1,
+    "Time": "1955-03-15"
+  },
+  {
+    "Medelhavsnivå": -63.1,
+    "Medelhavsnivå uncertainty": 7.0,
+    "Time": "1956-03-15"
+  },
+  {
+    "Medelhavsnivå": -49.7,
+    "Medelhavsnivå uncertainty": 6.9,
+    "Time": "1957-03-15"
+  },
+  {
+    "Medelhavsnivå": -48.3,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1958-03-15"
+  },
+  {
+    "Medelhavsnivå": -48.0,
+    "Medelhavsnivå uncertainty": 6.5,
+    "Time": "1959-03-15"
+  },
+  {
+    "Medelhavsnivå": -44.3,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1960-03-15"
+  },
+  {
+    "Medelhavsnivå": -38.1,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1961-03-15"
+  },
+  {
+    "Medelhavsnivå": -43.3,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1962-03-15"
+  },
+  {
+    "Medelhavsnivå": -44.9,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1963-03-15"
+  },
+  {
+    "Medelhavsnivå": -52.8,
+    "Medelhavsnivå uncertainty": 6.7,
+    "Time": "1964-03-15"
+  },
+  {
+    "Medelhavsnivå": -41.6,
+    "Medelhavsnivå uncertainty": 6.7,
+    "Time": "1965-03-15"
+  },
+  {
+    "Medelhavsnivå": -47.0,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1966-03-15"
+  },
+  {
+    "Medelhavsnivå": -45.6,
+    "Medelhavsnivå uncertainty": 6.5,
+    "Time": "1967-03-15"
+  },
+  {
+    "Medelhavsnivå": -44.8,
+    "Medelhavsnivå uncertainty": 6.7,
+    "Time": "1968-03-15"
+  },
+  {
+    "Medelhavsnivå": -38.0,
+    "Medelhavsnivå uncertainty": 7.0,
+    "Time": "1969-03-15"
+  },
+  {
+    "Medelhavsnivå": -39.9,
+    "Medelhavsnivå uncertainty": 7.0,
+    "Time": "1970-03-15"
+  },
+  {
+    "Medelhavsnivå": -34.7,
+    "Medelhavsnivå uncertainty": 6.9,
+    "Time": "1971-03-15"
+  },
+  {
+    "Medelhavsnivå": -25.6,
+    "Medelhavsnivå uncertainty": 6.9,
+    "Time": "1972-03-15"
+  },
+  {
+    "Medelhavsnivå": -31.6,
+    "Medelhavsnivå uncertainty": 6.8,
+    "Time": "1973-03-15"
+  },
+  {
+    "Medelhavsnivå": -19.7,
+    "Medelhavsnivå uncertainty": 6.8,
+    "Time": "1974-03-15"
+  },
+  {
+    "Medelhavsnivå": -21.3,
+    "Medelhavsnivå uncertainty": 6.7,
+    "Time": "1975-03-15"
+  },
+  {
+    "Medelhavsnivå": -22.3,
+    "Medelhavsnivå uncertainty": 6.8,
+    "Time": "1976-03-15"
+  },
+  {
+    "Medelhavsnivå": -24.0,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1977-03-15"
+  },
+  {
+    "Medelhavsnivå": -17.6,
+    "Medelhavsnivå uncertainty": 6.7,
+    "Time": "1978-03-15"
+  },
+  {
+    "Medelhavsnivå": -22.5,
+    "Medelhavsnivå uncertainty": 6.7,
+    "Time": "1979-03-15"
+  },
+  {
+    "Medelhavsnivå": -16.5,
+    "Medelhavsnivå uncertainty": 6.5,
+    "Time": "1980-03-15"
+  },
+  {
+    "Medelhavsnivå": -4.1,
+    "Medelhavsnivå uncertainty": 6.5,
+    "Time": "1981-03-15"
+  },
+  {
+    "Medelhavsnivå": -9.9,
+    "Medelhavsnivå uncertainty": 6.3,
+    "Time": "1982-03-15"
+  },
+  {
+    "Medelhavsnivå": -1.5,
+    "Medelhavsnivå uncertainty": 6.5,
+    "Time": "1983-03-15"
+  },
+  {
+    "Medelhavsnivå": -2.4,
+    "Medelhavsnivå uncertainty": 6.3,
+    "Time": "1984-03-15"
+  },
+  {
+    "Medelhavsnivå": -12.7,
+    "Medelhavsnivå uncertainty": 6.3,
+    "Time": "1985-03-15"
+  },
+  {
+    "Medelhavsnivå": -12.1,
+    "Medelhavsnivå uncertainty": 6.3,
+    "Time": "1986-03-15"
+  },
+  {
+    "Medelhavsnivå": -11.5,
+    "Medelhavsnivå uncertainty": 6.2,
+    "Time": "1987-03-15"
+  },
+  {
+    "Medelhavsnivå": -6.8,
+    "Medelhavsnivå uncertainty": 6.3,
+    "Time": "1988-03-15"
+  },
+  {
+    "Medelhavsnivå": -2.3,
+    "Medelhavsnivå uncertainty": 6.4,
+    "Time": "1989-03-15"
+  },
+  {
+    "Medelhavsnivå": 0.0,
+    "Medelhavsnivå uncertainty": 6.5,
+    "Time": "1990-03-15"
+  },
+  {
+    "Medelhavsnivå": 2.5,
+    "Medelhavsnivå uncertainty": 6.5,
+    "Time": "1991-03-15"
+  },
+  {
+    "Medelhavsnivå": 3.2,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1992-03-15"
+  },
+  {
+    "Medelhavsnivå": 1.4,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1993-03-15"
+  },
+  {
+    "Medelhavsnivå": 6.6,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1994-03-15"
+  },
+  {
+    "Medelhavsnivå": 9.5,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1995-03-15"
+  },
+  {
+    "Medelhavsnivå": 13.6,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1996-03-15"
+  },
+  {
+    "Medelhavsnivå": 20.6,
+    "Medelhavsnivå uncertainty": 6.6,
+    "Time": "1997-03-15"
+  },
+  {
+    "Medelhavsnivå": 10.7,
+    "Medelhavsnivå uncertainty": 6.8,
+    "Time": "1998-03-15"
+  },
+  {
+    "Medelhavsnivå": 19.2,
+    "Medelhavsnivå uncertainty": 6.8,
+    "Time": "1999-03-15"
+  },
+  {
+    "Medelhavsnivå": 20.5,
+    "Medelhavsnivå uncertainty": 6.8,
+    "Time": "2000-03-15"
+  },
+  {
+    "Medelhavsnivå": 26.0,
+    "Medelhavsnivå uncertainty": 6.7,
+    "Time": "2001-03-15"
+  },
+  {
+    "Medelhavsnivå": 28.4,
+    "Medelhavsnivå uncertainty": 6.8,
+    "Time": "2002-03-15"
+  },
+  {
+    "Medelhavsnivå": 37.6,
+    "Medelhavsnivå uncertainty": 6.9,
+    "Time": "2003-03-15"
+  },
+  {
+    "Medelhavsnivå": 37.2,
+    "Medelhavsnivå uncertainty": 6.9,
+    "Time": "2004-03-15"
+  },
+  {
+    "Medelhavsnivå": 37.3,
+    "Medelhavsnivå uncertainty": 6.8,
+    "Time": "2005-03-15"
+  },
+  {
+    "Medelhavsnivå": 41.6,
+    "Medelhavsnivå uncertainty": 6.8,
+    "Time": "2006-03-15"
+  },
+  {
+    "Medelhavsnivå": 43.5,
+    "Medelhavsnivå uncertainty": 7.1,
+    "Time": "2007-03-15"
+  },
+  {
+    "Medelhavsnivå": 52.2,
+    "Medelhavsnivå uncertainty": 6.8,
+    "Time": "2008-03-15"
+  },
+  {
+    "Medelhavsnivå": 58.0,
+    "Medelhavsnivå uncertainty": 6.9,
+    "Time": "2009-03-15"
+  },
+  {
+    "Medelhavsnivå": 65.7,
+    "Medelhavsnivå uncertainty": 7.1,
+    "Time": "2010-03-15"
+  },
+  {
+    "Medelhavsnivå": 67.3,
+    "Medelhavsnivå uncertainty": 7.5,
+    "Time": "2011-03-15"
+  },
+  {
+    "Medelhavsnivå": 76.1,
+    "Medelhavsnivå uncertainty": 8.3,
+    "Time": "2012-03-15"
+  },
+  {
+    "Medelhavsnivå": 67.7,
+    "Medelhavsnivå uncertainty": 8.9,
+    "Time": "2013-03-15"
+  }
+]
