@@ -1,4 +1,4 @@
-import "../Categories/categories.module.scss";
+import styles from "./categories.module.scss";
 
 export default function Categories() {
     return (
