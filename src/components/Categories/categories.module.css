@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
   text-decoration: none;
 }
 
@@ -35,9 +36,9 @@ main {
 }
 main > section {
   background: rgba(255, 255, 255, 0.31);
-  border-radius: 20px;
+  border-radius: 24px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(22px);
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(9.4px);
   display: flex;
   flex-direction: column;
@@ -56,26 +57,17 @@ button {
   color: #eeeeee;
   width: 125px;
 }
-button:hover {
-  opacity: 50%;
-}
-
 .primarybtn {
   font-weight: 700;
   background-color: #08594a;
 }
 
-h1, h2 {
-  font-size: 24px;
-}
-
-h3, h4 {
-  font-size: 16px;
-  font-weight: bold;
+h2 {
+  font-size: 1.5rem;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 small {
@@ -115,36 +107,56 @@ input {
   background-color: #4f4f4f;
 }
 
-.categoriesSection {
+.test-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.test-section > div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.test-section > .primary-buttons > button {
+  background-color: #08594a;
+  font-weight: 700;
+}
+
+.opt1:hover {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.opt2:hover {
+  background-color: rgb(44, 44, 44);
+}
+
+.opt:hover {
+  background-color: #2e4e48 !important;
+}
+
+.opt3:hover {
+  font-size: 1.1rem;
+}
+
+.opt4:hover {
+  transform: scale(1.1);
+}
+
+.opt5:hover {
+  transform: rotate(2.5deg);
 }
 
 .categories {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  margin: 0.5rem 2rem;
-  position: relative;
-}
-.categories > .comingSoon {
-  position: absolute;
-  top: 10px;
-  left: 40px;
-  transform: rotate(20deg);
-  background-color: #08594a;
-  color: #eeeeee;
-  padding: 0.15rem 0.5rem;
-  border-radius: 10px;
 }
 .categories > img {
-  width: 157px;
-  margin-bottom: 1rem;
-}
-.categories > img:hover {
-  opacity: 50%;
-  cursor: pointer;
+  width: 80px;
 }/*# sourceMappingURL=categories.module.css.map */
