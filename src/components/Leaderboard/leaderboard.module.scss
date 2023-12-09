@@ -1,0 +1,16 @@
+@import "../../styles/index.scss";
+
+.leaderBoard {
+    @include flex(row, space-between, flex-start);
+    width: 60%;
+    > .myPlace p {
+        font-size: 3rem;
+        text-align: center;
+    }
+    > .topPlace ol {
+        padding-left: 0;
+        > li {
+            list-style-position: inside;
+        }
+    }
+}

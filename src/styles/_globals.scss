@@ -46,12 +46,17 @@ button {
 
 // h1 h3 h3 h4
 
-h2 {
-  font-size: 1.5rem;
+h1, h2 {
+  font-size: 24px;
+}
+
+h3, h4 {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 small {

@@ -1,0 +1,15 @@
+@import "../../styles/index.scss";
+
+.services {
+    @include flex(row, center, center);
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    margin: 0 auto 2rem auto;
+    display: block;
+}

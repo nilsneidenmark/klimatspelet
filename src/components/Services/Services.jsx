@@ -1,24 +1,28 @@
-import "./services.modules.scss";
+import styles from "./services.module.scss"
+import bear from "../../assets/avatar_bear.webp";
 
 export default function Services() {
   return (
     <section>
-      <div>
-        <p>image</p>
-        <h3>Klimatkalkylatorn</h3>
-        <p>
-          isque sit amet felis non neque consectetur lobortis. Donec hendrerit
-          blandit ex, id congue nulla viverra eu!
-        </p>
-      </div>
+      <h2>Läs mer</h2>
+      <div className={styles.services}>
+        <div>
+          <img src={bear} />
+          <h3>Klimatkalkylatorn</h3>
+          <p>
+            isque sit amet felis non neque consectetur lobortis. Donec hendrerit
+            blandit ex, id congue nulla viverra eu!
+          </p>
+        </div>
 
-      <div>
-        <p>image</p>
-        <h3>Nasa ClimateKids</h3>
-        <p>
-          isque sit amet felis non neque consectetur lobortis. Donec hendrerit
-          blandit ex, id congue nulla viverra eu!
-        </p>
+        <div>
+          <img src={bear} />
+          <h3>Nasa ClimateKids</h3>
+          <p>
+            isque sit amet felis non neque consectetur lobortis. Donec hendrerit
+            blandit ex, id congue nulla viverra eu!
+          </p>
+        </div>
       </div>
     </section>
   );

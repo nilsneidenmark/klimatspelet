@@ -2,11 +2,16 @@
 
 // Colors
 $primary: #08594a;
+$primaryHover: #063C32;
+$primaryInactive: #409B8A;
 $secondary: #4f4f4f;
+$secondaryHover: #3C3C3C;
+$secondaryInactive:#868585;
 $white: #eeeeee;
 $opacity: 50%;
 
 // Spacing
+$XXsmall: 0.15rem;
 $Xsmall: 0.25rem;
 $small: 0.5rem;
 $medium: 1rem;
@@ -15,8 +20,8 @@ $XLarge: 4rem;
 $XXLarge: 6rem;
 
 // Borders and shadows
-$borderRadiusLarge: 24px;
-$borderRadiusSmall: 12px;
+$borderRadiusLarge: 20px;
+$borderRadiusSmall: 10px;
 
 // Mixins
 @mixin flex($direction, $justify, $align) {

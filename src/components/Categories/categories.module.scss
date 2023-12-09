@@ -1,8 +1,30 @@
 @import "../../styles/index.scss";
 
-.categories {
-    @include flex(row, space-around, center);
-    > img{ 
-        width: 80px;
+.categoriesSection {
+    @include flex(row, center, center);
+}
+
+.categories { 
+    @include flex(column, center, center);
+    margin: $small $large;
+    position: relative;
+    > .comingSoon {
+        position: absolute;
+        top: 10px;
+        left: 40px;
+        transform: rotate(20deg);
+        background-color: $primary;
+        color: $white;
+        padding: $XXsmall $small;
+        border-radius: $borderRadiusSmall;
+    }
+    > img {
+        width: 157px;
+        margin-bottom: $medium;
+    }
+    > img:hover {
+        opacity: $opacity;
+        cursor: pointer;
     }
 }
+

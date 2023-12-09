@@ -15,6 +15,7 @@ footer {
       cursor: pointer;
     }
     > ul {
+      list-style: none;
       > li {
         text-decoration: underline;
         padding: $Xsmall;
