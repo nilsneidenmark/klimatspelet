@@ -151,7 +151,6 @@ input {
   align-items: flex-start;
 }
 .signup > form > div > div > small {
-  opacity: 50%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;

@@ -5,6 +5,7 @@ import AvatarPicker from "../AvatarPicker/AvatarPicker";
 import eyeClosed from "../../assets/icons/eye-off.svg";
 import eyeOpen from "../../assets/icons/eye.svg";
 import check from "../../assets/icons/check.svg";
+import x from "../../assets/icons/x.svg";
 
 export default function Signup() {
   const [hidePW, setHidePW] = useState(true);
@@ -49,17 +50,17 @@ export default function Signup() {
           />
           <div className={styles.verifyInput}>
             <small>
-              <img width="16px" height="16px" src={check} alt="check" />
+              <img width="16px" height="16px" src={x} alt="check" />
               Minst 8 tecken
             </small>
             <small>
               {" "}
-              <img width="16px" height="16px" src={check} alt="check" />
+              <img width="16px" height="16px" src={x} alt="check" />
               Minst 1 specialtecken !#%&/?
             </small>
             <small>
               {" "}
-              <img width="16px" height="16px" src={check} alt="check" />
+              <img width="16px" height="16px" src={x} alt="check" />
               Minst 1 STOR bokstav
             </small>
           </div>
@@ -81,7 +82,7 @@ export default function Signup() {
           <div className={styles.verifyInput}>
             <small>
               {" "}
-              <img width="16px" height="16px" src={check} alt="check" />
+              <img width="16px" height="16px" src={x} alt="check" />
               Lösenorden stämmer överens
             </small>
           </div>
