@@ -1,18 +1,39 @@
-import { useEffect } from "react";
-import emissionsData from "../../API/Dataset1_GlobalCO2EmissionsfromFossilFuels.json";
+import { useState, useEffect } from "react";
+import Question from "../../components/Question/Question";
+import styles from "./quiz.module.scss";
 
+// Parent component för quizfrågor
 const Quiz=()=> {
+  // lagrar datan i komponenten, default värdet är null
+  const [QuizData, setQuizData] = useState([]);
+
   useEffect(()=>{
-    //const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
+    const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
     //const url = "../../API/quizdata.json";
-    const url = emissionsData;
+    //const url = "../../API/Dataset1_GlobalCO2Emissionsfrom FossilFuels.json";
     fetch(url).then(response=>response.json()).then(data=>{
-      console.log(data);
+      data.map(p=>p.all.answers = [p.correct_answer,...incorrect_answers]);
+      //console.log(data);
+
+      //lagrar data i QuizData
+      setQuizData(data);
     })
   })
   return (
     <section> 
-      Insert quiz here! 
+      <div className={styles.quizCategory}>
+        <p>INSERT ICON</p>
+        <h1>Category</h1>
+      </div>
+
+      <div className={styles.question}>
+        <p>Fråga 1/10</p>
+      </div>
+
+      <div>
+      <Question data={QuizData[0]}/>
+      </div>
+      
     </section>
   );
 }
