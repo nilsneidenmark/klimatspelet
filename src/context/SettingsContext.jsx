@@ -6,9 +6,11 @@ const SettingsContext = createContext();
 // Creates a provider component
 export const SettingsProvider = ({ children }) => {
   const [active, setActive] = useState({
-    font: { poppins: true, roboto: false },
-    fontSize: { small: false, medium: true, large: false },
-    space: { small: false, medium: true, large: false },
+    text: {
+      font: { poppins: true, roboto: false },
+      fontSize: { small: false, medium: true, large: false },
+      space: { small: false, medium: true, large: false },
+    },
   });
 
   return (

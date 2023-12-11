@@ -24,10 +24,13 @@ const SettingsFont = () => {
                 onClick={() =>
                   setActive({
                     ...active,
-                    font: { poppins: true, roboto: false },
+                    text: {
+                      ...active.text,
+                      font: { poppins: true, roboto: false },
+                    },
                   })
                 }
-                className={active.font.poppins ? styles.active : ""}
+                className={active.text.font.poppins ? styles.active : ""}
               >
                 Poppins
               </button>
@@ -35,10 +38,13 @@ const SettingsFont = () => {
                 onClick={() =>
                   setActive({
                     ...active,
-                    font: { poppins: false, roboto: true },
+                    text: {
+                      ...active.text,
+                      font: { poppins: false, roboto: true },
+                    },
                   })
                 }
-                className={active.font.roboto ? styles.active : ""}
+                className={active.text.font.roboto ? styles.active : ""}
               >
                 Roboto serif
               </button>
@@ -51,10 +57,13 @@ const SettingsFont = () => {
                 onClick={() =>
                   setActive({
                     ...active,
-                    fontSize: { small: true, medium: false, large: false },
+                    text: {
+                      ...active.text,
+                      fontSize: { small: true, medium: false, large: false },
+                    },
                   })
                 }
-                className={active.fontSize.small ? styles.active : ""}
+                className={active.text.fontSize.small ? styles.active : ""}
               >
                 Liten
               </button>
@@ -62,10 +71,13 @@ const SettingsFont = () => {
                 onClick={() =>
                   setActive({
                     ...active,
-                    fontSize: { small: false, medium: true, large: false },
+                    text: {
+                      ...active.text,
+                      fontSize: { small: false, medium: true, large: false },
+                    },
                   })
                 }
-                className={active.fontSize.medium ? styles.active : ""}
+                className={active.text.fontSize.medium ? styles.active : ""}
               >
                 Medium
               </button>
@@ -73,10 +85,13 @@ const SettingsFont = () => {
                 onClick={() =>
                   setActive({
                     ...active,
-                    fontSize: { small: false, medium: false, large: true },
+                    text: {
+                      ...active.text,
+                      fontSize: { small: false, medium: false, large: true },
+                    },
                   })
                 }
-                className={active.fontSize.large ? styles.active : ""}
+                className={active.text.fontSize.large ? styles.active : ""}
               >
                 Stor
               </button>
@@ -89,10 +104,13 @@ const SettingsFont = () => {
                 onClick={() =>
                   setActive({
                     ...active,
-                    space: { small: true, medium: false, large: false },
+                    text: {
+                      ...active.text,
+                      space: { small: true, medium: false, large: false },
+                    },
                   })
                 }
-                className={active.space.small ? styles.active : ""}
+                className={active.text.space.small ? styles.active : ""}
               >
                 Liten
               </button>
@@ -100,10 +118,13 @@ const SettingsFont = () => {
                 onClick={() =>
                   setActive({
                     ...active,
-                    space: { small: false, medium: true, large: false },
+                    text: {
+                      ...active.text,
+                      space: { small: false, medium: true, large: false },
+                    },
                   })
                 }
-                className={active.space.medium ? styles.active : ""}
+                className={active.text.space.medium ? styles.active : ""}
               >
                 Medium
               </button>
@@ -111,10 +132,13 @@ const SettingsFont = () => {
                 onClick={() =>
                   setActive({
                     ...active,
-                    space: { small: false, medium: false, large: true },
+                    text: {
+                      ...active.text,
+                      space: { small: false, medium: false, large: true },
+                    },
                   })
                 }
-                className={active.space.large ? styles.active : ""}
+                className={active.text.space.large ? styles.active : ""}
               >
                 Stor
               </button>
