@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ocean from "../../assets/category_ocean.webp";
 import Question from "../../components/Question/Question";
 import styles from "./quiz.module.scss";
 
@@ -8,32 +9,40 @@ const Quiz=()=> {
   const [QuizData, setQuizData] = useState([]);
 
   useEffect(()=>{
-    const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
-    //const url = "../../API/quizdata.json";
+    //const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
     //const url = "../../API/Dataset1_GlobalCO2Emissionsfrom FossilFuels.json";
+    const url = "../../API/quizdata.json";
     fetch(url).then(response=>response.json()).then(data=>{
-      data.map(p=>p.all.answers = [p.correct_answer,...incorrect_answers]);
-      //console.log(data);
-
+      // skapar en ny propety som slår ihop alla svaren för enklare presentation.
+      data.map(p=>p.all_answers = [p.correct_answer,...p.incorrect_answers]);
+      console.log(data);
       //lagrar data i QuizData
       setQuizData(data);
     })
-  })
+  },[])
+
   return (
     <section> 
       <div className={styles.quizCategory}>
-        <p>INSERT ICON</p>
+      <img src={ocean} />
         <h1>Category</h1>
+         {/* 
+          <h1>{category[0]}</h1>
+        */}
       </div>
 
       <div className={styles.question}>
         <p>Fråga 1/10</p>
+        {/* 
+            <p> Fråga {questions.number}/{category.questions}</p>
+        */}
       </div>
 
       <div>
+        {/* Visar endast första frågan, men ska ändras */}
       <Question data={QuizData[0]}/>
       </div>
-      
+      <p>Spara och avsluta</p>
     </section>
   );
 }
