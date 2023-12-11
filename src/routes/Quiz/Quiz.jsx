@@ -8,17 +8,17 @@ const Quiz=()=> {
   const [QuizData, setQuizData] = useState([]);
 
   useEffect(()=>{
-    const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
-    //const url = "../../API/quizdata.json";
+    //const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
+    const url = "../../API/quizdata.json";
     //const url = "../../API/Dataset1_GlobalCO2Emissionsfrom FossilFuels.json";
     fetch(url).then(response=>response.json()).then(data=>{
-      data.map(p=>p.all.answers = [p.correct_answer,...incorrect_answers]);
-      //console.log(data);
-
+      data.map(p=>p.all_answers = [p.correct_answer,...p.incorrect_answers]);
+      console.log(data);
       //lagrar data i QuizData
       setQuizData(data);
     })
-  })
+  },[])
+
   return (
     <section> 
       <div className={styles.quizCategory}>
