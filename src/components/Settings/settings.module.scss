@@ -91,11 +91,9 @@
 }
 
 .settingsProfile {
-  // border: 2px solid red;
   @include flex(row, center, flex-start);
   flex-wrap: wrap;
   > * {
-    // border: 2px solid blue;
     width: 45%;
     min-width: 300px;
   }

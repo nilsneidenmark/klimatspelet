@@ -1,3 +1,4 @@
+import { useState } from "react";
 import avatarBear from "../../assets/avatar_bear.webp";
 import avatarDog from "../../assets/avatar_dog.webp";
 import avatarGreen from "../../assets/avatar_gamer_green.webp";
@@ -19,14 +20,25 @@ export default function AvatarPicker() {
     avatarGreen,
     avatarPink,
   ];
+  const [active, setActive] = useState(0);
 
+  function handleClick(index) {
+    setActive(index);
+    event.preventDefault();
+  }
   return (
     <div className={styles.avatarContainer}>
       <p>Välj avatar</p>
       <div>
         {avatars.map((avatar, index) => (
           <button key={index}>
-            <img width="50px" src={avatar} alt={`Avatar ${index}`} />
+            <img
+              className={active === index ? styles.active : ""}
+              width="50px"
+              src={avatar}
+              alt={`Avatar ${index}`}
+              onClick={() => handleClick(index)}
+            />
           </button>
         ))}
       </div>

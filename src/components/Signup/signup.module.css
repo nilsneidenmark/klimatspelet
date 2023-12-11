@@ -123,6 +123,18 @@ input {
 .signup > form > div {
   width: 100%;
   margin-bottom: 1rem;
+  position: relative;
+}
+.signup > form > div > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 35px;
+  margin-right: 10px;
+  opacity: 50%;
+  cursor: pointer;
+  z-index: 999;
+  width: auto;
 }
 .signup > form > div > label {
   margin-bottom: 0.25rem;
@@ -130,9 +142,28 @@ input {
 .signup > form > div > input {
   margin-bottom: 0;
 }
+.signup > form > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 .signup > form > div > div > small {
-  margin-right: 2rem;
   opacity: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.signup > form > div > div > small > img {
+  margin: 0;
+  width: auto;
+  opacity: 50%;
+  margin-right: 0.5rem;
+}
+.signup > form > div > .verifyInput {
+  gap: 2rem;
+  margin-top: 0.5rem;
 }
 .signup > form > button {
   margin-bottom: 1rem;
