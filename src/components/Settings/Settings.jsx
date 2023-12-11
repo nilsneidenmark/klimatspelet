@@ -1,48 +1,13 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import styles from "./settings.module.scss";
 import { motion } from "framer-motion";
 import avatar from "../../assets/avatar_bear.webp";
 import AvatarPicker from "../AvatarPicker/AvatarPicker";
+import { useSettings } from "../../context/SettingsContext";
 
+// updates active style for clicked button and settings context for text
 const SettingsFont = () => {
-  const [active, setActive] = useState({
-    font: { poppins: true, roboto: false, open: false },
-    fontSize: { small: false, medium: true, large: false },
-    space: { small: false, medium: true, large: false },
-  });
-
-  const handleFontClick = (fontName) => {
-    setActive({
-      ...active,
-      font: {
-        poppins: fontName === "poppins",
-        roboto: fontName === "roboto",
-        open: fontName === "open",
-      },
-    });
-  };
-
-  const handleFontSizeClick = (size) => {
-    setActive({
-      ...active,
-      fontSize: {
-        small: size === "small",
-        medium: size === "medium",
-        large: size === "large",
-      },
-    });
-  };
-
-  const handleSpaceClick = (spaceSize) => {
-    setActive({
-      ...active,
-      space: {
-        small: spaceSize === "small",
-        medium: spaceSize === "medium",
-        large: spaceSize === "large",
-      },
-    });
-  };
+  const { active, setActive } = useSettings();
 
   return (
     <>
@@ -56,22 +21,26 @@ const SettingsFont = () => {
             <p>Typsnitt</p>
             <div>
               <button
-                onClick={() => handleFontClick("poppins")}
+                onClick={() =>
+                  setActive({
+                    ...active,
+                    font: { poppins: true, roboto: false },
+                  })
+                }
                 className={active.font.poppins ? styles.active : ""}
               >
                 Poppins
               </button>
               <button
-                onClick={() => handleFontClick("roboto")}
+                onClick={() =>
+                  setActive({
+                    ...active,
+                    font: { poppins: false, roboto: true },
+                  })
+                }
                 className={active.font.roboto ? styles.active : ""}
               >
                 Roboto serif
-              </button>
-              <button
-                onClick={() => handleFontClick("open")}
-                className={active.font.open ? styles.active : ""}
-              >
-                Open Dyslexic
               </button>
             </div>
           </div>
@@ -79,19 +48,34 @@ const SettingsFont = () => {
             <p>Textstorlek</p>
             <div>
               <button
-                onClick={() => handleFontSizeClick("small")}
+                onClick={() =>
+                  setActive({
+                    ...active,
+                    fontSize: { small: true, medium: false, large: false },
+                  })
+                }
                 className={active.fontSize.small ? styles.active : ""}
               >
                 Liten
               </button>
               <button
-                onClick={() => handleFontSizeClick("medium")}
+                onClick={() =>
+                  setActive({
+                    ...active,
+                    fontSize: { small: false, medium: true, large: false },
+                  })
+                }
                 className={active.fontSize.medium ? styles.active : ""}
               >
                 Medium
               </button>
               <button
-                onClick={() => handleFontSizeClick("large")}
+                onClick={() =>
+                  setActive({
+                    ...active,
+                    fontSize: { small: false, medium: false, large: true },
+                  })
+                }
                 className={active.fontSize.large ? styles.active : ""}
               >
                 Stor
@@ -102,19 +86,34 @@ const SettingsFont = () => {
             <p>Radavstånd</p>
             <div>
               <button
-                onClick={() => handleSpaceClick("small")}
+                onClick={() =>
+                  setActive({
+                    ...active,
+                    space: { small: true, medium: false, large: false },
+                  })
+                }
                 className={active.space.small ? styles.active : ""}
               >
                 Liten
               </button>
               <button
-                onClick={() => handleSpaceClick("medium")}
+                onClick={() =>
+                  setActive({
+                    ...active,
+                    space: { small: false, medium: true, large: false },
+                  })
+                }
                 className={active.space.medium ? styles.active : ""}
               >
                 Medium
               </button>
               <button
-                onClick={() => handleSpaceClick("large")}
+                onClick={() =>
+                  setActive({
+                    ...active,
+                    space: { small: false, medium: false, large: true },
+                  })
+                }
                 className={active.space.large ? styles.active : ""}
               >
                 Stor
@@ -147,6 +146,11 @@ const SettingsFont = () => {
 };
 
 const SettingsProfile = () => {
+  const [disabled, setDisabled] = useState(true);
+  function handleClick(e) {
+    e.preventDefault();
+    setDisabled(false);
+  }
   return (
     <>
       <motion.div
@@ -157,8 +161,13 @@ const SettingsProfile = () => {
         <form>
           <label htmlFor="name">Användarnamn</label>
           <div>
-            <input type="text" placeholder="Crazyfox23" minLength="2"></input>
-            <button>Ändra</button>
+            <input
+              disabled={disabled}
+              type="text"
+              placeholder="Crazyfox23"
+              minLength="2"
+            ></input>
+            <button onClick={handleClick}>Ändra</button>
           </div>
           <label htmlFor="passwordChange">Ändra lösenord</label>
           <button>Skicka återställningsmail</button>
