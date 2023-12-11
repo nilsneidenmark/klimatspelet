@@ -9,8 +9,8 @@ const Quiz=()=> {
 
   useEffect(()=>{
     //const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
-    const url = "../../API/quizdata.json";
     //const url = "../../API/Dataset1_GlobalCO2Emissionsfrom FossilFuels.json";
+    const url = "../../API/quizdata.json";
     fetch(url).then(response=>response.json()).then(data=>{
       // skapar en ny propety som slår ihop alla svaren för enklare presentation.
       data.map(p=>p.all_answers = [p.correct_answer,...p.incorrect_answers]);
