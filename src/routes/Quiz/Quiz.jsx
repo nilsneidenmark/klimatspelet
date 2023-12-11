@@ -1,3 +1,22 @@
+import { useEffect } from "react";
+
+const Quiz=()=> {
+  useEffect(()=>{
+    const url = "../../API/quizdata.json";
+    fetch(url).then(response=>response.json()).then(data=>{
+      console.log(data);
+    })
+  })
+  return (
+    <section> 
+      Insert quiz here! 
+    </section>
+  );
+}
+
+export default Quiz;
+
+{/*
 import { useState, useEffect } from "react";
 import {
   LineChart,
@@ -13,7 +32,9 @@ import {
 import emissionsData from "../../API/Dataset1_Global CO2 Emissions from Fossil Fuels.json";
 import temperaturesData from "../../API/Dataset2_Global Temperature Time Series.json";
 import sealevelData from "../../API/Dataset4_Sea Level .json";
+*/}
 
+{/*
 const Co2Emissions = ({ data }) => {
   return (
     <>
@@ -30,7 +51,7 @@ const Co2Emissions = ({ data }) => {
             bottom: 5,
           }}
         >
-          {/* <CartesianGrid vertical={false} strokeDasharray="0" /> */}
+          // <CartesianGrid vertical={false} strokeDasharray="0" /> 
           <XAxis dataKey="Year" tick={{ stroke: "black", strokeWidth: 0.5 }} />
           <YAxis dataKey="Total" tick={{ stroke: "black", strokeWidth: 0.5 }} />
           <Tooltip
@@ -56,7 +77,9 @@ const Co2Emissions = ({ data }) => {
     </>
   );
 };
+*/}
 
+{/*
 const GlobalTemperatures = ({ data }) => {
   return (
     <>
@@ -100,7 +123,9 @@ const GlobalTemperatures = ({ data }) => {
     </>
   );
 };
+*/}
 
+{/*
 const SeaLevel = ({ data }) => {
   return (
     <AreaChart
@@ -117,7 +142,7 @@ const SeaLevel = ({ data }) => {
         {/* <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
           <stop offset="10%" stopColor="#82ca9d" stopOpacity={0} />
           <stop offset="100%" stopColor="#82ca9d" stopOpacity={0} />
-        </linearGradient> */}
+        </linearGradient>
       </defs>
       <XAxis dataKey="Time" />
       <YAxis dataKey="Medelhavsnivå" />
@@ -140,11 +165,13 @@ const SeaLevel = ({ data }) => {
         stroke="#82ca9d"
         fillOpacity={1}
         fill="url(#colorPv)"
-      /> */}
+      /> *
     </AreaChart>
   );
 };
+*/}
 
+{/*
 // Renderar quizen (själva spelet)
 export default function Quiz() {
   const [temperatures, setTemperatures] = useState([]);
@@ -174,3 +201,4 @@ export default function Quiz() {
     </section>
   );
 }
+*/}
