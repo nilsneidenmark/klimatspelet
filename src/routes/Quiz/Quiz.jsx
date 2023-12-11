@@ -1,4 +1,47 @@
 import { useState, useEffect } from "react";
+import Question from "../../components/Question/Question";
+import styles from "./quiz.module.scss";
+
+// Parent component för quizfrågor
+const Quiz=()=> {
+  // lagrar datan i komponenten, default värdet är null
+  const [QuizData, setQuizData] = useState([]);
+
+  useEffect(()=>{
+    const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
+    //const url = "../../API/quizdata.json";
+    //const url = "../../API/Dataset1_GlobalCO2Emissionsfrom FossilFuels.json";
+    fetch(url).then(response=>response.json()).then(data=>{
+      data.map(p=>p.all.answers = [p.correct_answer,...incorrect_answers]);
+      //console.log(data);
+
+      //lagrar data i QuizData
+      setQuizData(data);
+    })
+  })
+  return (
+    <section> 
+      <div className={styles.quizCategory}>
+        <p>INSERT ICON</p>
+        <h1>Category</h1>
+      </div>
+
+      <div className={styles.question}>
+        <p>Fråga 1/10</p>
+      </div>
+
+      <div>
+      <Question data={QuizData[0]}/>
+      </div>
+      
+    </section>
+  );
+}
+
+export default Quiz;
+
+{/*
+import { useState, useEffect } from "react";
 import {
   LineChart,
   CartesianGrid,
@@ -13,7 +56,9 @@ import {
 import emissionsData from "../../API/Dataset1_Global CO2 Emissions from Fossil Fuels.json";
 import temperaturesData from "../../API/Dataset2_Global Temperature Time Series.json";
 import sealevelData from "../../API/Dataset4_Sea Level .json";
+*/}
 
+{/*
 const Co2Emissions = ({ data }) => {
   return (
     <>
@@ -30,7 +75,7 @@ const Co2Emissions = ({ data }) => {
             bottom: 5,
           }}
         >
-          {/* <CartesianGrid vertical={false} strokeDasharray="0" /> */}
+          // <CartesianGrid vertical={false} strokeDasharray="0" /> 
           <XAxis dataKey="Year" tick={{ stroke: "black", strokeWidth: 0.5 }} />
           <YAxis dataKey="Total" tick={{ stroke: "black", strokeWidth: 0.5 }} />
           <Tooltip
@@ -56,7 +101,9 @@ const Co2Emissions = ({ data }) => {
     </>
   );
 };
+*/}
 
+{/*
 const GlobalTemperatures = ({ data }) => {
   return (
     <>
@@ -100,7 +147,9 @@ const GlobalTemperatures = ({ data }) => {
     </>
   );
 };
+*/}
 
+{/*
 const SeaLevel = ({ data }) => {
   return (
     <AreaChart
@@ -117,7 +166,7 @@ const SeaLevel = ({ data }) => {
         {/* <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
           <stop offset="10%" stopColor="#82ca9d" stopOpacity={0} />
           <stop offset="100%" stopColor="#82ca9d" stopOpacity={0} />
-        </linearGradient> */}
+        </linearGradient>
       </defs>
       <XAxis dataKey="Time" />
       <YAxis dataKey="Medelhavsnivå" />
@@ -140,11 +189,13 @@ const SeaLevel = ({ data }) => {
         stroke="#82ca9d"
         fillOpacity={1}
         fill="url(#colorPv)"
-      /> */}
+      /> *
     </AreaChart>
   );
 };
+*/}
 
+{/*
 // Renderar quizen (själva spelet)
 export default function Quiz() {
   const [temperatures, setTemperatures] = useState([]);
@@ -174,3 +225,4 @@ export default function Quiz() {
     </section>
   );
 }
+*/}
