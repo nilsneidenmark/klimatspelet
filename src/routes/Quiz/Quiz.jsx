@@ -25,6 +25,9 @@ const Quiz=()=> {
       <div className={styles.quizCategory}>
         <p>INSERT ICON</p>
         <h1>Category</h1>
+         {/* 
+          <h1>{category[0]}</h1>
+        */}
       </div>
 
       <div className={styles.question}>
