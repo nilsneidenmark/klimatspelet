@@ -35,6 +35,7 @@ const Quiz=()=> {
       </div>
 
       <div>
+        {/* Visar endast första frågan, men ska ändras */}
       <Question data={QuizData[0]}/>
       </div>
       
