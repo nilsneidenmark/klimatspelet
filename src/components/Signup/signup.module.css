@@ -1,1 +1,149 @@
-/*# sourceMappingURL=signup.module.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: rgb(36, 36, 36);
+  background-image: url(/src/assets/bg_forest.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 4rem;
+  gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80dvh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main > section {
+  background: rgba(255, 255, 255, 0.31);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(9.4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  width: 80%;
+}
+
+button {
+  border-radius: 6px;
+  border: none;
+  padding: 0.5rem;
+  background-color: #4f4f4f;
+  color: #eeeeee;
+  width: 125px;
+}
+button:hover {
+  opacity: 50%;
+}
+
+.primarybtn {
+  font-weight: 700;
+  background-color: #08594a;
+}
+
+h1,
+h2 {
+  font-size: 24px;
+}
+
+h3,
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+form button {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #4f4f4f;
+}
+
+.signup {
+  max-width: 600px;
+}
+.signup > form > div {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.signup > form > div > label {
+  margin-bottom: 0.25rem;
+}
+.signup > form > div > input {
+  margin-bottom: 0;
+}
+.signup > form > div > div > small {
+  margin-right: 2rem;
+  opacity: 50%;
+}
+.signup > form > button {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.signup > button {
+  width: 100%;
+}
+.signup > h2 {
+  align-self: flex-start;
+}
+.signup > p {
+  align-self: flex-start;
+}/*# sourceMappingURL=signup.module.css.map */

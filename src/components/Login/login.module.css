@@ -56,16 +56,22 @@ button {
   color: #eeeeee;
   width: 125px;
 }
+button:hover {
+  opacity: 50%;
+}
+
 .primarybtn {
   font-weight: 700;
   background-color: #08594a;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 24px;
 }
 
-h3, h4 {
+h3,
+h4 {
   font-size: 16px;
   font-weight: bold;
 }
@@ -109,50 +115,6 @@ input {
   width: 100%;
   height: 1px;
   background-color: #4f4f4f;
-}
-
-.test-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.test-section > div {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.test-section > .primary-buttons > button {
-  background-color: #08594a;
-  font-weight: 700;
-}
-
-.opt1:hover {
-  border: 2px solid rgb(0, 0, 0);
-}
-
-.opt2:hover {
-  background-color: rgb(44, 44, 44);
-}
-
-.opt:hover {
-  background-color: #2e4e48 !important;
-}
-
-.opt3:hover {
-  font-size: 1.1rem;
-}
-
-.opt4:hover {
-  transform: scale(1.1);
-}
-
-.opt5:hover {
-  transform: rotate(2.5deg);
 }
 
 .login {

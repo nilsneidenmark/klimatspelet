@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   text-decoration: none;
 }
 
@@ -36,7 +35,7 @@ main {
 }
 main > section {
   background: rgba(255, 255, 255, 0.31);
-  border-radius: 24px;
+  border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(9.4px);
@@ -57,17 +56,28 @@ button {
   color: #eeeeee;
   width: 125px;
 }
+button:hover {
+  opacity: 50%;
+}
+
 .primarybtn {
   font-weight: 700;
   background-color: #08594a;
 }
 
+h1,
 h2 {
-  font-size: 1.5rem;
+  font-size: 24px;
+}
+
+h3,
+h4 {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 small {
@@ -107,46 +117,6 @@ input {
   background-color: #4f4f4f;
 }
 
-.test-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.test-section > div {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.test-section > .primary-buttons > button {
-  background-color: #08594a;
-  font-weight: 700;
-}
-
-.opt1:hover {
-  border: 2px solid rgb(0, 0, 0);
-}
-
-.opt2:hover {
-  background-color: rgb(44, 44, 44);
-}
-
-.opt:hover {
-  background-color: #2e4e48 !important;
-}
-
-.opt3:hover {
-  font-size: 1.1rem;
-}
-
-.opt4:hover {
-  transform: scale(1.1);
-}
-
-.opt5:hover {
-  transform: rotate(2.5deg);
+h2 {
+  text-align: center;
 }/*# sourceMappingURL=about.module.css.map */

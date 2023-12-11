@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -117,53 +118,34 @@ input {
   background-color: #4f4f4f;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.intro > div:first-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-}
-.intro > div:first-child > .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #eeeeee;
-  border-radius: 2rem;
-  width: 100%;
-  padding: 0 0 1rem 0;
-}
-.intro > div:first-child > .container > img {
-  width: 100%;
-  border-radius: 2rem 2rem 0 0;
-  margin-bottom: 1rem;
-}
-.intro > button {
+.avatarContainer {
   width: 100%;
 }
-.intro .circles {
+.avatarContainer > p {
+  margin-bottom: 0.25rem;
+}
+.avatarContainer > div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
-  margin: 2.5% 0% 5% 0%;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: #eeeeee;
 }
-.intro .circles > button {
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
-  background-color: #4f4f4f;
-  opacity: 50%;
+.avatarContainer > div > button {
+  border-radius: 0px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  width: auto;
 }
-.intro .circles > .active {
-  opacity: 100%;
-}/*# sourceMappingURL=intro.module.css.map */
+.avatarContainer > div > button:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>❤️</text></svg>") 16 0, auto;
+}
+.avatarContainer > div > button > img {
+  width: 60px;
+  margin: 0;
+}/*# sourceMappingURL=avatarpicker.module.css.map */

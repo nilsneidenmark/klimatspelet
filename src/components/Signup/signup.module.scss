@@ -1,0 +1,34 @@
+@import "../../styles/index.scss";
+
+.signup {
+  max-width: 600px;
+  > form {
+    > div {
+      width: 100%;
+      margin-bottom: $medium;
+      > label {
+        margin-bottom: $Xsmall;
+      }
+      > input {
+        margin-bottom: 0;
+      }
+      > div > small {
+        margin-right: $large;
+        opacity: $opacity;
+      }
+    }
+    > button {
+      margin-bottom: $medium;
+      margin-top: $medium;
+    }
+  }
+  > button {
+    width: 100%;
+  }
+  > h2 {
+    align-self: flex-start;
+  }
+  > p {
+    align-self: flex-start;
+  }
+}

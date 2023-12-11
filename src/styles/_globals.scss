@@ -35,7 +35,7 @@ button {
   color: $white;
   width: 125px;
   &:hover {
-    // opacity: $opacity;
+    opacity: $opacity;
   }
 }
 
@@ -46,11 +46,13 @@ button {
 
 // h1 h3 h3 h4
 
-h1, h2 {
+h1,
+h2 {
   font-size: 24px;
 }
 
-h3, h4 {
+h3,
+h4 {
   font-size: 16px;
   font-weight: bold;
 }

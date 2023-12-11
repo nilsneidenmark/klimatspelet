@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./settings.module.scss";
 import { motion } from "framer-motion";
 import avatar from "../../assets/avatar_bear.webp";
+import AvatarPicker from "../AvatarPicker/AvatarPicker";
 
 const SettingsFont = () => {
   const [active, setActive] = useState({
@@ -162,35 +163,7 @@ const SettingsProfile = () => {
           <label htmlFor="passwordChange">Ändra lösenord</label>
           <button>Skicka återställningsmail</button>
         </form>
-        <div>
-          <p>Avatar</p>
-          <div>
-            <button>
-              <img src={avatar} alt="avatar" width="50px" />
-            </button>
-            <button>
-              <img src={avatar} alt="avatar" width="50px" />
-            </button>
-            <button>
-              <img src={avatar} alt="avatar" width="50px" />
-            </button>
-            <button>
-              <img src={avatar} alt="avatar" width="50px" />
-            </button>
-            <button>
-              <img src={avatar} alt="avatar" width="50px" />
-            </button>
-            <button>
-              <img src={avatar} alt="avatar" width="50px" />
-            </button>
-            <button>
-              <img src={avatar} alt="avatar" width="50px" />
-            </button>
-            <button>
-              <img src={avatar} alt="avatar" width="50px" />
-            </button>
-          </div>
-        </div>
+        <AvatarPicker />
       </motion.div>
       <button className={styles.primarybtn}>Spara</button>
     </>
