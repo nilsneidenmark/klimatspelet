@@ -5,7 +5,7 @@ import avatar from "../../assets/avatar_bear.webp";
 import AvatarPicker from "../AvatarPicker/AvatarPicker";
 import { useSettings } from "../../context/SettingsContext";
 
-// updates active style for clicked button and settings context for text
+// Component for managing font settings, updates active style for clicked button and settings context for text
 const SettingsFont = () => {
   const { active, setActive } = useSettings();
 
