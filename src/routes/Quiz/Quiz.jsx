@@ -38,7 +38,7 @@ const Quiz=()=> {
         {/* Visar endast första frågan, men ska ändras */}
       <Question data={QuizData[0]}/>
       </div>
-
+      <p>Spara och avsluta</p>
     </section>
   );
 }

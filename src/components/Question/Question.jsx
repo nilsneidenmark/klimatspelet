@@ -26,7 +26,6 @@ const Question = (props) => {
             */}
                 
             </div>
-            <p>Spara och avsluta</p>
         </section>
     );
 }
