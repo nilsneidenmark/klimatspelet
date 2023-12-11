@@ -29,6 +29,9 @@ const Quiz=()=> {
 
       <div className={styles.question}>
         <p>Fråga 1/10</p>
+        {/* 
+            <p> Fråga {questions.number}/{category.questions}</p>
+        */}
       </div>
 
       <div>

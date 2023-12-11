@@ -3,7 +3,7 @@
 import styles from "./question.module.scss";
 
 // props, tar emot data från "send to question"
-const Question = (props) =>{
+const Question = (props) => {
 
     const data = props.data;
 
