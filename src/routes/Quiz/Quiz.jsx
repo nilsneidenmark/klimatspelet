@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ocean from "../../assets/category_ocean.webp";
 import Question from "../../components/Question/Question";
 import styles from "./quiz.module.scss";
 
@@ -23,7 +24,7 @@ const Quiz=()=> {
   return (
     <section> 
       <div className={styles.quizCategory}>
-        <p>INSERT ICON</p>
+      <img src={ocean} />
         <h1>Category</h1>
          {/* 
           <h1>{category[0]}</h1>
