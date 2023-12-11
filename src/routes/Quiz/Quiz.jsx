@@ -12,6 +12,7 @@ const Quiz=()=> {
     const url = "../../API/quizdata.json";
     //const url = "../../API/Dataset1_GlobalCO2Emissionsfrom FossilFuels.json";
     fetch(url).then(response=>response.json()).then(data=>{
+      // skapar en ny propety som slår ihop alla svaren för enklare presentation.
       data.map(p=>p.all_answers = [p.correct_answer,...p.incorrect_answers]);
       console.log(data);
       //lagrar data i QuizData

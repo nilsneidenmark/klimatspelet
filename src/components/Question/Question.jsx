@@ -17,16 +17,16 @@ const Question = (props) =>{
             <div className={styles.question} >
                 <p>API bugg, men här kommer frågan + alternativen, se kommentar i koden // LIP</p>
 
-                {/* 
+            {/* 
                 <p>{currentQuestion.question}</p>
 
-                {currentQuestion.incorrect_answers.map((answer)=>(
+                {currentQuestion.all_answers.map((answer)=>(
                     <div className={styles.alternatives}>
-                    <button>{answer}</button>
+                    <button>{Alternativ}</button>
                 </div>
                 ))}
+            */}
                 
-                */}
             </div>
             <p>Spara och avsluta</p>
         </section>
