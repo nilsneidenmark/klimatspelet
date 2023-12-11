@@ -1,8 +1,11 @@
 import { useEffect } from "react";
+import emissionsData from "../../API/Dataset1_GlobalCO2EmissionsfromFossilFuels.json";
 
 const Quiz=()=> {
   useEffect(()=>{
-    const url = "../../API/quizdata.json";
+    //const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
+    //const url = "../../API/quizdata.json";
+    const url = emissionsData;
     fetch(url).then(response=>response.json()).then(data=>{
       console.log(data);
     })
