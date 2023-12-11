@@ -8,15 +8,13 @@ const Question = (props) => {
     const data = props.data;
 
     // conditional rendering and error handler
-    //if(data === undefined) return <p>No data found</p>
+    if(data === undefined) return <p>No data found</p>
 
     const currentQuestion = data;
 
     return (
         <section>
             <div className={styles.question} >
-                <p>API bugg, men här kommer frågan + alternativen, se kommentar i koden // LIP</p>
-
             {/* 
                 <p>{currentQuestion.question}</p>
 
