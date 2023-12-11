@@ -10,7 +10,7 @@ const Question = (props) => {
     // conditional rendering and error handler
     if(data === undefined) return <p>No data found</p>
 
-    const currentQuestion = data;
+    //const currentQuestion = data;
 
     return (
         <section>
