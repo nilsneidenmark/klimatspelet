@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
 main {
@@ -44,21 +45,20 @@ button {
   background-color: $primary;
 }
 
-// h1 h3 h3 h4
-
 h1,
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 h3,
 h4 {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 small {
