@@ -2,11 +2,11 @@
 
 // Colors
 $primary: #08594a;
-$primaryHover: #063C32;
-$primaryInactive: #409B8A;
+$primaryHover: #063c32;
+$primaryInactive: #409b8a;
 $secondary: #4f4f4f;
-$secondaryHover: #3C3C3C;
-$secondaryInactive:#868585;
+$secondaryHover: #3c3c3c;
+$secondaryInactive: #868585;
 $white: #eeeeee;
 $opacity: 50%;
 
@@ -32,9 +32,9 @@ $borderRadiusSmall: 10px;
 }
 
 @mixin glass() {
-  background: rgba(255, 255, 255, 0.31);
+  background: rgba(255, 255, 255, 0.25);
   border-radius: $borderRadiusLarge;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(9.4px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
