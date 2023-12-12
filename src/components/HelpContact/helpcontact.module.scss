@@ -5,6 +5,12 @@
   gap: $XLarge;
   > div {
     max-width: 75%;
+    > article {
+      > h2,
+      h3 {
+        text-align: left;
+      }
+    }
     > div {
       > img {
         width: 100px;

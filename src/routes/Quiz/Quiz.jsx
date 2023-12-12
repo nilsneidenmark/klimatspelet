@@ -1,65 +1,17 @@
-import { useState, useEffect } from "react";
 import ocean from "../../assets/category_ocean.webp";
-// import Question from "../../components/Question/Question";
+import Questions from "../../components/Question/Questions";
 import styles from "./quiz.module.scss";
 import quizData from "../../API/quizdata.json";
 
-const Question = ({ data }) => {
-  const [displayFeedback, setDisplayFeedback] = useState(false);
-  const [feedback, setFeedback] = useState("");
-  // conditional rendering and error handler
-  if (data === undefined)
-    return <p>Hittade ingen fråga, pröva att ladda om sidan!</p>;
-  function handleclick(answer) {
-    setDisplayFeedback(true);
-    if (answer === "incorrect") {
-      setFeedback("Wrong answer!");
-    } else if (answer === "correct") {
-      setFeedback("Right answer!");
-    }
-  }
-  return (
-    <div className={styles.question}>
-      <h3>Fråga {data.number} / 10</h3>
-      {!displayFeedback ? <p>{data.question}</p> : <p>{feedback}</p>}
-      {!displayFeedback ? (
-        <div>
-          <button onClick={() => handleclick("incorrect")}>
-            {data.incorrect_answers[0]}
-          </button>
-          <button onClick={() => handleclick("incorrect")}>
-            {data.incorrect_answers[1]}
-          </button>
-          <button onClick={() => handleclick("incorrect")}>
-            {data.incorrect_answers[2]}
-          </button>
-          <button onClick={() => handleclick("correct")}>
-            {data.correct_answer}
-          </button>
-        </div>
-      ) : (
-        <div>
-          <button className="primarybtn">Nästa fråga</button>
-        </div>
-      )}
-    </div>
-  );
-};
-
-const Feedback = () => {
-  return <h2>question</h2>;
-};
-
 // Parent component för quizfrågor
 export default function Quiz() {
-  console.log(quizData.questions[0]);
   return (
     <section className={styles.quiz}>
       <div className={styles.quizCategory}>
         <img src={ocean} alt="ocean icon" width="85px" />
         <h1>{quizData.category.name}</h1>
       </div>
-      <Question data={quizData.questions[0]} />
+      <Questions data={quizData.questions} />
       <button>Spara och avsluta</button>
     </section>
   );

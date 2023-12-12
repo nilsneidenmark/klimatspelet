@@ -123,6 +123,14 @@ input {
   background-color: #eeeeee;
   border-radius: 10px;
   padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.question > h3 {
+  align-self: flex-start;
 }
 .question > p {
   margin-bottom: 2rem;
@@ -134,12 +142,37 @@ input {
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
+  width: 100%;
 }
 .question > div > button {
-  width: auto;
   width: 100%;
 }
 .question > div > button:hover {
   background-color: #08594a;
   opacity: 100%;
-}/*# sourceMappingURL=question.module.css.map */
+}
+.question > .feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.question > .feedback > img {
+  width: 200px;
+  margin: 0;
+  border-radius: 10px;
+}
+.question > .feedback > p {
+  width: 50%;
+}
+.question .nextQuestion {
+  align-self: flex-end;
+  width: 125px;
+}
+.question > .endQuiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=questions.module.css.map */

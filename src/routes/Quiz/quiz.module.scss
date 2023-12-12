@@ -18,32 +18,3 @@
     align-self: flex-start;
   }
 }
-.question {
-  background-color: $white;
-  border-radius: $borderRadiusSmall;
-  padding: $medium;
-  gap: $medium;
-  @include flex(column, flex-start, flex-start);
-  > h3 {
-    align-self: flex-start;
-  }
-  > p {
-    margin-bottom: $large;
-  }
-  > div {
-    @include flex(row, flex-start, center);
-    gap: $small;
-    flex-wrap: wrap;
-    > button {
-      width: auto;
-      //   background-color: $primary;
-      width: 100%;
-      &:hover {
-        background-color: $primary;
-        // color: $white;
-        opacity: 100%;
-        // font-weight: 700;
-      }
-    }
-  }
-}

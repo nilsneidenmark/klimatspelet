@@ -129,6 +129,10 @@ input {
 .helpContact > div {
   max-width: 75%;
 }
+.helpContact > div > article > h2,
+.helpContact > div > article h3 {
+  text-align: left;
+}
 .helpContact > div > div > img {
   width: 100px;
 }
