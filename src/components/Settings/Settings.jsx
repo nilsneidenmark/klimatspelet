@@ -1,7 +1,6 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import styles from "./settings.module.scss";
 import { motion } from "framer-motion";
-import avatar from "../../assets/avatar_bear.webp";
 import AvatarPicker from "../AvatarPicker/AvatarPicker";
 import { useSettings } from "../../context/SettingsContext";
 

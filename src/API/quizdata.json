@@ -1,109 +1,101 @@
 {
-    "category": {
+  "category": {
+    "number": 1,
+    "name": "Ocean",
+    "questions": 10
+  },
+  "questions": [
+    {
       "number": 1,
-      "name": "Ocean",
-      "questions": 10
+      "question": "What is the primary driver of sea-level rise due to climate change?",
+      "incorrect_answers": [
+        "Solar radiation",
+        "Expansion of ocean",
+        "Underwater volcanic activity"
+      ],
+      "correct_answer": "Melting glaciers and ice caps"
     },
-    "questions": [
-      {
-        "number": 1,
-        "question": "What is the primary driver of sea-level rise due to climate change?",
-        "incorrect_answers": [
-          "Increased solar radiation",
-          "Expansion of ocean water due to higher temperatures",
-          "Underwater volcanic activity"
-        ],
-        "correct_answer": "Melting glaciers and ice caps"
-      },
-      {
-        "number": 2,
-        "question": "Which greenhouse gas is most responsible for the warming of the Earth's oceans?",
-        "incorrect_answers": [
-          "Oxygen",
-          "Methane",
-          "Nitrous oxide"
-        ],
-        "correct_answer": "Carbon dioxide"
-      },
-      {
-        "number": 3,
-        "question": "How do coral reefs respond to the rising sea temperatures caused by climate change?",
-        "incorrect_answers": [
-          "They shrink in size",
-          "They thrive and grow faster",
-          "They migrate to colder waters"
-        ],
-        "correct_answer": "They undergo bleaching and may die"
-      },
-      {
-        "number": 4,
-        "question": "What role do oceans play in absorbing excess carbon dioxide from the atmosphere?",
-        "incorrect_answers": [
-          "Oceans release carbon dioxide",
-          "Oceans trap carbon dioxide at the surface",
-          "Oceans have no impact on carbon dioxide levels"
-        ],
-        "correct_answer": "Oceans absorb and store carbon dioxide"
-      },
-      {
-        "number": 5,
-        "question": "What is the term for the phenomenon where warmer ocean temperatures lead to more intense and frequent tropical storms?",
-        "incorrect_answers": [
-          "Ocean currents",
-          "El Niño",
-          "Ocean acidification"
-        ],
-        "correct_answer": "Tropical cyclones"
-      },
-      {
-        "number": 6,
-        "question": "Which human activity contributes significantly to the acidification of the world's oceans?",
-        "incorrect_answers": [
-          "Deforestation",
-          "Solar energy production",
-          "Organic farming"
-        ],
-        "correct_answer": "Industrial pollution"
-      },
-      {
-        "number": 7,
-        "question": "How does climate change affect the distribution of marine species",
-        "incorrect_answers": [
-          "It has no impact on marine species",
-          "Marine species become more localized",
-          "Marine species become extinct"
-        ],
-        "correct_answer": "Marine species migrate to colder waters"
-      },
-      {
-        "number": 8,
-        "question": "What is the term for the gradual increase in the Earth's average surface temperature due to human activities?",
-        "incorrect_answers": [
-          "Global cooling",
-          "Greenhouse effect",
-          "Ozone depletion"
-        ],
-        "correct_answer": "Global warming"
-      },
-      {
-        "number": 9,
-        "question": "How does melting Arctic ice contribute to sea-level rise?",
-        "incorrect_answers": [
-          "It doesn't affect sea-level",
-          "It decreases sea-level",
-          "It causes ocean currents to reverse"
-        ],
-        "correct_answer": "It contributes to sea-level rise"
-      },
-      {
-        "number": 10,
-        "question": "What is the main consequence of rising sea levels on coastal ecosystems?",
-        "incorrect_answers": [
-          "Increased biodiversity",
-          "Expansion of mangrove forests",
-          "Decreased salinity levels"
-        ],
-        "correct_answer": "Coastal erosion"
-      }
-    ]
-  }
+    {
+      "number": 2,
+      "question": "Which greenhouse gas is most responsible for the warming of the Earth's oceans?",
+      "incorrect_answers": ["Oxygen", "Methane", "Nitrous oxide"],
+      "correct_answer": "Carbon dioxide"
+    },
+    {
+      "number": 3,
+      "question": "How do coral reefs respond to the rising sea temperatures caused by climate change?",
+      "incorrect_answers": [
+        "They shrink in size",
+        "They thrive and grow faster",
+        "They migrate to colder waters"
+      ],
+      "correct_answer": "They undergo bleaching and may die"
+    },
+    {
+      "number": 4,
+      "question": "What role do oceans play in absorbing excess carbon dioxide from the atmosphere?",
+      "incorrect_answers": [
+        "Oceans release carbon dioxide",
+        "Oceans trap carbon dioxide at the surface",
+        "Oceans have no impact on carbon dioxide levels"
+      ],
+      "correct_answer": "Oceans absorb and store carbon dioxide"
+    },
+    {
+      "number": 5,
+      "question": "What is the term for the phenomenon where warmer ocean temperatures lead to more intense and frequent tropical storms?",
+      "incorrect_answers": ["Ocean currents", "El Niño", "Ocean acidification"],
+      "correct_answer": "Tropical cyclones"
+    },
+    {
+      "number": 6,
+      "question": "Which human activity contributes significantly to the acidification of the world's oceans?",
+      "incorrect_answers": [
+        "Deforestation",
+        "Solar energy production",
+        "Organic farming"
+      ],
+      "correct_answer": "Industrial pollution"
+    },
+    {
+      "number": 7,
+      "question": "How does climate change affect the distribution of marine species",
+      "incorrect_answers": [
+        "It has no impact on marine species",
+        "Marine species become more localized",
+        "Marine species become extinct"
+      ],
+      "correct_answer": "Marine species migrate to colder waters"
+    },
+    {
+      "number": 8,
+      "question": "What is the term for the gradual increase in the Earth's average surface temperature due to human activities?",
+      "incorrect_answers": [
+        "Global cooling",
+        "Greenhouse effect",
+        "Ozone depletion"
+      ],
+      "correct_answer": "Global warming"
+    },
+    {
+      "number": 9,
+      "question": "How does melting Arctic ice contribute to sea-level rise?",
+      "incorrect_answers": [
+        "It doesn't affect sea-level",
+        "It decreases sea-level",
+        "It causes ocean currents to reverse"
+      ],
+      "correct_answer": "It contributes to sea-level rise"
+    },
+    {
+      "number": 10,
+      "question": "What is the main consequence of rising sea levels on coastal ecosystems?",
+      "incorrect_answers": [
+        "Increased biodiversity",
+        "Expansion of mangrove forests",
+        "Decreased salinity levels"
+      ],
+      "correct_answer": "Coastal erosion"
+    }
+  ]
+}

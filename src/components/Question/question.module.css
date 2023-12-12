@@ -120,5 +120,26 @@ input {
 }
 
 .question {
-  background-color: rgb(255, 225, 161);
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.question > p {
+  margin-bottom: 2rem;
+}
+.question > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.question > div > button {
+  width: auto;
+  width: 100%;
+}
+.question > div > button:hover {
+  background-color: #08594a;
+  opacity: 100%;
 }/*# sourceMappingURL=question.module.css.map */

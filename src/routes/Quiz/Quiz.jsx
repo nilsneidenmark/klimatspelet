@@ -1,55 +1,87 @@
 import { useState, useEffect } from "react";
 import ocean from "../../assets/category_ocean.webp";
-import Question from "../../components/Question/Question";
+// import Question from "../../components/Question/Question";
 import styles from "./quiz.module.scss";
+import quizData from "../../API/quizdata.json";
+
+const Question = ({ data }) => {
+  const [displayFeedback, setDisplayFeedback] = useState(false);
+  const [feedback, setFeedback] = useState("");
+  // conditional rendering and error handler
+  if (data === undefined)
+    return <p>Hittade ingen fråga, pröva att ladda om sidan!</p>;
+  function handleclick(answer) {
+    setDisplayFeedback(true);
+    if (answer === "incorrect") {
+      setFeedback("Wrong answer!");
+    } else if (answer === "correct") {
+      setFeedback("Right answer!");
+    }
+  }
+  return (
+    <div className={styles.question}>
+      <h3>Fråga {data.number} / 10</h3>
+      {!displayFeedback ? <p>{data.question}</p> : <p>{feedback}</p>}
+      {!displayFeedback ? (
+        <div>
+          <button onClick={() => handleclick("incorrect")}>
+            {data.incorrect_answers[0]}
+          </button>
+          <button onClick={() => handleclick("incorrect")}>
+            {data.incorrect_answers[1]}
+          </button>
+          <button onClick={() => handleclick("incorrect")}>
+            {data.incorrect_answers[2]}
+          </button>
+          <button onClick={() => handleclick("correct")}>
+            {data.correct_answer}
+          </button>
+        </div>
+      ) : (
+        <div>
+          <button className="primarybtn">Nästa fråga</button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+const Feedback = () => {
+  return <h2>question</h2>;
+};
 
 // Parent component för quizfrågor
-const Quiz=()=> {
-  // lagrar datan i komponenten, default värdet är null
-  const [QuizData, setQuizData] = useState([]);
-
-  useEffect(()=>{
-    //const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
-    //const url = "../../API/Dataset1_GlobalCO2Emissionsfrom FossilFuels.json";
-    const url = "../../API/quizdata.json";
-    fetch(url).then(response=>response.json()).then(data=>{
-      // skapar en ny propety som slår ihop alla svaren för enklare presentation.
-      data.map(p=>p.all_answers = [p.correct_answer,...p.incorrect_answers]);
-      console.log(data);
-      //lagrar data i QuizData
-      setQuizData(data);
-    })
-  },[])
-
+export default function Quiz() {
+  console.log(quizData.questions[0]);
   return (
-    <section> 
+    <section className={styles.quiz}>
       <div className={styles.quizCategory}>
-      <img src={ocean} />
-        <h1>Category</h1>
-         {/* 
-          <h1>{category[0]}</h1>
-        */}
+        <img src={ocean} alt="ocean icon" width="85px" />
+        <h1>{quizData.category.name}</h1>
       </div>
-
-      <div className={styles.question}>
-        <p>Fråga 1/10</p>
-        {/* 
-            <p> Fråga {questions.number}/{category.questions}</p>
-        */}
-      </div>
-
-      <div>
-        {/* Visar endast första frågan, men ska ändras */}
-      <Question data={QuizData[0]}/>
-      </div>
-      <p>Spara och avsluta</p>
+      <Question data={quizData.questions[0]} />
+      <button>Spara och avsluta</button>
     </section>
   );
 }
+// lagrar datan i komponenten, default värdet är null
+// const [QuizData, setQuizData] = useState([]);
 
-export default Quiz;
+// useEffect(()=>{
+//   //const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
+//   //const url = "../../API/Dataset1_GlobalCO2Emissionsfrom FossilFuels.json";
+//   const url = "../../API/quizdata.json";
+//   fetch(url).then(response=>response.json()).then(data=>{
+//     // skapar en ny propety som slår ihop alla svaren för enklare presentation.
+//     data.map(p=>p.all_answers = [p.correct_answer,...p.incorrect_answers]);
+//     console.log(data);
+//     //lagrar data i QuizData
+//     setQuizData(data);
+//   })
+// },[])
 
-{/*
+{
+  /*
 import { useState, useEffect } from "react";
 import {
   LineChart,
@@ -65,9 +97,11 @@ import {
 import emissionsData from "../../API/Dataset1_Global CO2 Emissions from Fossil Fuels.json";
 import temperaturesData from "../../API/Dataset2_Global Temperature Time Series.json";
 import sealevelData from "../../API/Dataset4_Sea Level .json";
-*/}
+*/
+}
 
-{/*
+{
+  /*
 const Co2Emissions = ({ data }) => {
   return (
     <>
@@ -110,9 +144,11 @@ const Co2Emissions = ({ data }) => {
     </>
   );
 };
-*/}
+*/
+}
 
-{/*
+{
+  /*
 const GlobalTemperatures = ({ data }) => {
   return (
     <>
@@ -156,9 +192,11 @@ const GlobalTemperatures = ({ data }) => {
     </>
   );
 };
-*/}
+*/
+}
 
-{/*
+{
+  /*
 const SeaLevel = ({ data }) => {
   return (
     <AreaChart
@@ -202,9 +240,11 @@ const SeaLevel = ({ data }) => {
     </AreaChart>
   );
 };
-*/}
+*/
+}
 
-{/*
+{
+  /*
 // Renderar quizen (själva spelet)
 export default function Quiz() {
   const [temperatures, setTemperatures] = useState([]);
@@ -234,4 +274,5 @@ export default function Quiz() {
     </section>
   );
 }
-*/}
+*/
+}
