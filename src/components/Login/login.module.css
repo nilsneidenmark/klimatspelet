@@ -60,10 +60,6 @@ button {
 button:hover {
   opacity: 50%;
 }
-button:disabled {
-  opacity: 50%;
-}
-
 .primarybtn {
   font-weight: 700;
   background-color: #08594a;
@@ -120,6 +116,16 @@ input {
   width: 100%;
   height: 1px;
   background-color: #4f4f4f;
+}
+
+::-webkit-scrollbar {
+  background: #4f4f4f;
+  width: 12.5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #08594a;
+  border-radius: 10px;
 }
 
 .login {

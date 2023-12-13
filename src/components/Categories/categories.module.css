@@ -60,10 +60,6 @@ button {
 button:hover {
   opacity: 50%;
 }
-button:disabled {
-  opacity: 50%;
-}
-
 .primarybtn {
   font-weight: 700;
   background-color: #08594a;
@@ -122,11 +118,22 @@ input {
   background-color: #4f4f4f;
 }
 
+::-webkit-scrollbar {
+  background: #4f4f4f;
+  width: 12.5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #08594a;
+  border-radius: 10px;
+}
+
 .categoriesSection {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .categories {
@@ -136,19 +143,27 @@ input {
   align-items: center;
   margin: 0.5rem 2rem;
   position: relative;
+  background-color: transparent;
+  color: black;
+  width: 25%;
+}
+.categories:disabled {
+  opacity: 50%;
 }
 .categories > .comingSoon {
   position: absolute;
-  top: 10px;
-  left: 40px;
+  top: 0;
+  left: 25%;
+  width: 135px;
   transform: rotate(20deg);
   background-color: #08594a;
   color: #eeeeee;
   padding: 0.15rem 0.5rem;
   border-radius: 10px;
+  opacity: 100%;
 }
 .categories > img {
-  width: 157px;
+  width: 125px;
   margin-bottom: 1rem;
 }
 .categories > img:hover {

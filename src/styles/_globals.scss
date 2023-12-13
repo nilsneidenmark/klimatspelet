@@ -39,7 +39,8 @@ button {
     opacity: $opacity;
   }
   &:disabled {
-    opacity: $opacity;
+    // opacity: $opacity;
+    // cursor: default;
   }
 }
 
@@ -94,4 +95,16 @@ input {
   height: 1px;
   background-color: $secondary;
 }
-// @include button(small, secondary)
+
+// Scrollbar
+::-webkit-scrollbar {
+  // box-shadow: $boxShadow;
+  background: $secondary;
+  // border-radius: 10px;
+  width: 12.5px;
+}
+::-webkit-scrollbar-thumb {
+  // background: rgb(211, 211, 211);
+  background: $primary;
+  border-radius: 10px;
+}
