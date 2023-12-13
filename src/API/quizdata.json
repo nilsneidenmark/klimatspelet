@@ -14,14 +14,26 @@
         "Underwater volcanic activity"
       ],
       "correct_answer": "Melting glaciers and ice caps",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels."
+      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "media": {
+        "diagram": false,
+        "video": false,
+        "podcast": "podcast",
+        "image": false
+      }
     },
     {
       "number": 2,
       "question": "Which greenhouse gas is most responsible for the warming of the Earth's oceans?",
       "incorrect_answers": ["Oxygen", "Methane", "Nitrous oxide"],
       "correct_answer": "Carbon dioxide",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels."
+      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "media": {
+        "diagram": false,
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
     },
     {
       "number": 3,
@@ -32,7 +44,13 @@
         "They migrate to colder waters"
       ],
       "correct_answer": "They undergo bleaching and may die",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels."
+      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "media": {
+        "diagram": "emissions",
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
     },
     {
       "number": 4,
@@ -43,14 +61,26 @@
         "Oceans have no impact on carbon dioxide levels"
       ],
       "correct_answer": "Oceans absorb and store carbon dioxide",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels."
+      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "media": {
+        "diagram": "emissions",
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
     },
     {
       "number": 5,
       "question": "What is the term for the phenomenon where warmer ocean temperatures lead to more intense and frequent tropical storms?",
       "incorrect_answers": ["Ocean currents", "El Niño", "Ocean acidification"],
       "correct_answer": "Tropical cyclones",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels."
+      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "media": {
+        "diagram": "temperatures",
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
     },
     {
       "number": 6,
@@ -61,7 +91,13 @@
         "Organic farming"
       ],
       "correct_answer": "Industrial pollution",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels."
+      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "media": {
+        "diagram": "temperatures",
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
     },
     {
       "number": 7,
@@ -72,7 +108,13 @@
         "Marine species become extinct"
       ],
       "correct_answer": "Marine species migrate to colder waters",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels."
+      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "media": {
+        "diagram": "sealevel",
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
     },
     {
       "number": 8,
@@ -83,7 +125,13 @@
         "Ozone depletion"
       ],
       "correct_answer": "Global warming",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels."
+      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "media": {
+        "diagram": "sealevel",
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
     },
     {
       "number": 9,
@@ -94,7 +142,13 @@
         "It causes ocean currents to reverse"
       ],
       "correct_answer": "It contributes to sea-level rise",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels."
+      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "media": {
+        "diagram": "false",
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
     },
     {
       "number": 10,
@@ -105,7 +159,13 @@
         "Decreased salinity levels"
       ],
       "correct_answer": "Coastal erosion",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels."
+      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "media": {
+        "diagram": false,
+        "video": false,
+        "podcast": "podcast",
+        "image": false
+      }
     }
   ]
 }

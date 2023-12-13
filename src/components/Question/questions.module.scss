@@ -4,37 +4,39 @@
   background-color: $white;
   border-radius: $borderRadiusSmall;
   padding: $medium;
-  gap: $medium;
-  @include flex(column, flex-start, flex-start);
-  > h3 {
-    align-self: flex-start;
-  }
-  > p {
-    margin-bottom: $large;
-  }
   > div {
-    @include flex(row, flex-start, center);
-    gap: $small;
-    flex-wrap: wrap;
-    width: 100%;
-    > button {
-      width: 100%;
-      &:hover {
-        background-color: $primary;
-        opacity: 100%;
-      }
-    }
-  }
-  > .feedback {
-    @include flex(row, flex-start, flex-start);
-    gap: $large;
-    > img {
-      width: 200px;
-      margin: 0;
-      border-radius: $borderRadiusSmall;
+    @include flex(column, flex-start, flex-start);
+    gap: $medium;
+    > h3 {
+      align-self: flex-start;
     }
     > p {
-      width: 50%;
+      margin-bottom: $large;
+    }
+    > div > audio {
+      width: 100%;
+    }
+    > div {
+      @include flex(row, flex-start, center);
+      gap: $small;
+      flex-wrap: wrap;
+      width: 100%;
+      > button {
+        width: 100%;
+      }
+    }
+    > .feedback {
+      @include flex(row, flex-start, flex-start);
+      gap: $large;
+      > img {
+        width: 300px;
+        margin: 0;
+        border-radius: $borderRadiusSmall;
+      }
+      > p {
+        width: 50%;
+        font-size: 1.5rem;
+      }
     }
   }
   .nextQuestion {
@@ -43,5 +45,12 @@
   }
   > .endQuiz {
     @include flex(column, center, center);
+    > img {
+      width: 90%;
+      border-radius: $borderRadiusSmall;
+    }
+    > button {
+      width: 100%;
+    }
   }
 }

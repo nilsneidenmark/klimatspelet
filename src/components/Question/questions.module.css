@@ -123,19 +123,24 @@ input {
   background-color: #eeeeee;
   border-radius: 10px;
   padding: 1rem;
-  gap: 1rem;
+}
+.question > div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  gap: 1rem;
 }
-.question > h3 {
+.question > div > h3 {
   align-self: flex-start;
 }
-.question > p {
+.question > div > p {
   margin-bottom: 2rem;
 }
-.question > div {
+.question > div > div > audio {
+  width: 100%;
+}
+.question > div > div {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -144,27 +149,24 @@ input {
   flex-wrap: wrap;
   width: 100%;
 }
-.question > div > button {
+.question > div > div > button {
   width: 100%;
 }
-.question > div > button:hover {
-  background-color: #08594a;
-  opacity: 100%;
-}
-.question > .feedback {
+.question > div > .feedback {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
 }
-.question > .feedback > img {
-  width: 200px;
+.question > div > .feedback > img {
+  width: 300px;
   margin: 0;
   border-radius: 10px;
 }
-.question > .feedback > p {
+.question > div > .feedback > p {
   width: 50%;
+  font-size: 1.5rem;
 }
 .question .nextQuestion {
   align-self: flex-end;
@@ -175,4 +177,11 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.question > .endQuiz > img {
+  width: 90%;
+  border-radius: 10px;
+}
+.question > .endQuiz > button {
+  width: 100%;
 }/*# sourceMappingURL=questions.module.css.map */
