@@ -58,11 +58,14 @@ button {
   width: 125px;
 }
 button:hover {
-  opacity: 50%;
+  background-color: rgb(63, 63, 63);
 }
 .primarybtn {
   font-weight: 700;
   background-color: #08594a;
+}
+.primarybtn:hover {
+  background-color: rgb(1, 66, 21);
 }
 
 h1,
@@ -102,6 +105,9 @@ form {
 }
 form button {
   width: 100%;
+}
+form button:disabled {
+  opacity: 50%;
 }
 
 input {

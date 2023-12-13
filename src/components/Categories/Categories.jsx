@@ -12,42 +12,42 @@ export default function Categories() {
     <section>
       <h1>Kategorier</h1>
       <div className={styles.categoriesSection}>
-        <button className={styles.categories}>
-          <img src={ocean} />
+        <button onClick={() => navigate("/quiz")} className={styles.categories}>
+          <img className={styles.active} src={ocean} alt="category" />
           <p>Världens hav</p>
           <small>0/12</small>
         </button>
 
         <button disabled className={styles.categories}>
-          <img src={ocean} />
+          <img src={ocean} alt="category" />
           <p>Energi</p>
           <p className={styles.comingSoon}>Kommer snart</p>
           <small>0/12</small>
         </button>
 
         <button disabled className={styles.categories}>
-          <img src={pineTree} />
+          <img src={pineTree} alt="category" />
           <p>Skogen</p>
           <p className={styles.comingSoon}>Kommer snart</p>
           <small>0/12</small>
         </button>
 
         <button disabled className={styles.categories}>
-          <img src={buildings} />
+          <img src={buildings} alt="category" />
           <p>Människan</p>
           <p className={styles.comingSoon}>Kommer snart</p>
           <small>0/12</small>
         </button>
 
         <button disabled className={styles.categories}>
-          <img src={glacier} />
+          <img src={glacier} alt="category" />
           <p>Glaciärer</p>
           <p className={styles.comingSoon}>Kommer snart</p>
           <small>0/12</small>
         </button>
 
         <button disabled className={styles.categories}>
-          <img src={desert} />
+          <img src={desert} alt="category" />
           <p>Öknen</p>
           <p className={styles.comingSoon}>Kommer snart</p>
           <small>0/12</small>

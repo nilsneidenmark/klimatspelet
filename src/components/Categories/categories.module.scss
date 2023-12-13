@@ -3,17 +3,25 @@
 .categoriesSection {
   @include flex(row, center, center);
   flex-wrap: wrap;
+  gap: $large;
 }
 
 .categories {
   @include flex(column, center, center);
-  margin: $small $large;
+  gap: $small;
   position: relative;
   background-color: transparent;
   color: black;
   width: 25%;
-  &:disabled {
-    opacity: 50%;
+  &:hover {
+    background-color: transparent;
+  }
+  > .active {
+    opacity: 100%;
+    transition: transform 0.25s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   > .comingSoon {
     position: absolute;
@@ -27,12 +35,13 @@
     border-radius: $borderRadiusSmall;
     opacity: 100%;
   }
+  > p {
+    margin: 0;
+    padding: 0;
+  }
   > img {
     width: 125px;
-    margin-bottom: $medium;
-  }
-  > img:hover {
+    margin: 0;
     opacity: $opacity;
-    cursor: pointer;
   }
 }

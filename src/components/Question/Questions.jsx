@@ -87,7 +87,7 @@ export default function Questions({ quizData }) {
             animate={{ opacity: 1, transition: { duration: 1 } }}
           >
             <img src={celebrate} alt="ocean icon" />
-            <h3>Grattis! du har precis genomfört Världens hav 🌊</h3>
+            <h3>Grattis! du har precis genomfört Världens hav 😍</h3>
             <p>Du fick {points}/10 poäng</p>
             <button className={styles.primarybtn}>Spara och avsluta</button>
           </motion.div>

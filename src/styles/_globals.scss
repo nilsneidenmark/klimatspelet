@@ -36,7 +36,7 @@ button {
   color: $white;
   width: 125px;
   &:hover {
-    opacity: $opacity;
+    background-color: rgb(63, 63, 63);
   }
   &:disabled {
     // opacity: $opacity;
@@ -47,6 +47,9 @@ button {
 .primarybtn {
   font-weight: 700;
   background-color: $primary;
+  &:hover {
+    background-color: rgb(1, 66, 21);
+  }
 }
 
 h1,
@@ -81,6 +84,9 @@ form {
   @include flex(column, center, flex-start);
   button {
     width: 100%;
+    &:disabled {
+      opacity: $opacity;
+    }
   }
 }
 input {
@@ -98,13 +104,10 @@ input {
 
 // Scrollbar
 ::-webkit-scrollbar {
-  // box-shadow: $boxShadow;
   background: $secondary;
-  // border-radius: 10px;
   width: 12.5px;
 }
 ::-webkit-scrollbar-thumb {
-  // background: rgb(211, 211, 211);
   background: $primary;
   border-radius: 10px;
 }
