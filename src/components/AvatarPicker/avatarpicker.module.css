@@ -61,6 +61,9 @@ button {
 button:hover {
   opacity: 50%;
 }
+button:disabled {
+  opacity: 50%;
+}
 
 .primarybtn {
   font-weight: 700;

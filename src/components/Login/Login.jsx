@@ -1,7 +1,23 @@
 import styles from "./login.module.scss";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useDisplay } from "../../context/DisplayLoginOrSignupContext";
+import { useAuthenticated } from "../../context/AuthenticatedContext";
 
 export default function Login() {
+  const navigate = useNavigate();
+  const { authenticated, setAuthenticated } = useAuthenticated();
+  const { setDisplay } = useDisplay();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setAuthenticated(true);
+    setTimeout(() => {
+      navigate("/profile");
+      setDisplay("avatar");
+    }, [1000]);
+  }
   return (
     <motion.section
       className={styles.login}
@@ -10,7 +26,7 @@ export default function Login() {
     >
       <h2>Välkommen tillbaka</h2>
       <h2>Logga in</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="username">Användarnamn eller epost</label>
         <input value="Cr4zyfox09" id="username" type="text" minLength="2" />
         <label htmlFor="password">Lösenord</label>
@@ -20,8 +36,12 @@ export default function Login() {
           type="password"
           minLength="8"
         />
-        <button className={styles.primarybtn} type="submit">
-          Logga in
+        <button
+          disabled={authenticated}
+          className={styles.primarybtn}
+          type="submit"
+        >
+          {authenticated ? "Loggar in..." : "Logga in"}
         </button>
       </form>
       <div>

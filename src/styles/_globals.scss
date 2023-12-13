@@ -38,6 +38,9 @@ button {
   &:hover {
     opacity: $opacity;
   }
+  &:disabled {
+    opacity: $opacity;
+  }
 }
 
 .primarybtn {
