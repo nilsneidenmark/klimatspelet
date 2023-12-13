@@ -27,7 +27,7 @@
       }
       > div {
         @include flex(row, flex-start, flex-start);
-
+        flex-wrap: wrap;
         > small {
           // opacity: 75%;
           @include flex(row, flex-end, center);
@@ -35,12 +35,11 @@
             margin: 0;
             width: auto;
             opacity: 50%;
-            margin-right: $small;
           }
         }
       }
       > .verifyInput {
-        gap: $large;
+        gap: $small;
         margin-top: $small;
       }
     }

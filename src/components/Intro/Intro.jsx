@@ -76,7 +76,7 @@ const Slide = ({ header, text, img }) => {
   );
 };
 
-export default function Intro() {
+export default function Intro({ handleClick }) {
   return (
     <section className={styles.intro}>
       <Slideshow>
@@ -96,8 +96,13 @@ export default function Intro() {
           text="Vem av dina vänner vet mest?"
         />
       </Slideshow>
-      <button className={styles.primarybtn}>Logga in</button>
-      <button>Skapa konto</button>
+      <button
+        onClick={() => handleClick("login")}
+        className={styles.primarybtn}
+      >
+        Logga in
+      </button>
+      <button onClick={() => handleClick("signup")}>Skapa konto</button>
     </section>
   );
 }

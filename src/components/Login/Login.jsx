@@ -12,9 +12,14 @@ export default function Login() {
       <h2>Logga in</h2>
       <form>
         <label htmlFor="username">Användarnamn eller epost</label>
-        <input id="username" type="text" minLength="2" />
+        <input value="Cr4zyfox09" id="username" type="text" minLength="2" />
         <label htmlFor="password">Lösenord</label>
-        <input id="password" type="password" minLength="8" />
+        <input
+          value="Password123!"
+          id="password"
+          type="password"
+          minLength="8"
+        />
         <button className={styles.primarybtn} type="submit">
           Logga in
         </button>

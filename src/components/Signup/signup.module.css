@@ -149,6 +149,7 @@ input {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .signup > form > div > div > small {
   display: flex;
@@ -160,10 +161,9 @@ input {
   margin: 0;
   width: auto;
   opacity: 50%;
-  margin-right: 0.5rem;
 }
 .signup > form > div > .verifyInput {
-  gap: 2rem;
+  gap: 0.5rem;
   margin-top: 0.5rem;
 }
 .signup > form > button {
