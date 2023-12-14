@@ -12,16 +12,26 @@ import settings from "../../assets/icons/settings.svg";
 import Modal from "@mui/material/Modal";
 import Settings from "../Settings/Settings";
 import HelpContact from "../HelpContact/HelpContact";
+import { useLocation } from "react-router-dom";
 
 export default function Header() {
   const { display, setDisplay } = useDisplay();
   const { authenticated } = useAuthenticated();
   const [openDrawer, setOpenDrawer] = useState(false);
-  // const [openModal, setOpenModal] = useState({ settings: false, help: false });
   const [openSettings, setOpenSettings] = useState(false);
   const [openHelp, setOpenHelp] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
+  console.log(location);
+
+  if (location.pathname === "/profile") {
+    document.documentElement.style.setProperty(
+      "--backgroundImage",
+      "url(/src/assets/background/ocean2.webp)"
+    );
+    // Your logic for the profile route
+  }
   const handleClose = () => setOpenDrawer(false);
   const handleShow = () => setOpenDrawer(true);
 

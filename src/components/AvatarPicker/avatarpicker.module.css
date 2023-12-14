@@ -7,6 +7,7 @@
   --fontSizeSmall: 0.75rem;
   --letterSpacing: normal;
   --wordSpacing: normal;
+  --backgroundImage: url(/src/assets//background/pexels-matthew-leland-822528.jpg);
 }
 
 * {
@@ -25,7 +26,7 @@ html {
 
 body {
   background-color: rgb(36, 36, 36);
-  background-image: url(/src/assets//background/pexels-matthew-leland-822528.jpg);
+  background-image: var(--backgroundImage);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

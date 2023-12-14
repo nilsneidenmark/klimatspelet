@@ -1,6 +1,6 @@
 import img1 from "../../assets/bg_forest.webp";
 import img2 from "../../assets/bg_water.webp";
-import img3 from "../../assets/woods.jpg";
+import img3 from "../../assets/background/woods.jpg";
 import styles from "./intro.module.scss";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
