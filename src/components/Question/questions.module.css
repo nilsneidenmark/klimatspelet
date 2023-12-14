@@ -159,10 +159,10 @@ input {
 }
 
 .score {
-  transition: color 0.75s ease-out;
+  transition: color 1s ease-out;
 }
 .score.increase {
-  color: rgb(91, 236, 91);
+  color: rgb(114, 255, 114);
 }
 .score.decrease {
   color: rgb(255, 116, 97);
@@ -180,10 +180,11 @@ input {
   align-items: flex-start;
   gap: 1rem;
 }
-.question > div > h3 {
-  align-self: flex-start;
-}
-.question > div > p {
+.question > div > .top_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 2rem;
 }
 .question > div > div > audio {

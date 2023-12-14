@@ -22,7 +22,7 @@ export const useScoreAnimation = (score) => {
 
     setTimeout(() => {
       setAnimate({ increase: false, decrease: false });
-    }, 750);
+    }, 1000);
   }, [score]);
 
   return animate;

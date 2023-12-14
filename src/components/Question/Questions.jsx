@@ -98,14 +98,16 @@ export default function Questions({ quizData }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1 } }}
           >
-            <h3>Fråga {quizData[index].number} / 10</h3>
-            <p
-              className={`${styles.score} ${
-                animate.increase ? styles.increase : ""
-              } ${animate.decrease ? styles.decrease : ""}`}
-            >
-              Dina poäng: {score}
-            </p>
+            <div className={styles.top_section}>
+              <h3>Fråga {quizData[index].number} / 10</h3>
+              <h3
+                className={`${styles.score} ${
+                  animate.increase ? styles.increase : ""
+                } ${animate.decrease ? styles.decrease : ""}`}
+              >
+                Dina poäng: {score}
+              </h3>
+            </div>
             {!displayFeedback ? (
               <motion.div
                 initial={{ opacity: 0 }}
