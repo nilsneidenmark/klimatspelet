@@ -10,7 +10,14 @@ body {
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font);
+  letter-spacing: var(--letterSpacing);
+  word-spacing: var(--wordSpacing);
+}
+
+button {
+  letter-spacing: var(--letterSpacing);
+  word-spacing: var(--wordSpacing);
 }
 
 .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
@@ -40,7 +47,6 @@ button {
   background-color: $secondary;
   color: $white;
   width: 125px;
-  // min-height: 40px;
   font-size: 1rem;
   &:hover {
     background-color: $secondaryHover;
@@ -54,31 +60,30 @@ button {
 }
 
 .primarybtn {
-  // font-weight: 700;
   background-color: $primary;
   &:hover {
-    background-color: rgb(1, 66, 21);
+    background-color: $primaryHover;
   }
 }
 
 h1,
 h2 {
-  font-size: 1.5rem;
+  font-size: var(--fontSizeHeader);
   font-weight: 700;
 }
 
 h3,
 h4 {
-  font-size: 1.25rem;
+  font-size: var(--fontSizeSubheader);
   font-weight: 700;
 }
 
 p {
-  font-size: 1rem;
+  font-size: var(--fontSizeP);
 }
 
 small {
-  font-size: 0.75rem;
+  font-size: var(--fontSizeSmall);
 }
 
 strong {

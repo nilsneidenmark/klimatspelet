@@ -1,4 +1,13 @@
 // Fonts
+:root {
+  --font: "Poppins", serif;
+  --fontSizeHeader: 2rem;
+  --fontSizeSubheader: 1.25rem;
+  --fontSizeP: 1rem;
+  --fontSizeSmall: 0.75rem;
+  --letterSpacing: normal;
+  --wordSpacing: normal;
+}
 
 // Colors
 $primary: #08594a;

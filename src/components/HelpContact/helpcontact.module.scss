@@ -2,6 +2,14 @@
 
 .helpContact {
   @include flex(row, center, space-between);
+  @include glass();
+  width: 95%;
+  max-width: 750px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: $large;
   gap: $XLarge;
   > div {
     max-width: 75%;

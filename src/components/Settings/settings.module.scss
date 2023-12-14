@@ -10,27 +10,33 @@
   top: 50%;
   left: 50%;
   padding: $large;
-  min-height: 650px;
+  min-height: 655px;
   > button {
     align-self: flex-end;
   }
   > div {
     @include flex(column, space-between, center);
-    gap: $large;
+    gap: $medium;
   }
   > div > div {
     > .fontSection {
       @include flex(row, space-between, flex-start);
       flex-wrap: wrap;
+      margin-top: 5%;
       > div {
         @include flex(column, space-between, flex-start);
-        gap: $large;
+        gap: $medium;
         width: 45%;
         min-width: 300px;
         > div {
+          @include flex(column, flex-start, flex-start);
+          gap: $small;
+          > p {
+            margin: 0;
+          }
           > div {
             @include flex(row, flex-start, center);
-            gap: $medium;
+            gap: $small;
             flex-wrap: wrap;
             > button {
               opacity: $opacity;
@@ -105,6 +111,7 @@
 .settingsProfile {
   @include flex(row, center, flex-start);
   flex-wrap: wrap;
+  margin-top: 5%;
   > * {
     width: 45%;
     min-width: 300px;
@@ -118,7 +125,7 @@
       > input {
         min-width: 200px;
         &::placeholder {
-          color: black;
+          color: rgb(37, 37, 37);
         }
       }
     }

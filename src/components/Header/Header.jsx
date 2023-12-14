@@ -11,13 +11,15 @@ import help from "../../assets/icons/help-circle.svg";
 import settings from "../../assets/icons/settings.svg";
 import Modal from "@mui/material/Modal";
 import Settings from "../Settings/Settings";
+import HelpContact from "../HelpContact/HelpContact";
 
 export default function Header() {
   const { display, setDisplay } = useDisplay();
   const { authenticated } = useAuthenticated();
   const [openDrawer, setOpenDrawer] = useState(false);
   // const [openModal, setOpenModal] = useState({ settings: false, help: false });
-  const [openModal, setOpenModal] = useState(false);
+  const [openSettings, setOpenSettings] = useState(false);
+  const [openHelp, setOpenHelp] = useState(false);
   const navigate = useNavigate();
 
   const handleClose = () => setOpenDrawer(false);
@@ -71,14 +73,16 @@ export default function Header() {
             <li>
               <img src={settings} alt="settings" />
               <button
-                onClick={() => (setOpenModal(true), setOpenDrawer(false))}
+                onClick={() => (setOpenSettings(true), setOpenDrawer(false))}
               >
                 Inställningar
               </button>
             </li>
             <li>
               <img src={help} alt="help" />
-              <button>Hjälp & kontakt</button>
+              <button onClick={() => (setOpenHelp(true), setOpenDrawer(false))}>
+                Hjälp & kontakt
+              </button>
             </li>
             <li>
               <img src={logout} alt="logout" />
@@ -91,10 +95,19 @@ export default function Header() {
         style={{
           backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
-        open={openModal}
-        onClose={() => setOpenModal(false)}
+        open={openSettings}
+        onClose={() => setOpenSettings(false)}
       >
         <Settings />
+      </Modal>
+      <Modal
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.4)",
+        }}
+        open={openHelp}
+        onClose={() => setOpenHelp(false)}
+      >
+        <HelpContact />
       </Modal>
     </>
   );

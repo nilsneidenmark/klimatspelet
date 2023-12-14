@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./settings.module.scss";
 import { motion } from "framer-motion";
 import AvatarPicker from "../AvatarPicker/AvatarPicker";
@@ -7,6 +7,52 @@ import { useSettings } from "../../context/SettingsContext";
 // Component for managing font settings, updates active style for clicked button and settings context for text
 const SettingsFont = () => {
   const { active, setActive } = useSettings();
+
+  useEffect(() => {
+    if (active.text.font.poppins) {
+      document.documentElement.style.setProperty(
+        "--font",
+        "Poppins, sans-serif"
+      );
+    } else if (active.text.font.roboto) {
+      document.documentElement.style.setProperty(
+        "--font",
+        "'Roboto Serif', serif"
+      );
+    }
+    if (active.text.fontSize.small) {
+      document.documentElement.style.setProperty("--fontSizeHeader", "1.5rem");
+      document.documentElement.style.setProperty("--fontSizeSubheader", "1rem");
+      document.documentElement.style.setProperty("--fontSizeP", "0.75rem");
+      document.documentElement.style.setProperty("--fontSizeSmall", "0.6rem");
+    } else if (active.text.fontSize.medium) {
+      document.documentElement.style.setProperty("--fontSizeHeader", "2rem");
+      document.documentElement.style.setProperty(
+        "--fontSizeSubheader",
+        "1.25rem"
+      );
+      document.documentElement.style.setProperty("--fontSizeP", "1rem");
+      document.documentElement.style.setProperty("--fontSizeSmall", "0.8rem");
+    } else if (active.text.fontSize.large) {
+      document.documentElement.style.setProperty("--fontSizeHeader", "2.5rem");
+      document.documentElement.style.setProperty(
+        "--fontSizeSubheader",
+        "1.5625rem"
+      );
+      document.documentElement.style.setProperty("--fontSizeP", "1.25rem");
+      document.documentElement.style.setProperty("--fontSizeSmall", "1rem");
+    }
+    if (active.text.space.small) {
+      document.documentElement.style.setProperty("--letterSpacing", "normal");
+      document.documentElement.style.setProperty("--wordSpacing", "normal");
+    } else if (active.text.space.medium) {
+      document.documentElement.style.setProperty("--letterSpacing", "1px");
+      document.documentElement.style.setProperty("--wordSpacing", "4px");
+    } else if (active.text.space.large) {
+      document.documentElement.style.setProperty("--letterSpacing", "4px");
+      document.documentElement.style.setProperty("--wordSpacing", "15px");
+    }
+  }, [active]);
 
   return (
     <>
@@ -180,7 +226,7 @@ const SettingsProfile = () => {
         animate={{ opacity: 1, transition: { duration: 0.75 } }}
         className={styles.settingsProfile}
       >
-        <form>
+        <form onSubmit={(e) => e.preventDefault()}>
           <label htmlFor="name">Användarnamn</label>
           <div>
             <input
