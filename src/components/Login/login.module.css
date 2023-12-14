@@ -164,7 +164,15 @@ input {
   justify-content: space-between;
   align-items: flex-start;
 }
+.login > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .login > div > div > input {
+  width: 15px;
+  margin: 0;
   margin-right: 0.5rem;
 }
 .login > small {

@@ -7,8 +7,13 @@
   > div {
     width: 100%;
     @include flex(row, space-between, flex-start);
-    > div > input {
-      margin-right: $small;
+    > div {
+      @include flex(row, center, center);
+      > input {
+        width: 15px;
+        margin: 0;
+        margin-right: $small;
+      }
     }
   }
   > small {
