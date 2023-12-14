@@ -31,3 +31,40 @@ header {
     }
   }
 }
+
+.drawer {
+  height: 100%;
+  padding: $XLarge;
+  @include glass();
+  border-radius: 0;
+  > ul {
+    list-style: none;
+    @include flex(column, flex-start, flex-start);
+    gap: $large;
+    > li {
+      cursor: pointer;
+      @include flex(row, center, center);
+      gap: $Xsmall;
+      padding: $small;
+      border: 2px solid transparent;
+      > img {
+        width: 25px;
+        padding: 0;
+        margin: 0;
+        > svg > path {
+          stroke: $white;
+        }
+      }
+      > button {
+        background-color: transparent;
+        width: auto;
+        font-weight: 700;
+        color: $white;
+      }
+      &:hover {
+        border: 2px solid $white;
+        border-radius: $borderRadiusSmall;
+      }
+    }
+  }
+}

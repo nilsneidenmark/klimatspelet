@@ -5,12 +5,12 @@ import styles from "./avatar.module.scss";
 import { useScore } from "../../context/ScoreContext";
 import { useScoreAnimation } from "../../hooks/useScoreAnimation";
 
-export default function Avatar() {
+export default function Avatar({ handleShow }) {
   const { score } = useScore();
   const animate = useScoreAnimation(score);
 
   return (
-    <div tabIndex={0} className={styles.avatar}>
+    <div onClick={handleShow} tabIndex={0} className={styles.avatar}>
       <div className={styles.points}>
         <p className={styles.star}>⭐</p>
         <p
