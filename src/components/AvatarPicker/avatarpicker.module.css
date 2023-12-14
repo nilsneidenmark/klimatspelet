@@ -68,7 +68,6 @@ button:hover {
   cursor: pointer;
 }
 .primarybtn {
-  font-weight: 700;
   background-color: #08594a;
 }
 .primarybtn:hover {
