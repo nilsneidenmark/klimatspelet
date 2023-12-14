@@ -94,6 +94,7 @@ export default function Header() {
       <Modal
         style={{
           backgroundColor: "rgba(0, 0, 0, 0.5)",
+          overflowY: "scroll",
         }}
         open={openSettings}
         onClose={() => setOpenSettings(false)}
@@ -102,7 +103,7 @@ export default function Header() {
       </Modal>
       <Modal
         style={{
-          backgroundColor: "rgba(255, 255, 255, 0.4)",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
         open={openHelp}
         onClose={() => setOpenHelp(false)}

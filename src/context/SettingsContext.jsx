@@ -9,7 +9,7 @@ export const SettingsProvider = ({ children }) => {
     text: {
       font: { poppins: true, roboto: false },
       fontSize: { small: false, medium: true, large: false },
-      space: { small: false, medium: true, large: false },
+      space: { small: true, medium: false, large: false },
     },
   });
 

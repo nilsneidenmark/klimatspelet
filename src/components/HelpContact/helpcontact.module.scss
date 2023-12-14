@@ -3,6 +3,7 @@
 .helpContact {
   @include flex(row, center, space-between);
   @include glass();
+  background: rgba(255, 255, 255, 0.55);
   width: 95%;
   max-width: 750px;
   transform: translate(-50%, -50%);

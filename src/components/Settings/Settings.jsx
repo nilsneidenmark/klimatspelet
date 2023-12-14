@@ -143,7 +143,7 @@ const SettingsFont = () => {
             </div>
           </div>
           <div>
-            <p>Radavstånd</p>
+            <p>Avstånd</p>
             <div>
               <button
                 onClick={() =>
