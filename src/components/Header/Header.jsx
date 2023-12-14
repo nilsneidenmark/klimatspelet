@@ -1,13 +1,29 @@
 import "../Header/header.module.scss";
 import Avatar from "../Avatar/Avatar";
 import { useDisplay } from "../../context/DisplayLoginOrSignupContext";
+import { useNavigate } from "react-router-dom";
+import { useAuthenticated } from "../../context/AuthenticatedContext";
 
 export default function Header() {
   const { display, setDisplay } = useDisplay();
+  const { authenticated } = useAuthenticated();
+
+  const navigate = useNavigate();
+
+  function handleClick() {
+    if (authenticated) {
+      navigate("/profile");
+    } else {
+      setDisplay("intro");
+      navigate("/");
+    }
+    // console.log("clicked");
+  }
+
   return (
     <header>
       <div>
-        <h2>EcoExplorer</h2>
+        <button onClick={handleClick}>EcoExplorer</button>
         {display === "avatar" ? (
           <Avatar />
         ) : (

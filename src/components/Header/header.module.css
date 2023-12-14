@@ -154,9 +154,15 @@ header > div {
   max-width: 1200px;
   width: 100%;
 }
-header > div > h2 {
+header > div > button {
   color: #08594a;
   cursor: pointer;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+header > div > button:hover {
+  background-color: transparent;
 }
 header > div > div > button {
   color: #eeeeee;
