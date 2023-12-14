@@ -3,7 +3,8 @@ html {
 }
 body {
   background-color: rgb(36, 36, 36);
-  background-image: url(/src/assets/bg_forest.webp);
+  // background-image: url(/src/assets/bg_forest.webp);
+  background-image: url(/src/assets//background/pexels-matthew-leland-822528.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,7 +54,7 @@ button {
 }
 
 .primarybtn {
-  font-weight: 700;
+  // font-weight: 700;
   background-color: $primary;
   &:hover {
     background-color: rgb(1, 66, 21);
