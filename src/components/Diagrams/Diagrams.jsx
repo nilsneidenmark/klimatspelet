@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import {
   LineChart,
   CartesianGrid,
@@ -49,14 +48,13 @@ const SeaLevel = () => {
         fillOpacity={1}
         fill="url(#colorUv)"
       />
-      <Area
+      {/* <Area
         type="monotone"
         dataKey="GMSL uncertainty"
         stroke="#82ca9d"
         fillOpacity={1}
         fill="url(#colorPv)"
-      />{" "}
-      *
+      /> */}
     </AreaChart>
   );
 };

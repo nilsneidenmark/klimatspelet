@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./questions.module.scss";
 import einstein from "../../assets/memes/einstein.webp";
 import greta from "../../assets/memes/greta-min.webp";
-import ocean from "../../assets/category_ocean.webp";
 import celebrate from "../../assets/memes/celebrate.gif";
 import {
   SeaLevel,
@@ -11,6 +10,7 @@ import {
 } from "../Diagrams/Diagrams";
 import podcast from "../../assets/podcast.mp3";
 import { motion } from "framer-motion";
+import { useScore } from "../../context/ScoreContext";
 
 const Media = ({ media }) => {
   let item = "";
@@ -40,8 +40,8 @@ export default function Questions({ quizData }) {
   const [feedback, setFeedback] = useState("");
   const [btnText, setBtnText] = useState("Nästa fråga");
   const [index, setIndex] = useState(0);
-  const [points, setPoints] = useState(0);
   const [endQuiz, setEndQuiz] = useState(false);
+  const { score, setScore } = useScore();
 
   if (quizData === undefined)
     return <p>Hittade ingen fråga, pröva att ladda om sidan!</p>;
@@ -50,12 +50,12 @@ export default function Questions({ quizData }) {
     setDisplayFeedback(true);
     if (answer === "incorrect") {
       setFeedback(`Fel svar.. 😔 ${quizData[index].feedback}`);
-      if (points != 0) {
-        setPoints((prevPoints) => prevPoints - 1);
+      if (score != 0) {
+        setScore((prevScore) => prevScore - 1);
       }
     } else if (answer === "correct") {
       setFeedback(`Rätt svar 🤩! ${quizData[index].feedback}`);
-      setPoints((prevPoints) => prevPoints + 1);
+      setScore((prevScore) => prevScore + 1);
     }
   }
 
@@ -88,7 +88,7 @@ export default function Questions({ quizData }) {
           >
             <img src={celebrate} alt="ocean icon" />
             <h3>Grattis! du har precis genomfört Världens hav 😍</h3>
-            <p>Du fick {points}/10 poäng</p>
+            <p>Du fick {score}/10 poäng</p>
             <button className={styles.primarybtn}>Spara och avsluta</button>
           </motion.div>
         ) : (
@@ -97,7 +97,7 @@ export default function Questions({ quizData }) {
             animate={{ opacity: 1, transition: { duration: 1 } }}
           >
             <h3>Fråga {quizData[index].number} / 10</h3>
-            <p>Dina poäng: {points}</p>
+            <p>Dina poäng: {score}</p>
             {!displayFeedback ? (
               <motion.div
                 initial={{ opacity: 0 }}

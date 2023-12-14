@@ -56,9 +56,12 @@ button {
   background-color: #4f4f4f;
   color: #eeeeee;
   width: 125px;
+  min-height: 40px;
+  font-size: 1rem;
 }
 button:hover {
   background-color: rgb(63, 63, 63);
+  cursor: pointer;
 }
 .primarybtn {
   font-weight: 700;
