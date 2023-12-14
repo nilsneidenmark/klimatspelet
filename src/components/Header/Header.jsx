@@ -9,11 +9,15 @@ import home from "../../assets/icons/home.svg";
 import logout from "../../assets/icons/log-out.svg";
 import help from "../../assets/icons/help-circle.svg";
 import settings from "../../assets/icons/settings.svg";
+import Modal from "@mui/material/Modal";
+import Settings from "../Settings/Settings";
 
 export default function Header() {
   const { display, setDisplay } = useDisplay();
   const { authenticated } = useAuthenticated();
   const [openDrawer, setOpenDrawer] = useState(false);
+  // const [openModal, setOpenModal] = useState({ settings: false, help: false });
+  const [openModal, setOpenModal] = useState(false);
   const navigate = useNavigate();
 
   const handleClose = () => setOpenDrawer(false);
@@ -58,11 +62,19 @@ export default function Header() {
           <ul>
             <li>
               <img src={home} alt="home" />
-              <button>Mina sidor</button>
+              <button
+                onClick={() => (navigate("/profile"), setOpenDrawer(false))}
+              >
+                Mina sidor
+              </button>
             </li>
             <li>
               <img src={settings} alt="settings" />
-              <button>Inställningar</button>
+              <button
+                onClick={() => (setOpenModal(true), setOpenDrawer(false))}
+              >
+                Inställningar
+              </button>
             </li>
             <li>
               <img src={help} alt="help" />
@@ -75,6 +87,15 @@ export default function Header() {
           </ul>
         </div>
       </SwipeableDrawer>
+      <Modal
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+        }}
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+      >
+        <Settings />
+      </Modal>
     </>
   );
 }

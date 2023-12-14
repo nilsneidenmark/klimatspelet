@@ -57,13 +57,14 @@ button {
   border-radius: 10px;
   border: none;
   padding: 0.5rem;
-  background-color: #4f4f4f;
+  background-color: #353535;
   color: #eeeeee;
   width: 125px;
   font-size: 1rem;
 }
 button:hover {
-  background-color: rgb(63, 63, 63);
+  background-color: #292929;
+  opacity: 100%;
   cursor: pointer;
 }
 .primarybtn {
@@ -126,11 +127,11 @@ input {
 .divider {
   width: 100%;
   height: 1px;
-  background-color: #4f4f4f;
+  background-color: #353535;
 }
 
 ::-webkit-scrollbar {
-  background: #4f4f4f;
+  background: #353535;
   width: 12.5px;
 }
 
@@ -149,17 +150,43 @@ input {
   color: rgb(255, 116, 97);
 }
 
-.settingsSection > div > button {
-  float: right;
+.settingsSection {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: 750px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 2rem;
+  min-height: 650px;
 }
-.settingsSection > div > .fontSection {
+.settingsSection > button {
+  align-self: flex-end;
+}
+.settingsSection > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.settingsSection > div > div > .fontSection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.settingsSection > div > .fontSection > div {
+.settingsSection > div > div > .fontSection > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -168,7 +195,7 @@ input {
   width: 45%;
   min-width: 300px;
 }
-.settingsSection > div > .fontSection > div > div > div {
+.settingsSection > div > div > .fontSection > div > div > div {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -176,7 +203,7 @@ input {
   gap: 1rem;
   flex-wrap: wrap;
 }
-.settingsSection > div > .fontSection > div > div > div > button {
+.settingsSection > div > div > .fontSection > div > div > div > button {
   opacity: 50%;
   border-radius: 50px;
   height: 35px;
@@ -185,10 +212,13 @@ input {
   justify-content: center;
   align-items: center;
 }
-.settingsSection > div > .fontSection > .test {
+.settingsSection > div > div > .fontSection > .test {
   gap: 0.5rem;
+  background-color: #eeeeee;
+  padding: 1rem;
+  border-radius: 10px;
 }
-.settingsSection > div > .fontSection > .test > div {
+.settingsSection > div > div > .fontSection > .test > div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -197,31 +227,28 @@ input {
   gap: 0.5rem;
   width: 100%;
 }
-.settingsSection > div > .fontSection > .test > div > button {
+.settingsSection > div > div > .fontSection > .test > div > button {
   width: 45%;
 }
-.settingsSection > .toggle {
+.settingsSection > div > .toggle {
   border-radius: 50px;
   display: flex;
   width: 350px;
   height: 80px;
   position: relative;
   margin: 0 auto;
-  background-color: #b5b2a7;
+  background-color: #444444;
 }
-.settingsSection > .toggle > button {
+.settingsSection > div > .toggle > button {
   width: 50%;
   border-radius: 50px;
   font-size: 18px;
   background-color: transparent;
   z-index: 1;
 }
-.settingsSection > .toggle > .active {
-  font-weight: 600;
-}
 .settingsSection .slideBackground {
   position: absolute;
-  background-color: #4f4f4f;
+  background-color: #353535;
   border-radius: 50px;
   top: 0;
   left: 0;
@@ -268,6 +295,12 @@ input {
 }
 .settingsProfile > form > div > input {
   min-width: 200px;
+}
+.settingsProfile > form > div > input::-moz-placeholder {
+  color: black;
+}
+.settingsProfile > form > div > input::placeholder {
+  color: black;
 }
 .settingsProfile > form > button {
   width: 275px;

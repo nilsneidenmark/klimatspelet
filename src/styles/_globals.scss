@@ -30,7 +30,6 @@ main {
     gap: $large;
     padding: $large;
     width: 80%;
-    // transition: transform 0.25s ease-in-out;
   }
 }
 
@@ -44,7 +43,8 @@ button {
   // min-height: 40px;
   font-size: 1rem;
   &:hover {
-    background-color: rgb(63, 63, 63);
+    background-color: $secondaryHover;
+    opacity: 100%;
     cursor: pointer;
   }
   &:disabled {

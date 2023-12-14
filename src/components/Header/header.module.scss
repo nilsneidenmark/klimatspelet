@@ -4,7 +4,8 @@ header {
   @include glass();
   border-radius: 0;
   width: 100dvw;
-  background: rgba(0, 0, 0, 0.31);
+  // background: rgba(44, 44, 44, 0.25);
+  // backdrop-filter: blur(2.5px);
   > div {
     @include flex(row, space-between, center);
     padding: $medium;

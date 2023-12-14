@@ -57,13 +57,14 @@ button {
   border-radius: 10px;
   border: none;
   padding: 0.5rem;
-  background-color: #4f4f4f;
+  background-color: #353535;
   color: #eeeeee;
   width: 125px;
   font-size: 1rem;
 }
 button:hover {
-  background-color: rgb(63, 63, 63);
+  background-color: #292929;
+  opacity: 100%;
   cursor: pointer;
 }
 .primarybtn {
@@ -126,11 +127,11 @@ input {
 .divider {
   width: 100%;
   height: 1px;
-  background-color: #4f4f4f;
+  background-color: #353535;
 }
 
 ::-webkit-scrollbar {
-  background: #4f4f4f;
+  background: #353535;
   width: 12.5px;
 }
 

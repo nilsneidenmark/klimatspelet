@@ -163,7 +163,6 @@ const SettingsFont = () => {
           </div>
         </div>
       </motion.div>
-      <button className={styles.primarybtn}>Spara</button>
     </>
   );
 };
@@ -197,7 +196,6 @@ const SettingsProfile = () => {
         </form>
         <AvatarPicker />
       </motion.div>
-      <button className={styles.primarybtn}>Spara</button>
     </>
   );
 };
@@ -209,38 +207,41 @@ export default function Settings() {
     <>
       <motion.section
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 0.75 } }}
+        animate={{ opacity: 1, transition: { duration: 0.25 } }}
         className={styles.settingsSection}
       >
-        <h2>Settings</h2>
-        <div className={styles.toggle}>
-          <button
-            className={`${styles.toggleButton} ${
-              activeSetting === "font" ? styles.active : ""
-            }`}
-            onClick={() => setActiveSetting("font")}
+        <div>
+          <h2>Settings</h2>
+          <div className={styles.toggle}>
+            <button
+              className={`${styles.toggleButton} ${
+                activeSetting === "font" ? styles.active : ""
+              }`}
+              onClick={() => setActiveSetting("font")}
+            >
+              Text
+            </button>
+            <button
+              className={`${styles.toggleButton} ${
+                activeSetting === "profile" ? styles.active : ""
+              }`}
+              onClick={() => setActiveSetting("profile")}
+            >
+              Profilinställningar
+            </button>
+            <div
+              className={`${styles.slideBackground} ${styles[activeSetting]}`}
+            />
+          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 1 } }}
           >
-            Text
-          </button>
-          <button
-            className={`${styles.toggleButton} ${
-              activeSetting === "profile" ? styles.active : ""
-            }`}
-            onClick={() => setActiveSetting("profile")}
-          >
-            Profilinställningar
-          </button>
-          <div
-            className={`${styles.slideBackground} ${styles[activeSetting]}`}
-          />
+            {activeSetting === "font" && <SettingsFont />}
+            {activeSetting === "profile" && <SettingsProfile />}
+          </motion.div>
         </div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1 } }}
-        >
-          {activeSetting === "font" && <SettingsFont />}
-          {activeSetting === "profile" && <SettingsProfile />}
-        </motion.div>
+        <button className={styles.primarybtn}>Spara</button>
       </motion.section>
     </>
   );
