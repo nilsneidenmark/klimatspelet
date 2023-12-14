@@ -28,10 +28,10 @@
     margin: 2.5% 0% 5% 0%;
     > button {
       border-radius: 50%;
-      height: 25px;
-      width: 25px;
+      width: 15px;
       background-color: $secondary;
       opacity: $opacity;
+      height: 15px;
     }
     > .active {
       opacity: 100%;

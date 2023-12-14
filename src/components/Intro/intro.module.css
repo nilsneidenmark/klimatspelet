@@ -56,7 +56,6 @@ button {
   background-color: #4f4f4f;
   color: #eeeeee;
   width: 125px;
-  min-height: 40px;
   font-size: 1rem;
 }
 button:hover {
@@ -179,10 +178,10 @@ input {
 }
 .intro .circles > button {
   border-radius: 50%;
-  height: 25px;
-  width: 25px;
+  width: 15px;
   background-color: #4f4f4f;
   opacity: 50%;
+  height: 15px;
 }
 .intro .circles > .active {
   opacity: 100%;
