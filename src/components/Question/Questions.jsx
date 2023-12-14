@@ -11,6 +11,7 @@ import {
 import podcast from "../../assets/podcast.mp3";
 import { motion } from "framer-motion";
 import { useScore } from "../../context/ScoreContext";
+import { useScoreAnimation } from "../../hooks/useScoreAnimation";
 
 const Media = ({ media }) => {
   let item = "";
@@ -42,6 +43,7 @@ export default function Questions({ quizData }) {
   const [index, setIndex] = useState(0);
   const [endQuiz, setEndQuiz] = useState(false);
   const { score, setScore } = useScore();
+  const animate = useScoreAnimation(score);
 
   if (quizData === undefined)
     return <p>Hittade ingen fråga, pröva att ladda om sidan!</p>;
@@ -97,7 +99,13 @@ export default function Questions({ quizData }) {
             animate={{ opacity: 1, transition: { duration: 1 } }}
           >
             <h3>Fråga {quizData[index].number} / 10</h3>
-            <p>Dina poäng: {score}</p>
+            <p
+              className={`${styles.score} ${
+                animate.increase ? styles.increase : ""
+              } ${animate.decrease ? styles.decrease : ""}`}
+            >
+              Dina poäng: {score}
+            </p>
             {!displayFeedback ? (
               <motion.div
                 initial={{ opacity: 0 }}

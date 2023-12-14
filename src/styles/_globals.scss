@@ -25,11 +25,12 @@ main {
     gap: $large;
     padding: $large;
     width: 80%;
+    // transition: transform 0.25s ease-in-out;
   }
 }
 
 button {
-  border-radius: 6px;
+  border-radius: $borderRadiusSmall;
   border: none;
   padding: $small;
   background-color: $secondary;
@@ -113,4 +114,16 @@ input {
 ::-webkit-scrollbar-thumb {
   background: $primary;
   border-radius: 10px;
+}
+
+// for score animation
+
+.score {
+  transition: color 0.75s ease-out;
+  &.increase {
+    color: rgb(91, 236, 91);
+  }
+  &.decrease {
+    color: rgb(255, 116, 97);
+  }
 }

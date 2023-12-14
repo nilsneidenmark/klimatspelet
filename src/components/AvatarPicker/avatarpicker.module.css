@@ -51,7 +51,7 @@ main > section {
 }
 
 button {
-  border-radius: 6px;
+  border-radius: 10px;
   border: none;
   padding: 0.5rem;
   background-color: #4f4f4f;
@@ -135,6 +135,16 @@ input {
 ::-webkit-scrollbar-thumb {
   background: #08594a;
   border-radius: 10px;
+}
+
+.score {
+  transition: color 0.75s ease-out;
+}
+.score.increase {
+  color: rgb(91, 236, 91);
+}
+.score.decrease {
+  color: rgb(255, 116, 97);
 }
 
 .avatarContainer {
