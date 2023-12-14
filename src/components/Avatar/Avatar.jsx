@@ -8,13 +8,15 @@ import avatarRabbit from "../../assets/avatar_rabbit.webp";
 import avatarWalrus from "../../assets/avatar_walrus.webp";
 import arrow from "../../assets/icons/chevron-down.svg";
 import styles from "./avatar.module.scss";
+import { useScore } from "../../context/ScoreContext";
 
 export default function Avatar() {
+  const { score } = useScore();
   return (
     <div tabIndex={0} className={styles.avatar}>
       <div className={styles.points}>
         <p className={styles.star}>⭐</p>
-        <p>0</p>
+        <p>{score}</p>
       </div>
 
       <img src={avatarBear} alt="avatar" />
