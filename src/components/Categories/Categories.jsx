@@ -1,5 +1,6 @@
 import styles from "./categories.module.scss";
 import ocean from "../../assets/category_ocean.webp";
+import mangrove from "../../assets/category_mangrove.webp";
 import pineTree from "../../assets/category_pine-tree.webp";
 import buildings from "../../assets/category_buildings.webp";
 import glacier from "../../assets/category_glacier.webp";
@@ -19,7 +20,7 @@ export default function Categories() {
         </button>
 
         <button disabled className={styles.categories}>
-          <img src={ocean} alt="category" />
+          <img src={mangrove} alt="category" />
           <p>Energi</p>
           <p className={styles.comingSoon}>Kommer snart</p>
           <small>0/12</small>

@@ -176,6 +176,14 @@ input {
   align-items: center;
 }
 
+.card {
+  margin: 0 2rem;
+}
+
+.card:hover {
+  opacity: 50%;
+}
+
 h3 {
   text-align: center;
 }

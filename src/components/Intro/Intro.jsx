@@ -1,6 +1,6 @@
-import img1 from "../../assets/bg_forest.webp";
 import img2 from "../../assets/bg_water.webp";
 import img3 from "../../assets/background/woods.jpg";
+import slideImg1 from "../../assets/slider/SlideImg1.webp";
 import styles from "./intro.module.scss";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -82,7 +82,7 @@ export default function Intro({ handleClick }) {
       <Slideshow>
         <Slide
           header="Lär dig om klimatforändringar"
-          img={img1}
+          img={slideImg1}
           text="Välj en kategori på mina sidor för att göra ett quiz."
         />
         <Slide
