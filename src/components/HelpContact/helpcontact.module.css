@@ -283,9 +283,11 @@ article {
     justify-content: center;
     align-items: space-between;
     gap: 0;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    left: 50%;
+    transform: translate(0%, 0%);
+    position: static;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .helpContact > div {
     max-width: 100%;

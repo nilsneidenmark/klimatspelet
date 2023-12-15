@@ -257,7 +257,7 @@ export default function Settings() {
         className={styles.settingsSection}
       >
         <div>
-          <h2>Settings</h2>
+          <h2>Inställningar</h2>
           <div className={styles.toggle}>
             <button
               className={`${styles.toggleButton} ${
@@ -273,7 +273,7 @@ export default function Settings() {
               }`}
               onClick={() => setActiveSetting("profile")}
             >
-              Profilinställningar
+              Profil
             </button>
             <div
               className={`${styles.slideBackground} ${styles[activeSetting]}`}

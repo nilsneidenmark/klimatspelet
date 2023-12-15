@@ -365,6 +365,15 @@ input {
 }
 
 @media screen and (max-width: 710px) {
+  .settingsSection {
+    transform: translate(0%, 0%);
+    position: static;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2rem;
+    max-width: 95vw;
+  }
   .settingsSection > button {
     margin-top: 2rem;
   }

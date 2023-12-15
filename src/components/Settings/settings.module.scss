@@ -148,7 +148,13 @@
 
 @media screen and (max-width: 710px) {
   .settingsSection {
-    // margin-top: 150px;
+    transform: translate(-0%, -0%);
+    position: static;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: $large;
+    max-width: 95vw;
     > button {
       margin-top: $large;
     }
