@@ -1,6 +1,6 @@
-import img2 from "../../assets/bg_water.webp";
-import img3 from "../../assets/background/woods.jpg";
 import slideImg1 from "../../assets/slider/SlideImg1.webp";
+import slideImg2 from "../../assets/slider/SlideImg2.webp";
+import slideImg3 from "../../assets/slider/SlideImg3.webp";
 import styles from "./intro.module.scss";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -69,7 +69,7 @@ const Slide = ({ header, text, img }) => {
     <>
       <h1>{header}</h1>
       <div className={styles.container}>
-        <img src={img} width="300px" height="250px" />
+        <img src={img} width="300px" height="300px" />
         <p>{text}</p>
       </div>
     </>
@@ -83,17 +83,17 @@ export default function Intro({ handleClick }) {
         <Slide
           header="Lär dig om klimatforändringar"
           img={slideImg1}
-          text="Välj en kategori på mina sidor för att göra ett quiz."
+          text="Välj din favorit kategori på mina sidor och briljera för dina vänner."
         />
         <Slide
-          header="Svara pa frågor"
-          img={img2}
-          text="Lär dig genom att kolla på grafer, videos och mycker mer!"
+          header="Utforska det interaktiva quizet"
+          img={slideImg2}
+          text="Vad vill vi ha? Bilder, grafer, vidoes! Var hittar vi det? I quizen!"
         />
         <Slide
-          header="Tavla mot dina vanner"
-          img={img3}
-          text="Vem av dina vänner vet mest?"
+          header="Visa dina vänner vem som är bäst"
+          img={slideImg3}
+          text="Lär dig mest, svara rätt, vinn lätt!"
         />
       </Slideshow>
       <button
