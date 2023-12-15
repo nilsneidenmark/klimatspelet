@@ -1,16 +1,20 @@
 @import "../../styles/index.scss";
 
 .leaderBoard {
-    @include flex(row, space-between, flex-start);
-    width: 60%;
-    > .myPlace p {
-        font-size: 3rem;
-        text-align: center;
+  @include flex(row, space-around, center);
+  flex-wrap: wrap;
+  gap: $medium;
+  width: 100%;
+  max-width: 500px;
+  > .myPlace {
+    > p {
+      font-size: 3rem;
+      text-align: center;
     }
-    > .topPlace ol {
-        padding-left: 0;
-        > li {
-            list-style-position: inside;
-        }
+  }
+  > .topPlace ol {
+    > li {
+      list-style-position: inside;
     }
+  }
 }

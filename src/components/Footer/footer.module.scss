@@ -3,12 +3,10 @@
 footer {
   @include glass();
   border-radius: 0;
-  width: 100vw;
-  // background: rgba(44, 44, 44, 0.25);
-  // backdrop-filter: blur(2.5px);
+  min-width: 100vw;
   > div {
     @include flex(row, space-between, center);
-    padding: $medium;
+    padding: $medium 6rem $medium 6rem;
     margin: 0 auto;
     max-width: 1200px;
     > h2 {
