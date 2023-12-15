@@ -29,6 +29,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100vw;
   background-attachment: fixed;
   overflow-x: hidden;
   font-family: var(--font);
@@ -169,6 +170,19 @@ input {
   color: rgb(255, 116, 97);
 }
 
+@media screen and (max-width: 710px) {
+  main {
+    padding: 1rem;
+    gap: 2rem;
+    min-height: 80dvh;
+    max-width: 100vw;
+  }
+  main > section {
+    gap: 1rem;
+    padding: 1rem;
+    width: 95%;
+  }
+}
 .settingsSection {
   background: rgba(255, 255, 255, 0.425);
   border-radius: 20px;
@@ -179,13 +193,14 @@ input {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 800px;
+  width: 1000px;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-top: 2rem;
   padding: 2rem;
-  min-height: 700px;
+  max-width: 95vw;
 }
 .settingsSection > button {
   align-self: flex-end;
@@ -197,74 +212,12 @@ input {
   align-items: center;
   gap: 1rem;
 }
-.settingsSection > div > div > .fontSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-top: 5%;
-}
-.settingsSection > div > div > .fontSection > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  width: 45%;
-  min-width: 300px;
-}
-.settingsSection > div > div > .fontSection > div > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 0.5rem;
-}
-.settingsSection > div > div > .fontSection > div > div > p {
-  margin: 0;
-}
-.settingsSection > div > div > .fontSection > div > div > div {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-.settingsSection > div > div > .fontSection > div > div > div > button {
-  opacity: 50%;
-  border-radius: 50px;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.settingsSection > div > div > .fontSection > .test {
-  gap: 0.5rem;
-  background-color: #eeeeee;
-  padding: 1rem;
-  border-radius: 10px;
-}
-.settingsSection > div > div > .fontSection > .test > div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  width: 100%;
-}
-.settingsSection > div > div > .fontSection > .test > div > button {
-  width: 45%;
-}
 .settingsSection > div > .toggle {
   border-radius: 50px;
   display: flex;
-  min-width: 75%;
+  width: 50%;
+  min-width: 350px;
   height: 80px;
-  width: auto;
   position: relative;
   margin: 0 auto;
   background-color: #616161;
@@ -296,6 +249,69 @@ input {
 
 .active {
   opacity: 100% !important;
+}
+
+.fontSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.fontSection > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 50%;
+}
+.fontSection > .fontButtons > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.fontSection > .fontButtons > div > p {
+  margin: 0;
+}
+.fontSection > .fontButtons > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.fontSection > .fontButtons > div > div > button {
+  opacity: 50%;
+  border-radius: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fontSection > .test {
+  gap: 0.5rem;
+  background-color: #eeeeee;
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 300px;
+}
+.fontSection > .test > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+}
+.fontSection > .test > div > button {
+  width: 45%;
 }
 
 .settingsProfile {
@@ -346,4 +362,16 @@ input {
 }
 .settingsProfile > div > div {
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 710px) {
+  .settingsSection > button {
+    margin-top: 2rem;
+  }
+  .fontSection {
+    gap: 2rem;
+  }
+  .fontSection > div {
+    width: 100%;
+  }
 }/*# sourceMappingURL=settings.module.css.map */

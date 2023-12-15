@@ -30,6 +30,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100vw;
   background-attachment: fixed;
   overflow-x: hidden;
   font-family: var(--font);
@@ -170,6 +171,19 @@ input {
   color: rgb(255, 116, 97);
 }
 
+@media screen and (max-width: 710px) {
+  main {
+    padding: 1rem;
+    gap: 2rem;
+    min-height: 80dvh;
+    max-width: 100vw;
+  }
+  main > section {
+    gap: 1rem;
+    padding: 1rem;
+    width: 95%;
+  }
+}
 .avatarContainer {
   width: 100%;
 }

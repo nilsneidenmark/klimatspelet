@@ -14,7 +14,7 @@ export default function Services() {
       <h2>Rekomenderade tjänster</h2>
       <div className={styles.services}>
         <div className={styles.card}>
-          <Card sx={{ maxWidth: 300 }}>
+          {/* <Card sx={{ maxWidth: 300 }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -52,7 +52,7 @@ export default function Services() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-          </Card>
+          </Card> */}
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  max-width: 100vw;
   background-attachment: fixed;
   overflow-x: hidden;
   font-family: var(--font);
@@ -137,5 +137,23 @@ input {
   }
   &.decrease {
     color: rgb(255, 116, 97);
+  }
+}
+
+@media screen and (max-width: 710px) {
+  main {
+    padding: $medium;
+    gap: $large;
+    // @include flex(column, center, center);
+    min-height: 80dvh;
+    max-width: 100vw;
+    // margin: 0 auto;
+    > section {
+      // @include glass();
+      // @include flex(column, center, center);
+      gap: $medium;
+      padding: $medium;
+      width: 95%;
+    }
   }
 }

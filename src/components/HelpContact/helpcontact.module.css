@@ -29,6 +29,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100vw;
   background-attachment: fixed;
   overflow-x: hidden;
   font-family: var(--font);
@@ -169,6 +170,19 @@ input {
   color: rgb(255, 116, 97);
 }
 
+@media screen and (max-width: 710px) {
+  main {
+    padding: 1rem;
+    gap: 2rem;
+    min-height: 80dvh;
+    max-width: 100vw;
+  }
+  main > section {
+    gap: 1rem;
+    padding: 1rem;
+    width: 95%;
+  }
+}
 .helpContact {
   display: flex;
   flex-direction: row;
@@ -180,8 +194,8 @@ input {
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   background: rgba(255, 255, 255, 0.55);
-  width: 95%;
-  max-width: 750px;
+  width: 750px;
+  max-width: 95vw;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
@@ -260,4 +274,27 @@ article {
 
 .closeBTN {
   float: right !important;
+}
+
+@media screen and (max-width: 685px) {
+  .helpContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    gap: 0;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+  }
+  .helpContact > div {
+    max-width: 100%;
+  }
+  .avatars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-between;
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=helpcontact.module.css.map */

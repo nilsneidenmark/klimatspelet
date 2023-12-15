@@ -2,15 +2,15 @@
 
 .settingsSection {
   @include glass();
-  // background: rgba(255, 255, 255, 0.55);
   @include flex(column, space-between, center);
-  max-width: 800px;
+  width: 1000px;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-top: 2rem;
   padding: $large;
-  min-height: 700px;
+  max-width: 95vw;
   > button {
     align-self: flex-end;
   }
@@ -18,58 +18,13 @@
     @include flex(column, space-between, center);
     gap: $medium;
   }
-  > div > div {
-    > .fontSection {
-      @include flex(row, space-between, flex-start);
-      flex-wrap: wrap;
-      margin-top: 5%;
-      > div {
-        @include flex(column, space-between, flex-start);
-        gap: $medium;
-        width: 45%;
-        min-width: 300px;
-        > div {
-          @include flex(column, flex-start, flex-start);
-          gap: $small;
-          > p {
-            margin: 0;
-          }
-          > div {
-            @include flex(row, flex-start, center);
-            gap: $small;
-            flex-wrap: wrap;
-            > button {
-              opacity: $opacity;
-              border-radius: 50px;
-              height: 50px;
-              @include flex(row, center, center);
-            }
-          }
-        }
-      }
-      > .test {
-        gap: $small;
-        background-color: $white;
-        padding: $medium;
-        border-radius: $borderRadiusSmall;
-        > div {
-          @include flex(row, space-between, center);
-          flex-wrap: wrap;
-          gap: $small;
-          width: 100%;
-          > button {
-            width: 45%;
-          }
-        }
-      }
-    }
-  }
+
   > div > .toggle {
     border-radius: 50px;
     display: flex;
-    min-width: 75%;
+    width: 50%;
+    min-width: 350px;
     height: 80px;
-    width: auto;
     position: relative;
     margin: 0 auto;
     background-color: #616161;
@@ -109,6 +64,53 @@
   opacity: 100% !important;
 }
 
+.fontSection {
+  @include flex(row, space-between, flex-start);
+  flex-wrap: wrap;
+  margin-top: $medium;
+  > div {
+    @include flex(column, space-between, flex-start);
+    gap: $medium;
+    width: 50%;
+  }
+  > .fontButtons {
+    > div {
+      @include flex(column, flex-start, flex-start);
+      gap: $small;
+      > p {
+        margin: 0;
+      }
+      > div {
+        @include flex(row, flex-start, center);
+        gap: $small;
+        flex-wrap: wrap;
+        > button {
+          opacity: $opacity;
+          border-radius: 50px;
+          height: 50px;
+          @include flex(row, center, center);
+        }
+      }
+    }
+  }
+  > .test {
+    gap: $small;
+    background-color: $white;
+    padding: $medium;
+    border-radius: $borderRadiusSmall;
+    min-width: 300px;
+    > div {
+      @include flex(row, space-between, center);
+      flex-wrap: wrap;
+      gap: $small;
+      width: 100%;
+      > button {
+        width: 45%;
+      }
+    }
+  }
+}
+
 .settingsProfile {
   @include flex(row, center, flex-start);
   flex-wrap: wrap;
@@ -140,6 +142,21 @@
     width: 50%;
     > div {
       margin-bottom: $large;
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .settingsSection {
+    // margin-top: 150px;
+    > button {
+      margin-top: $large;
+    }
+  }
+  .fontSection {
+    gap: $large;
+    > div {
+      width: 100%;
     }
   }
 }

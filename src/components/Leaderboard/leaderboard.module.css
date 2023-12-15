@@ -29,6 +29,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100vw;
   background-attachment: fixed;
   overflow-x: hidden;
   font-family: var(--font);
@@ -169,19 +170,32 @@ input {
   color: rgb(255, 116, 97);
 }
 
+@media screen and (max-width: 710px) {
+  main {
+    padding: 1rem;
+    gap: 2rem;
+    min-height: 80dvh;
+    max-width: 100vw;
+  }
+  main > section {
+    gap: 1rem;
+    padding: 1rem;
+    width: 95%;
+  }
+}
 .leaderBoard {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
 }
-.leaderBoard > .myPlace p {
+.leaderBoard > .myPlace > p {
   font-size: 3rem;
   text-align: center;
-}
-.leaderBoard > .topPlace ol {
-  padding-left: 0;
 }
 .leaderBoard > .topPlace ol > li {
   list-style-position: inside;

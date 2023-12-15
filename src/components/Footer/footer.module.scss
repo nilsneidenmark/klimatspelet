@@ -24,3 +24,15 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 710px) {
+  footer {
+    margin-top: $large;
+    > div {
+      padding: $small;
+      > h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

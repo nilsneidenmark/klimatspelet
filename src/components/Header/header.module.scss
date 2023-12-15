@@ -67,3 +67,15 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 710px) {
+  header {
+    margin-bottom: $large;
+    > div {
+      padding: $medium;
+      > h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}

@@ -3,9 +3,11 @@
 .helpContact {
   @include flex(row, center, space-between);
   @include glass();
+  // flex-wrap: wrap;
   background: rgba(255, 255, 255, 0.55);
-  width: 95%;
-  max-width: 750px;
+  width: 750px;
+  // max-width: 750px;
+  max-width: 95vw;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
@@ -89,4 +91,23 @@ article {
 
 .closeBTN {
   float: right !important;
+}
+
+@media screen and (max-width: 685px) {
+  .helpContact {
+    @include flex(column, center, space-between);
+    gap: 0;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    // top: 55%;
+    // margin-top: -2rem;
+    left: 50%;
+    > div {
+      max-width: 100%;
+    }
+  }
+  .avatars {
+    @include flex(row, space-around, space-between);
+    margin-top: 0;
+  }
 }

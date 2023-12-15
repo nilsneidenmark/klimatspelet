@@ -61,7 +61,7 @@ const SettingsFont = () => {
         animate={{ opacity: 1, transition: { duration: 0.75 } }}
         className={styles.fontSection}
       >
-        <div>
+        <div className={styles.fontButtons}>
           <div>
             <p>Typsnitt</p>
             <div>
