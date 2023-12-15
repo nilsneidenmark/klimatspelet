@@ -25,7 +25,7 @@ html {
 
 body {
   background-color: rgb(36, 36, 36);
-  background-image: var(--backgroundImage);
+  background-image: url(/src/assets/background/ocean.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +58,7 @@ main {
   margin: 0 auto;
 }
 main > section {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.425);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
@@ -155,7 +155,7 @@ input {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #08594a;
+  background: rgb(173, 173, 173);
   border-radius: 10px;
 }
 
@@ -174,7 +174,7 @@ input {
   flex-direction: row;
   justify-content: center;
   align-items: space-between;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.425);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);

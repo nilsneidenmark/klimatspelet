@@ -3,11 +3,12 @@ html {
 }
 body {
   background-color: rgb(36, 36, 36);
-  // background-image: url(/src/assets/bg_forest.webp);
-  background-image: var(--backgroundImage);
+  background-image: url(/src/assets/background/ocean.webp);
+  // background-image: var(--backgroundImage);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   background-attachment: fixed;
   overflow-x: hidden;
   font-family: var(--font);
@@ -123,7 +124,7 @@ input {
   width: 12.5px;
 }
 ::-webkit-scrollbar-thumb {
-  background: $primary;
+  background: rgb(173, 173, 173);
   border-radius: 10px;
 }
 
