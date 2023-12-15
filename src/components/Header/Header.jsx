@@ -20,7 +20,7 @@ export default function Header() {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [openSettings, setOpenSettings] = useState(false);
   const [openHelp, setOpenHelp] = useState(false);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   // const location = useLocation();
 
   // if (location.pathname === "/profile") {

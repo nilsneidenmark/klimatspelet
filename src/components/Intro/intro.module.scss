@@ -7,11 +7,13 @@
     @include flex(column, center, center);
     width: 80%;
     > .container {
+      margin-top: $large;
       @include flex(column, center, center);
       background-color: $white;
       border-radius: $large;
       width: 100%;
       padding: 0 0 $medium 0;
+
       > img {
         width: 100%;
         border-radius: $large $large 0 0;
