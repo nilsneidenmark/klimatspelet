@@ -1,5 +1,4 @@
-import { useEffect, useState, useRef } from "react";
-import avatarBear from "../../assets/avatar_bear.webp";
+import avatarBear from "../../assets/avatars/avatar_bear.webp";
 import arrow from "../../assets/icons/chevron-down.svg";
 import styles from "./avatar.module.scss";
 import { useScore } from "../../context/ScoreContext";
@@ -22,7 +21,7 @@ export default function Avatar({ handleShow }) {
         </p>
       </div>
 
-      <img src={avatarBear} alt="avatar" />
+      <img width="60px" src={avatarBear} alt="avatar" />
       <div className={styles.arrow}>
         <img src={arrow} alt="down arrow" />
       </div>

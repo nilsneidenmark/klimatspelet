@@ -1,10 +1,10 @@
 import styles from "./categories.module.scss";
-import ocean from "../../assets/category_ocean.webp";
-import mangrove from "../../assets/category_mangrove.webp";
-import pineTree from "../../assets/category_pine-tree.webp";
-import buildings from "../../assets/category_buildings.webp";
-import glacier from "../../assets/category_glacier.webp";
-import desert from "../../assets/category_desert.webp";
+import ocean from "../../assets/categories/category_ocean.webp";
+import mangrove from "../../assets/categories/category_mangrove.webp";
+import pineTree from "../../assets/categories/category_pine-tree.webp";
+import buildings from "../../assets/categories/category_buildings.webp";
+import glacier from "../../assets/categories/category_glacier.webp";
+import desert from "../../assets/categories/category_desert.webp";
 import { useNavigate } from "react-router-dom";
 
 export default function Categories() {
