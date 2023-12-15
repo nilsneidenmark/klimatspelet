@@ -1,4 +1,4 @@
-import ocean from "../../assets/category_ocean.webp";
+import ocean from "../../assets/categories/category_ocean_85x85.webp";
 import Questions from "../../components/Question/Questions";
 import styles from "./quiz.module.scss";
 import quizData from "../../API/quizdata.json";

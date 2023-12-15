@@ -1,8 +1,8 @@
 import styles from "./helpcontact.module.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import bearAvatar from "../../assets/avatar_bear.webp";
-import rabbitAvatar from "../../assets/avatar_rabbit.webp";
-import gorillaAvatar from "../../assets/avatar_gorilla.webp";
+import bearAvatar from "../../assets/avatars/Bear.webp";
+import rabbitAvatar from "../../assets/avatars/Rabbit.webp";
+import gorillaAvatar from "../../assets/avatars/Gorilla.webp";
 
 // Imports for icons from React bootstrap
 import CloseButton from "react-bootstrap/CloseButton";
@@ -26,21 +26,25 @@ export default function HelpContact() {
             <Accordion.Item eventKey="0">
               <Accordion.Header>Hur byter jag avatar?</Accordion.Header>
               <Accordion.Body>
-                En meny visas om du trycker på din avatar i höger hörn. Under inställningar finns knappen profilinställning hittar du olika avatarer.
+                En meny visas om du trycker på din avatar i höger hörn. Under
+                inställningar finns knappen profilinställning hittar du olika
+                avatarer.
               </Accordion.Body>
             </Accordion.Item>
 
             <Accordion.Item eventKey="1">
               <Accordion.Header>Var ser jag mina poäng?</Accordion.Header>
               <Accordion.Body>
-                Du ser dina poäng uppe till höger bredvid din avatar. Du kan även se dina poäng i topplistan på “mina sidor”.
+                Du ser dina poäng uppe till höger bredvid din avatar. Du kan
+                även se dina poäng i topplistan på “mina sidor”.
               </Accordion.Body>
             </Accordion.Item>
 
             <Accordion.Item eventKey="2">
               <Accordion.Header>Kan jag byta lösenord?</Accordion.Header>
               <Accordion.Body>
-                Du kan byta lösenord på inställningar. Detta hittar du under menyn i din avatar.
+                Du kan byta lösenord på inställningar. Detta hittar du under
+                menyn i din avatar.
               </Accordion.Body>
             </Accordion.Item>
 
@@ -49,7 +53,8 @@ export default function HelpContact() {
                 Kan jag göra om ett quiz och få bättre poäng?
               </Accordion.Header>
               <Accordion.Body>
-                Ja, det kan du. Du kan göra om ett quiz hur många gånger du vill.
+                Ja, det kan du. Du kan göra om ett quiz hur många gånger du
+                vill.
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
@@ -65,19 +70,18 @@ export default function HelpContact() {
       </div>
 
       <div>
-        
-      <CloseButton className={styles.closeBTN} />
+        <CloseButton className={styles.closeBTN} />
         <div>
           <div className={styles.bearAvatar}>
-            <img src={bearAvatar} />
+            <img src={bearAvatar} alt="Bear avatar" />
             <p>???</p>
           </div>
           <div className={styles.rabbitAvatar}>
-            <img src={rabbitAvatar} />
+            <img src={rabbitAvatar} alt="Rabbit avatar" />
             <p>?</p>
           </div>
           <div className={styles.gorillaAvatar}>
-            <img src={gorillaAvatar} />
+            <img src={gorillaAvatar} alt="Gorilla avatar" />
             <p>??</p>
           </div>
         </div>

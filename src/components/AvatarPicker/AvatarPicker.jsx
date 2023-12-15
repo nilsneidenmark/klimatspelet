@@ -1,12 +1,12 @@
 import { useState } from "react";
-import avatarBear from "../../assets/avatars/avatar_bear.webp";
-import avatarDog from "../../assets/avatars/avatar_dog.webp";
-import avatarGreen from "../../assets/avatars/avatar_gamer_green.webp";
-import avatarPink from "../../assets/avatars/avatar_gamer_pink.webp";
-import avatarGiraffe from "../../assets/avatars/avatar_giraffe.webp";
-import avatarGorilla from "../../assets/avatars/avatar_gorilla.webp";
-import avatarRabbit from "../../assets/avatars/avatar_rabbit.webp";
-import avatarWalrus from "../../assets/avatars/avatar_walrus.webp";
+import avatarBear from "../../assets/avatars/bear_60x60.webp";
+import avatarDog from "../../assets/avatars/dog_60x60.webp";
+import avatarGreen from "../../assets/avatars/panda_60x60.webp";
+import avatarPink from "../../assets/avatars/shark_60x60.webp";
+import avatarGiraffe from "../../assets/avatars/giraffe_60x60.webp";
+import avatarGorilla from "../../assets/avatars/gorilla_60x60.webp";
+import avatarRabbit from "../../assets/avatars/rabbit_60x60.webp";
+import avatarWalrus from "../../assets/avatars/walrus_60x60.webp";
 import styles from "./avatarpicker.module.scss";
 
 export default function AvatarPicker() {
