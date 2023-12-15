@@ -1,5 +1,3 @@
-import img2 from "../../assets/bg_water.webp";
-import img3 from "../../assets/background/woods.jpg";
 import slideImg1 from "../../assets/slider/SlideImg1.webp";
 import slideImg2 from "../../assets/slider/SlideImg2.webp";
 import slideImg3 from "../../assets/slider/SlideImg3.webp";
