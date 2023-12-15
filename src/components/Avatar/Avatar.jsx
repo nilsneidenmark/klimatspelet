@@ -1,4 +1,4 @@
-import avatarBear from "../../assets/avatars/Bear_60x60.webp";
+import avatarBear from "../../assets/avatars/bear_60x60.webp";
 import arrow from "../../assets/icons/chevron-down.svg";
 import styles from "./avatar.module.scss";
 import { useScore } from "../../context/ScoreContext";
