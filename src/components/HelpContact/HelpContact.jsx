@@ -1,8 +1,8 @@
 import styles from "./helpcontact.module.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import bearAvatar from "../../assets/avatars/Bear.webp";
-import rabbitAvatar from "../../assets/avatars/Rabbit.webp";
-import gorillaAvatar from "../../assets/avatars/Gorilla.webp";
+import bearAvatar from "../../assets/avatars/bear.webp";
+import rabbitAvatar from "../../assets/avatars/rabbit.webp";
+import gorillaAvatar from "../../assets/avatars/gorilla.webp";
 
 // Imports for icons from React bootstrap
 import CloseButton from "react-bootstrap/CloseButton";
