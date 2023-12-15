@@ -23,12 +23,10 @@ export default function Header() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  console.log(location);
-
   if (location.pathname === "/profile") {
     document.documentElement.style.setProperty(
       "--backgroundImage",
-      "url(/src/assets/background/ocean2.webp)"
+      "url(/src/assets/background/bg_water.webp)"
     );
     // Your logic for the profile route
   }
