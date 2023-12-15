@@ -12,7 +12,6 @@ import settings from "../../assets/icons/settings.svg";
 import Modal from "@mui/material/Modal";
 import Settings from "../Settings/Settings";
 import HelpContact from "../HelpContact/HelpContact";
-// import { useLocation } from "react-router-dom";
 
 export default function Header() {
   const { display, setDisplay } = useDisplay();
@@ -21,15 +20,8 @@ export default function Header() {
   const [openSettings, setOpenSettings] = useState(false);
   const [openHelp, setOpenHelp] = useState(false);
   const navigate = useNavigate();
-  // const location = useLocation();
 
-  // if (location.pathname === "/profile") {
-  //   document.documentElement.style.setProperty(
-  //     "--backgroundImage",
-  //     "url(/src/assets/background/bg_water.webp)"
-  //   );
-  // }
-  const handleClose = () => setOpenDrawer(false);
+  // const handleClose = () => setOpenDrawer(false);
   const handleShow = () => setOpenDrawer(true);
 
   function handleClick() {
@@ -106,7 +98,9 @@ export default function Header() {
         open={openSettings}
         onClose={() => setOpenSettings(false)}
       >
-        <Settings />
+        <>
+          <Settings />
+        </>
       </Modal>
       <Modal
         style={{
@@ -115,7 +109,9 @@ export default function Header() {
         open={openHelp}
         onClose={() => setOpenHelp(false)}
       >
-        <HelpContact />
+        <>
+          <HelpContact />
+        </>
       </Modal>
     </>
   );

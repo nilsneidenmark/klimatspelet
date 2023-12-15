@@ -28,9 +28,16 @@ export default function Login() {
       <h2>Logga in</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Användarnamn eller epost</label>
-        <input value="Cr4zyfox09" id="username" type="text" minLength="2" />
+        <input
+          readOnly
+          value="Cr4zyfox09"
+          id="username"
+          type="text"
+          minLength="2"
+        />
         <label htmlFor="password">Lösenord</label>
         <input
+          readOnly
           value="Password123!"
           id="password"
           type="password"
