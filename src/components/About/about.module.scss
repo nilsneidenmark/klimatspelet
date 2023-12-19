@@ -1,5 +1,11 @@
 @import "../../styles/index.scss";
 
-h2 {
-    text-align: center;
+.about {
+  gap: $medium;
+  > div {
+    max-width: 650px;
+    background-color: $white;
+    padding: $medium;
+    border-radius: $borderRadiusSmall;
+  }
 }

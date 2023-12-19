@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
 :root {
   --font: "Poppins", serif;
   --fontSizeHeader: 2rem;
@@ -48,8 +49,8 @@ button {
 }
 
 main {
-  padding: 4rem;
-  gap: 4rem;
+  padding: 2rem;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,8 +97,12 @@ button:hover {
 
 h1,
 h2 {
+  font-family: "Preahvihear", sans-serif;
   font-size: var(--fontSizeHeader);
-  font-weight: 700;
+}
+
+h2 {
+  margin: 0.5rem 0;
 }
 
 h3,
