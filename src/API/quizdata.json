@@ -1,20 +1,41 @@
 {
   "category": {
     "number": 1,
-    "name": "Ocean",
+    "name": "Världens hav",
     "questions": 10
   },
   "questions": [
     {
       "number": 1,
-      "question": "What is the primary driver of sea-level rise due to climate change?",
+      "introduction": "Medeltemperaturen har under de senaste 100 åren ökat med drygt 0,7 grader. I klimatsammanhang ses detta som en stor och snabb ökning. Havet har historiskt sett spelat en viktig roll i att stabilisera klimatet genom att lagra värme. Under de senaste 50 åren har haven absorberat över 90 procent av den temperaturökning som klimatförändringarna har orsakat. Detta gör nu att haven idag är under stor press och genomgår stora förändringar.",
+      "question": "Hur har havet historiskt sett hjälpt till att hålla klimatet stabilt på jorden?",
       "incorrect_answers": [
-        "Solar radiation",
-        "Expansion of ocean",
-        "Underwater volcanic activity"
+        "Havet kyler ner jorden när det behövs",
+        "Havet fryser till is på vintern",
+        "Det mesta av allt regn hamnar i havet"
       ],
-      "correct_answer": "Melting glaciers and ice caps",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "correct_answer": "De ökade temperaturerna har lagrats i havet",
+      "feedback": "Havet har under de senaste 50 åren “sugit upp” över 90 procent av den ökade temperaturen klimatförändringarna orsakat.",
+      "source": "https://www.havet.nu/klimat-i-forandring",
+      "media": {
+        "diagram": "temperatures",
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
+    },
+    {
+      "number": 2,
+      "introduction": "I Norden beror vårt klimat  på att Golfströmmen för med sig varmare vatten från sydligare breddgrader och värmer upp våra länder här uppe i norr. På grund av klimatförändringarna i havet ser forskarna att Golfströmmen rör sig långsammare och hotar att sluta röra sig. Det skulle få stora konsekvenser, inte bara för havet i sig utan för alla som bor i närheten av Golfströmmen.",
+      "question": "Vad skulle hända hos oss i Norden om Golfströmmen slutade röra sig?",
+      "incorrect_answers": [
+        "Det skulle bli varmare temperaturer", 
+        "Vattnet i åar skulle börja strömma åt andra hållet", 
+        "Östersjön skulle få högre salthalt"
+      ],
+      "correct_answer": "Det skulle bli kallare temperature",
+      "feedback": "Temperaturen i Norden skulle sjunka utan Golfströmmen, eftersom den för med sig varmt vatten upp till oss i norr. Det gör att vårt klimat blir varmare. Utan Golfströmmen skulle det kunna bli -50 grader på vintern i vissa delar av Sverige, och även torrare somrar.",
+      "source": "https://www.havet.nu/orovackande-rapport-om-golfstrommen- ",
       "media": {
         "diagram": false,
         "video": false,
@@ -23,28 +44,20 @@
       }
     },
     {
-      "number": 2,
-      "question": "Which greenhouse gas is most responsible for the warming of the Earth's oceans?",
-      "incorrect_answers": ["Oxygen", "Methane", "Nitrous oxide"],
-      "correct_answer": "Carbon dioxide",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
-      "media": {
-        "diagram": false,
-        "video": false,
-        "podcast": false,
-        "image": false
-      }
-    },
-    {
       "number": 3,
-      "question": "How do coral reefs respond to the rising sea temperatures caused by climate change?",
+      "introduction": "Det är i haven som de mest påtagliga effekterna av klimatförändringarna syns. En av de mest påtagliga konsekvenserna är den stigande havsnivån. Uppvärmning av haven, ökad volym av havsvatten och avsmältning av glaciärer och inlandsisar är de främsta orsakerna till detta fenomen. Haven täcker 71 procent av jordens yta och skapar över hälften av allt syre i atmosfären, vilket är det vi behöver för att kunna andas. Haven tar upp cirka 30 procent av luftens koldioxid, vilket är det vi andas ut.",
+      "question": "Vad händer i havet när glaciärer och inlandsisar smälter?",
       "incorrect_answers": [
-        "They shrink in size",
-        "They thrive and grow faster",
-        "They migrate to colder waters"
+        "Det blir fler vulkanutbrott på Island",
+        "Det blir för lite fisk i havet",
+        "Det blir kallare i vattnet"
       ],
-      "correct_answer": "They undergo bleaching and may die",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "correct_answer": "Havsnivån stiger",
+      "feedback": " Det blir mer havsvatten när isarna smälter, och det gör att havsnivån blir högre. Det i sin tur gör att människor och djur som bor nära havet kan bli tvingade att flytta eftersom deras hem och åkrar blir översvämmade. Isarna kyler också ner jordklotet. När de försvinner blir det varmare och vädret mer extremt. Detta är också en orsak till att människor måste fly från sina hem. Många klimatflyktingar har ingenstans att ta vägen",
+      "source": [
+        "https://www.naturskyddsforeningen.se/artiklar/andrat-klimat-driver-manniskor-pa-flykt/",
+        "https://www.greenpeace.org/sweden/artiklar/hav/arktis-hot/"
+      ],
       "media": {
         "diagram": "emissions",
         "video": false,
@@ -54,16 +67,18 @@
     },
     {
       "number": 4,
-      "question": "What role do oceans play in absorbing excess carbon dioxide from the atmosphere?",
+      "introduction": null,
+      "question": "Hur mycket har den globala medeltemperaturen ökat under den senaste 100-årsperioden?",
       "incorrect_answers": [
-        "Oceans release carbon dioxide",
-        "Oceans trap carbon dioxide at the surface",
-        "Oceans have no impact on carbon dioxide levels"
+        "Ungefär 2 grader",
+        "Ungefär 1,5 grader",
+        "Ungefär 0,2 grader"
       ],
-      "correct_answer": "Oceans absorb and store carbon dioxide",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "correct_answer": "Ungefär 0,7 grader",
+      "feedback": "Medeltemperaturen har ökat med drygt 0,7 grader, vilket är en stor och snabb ökning.",
+      "source": "https://www.so-rummet.se/kategorier/geografi/klimat#",
       "media": {
-        "diagram": "emissions",
+        "diagram": false,
         "video": false,
         "podcast": false,
         "image": false
@@ -71,61 +86,73 @@
     },
     {
       "number": 5,
-      "question": "What is the term for the phenomenon where warmer ocean temperatures lead to more intense and frequent tropical storms?",
-      "incorrect_answers": ["Ocean currents", "El Niño", "Ocean acidification"],
-      "correct_answer": "Tropical cyclones",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
+      "question": "Ljudfråga 1 av 3: Vad är växthuseffekten?",
+      "incorrect_answers": [
+        "Det som sker i molnen när det regnar", 
+        "Det som gör att vi har klimatförändringar", 
+        "Ett annat ord för sommarväder"
+      ],
+      "correct_answer": "En process som gör att all jordens värme inte åker ut i rymden",
+      "feedback": "Växthuseffekten är en naturlig process vi behöver på jorden för att inte all värme ska åka rakt ut i rymden utan istället stanna i vår atmosfär. Utan den skulle det vara så kallt på jorden att ingenting kunde leva här. Problemet är den förstärkta växthuseffekten som är skapad av oss människor. Den innebär att vi släpper ut för mycket växthusgaser i atmosfären, vilket gör att lagret växthusgaser blir för tjockt och för mycket värme stannar kvar på jorden.",
+      "source": "https://www.so-rummet.se/podcast/global-uppvarmning-orsaker-konsekvenser-och-losningar",
       "media": {
-        "diagram": "temperatures",
+        "diagram": false,
         "video": false,
-        "podcast": false,
+        "podcast": "podcast",
         "image": false
       }
     },
     {
       "number": 6,
-      "question": "Which human activity contributes significantly to the acidification of the world's oceans?",
+      "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
+      "question": "Ljudfråga 2 av 3: Vilken är den viktigaste orsaken till den globala uppvärmningen?",
       "incorrect_answers": [
-        "Deforestation",
-        "Solar energy production",
-        "Organic farming"
+        "Donald Trumps lögner",
+        "Havsnivån stiger",
+        "Solens strålar släpps igenom för mycket genom atmosfären"
       ],
-      "correct_answer": "Industrial pollution",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "correct_answer": "Vi släpper ut för mycket växthusgaser",
+      "feedback": "Vi släpper ut för mycket växthusgaser i atmosfären. Dessa gaser är till exempel koldioxid och metangas. Detta gör vi genom bland annat genom en väldigt stor boskapsuppfödning, samt elda olja och naturgaser.",
+      "source": "https://www.so-rummet.se/podcast/global-uppvarmning-orsaker-konsekvenser-och-losningar",
       "media": {
-        "diagram": "temperatures",
+        "diagram": false,
         "video": false,
-        "podcast": false,
+        "podcast": "podcast",
         "image": false
       }
     },
     {
       "number": 7,
-      "question": "How does climate change affect the distribution of marine species",
+      "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
+      "question": "Ljudfråga 3 av 3: Vad kan vi bland annat göra för att stoppa den globala uppvärmningen?",
       "incorrect_answers": [
-        "It has no impact on marine species",
-        "Marine species become more localized",
-        "Marine species become extinct"
+        "Kyla ner oss själva och inte bli för varma",
+        "Resa bara på sportlovet och inte på sommaren",
+        "Cykla istället för att springa"
       ],
-      "correct_answer": "Marine species migrate to colder waters",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "correct_answer": "Gå över till förnyelsebar energi och minska köttkonsumtionen",
+      "feedback": "Vi kan minska våra utsläpp bl a genom att: Gå över till förnyelsebar energi istället för olja. Då släpper vi ut mycket mindre koldioxid, Äta mindre kött. Nötkreatur släpper ut väldigt mycket metangas, Sluta hugga ner skog. Träd binder koldioxid så den inte åker upp i atmosfären",
+      "source": "https://www.so-rummet.se/podcast/global-uppvarmning-orsaker-konsekvenser-och-losningar",
       "media": {
-        "diagram": "sealevel",
+        "diagram": false,
         "video": false,
-        "podcast": false,
+        "podcast": "podcast",
         "image": false
       }
     },
     {
       "number": 8,
-      "question": "What is the term for the gradual increase in the Earth's average surface temperature due to human activities?",
+      "introduction": null,
+      "question": "Hur mycket har medelhavsnivån ökat mellan år 1991 och 2003?",
       "incorrect_answers": [
-        "Global cooling",
-        "Greenhouse effect",
-        "Ozone depletion"
+        "Den har ökat 65,2 cm",
+        "Den har sänkts med 65.2 mm",
+        "Den är oförändrad"
       ],
-      "correct_answer": "Global warming",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "correct_answer": "Det har ökat 65,2 mm",
+      "feedback": "Den har ökat med 65,2 mm vilket motsvarar 6,52 cm",
+      "source": null,
       "media": {
         "diagram": "sealevel",
         "video": false,
@@ -135,16 +162,22 @@
     },
     {
       "number": 9,
-      "question": "How does melting Arctic ice contribute to sea-level rise?",
+      "introduction": null,
+      "question": "Var låg nivån för koldioxidutsläpp globalt år 2005?",
       "incorrect_answers": [
-        "It doesn't affect sea-level",
-        "It decreases sea-level",
-        "It causes ocean currents to reverse"
+        "2048 miljarder ton koldioxidekvivalenter",
+        "10 523 miljoner ton koldioxidekvivalenter",
+        "8093 miljarder ton koldioxidekvivalenter"
       ],
-      "correct_answer": "It contributes to sea-level rise",
+      "correct_answer": "8093 miljoner ton koldioxidekvivalenter",
       "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "source": [
+        "https://www.scb.se/hitta-statistik/sverige-i-siffror/miljo/utslapp-av-vaxthusgaser/",
+        "https://www.naturvardsverket.se/om-oss/aktuellt/nyheter-och-pressmeddelanden/2023/juni/s",
+        "veriges-klimatutslapp-minskade-med-fem-procent-under-2022/"
+      ],
       "media": {
-        "diagram": "false",
+        "diagram": "emissions",
         "video": false,
         "podcast": false,
         "image": false
@@ -152,18 +185,23 @@
     },
     {
       "number": 10,
-      "question": "What is the main consequence of rising sea levels on coastal ecosystems?",
+      "introduction": null,
+      "question": "Hur stor var ökningen av temperaturen år 2000?",
       "incorrect_answers": [
-        "Increased biodiversity",
-        "Expansion of mangrove forests",
-        "Decreased salinity levels"
+        "ca 0,55 grader celsius",
+        "ca 0 grader celsius",
+        "ca 7 grader celsius"
       ],
-      "correct_answer": "Coastal erosion",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "correct_answer": "ca 0,43 grader celsius",
+      "feedback": "År 2000 hade temperaturen ökat med 0,43 grader celsius. Idag år 2023 ligger vi på en ökning på 1,1 grader celsius. Konsekvenserna för världen vid en uppvärmning på 1,5 till 2 grader blir stora och kan då förväntas få extrema värmeböljor och stigande havsnivå.",
+      "source": [
+        "https://www.klimatpolitiskaradet.se/2023-klimatpolitiska-radets-rapport/",
+        "https://www.naturskyddsforeningen.se/artiklar/den-globala-uppvarmningens-konsekvenser/"
+      ],
       "media": {
-        "diagram": false,
+        "diagram": "temperatures",
         "video": false,
-        "podcast": "podcast",
+        "podcast": false,
         "image": false
       }
     }
