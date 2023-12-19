@@ -2,35 +2,50 @@ import slideImg1 from "../../assets/slider/SlideImg1.webp";
 import slideImg2 from "../../assets/slider/SlideImg2.webp";
 import slideImg3 from "../../assets/slider/SlideImg3.webp";
 import styles from "./intro.module.scss";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-// functionality for the slides
+// Slideshow component, renders each slide as children
 const Slideshow = ({ children }) => {
   const [index, setIndex] = useState(0); // tracks slide index
-  // increments the index every 5 seconds
+  const intervalRef = useRef(null); // tracks the timer
 
-  // Animation variants for slide transitions
+  // objects for fade-in animation
   const slideVariants = {
     enter: { opacity: 0 },
     center: { opacity: 1 },
     exit: { opacity: 0 },
   };
-
   const transition = {
     duration: 1,
     ease: "easeOut",
   };
+
+  // starts a timer that changes the index every five seconds, index is used for displaying which slide
   useEffect(() => {
-    const interval = setInterval(() => {
+    const startInterval = () => {
+      intervalRef.current = setInterval(() => {
+        setIndex((prevIndex) =>
+          prevIndex === children.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 5000);
+    };
+
+    startInterval();
+
+    return () => clearInterval(intervalRef.current);
+  }, [children]);
+
+  // manually changes slide index on click, also resets previously set timer and starts a new one
+  const handleClick = (index) => {
+    setIndex(index);
+    clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => {
       setIndex((prevIndex) =>
         prevIndex === children.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000);
-
-    return () => clearInterval(interval);
-  }, [children.length]);
-
+  };
   return (
     <>
       <motion.div
@@ -47,15 +62,15 @@ const Slideshow = ({ children }) => {
       </motion.div>
       <div className={styles.circles}>
         <button
-          onClick={() => setIndex(0)}
+          onClick={() => handleClick(0)}
           className={`${index === 0 ? styles.active : ""}`}
         ></button>
         <button
-          onClick={() => setIndex(1)}
+          onClick={() => handleClick(1)}
           className={`${index === 1 ? styles.active : ""}`}
         ></button>
         <button
-          onClick={() => setIndex(2)}
+          onClick={() => handleClick(2)}
           className={`${index === 2 ? styles.active : ""}`}
         ></button>
       </div>
