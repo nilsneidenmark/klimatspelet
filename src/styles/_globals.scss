@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
 html {
   @include flex(column, center, center);
 }
@@ -70,8 +72,12 @@ button {
 
 h1,
 h2 {
+  font-family: 'Preahvihear', sans-serif;
   font-size: var(--fontSizeHeader);
-  font-weight: 700;
+}
+
+h2 {
+  margin: $small 0;
 }
 
 h3,

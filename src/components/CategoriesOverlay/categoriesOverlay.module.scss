@@ -1,0 +1,25 @@
+@import "../../styles/index.scss";
+
+
+.overlayContainer {
+    width: 90%;
+    background-color: #EEEEEE;
+    border-radius: $borderRadiusLarge;
+    position: absolute;
+    z-index: 9999999;
+}
+
+.overlayWrapper {
+    margin: 0 auto;
+    padding: $large;
+    text-align: center;
+    > h2, button {
+        margin: $medium 0;
+    }
+    > .categoryIcon {
+        width: 120px;
+    }
+    > .closeBTN {
+        float: right !important;
+      }
+}

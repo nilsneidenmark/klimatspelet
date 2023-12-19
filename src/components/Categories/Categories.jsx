@@ -6,14 +6,22 @@ import buildings from "../../assets/categories/category_buildings_125x125.webp";
 import glacier from "../../assets/categories/category_glacier_125x125.webp";
 import desert from "../../assets/categories/category_desert_125x125.webp";
 import { useNavigate } from "react-router-dom";
+import { useState } from 'react';
+
+import CategoryOverlay from "../CategoriesOverlay/CategoriesOverlay"
 
 export default function Categories() {
   const navigate = useNavigate();
+  const [buttonPopup, setButtonPopup] = useState(false)
+  
   return (
     <section>
+      <CategoryOverlay trigger={buttonPopup} setTrigger={setButtonPopup}>
+          <button onClick={() => navigate("/quiz")} className={styles.primarybtn}>Börja spela</button>
+      </CategoryOverlay>
       <h1>Kategorier</h1>
       <div className={styles.categoriesSection}>
-        <button onClick={() => navigate("/quiz")} className={styles.categories}>
+        <button onClick={() => setButtonPopup(true)} className={styles.categories}>
           <img className={styles.active} src={ocean} alt="category" />
           <p>Världens hav</p>
           <small>0/12</small>
