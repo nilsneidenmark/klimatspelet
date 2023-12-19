@@ -51,12 +51,12 @@ export default function Questions({ quizData }) {
   function handleclick(answer) {
     setDisplayFeedback(true);
     if (answer === "incorrect") {
-      setFeedback(`Fel svar.. 😔 ${quizData[index].feedback}`);
+      setFeedback(`Fel svar.. 😔 ${quizData[index].feedback} Läs mer på ${quizData[index].source}`);
       if (score != 0) {
         setScore((prevScore) => prevScore - 1);
       }
     } else if (answer === "correct") {
-      setFeedback(`Rätt svar 🤩! ${quizData[index].feedback}`);
+      setFeedback(`Rätt svar 🤩! ${quizData[index].feedback} Läs mer på ${quizData[index].source}`);
       setScore((prevScore) => prevScore + 1);
     }
   }
@@ -114,7 +114,9 @@ export default function Questions({ quizData }) {
                 animate={{ opacity: 1, transition: { duration: 1 } }}
               >
                 <Media media={quizData[index].media} />
-                <p>{quizData[index].question}</p>
+
+                <p>{quizData[index].introduction}</p>
+                <p className={styles.thisQuestion}>Fråga: {quizData[index].question}</p>
               </motion.div>
             ) : (
               <motion.div

@@ -39,7 +39,7 @@
       "media": {
         "diagram": false,
         "video": false,
-        "podcast": "podcast",
+        "podcast": false,
         "image": false
       }
     },
@@ -87,7 +87,7 @@
     {
       "number": 5,
       "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
-      "question": "Ljudfråga 1 av 3: Vad är växthuseffekten?",
+      "question": "1 av 3. Vad är växthuseffekten?",
       "incorrect_answers": [
         "Det som sker i molnen när det regnar", 
         "Det som gör att vi har klimatförändringar", 
@@ -106,7 +106,7 @@
     {
       "number": 6,
       "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
-      "question": "Ljudfråga 2 av 3: Vilken är den viktigaste orsaken till den globala uppvärmningen?",
+      "question": "2 av 3. Vilken är den viktigaste orsaken till den globala uppvärmningen?",
       "incorrect_answers": [
         "Donald Trumps lögner",
         "Havsnivån stiger",
@@ -125,7 +125,7 @@
     {
       "number": 7,
       "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
-      "question": "Ljudfråga 3 av 3: Vad kan vi bland annat göra för att stoppa den globala uppvärmningen?",
+      "question": "3 av 3. Vad kan vi bland annat göra för att stoppa den globala uppvärmningen?",
       "incorrect_answers": [
         "Kyla ner oss själva och inte bli för varma",
         "Resa bara på sportlovet och inte på sommaren",
@@ -170,7 +170,7 @@
         "8093 miljarder ton koldioxidekvivalenter"
       ],
       "correct_answer": "8093 miljoner ton koldioxidekvivalenter",
-      "feedback": "Melting glaciers and ice caps are the primary drivers for the rising sea-levels.",
+      "feedback": "År 2005 låg det globala koldioxidutsläppet på 8093 miljoner ton koldioxidekvivalenter. En stor del av utsläppen kommer från bilar, lastbilar, flyg och båttrafik. I Sverige låg utsläppen år 2005 på 66,54 och har minskat till 47,8 miljoner ton koldioxidekvivalenter år 2021.",
       "source": [
         "https://www.scb.se/hitta-statistik/sverige-i-siffror/miljo/utslapp-av-vaxthusgaser/",
         "https://www.naturvardsverket.se/om-oss/aktuellt/nyheter-och-pressmeddelanden/2023/juni/s",

@@ -18,7 +18,6 @@ import temperatures from "../../API/Dataset2_GlobalTemperatureTimeSeries.json";
 const SeaLevel = () => {
   return (
     <>
-      <h2>Medelhavsnivå</h2>
       <AreaChart
         width={730}
         height={250}
@@ -37,7 +36,7 @@ const SeaLevel = () => {
         </defs>
         <XAxis dataKey="Time" />
         <YAxis dataKey="Medelhavsnivå" />
-        <Legend content={() => "Skillnad i medelhavsnivå i millimeter"} />
+        <Legend content={() => "I grafen ser du hur medelhavsnivån har förändrats i millimeter."} />
         <Tooltip
           wrapperStyle={{ borderRadius: "12px" }}
           itemStyle={{ color: "#000000" }}
@@ -65,7 +64,6 @@ const SeaLevel = () => {
 const GlobalTemperatures = () => {
   return (
     <>
-      <h2>Globala temperaturer</h2>
       <LineChart
         width={800}
         height={400}
@@ -85,7 +83,7 @@ const GlobalTemperatures = () => {
           contentStyle={{ color: "#000000", borderRadius: "12px" }}
         />
         <Legend
-          content={() => "Global temperatures difference from mean (0)"}
+          content={() => "I grafen ser du hur den globala temperaturen har förändras över tiden."}
         />
         <Line
           type="natural"
@@ -107,8 +105,6 @@ const GlobalTemperatures = () => {
 const Co2Emissions = () => {
   return (
     <>
-      <h2>Co2 utsläpp från fossila bränslen</h2>
-
       <LineChart
         width={800}
         height={400}
@@ -128,7 +124,7 @@ const Co2Emissions = () => {
           itemStyle={{ color: "#000000" }}
           contentStyle={{ color: "#000000", borderRadius: "12px" }}
         />
-        <Legend content={() => "In million metric tons by year"} />
+        <Legend content={() => "I grafen ser du hur mycket koldioxidutsläppen från fossila bränslen har ökat."} />
         <Line
           type="natural"
           dataKey="Total"
