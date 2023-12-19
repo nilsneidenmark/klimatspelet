@@ -76,6 +76,9 @@ header {
       > h2 {
         font-size: 2rem;
       }
+      > div > button {
+        display: none;
+      }
     }
   }
 }

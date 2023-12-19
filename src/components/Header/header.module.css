@@ -281,4 +281,7 @@ header > div > div > :first-child {
   header > div > h2 {
     font-size: 2rem;
   }
+  header > div > div > button {
+    display: none;
+  }
 }/*# sourceMappingURL=header.module.css.map */
