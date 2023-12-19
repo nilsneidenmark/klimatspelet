@@ -195,6 +195,7 @@ input {
   align-items: center;
   gap: 1rem;
   text-align: center;
+  max-width: 95vw;
   width: 750px;
 }
 .intro > div:first-child {
