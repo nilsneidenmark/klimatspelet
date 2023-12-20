@@ -2,22 +2,18 @@
 
 .services {
     @include flex(row, center, center);
+    gap: $medium;
+    flex-wrap: wrap;
 }
 
 .card {
-    margin: 0 2rem;
+    flex: 1 1 160px;
+    background-color: green;
+    padding: $medium;
+    border-radius: $small;
 }
 
 .card:hover {
     opacity: $opacity;
-}
-
-h3 {
-    text-align: center;
-}
-
-img {
-    width: 150px;
-    margin: 0 auto 2rem auto;
-    display: block;
+    cursor: pointer;
 }

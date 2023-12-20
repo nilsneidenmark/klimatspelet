@@ -51,7 +51,7 @@ export default function Questions({ quizData }) {
   function handleclick(answer) {
     setDisplayFeedback(true);
     if (answer === "incorrect") {
-      setFeedback(`Fel svar.. 😔 ${quizData[index].feedback} Läs mer på ${quizData[index].source}`);
+      setFeedback(`Fel svar.. 😔 ${quizData[index].feedback} Läs mer på ${quizData[index].source})`);
       if (score != 0) {
         setScore((prevScore) => prevScore - 1);
       }

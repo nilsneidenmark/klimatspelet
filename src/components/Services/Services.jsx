@@ -13,47 +13,35 @@ export default function Services() {
     <section>
       <h2>Rekomenderade tjänster</h2>
       <div className={styles.services}>
-        <div className={styles.card}>
-          <Card sx={{ maxWidth: 300 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="200"
-                src={cardImgKalkyl}
-                alt="Klimatkalkylatorn"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Klimatkalkylatorn
-                </Typography>
-                <Typography variant="body" color="text.secondary">
-                  Du kan beräkna din miljöpåverkan här.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </div>
+         <div className={styles.card}>
+          <h3>Klimatkalkylatorn</h3>
+          <p>Du kan beräkna din miljöpåverkan här</p>
+         </div>
 
-        <div className={styles.card}>
-          <Card sx={{ maxWidth: 300 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="200"
-                src={cardImgNasa}
-                alt="NASA ClimateKids"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  NASA ClimateKids
-                </Typography>
-                <Typography variant="body" color="text.secondary">
-                  Lär dig mer om klimatet genom spel på NASA ClimateKids.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </div>
+         <div className={styles.card}>
+          <h3>NASA ClimateKids</h3>
+          <p>Lär dig mer om klimatet genom spel på NASA ClimateKids.</p>
+         </div>
+
+         <div className={styles.card}>
+          <h3>NASA ClimateKids</h3>
+          <p>Lär dig mer om klimatet genom spel på NASA ClimateKids.</p>
+         </div>
+
+         <div className={styles.card}>
+          <h3>NASA ClimateKids</h3>
+          <p>Lär dig mer om klimatet genom spel på NASA ClimateKids.</p>
+         </div>
+
+         <div className={styles.card}>
+          <h3>NASA ClimateKids</h3>
+          <p>Lär dig mer om klimatet genom spel på NASA ClimateKids.</p>
+         </div>
+
+         <div className={styles.card}>
+          <h3>NASA ClimateKids</h3>
+          <p>Lär dig mer om klimatet genom spel på NASA ClimateKids.</p>
+         </div>
       </div>
     </section>
   );
