@@ -263,7 +263,7 @@ header > div > div > :first-child {
 .drawer > ul > li > button {
   background-color: transparent;
   width: auto;
-  font-weight: 700;
+  font-size: 1.25rem;
   color: black;
 }
 .drawer > ul > li:hover {

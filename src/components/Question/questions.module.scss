@@ -4,6 +4,7 @@
   background-color: $white;
   border-radius: $borderRadiusSmall;
   padding: $medium;
+  max-width: 95%;
   > div {
     @include flex(column, flex-start, flex-start);
     gap: $medium;
@@ -34,7 +35,10 @@
       }
       > p {
         width: 50%;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+      }
+      > .source {
+        width: 100%;
       }
     }
   }
@@ -57,4 +61,48 @@
 .thisQuestion {
   font-weight: bold;
   font-size: 1.25rem;
+}
+
+@media screen and (max-width: 985px) {
+  .question {
+    > div {
+      gap: $small;
+      > .top_section {
+        margin-bottom: $medium;
+      }
+      > div {
+        gap: $small;
+        flex-wrap: wrap;
+        width: 100%;
+        > button {
+          width: 100%;
+        }
+      }
+      > .feedback {
+        @include flex(column, center, center);
+        gap: $large;
+        > img {
+          width: 50%;
+        }
+        > p {
+          width: 100%;
+        }
+      }
+    }
+    .nextQuestion {
+      align-self: flex-end;
+      width: 100%;
+      margin-top: $large;
+    }
+    > .endQuiz {
+      @include flex(column, center, center);
+      > img {
+        width: 90%;
+        border-radius: $borderRadiusSmall;
+      }
+      > button {
+        width: 100%;
+      }
+    }
+  }
 }
