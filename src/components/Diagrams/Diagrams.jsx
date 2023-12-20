@@ -47,6 +47,7 @@ const SeaLevel = () => {
               angle: -90,
               position: "insideBottomLeft",
             }}
+            tick={{ stroke: "black", strokeWidth: 0.5 }}
             dataKey="Medelhavsnivå"
           />
 
