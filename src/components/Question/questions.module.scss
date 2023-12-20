@@ -34,8 +34,11 @@
         border-radius: $borderRadiusSmall;
       }
       > p {
-        width: 45%;
-        font-size: 1.5rem;
+        width: 50%;
+        font-size: 1.25rem;
+      }
+      > .source {
+        width: 100%;
       }
     }
   }
@@ -68,7 +71,6 @@
         margin-bottom: $medium;
       }
       > div {
-        // @include flex(row, flex-start, center);
         gap: $small;
         flex-wrap: wrap;
         width: 100%;
@@ -77,15 +79,13 @@
         }
       }
       > .feedback {
-        @include flex(column-reverse, center, center);
+        @include flex(column, center, center);
         gap: $large;
         > img {
           width: 50%;
-          // height: 250px;
         }
         > p {
           width: 100%;
-          font-size: 1.25rem;
         }
       }
     }

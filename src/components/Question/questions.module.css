@@ -236,8 +236,11 @@ input {
   border-radius: 10px;
 }
 .question > div > .feedback > p {
-  width: 45%;
-  font-size: 1.5rem;
+  width: 50%;
+  font-size: 1.25rem;
+}
+.question > div > .feedback > .source {
+  width: 100%;
 }
 .question .nextQuestion {
   align-self: flex-end;
@@ -279,7 +282,7 @@ input {
   }
   .question > div > .feedback {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -289,7 +292,6 @@ input {
   }
   .question > div > .feedback > p {
     width: 100%;
-    font-size: 1.25rem;
   }
   .question .nextQuestion {
     align-self: flex-end;

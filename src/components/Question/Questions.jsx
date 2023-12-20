@@ -51,16 +51,12 @@ export default function Questions({ quizData }) {
   function handleclick(answer) {
     setDisplayFeedback(true);
     if (answer === "incorrect") {
-      setFeedback(
-        `Fel svar.. 😔 ${quizData[index].feedback} Läs mer på ${quizData[index].source}`
-      );
+      setFeedback(`Fel svar.. 😔 ${quizData[index].feedback}`);
       if (score != 0) {
         setScore((prevScore) => prevScore - 1);
       }
     } else if (answer === "correct") {
-      setFeedback(
-        `Rätt svar 🤩! ${quizData[index].feedback} Läs mer på ${quizData[index].source}`
-      );
+      setFeedback(`Rätt svar 🤩! ${quizData[index].feedback}`);
       setScore((prevScore) => prevScore + 1);
     }
   }
@@ -142,6 +138,15 @@ export default function Questions({ quizData }) {
                 >
                   {feedback}
                 </motion.p>
+                <motion.a
+                  href={quizData[index].source}
+                  target="blank"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { duration: 1 } }}
+                  className={styles.source}
+                >
+                  {`Lär dig mer om ${quizData[index].sourceDescription}`}
+                </motion.a>
               </motion.div>
             )}
             {!displayFeedback && (

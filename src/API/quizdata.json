@@ -17,6 +17,7 @@
       "correct_answer": "De ökade temperaturerna har lagrats i havet",
       "feedback": "Havet har under de senaste 50 åren “sugit upp” över 90 procent av den ökade temperaturen klimatförändringarna orsakat.",
       "source": "https://www.havet.nu/klimat-i-forandring",
+      "sourceDescription": "hur haven reglerar den globala temperaturen",
       "media": {
         "diagram": "temperatures",
         "video": false,
@@ -29,13 +30,14 @@
       "introduction": "I Norden beror vårt klimat  på att Golfströmmen för med sig varmare vatten från sydligare breddgrader och värmer upp våra länder här uppe i norr. På grund av klimatförändringarna i havet ser forskarna att Golfströmmen rör sig långsammare och hotar att sluta röra sig. Det skulle få stora konsekvenser, inte bara för havet i sig utan för alla som bor i närheten av Golfströmmen.",
       "question": "Vad skulle hända hos oss i Norden om Golfströmmen slutade röra sig?",
       "incorrect_answers": [
-        "Det skulle bli varmare temperaturer", 
-        "Vattnet i åar skulle börja strömma åt andra hållet", 
+        "Det skulle bli varmare temperaturer",
+        "Vattnet i åar skulle börja strömma åt andra hållet",
         "Östersjön skulle få högre salthalt"
       ],
       "correct_answer": "Det skulle bli kallare temperature",
       "feedback": "Temperaturen i Norden skulle sjunka utan Golfströmmen, eftersom den för med sig varmt vatten upp till oss i norr. Det gör att vårt klimat blir varmare. Utan Golfströmmen skulle det kunna bli -50 grader på vintern i vissa delar av Sverige, och även torrare somrar.",
       "source": "https://www.havet.nu/orovackande-rapport-om-golfstrommen- ",
+      "sourceDescription": "hur golfströmmen fungerar.",
       "media": {
         "diagram": false,
         "video": false,
@@ -58,6 +60,7 @@
         "https://www.naturskyddsforeningen.se/artiklar/andrat-klimat-driver-manniskor-pa-flykt/",
         "https://www.greenpeace.org/sweden/artiklar/hav/arktis-hot/"
       ],
+      "sourceDescription": "hur glaciärerna påverkar klimatet och människor.",
       "media": {
         "diagram": "emissions",
         "video": false,
@@ -77,6 +80,7 @@
       "correct_answer": "Ungefär 0,7 grader",
       "feedback": "Medeltemperaturen har ökat med drygt 0,7 grader, vilket är en stor och snabb ökning.",
       "source": "https://www.so-rummet.se/kategorier/geografi/klimat#",
+      "sourceDescription": "hur den globala temperaturen har ändrat sig.",
       "media": {
         "diagram": false,
         "video": false,
@@ -89,13 +93,14 @@
       "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
       "question": "1 av 3. Vad är växthuseffekten?",
       "incorrect_answers": [
-        "Det som sker i molnen när det regnar", 
-        "Det som gör att vi har klimatförändringar", 
+        "Det som sker i molnen när det regnar",
+        "Det som gör att vi har klimatförändringar",
         "Ett annat ord för sommarväder"
       ],
       "correct_answer": "En process som gör att all jordens värme inte åker ut i rymden",
       "feedback": "Växthuseffekten är en naturlig process vi behöver på jorden för att inte all värme ska åka rakt ut i rymden utan istället stanna i vår atmosfär. Utan den skulle det vara så kallt på jorden att ingenting kunde leva här. Problemet är den förstärkta växthuseffekten som är skapad av oss människor. Den innebär att vi släpper ut för mycket växthusgaser i atmosfären, vilket gör att lagret växthusgaser blir för tjockt och för mycket värme stannar kvar på jorden.",
       "source": "https://www.so-rummet.se/podcast/global-uppvarmning-orsaker-konsekvenser-och-losningar",
+      "sourceDescription": "den globala uppvärmningens orsaker och konsekvenser.",
       "media": {
         "diagram": false,
         "video": false,
@@ -115,6 +120,7 @@
       "correct_answer": "Vi släpper ut för mycket växthusgaser",
       "feedback": "Vi släpper ut för mycket växthusgaser i atmosfären. Dessa gaser är till exempel koldioxid och metangas. Detta gör vi genom bland annat genom en väldigt stor boskapsuppfödning, samt elda olja och naturgaser.",
       "source": "https://www.so-rummet.se/podcast/global-uppvarmning-orsaker-konsekvenser-och-losningar",
+      "sourceDescription": "den globala uppvärmningens orsaker och konsekvenser.",
       "media": {
         "diagram": false,
         "video": false,
@@ -134,6 +140,7 @@
       "correct_answer": "Gå över till förnyelsebar energi och minska köttkonsumtionen",
       "feedback": "Vi kan minska våra utsläpp bl a genom att: Gå över till förnyelsebar energi istället för olja. Då släpper vi ut mycket mindre koldioxid, Äta mindre kött. Nötkreatur släpper ut väldigt mycket metangas, Sluta hugga ner skog. Träd binder koldioxid så den inte åker upp i atmosfären",
       "source": "https://www.so-rummet.se/podcast/global-uppvarmning-orsaker-konsekvenser-och-losningar",
+      "sourceDescription": "den globala uppvärmningens orsaker och konsekvenser.",
       "media": {
         "diagram": false,
         "video": false,
@@ -153,6 +160,7 @@
       "correct_answer": "Det har ökat 65,2 mm",
       "feedback": "Den har ökat med 65,2 mm vilket motsvarar 6,52 cm",
       "source": null,
+      "sourceDescription": "hur medelhavsnivån har ändrat sig.",
       "media": {
         "diagram": "sealevel",
         "video": false,
@@ -176,6 +184,7 @@
         "https://www.naturvardsverket.se/om-oss/aktuellt/nyheter-och-pressmeddelanden/2023/juni/s",
         "veriges-klimatutslapp-minskade-med-fem-procent-under-2022/"
       ],
+      "sourceDescription": "det globala koldioxidutsläppet.",
       "media": {
         "diagram": "emissions",
         "video": false,
@@ -198,6 +207,7 @@
         "https://www.klimatpolitiskaradet.se/2023-klimatpolitiska-radets-rapport/",
         "https://www.naturskyddsforeningen.se/artiklar/den-globala-uppvarmningens-konsekvenser/"
       ],
+      "sourceDescription": "hur den globala temperaturen har ändrat sig.",
       "media": {
         "diagram": "temperatures",
         "video": false,
