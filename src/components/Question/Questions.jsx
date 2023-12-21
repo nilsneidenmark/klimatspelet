@@ -38,7 +38,7 @@ const Media = ({ media }) => {
 
 export default function Questions({ quizData }) {
   const [displayFeedback, setDisplayFeedback] = useState(false);
-  const [feedback, setFeedback] = useState("");
+  const [correctAnswer, setCorrectAnswer] = useState(false);
   const [btnText, setBtnText] = useState("Nästa fråga");
   const [index, setIndex] = useState(0);
   const [endQuiz, setEndQuiz] = useState(false);
@@ -51,12 +51,12 @@ export default function Questions({ quizData }) {
   function handleclick(answer) {
     setDisplayFeedback(true);
     if (answer === "incorrect") {
-      setFeedback(`Fel svar.. 😔 ${quizData[index].feedback} Läs mer på ${quizData[index].source})`);
+      setCorrectAnswer(false);
       if (score != 0) {
         setScore((prevScore) => prevScore - 1);
       }
     } else if (answer === "correct") {
-      setFeedback(`Rätt svar 🤩! ${quizData[index].feedback} Läs mer på ${quizData[index].source}`);
+      setCorrectAnswer(true);
       setScore((prevScore) => prevScore + 1);
     }
   }
@@ -116,7 +116,9 @@ export default function Questions({ quizData }) {
                 <Media media={quizData[index].media} />
 
                 <p>{quizData[index].introduction}</p>
-                <p className={styles.thisQuestion}>Fråga: {quizData[index].question}</p>
+                <p className={styles.thisQuestion}>
+                  Fråga: {quizData[index].question}
+                </p>
               </motion.div>
             ) : (
               <motion.div
@@ -127,15 +129,27 @@ export default function Questions({ quizData }) {
                 <motion.img
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, transition: { duration: 1 } }}
-                  src={feedback[0] === "R" ? einstein : greta}
+                  src={correctAnswer ? einstein : greta}
                   alt="meme"
                 />
-                <motion.p
+                <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, transition: { duration: 1 } }}
                 >
-                  {feedback}
-                </motion.p>
+                  <p>{correctAnswer ? "Rätt svar!" : "Tyvärr, fel svar."}</p>
+                  {!correctAnswer && (
+                    <p>Det rätta svaret är: {quizData[index].correct_answer}</p>
+                  )}
+                  <p>{quizData[index].feedback}</p>
+                  <div>
+                    <p>
+                      Källa:{" "}
+                      <a target="blank" href={quizData[index].source}>
+                        {quizData[index].sourceDescription}
+                      </a>
+                    </p>
+                  </div>
+                </motion.div>
               </motion.div>
             )}
             {!displayFeedback && (

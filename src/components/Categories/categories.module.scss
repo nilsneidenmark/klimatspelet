@@ -1,7 +1,7 @@
 @import "../../styles/index.scss";
 
 .categoriesSection {
-  @include flex(row, center, center);
+  @include flex(row, flex-start, center);
   flex-wrap: wrap;
   gap: $large;
 }

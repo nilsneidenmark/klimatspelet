@@ -33,9 +33,13 @@
         margin: 0;
         border-radius: $borderRadiusSmall;
       }
-      > p {
+      > div {
         width: 50%;
-        font-size: 1.25rem;
+        // font-size: 1.25rem;
+        > div {
+          @include flex(row, flex-start, flex-start);
+          gap: $small;
+        }
       }
       > .source {
         width: 100%;
@@ -84,7 +88,7 @@
         > img {
           width: 50%;
         }
-        > p {
+        > div {
           width: 100%;
         }
       }

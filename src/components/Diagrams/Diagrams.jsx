@@ -4,15 +4,13 @@ import {
   XAxis,
   YAxis,
   Tooltip,
-  Legend,
   Line,
   AreaChart,
   Area,
   ResponsiveContainer,
   Label,
 } from "recharts";
-// import emissionsData from "../../API/Dataset1_Global CO2 Emissions from Fossil Fuels.json";
-// import temperaturesData from "../../API/Dataset2_Global Temperature Time Series.json";
+
 import sealevelData from "../../API/Dataset4_SeaLevel .json";
 import emissions from "../../API/Dataset1_GlobalCO2EmissionsfromFossilFuels.json";
 import temperatures from "../../API/Dataset2_GlobalTemperatureTimeSeries.json";

@@ -235,9 +235,15 @@ input {
   margin: 0;
   border-radius: 10px;
 }
-.question > div > .feedback > p {
+.question > div > .feedback > div {
   width: 50%;
-  font-size: 1.25rem;
+}
+.question > div > .feedback > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 .question > div > .feedback > .source {
   width: 100%;
@@ -290,7 +296,7 @@ input {
   .question > div > .feedback > img {
     width: 50%;
   }
-  .question > div > .feedback > p {
+  .question > div > .feedback > div {
     width: 100%;
   }
   .question .nextQuestion {
