@@ -36,6 +36,7 @@ body {
   font-family: var(--font);
   letter-spacing: var(--letterSpacing);
   word-spacing: var(--wordSpacing);
+  color: #eeeeee;
 }
 
 button {
@@ -60,7 +61,7 @@ main {
   margin: 0 auto;
 }
 main > section {
-  background: rgba(255, 255, 255, 0.425);
+  background: rgba(0, 0, 0, 0);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
@@ -84,7 +85,6 @@ button {
   font-size: 1rem;
 }
 button:hover {
-  background-color: #292929;
   opacity: 100%;
   cursor: pointer;
 }
@@ -205,7 +205,7 @@ input {
   gap: 0.5rem;
   position: relative;
   background-color: transparent;
-  color: black;
+  color: #eeeeee;
   min-width: 175px;
 }
 .categories:hover {

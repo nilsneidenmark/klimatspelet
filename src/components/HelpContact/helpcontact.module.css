@@ -36,6 +36,7 @@ body {
   font-family: var(--font);
   letter-spacing: var(--letterSpacing);
   word-spacing: var(--wordSpacing);
+  color: #eeeeee;
 }
 
 button {
@@ -60,7 +61,7 @@ main {
   margin: 0 auto;
 }
 main > section {
-  background: rgba(255, 255, 255, 0.425);
+  background: rgba(0, 0, 0, 0);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
@@ -84,7 +85,6 @@ button {
   font-size: 1rem;
 }
 button:hover {
-  background-color: #292929;
   opacity: 100%;
   cursor: pointer;
 }
@@ -189,43 +189,58 @@ input {
   }
 }
 .helpContact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: space-between;
-  background: rgba(255, 255, 255, 0.425);
+  background: rgba(0, 0, 0, 0);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(58, 58, 58, 0.55);
   width: 750px;
+  max-width: 750px;
   max-width: 95vw;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
   padding: 2rem;
-  gap: 4rem;
 }
-.helpContact > div {
+.helpContact > .topSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+}
+.helpContact > .contentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+.helpContact > .contentContainer > .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
   max-width: 75%;
 }
-.helpContact > div > article > h2,
-.helpContact > div > article h3 {
-  text-align: left;
+.helpContact > .contentContainer > .info > article > p {
+  margin: 0;
 }
-.helpContact > div > div > img {
-  width: 100px;
+.helpContact > .contentContainer > .info > .faq {
+  width: 100%;
 }
-.helpContact > div > div {
-  margin-top: 4rem;
-}
-.helpContact > div > div > div {
+
+.avatars {
   position: relative;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
 }
-.helpContact > div > div > div > p {
+.avatars > div > p {
   position: absolute;
   top: 0;
   right: 0;
@@ -233,69 +248,55 @@ input {
   margin-top: -15px;
   font-weight: 600;
 }
-.helpContact > div > div .bearAvatar {
+.avatars .bearAvatar {
   transform: rotate(-20deg);
 }
-.helpContact > div > div .bearAvatar > img {
+.avatars .bearAvatar > img {
   width: 100px;
 }
-.helpContact > div > div > .rabbitAvatar {
+.avatars > .rabbitAvatar {
   transform: rotate(20deg);
 }
-.helpContact > div > div > .rabbitAvatar > img {
+.avatars > .rabbitAvatar > img {
   width: 115px;
 }
-.helpContact > div > div > .rabbitAvatar > p {
+.avatars > .rabbitAvatar > p {
   left: 0;
   font-size: 2.5rem;
   margin-left: 10px;
 }
-.helpContact > div > div > .gorillaAvatar {
+.avatars > .gorillaAvatar {
   transform: rotate(-10deg);
 }
-.helpContact > div > div > .gorillaAvatar > img {
+.avatars > .gorillaAvatar > img {
   width: 85px;
-}
-
-article {
-  padding: 0.5rem 0;
-}
-
-.avatarLeft img {
-  width: 100px;
-  transform: rotate(-0.05turn);
-}
-
-.avatarMiddle img {
-  width: 90px;
-  transform: rotate(0.05turn);
-  margin: 1rem 0 auto 6rem;
-}
-
-.avatarRight img {
-  width: 80px;
-  margin: 1rem 0 auto 0.5rem;
-}
-
-.closeBTN {
-  float: right !important;
 }
 
 @media screen and (max-width: 685px) {
   .helpContact {
+    margin-top: 75px;
+  }
+  .helpContact > .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+  }
+  .helpContact > .contentContainer > .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-between;
-    gap: 0;
-    transform: translate(0%, 0%);
-    position: static;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .helpContact > div {
+    align-items: flex-start;
+    gap: 1rem;
     max-width: 100%;
+  }
+  .helpContact > .contentContainer > .info > article > p {
+    margin: 0;
+  }
+  .helpContact > .contentContainer > .info > .faq {
+    width: 100%;
   }
   .avatars {
     display: flex;

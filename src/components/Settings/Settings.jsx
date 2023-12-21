@@ -3,11 +3,12 @@ import styles from "./settings.module.scss";
 import { motion } from "framer-motion";
 import AvatarPicker from "../AvatarPicker/AvatarPicker";
 import { useSettings } from "../../context/SettingsContext";
-
+import CloseButton from "react-bootstrap/CloseButton";
 // Component for managing font settings, updates active style for clicked button and settings context for text
 const SettingsFont = () => {
-  const { active, setActive } = useSettings();
+  const { active, setActive } = useSettings(); // State for managing clicked setting, state is used to update CSS variables and for active styling
 
+  // Updates CSS variables of active setting.
   useEffect(() => {
     if (active.text.font.poppins) {
       document.documentElement.style.setProperty(
@@ -56,6 +57,7 @@ const SettingsFont = () => {
 
   return (
     <>
+      {/* Below buttons all update the active state of the clicked button to true. */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 0.75 } }}
@@ -246,7 +248,7 @@ const SettingsProfile = () => {
   );
 };
 
-export default function Settings() {
+export default function Settings({ handleClick }) {
   const [activeSetting, setActiveSetting] = useState("font");
 
   return (
@@ -257,7 +259,10 @@ export default function Settings() {
         className={styles.settingsSection}
       >
         <div>
-          <h2>Inställningar</h2>
+          <div className={styles.topSection}>
+            <h2>Inställningar</h2>
+            <CloseButton onClick={handleClick} className={styles.closeBTN} />
+          </div>
           <div className={styles.toggle}>
             <button
               className={`${styles.toggleButton} ${

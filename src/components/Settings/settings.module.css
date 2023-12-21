@@ -36,6 +36,7 @@ body {
   font-family: var(--font);
   letter-spacing: var(--letterSpacing);
   word-spacing: var(--wordSpacing);
+  color: #eeeeee;
 }
 
 button {
@@ -60,7 +61,7 @@ main {
   margin: 0 auto;
 }
 main > section {
-  background: rgba(255, 255, 255, 0.425);
+  background: rgba(0, 0, 0, 0);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
@@ -84,7 +85,6 @@ button {
   font-size: 1rem;
 }
 button:hover {
-  background-color: #292929;
   opacity: 100%;
   cursor: pointer;
 }
@@ -189,7 +189,7 @@ input {
   }
 }
 .settingsSection {
-  background: rgba(255, 255, 255, 0.425);
+  background: rgba(0, 0, 0, 0);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
@@ -199,6 +199,7 @@ input {
   justify-content: space-between;
   align-items: center;
   width: 1000px;
+  background: rgba(58, 58, 58, 0.55);
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
@@ -252,6 +253,17 @@ input {
   transform: translateX(100%);
 }
 
+.topSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.topSection > h2 {
+  text-align: center;
+  flex-grow: 1;
+}
 .active {
   opacity: 100% !important;
 }

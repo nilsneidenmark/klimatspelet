@@ -5,6 +5,7 @@ const AuthenticatedContext = createContext();
 
 // Creates a provider component
 export const AuthenticatedContextProvider = ({ children }) => {
+  // Context is used for managing logged in / logged out status.
   const [authenticated, setAuthenticated] = useState(false);
 
   return (

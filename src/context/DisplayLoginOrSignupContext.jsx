@@ -5,6 +5,7 @@ const DisplayLoginOrSignupContext = createContext();
 
 // Creates a provider component
 export const DisplayLoginOrSignupProvider = ({ children }) => {
+  // Context is used for dynamically rendering different components
   const [display, setDisplay] = useState("intro");
 
   return (

@@ -8,8 +8,10 @@ import check from "../../assets/icons/check.svg";
 import x from "../../assets/icons/x.svg";
 
 export default function Signup() {
-  const [hidePW, setHidePW] = useState(true);
-  const [hidePW2, setHidePW2] = useState(true);
+  const [hidePW, setHidePW] = useState(true); // State for showing/hiding password of first input
+  const [hidePW2, setHidePW2] = useState(true); // State for showing/hiding password of second input
+
+  // toggles the display of hide/show icon in input field and toggles between input type text/password
   function handleClick(param) {
     if (param === "pw") {
       setHidePW((prevState) => !prevState);
@@ -43,7 +45,6 @@ export default function Signup() {
           ></input>
           <img
             onClick={() => handleClick("pw")}
-            // width="24px"
             height="24px"
             src={hidePW ? eyeClosed : eyeOpen}
             alt="Show password"
@@ -74,7 +75,6 @@ export default function Signup() {
           />
           <img
             onClick={() => handleClick("repeat")}
-            // width="24px"
             height="24px"
             src={hidePW2 ? eyeClosed : eyeOpen}
             alt="Show password"

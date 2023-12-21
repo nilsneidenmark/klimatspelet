@@ -16,6 +16,7 @@ body {
   font-family: var(--font);
   letter-spacing: var(--letterSpacing);
   word-spacing: var(--wordSpacing);
+  color: $white;
 }
 
 button {
@@ -53,7 +54,7 @@ button {
   width: 125px;
   font-size: 1rem;
   &:hover {
-    background-color: $secondaryHover;
+    // background-color: $secondaryHover;
     opacity: 100%;
     cursor: pointer;
   }

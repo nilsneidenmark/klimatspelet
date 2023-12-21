@@ -5,6 +5,7 @@
   border-radius: $borderRadiusSmall;
   padding: $medium;
   max-width: 95%;
+  color: black;
   > div {
     @include flex(column, flex-start, flex-start);
     gap: $medium;

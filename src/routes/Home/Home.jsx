@@ -5,15 +5,16 @@ import Signup from "../../components/Signup/Signup";
 import { useDisplay } from "../../context/DisplayLoginOrSignupContext";
 
 export default function Home() {
-  const { display, setDisplay } = useDisplay();
+  const { display, setDisplay } = useDisplay(); // State for conditional rendering
 
-  // updates display context to conditionally render the home page depending on state
+  // updates display context to conditionally render the home page (the Intro or Signup component)
   function handleClick(type) {
     setDisplay(type);
   }
 
   return (
     <>
+      {/* The handleClick receives either login or signup as a parameter*/}
       {display === "intro" && <Intro handleClick={handleClick} />}
       {display === "login" && <Login />}
       {display === "signup" && <Signup />}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./questions.module.scss";
 import einstein from "../../assets/memes/einstein.webp";
 import greta from "../../assets/memes/greta-min.webp";
@@ -44,6 +45,7 @@ export default function Questions({ quizData }) {
   const [endQuiz, setEndQuiz] = useState(false);
   const { score, setScore } = useScore();
   const animate = useScoreAnimation(score);
+  const navigate = useNavigate();
 
   if (quizData === undefined)
     return <p>Hittade ingen fråga, pröva att ladda om sidan!</p>;
@@ -91,7 +93,12 @@ export default function Questions({ quizData }) {
             <img src={celebrate} alt="ocean icon" />
             <h3>Grattis! du har precis genomfört Världens hav 😍</h3>
             <p>Du fick {score}/10 poäng</p>
-            <button className={styles.primarybtn}>Spara och avsluta</button>
+            <button
+              onClick={() => navigate("/profile")}
+              className={styles.primarybtn}
+            >
+              Spara och avsluta
+            </button>
           </motion.div>
         ) : (
           <motion.div
