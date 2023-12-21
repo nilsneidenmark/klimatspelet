@@ -8,12 +8,12 @@ import gorillaAvatar from "../../assets/avatars/gorilla.webp";
 import CloseButton from "react-bootstrap/CloseButton";
 import Accordion from "react-bootstrap/Accordion";
 
-export default function HelpContact() {
+export default function HelpContact({ handleClick }) {
   return (
     <section className={styles.helpContact}>
       <div className={styles.topSection}>
         <h1>Hjälp & kontakt</h1>
-        <CloseButton className={styles.closeBTN} />
+        <CloseButton onClick={handleClick} className={styles.closeBTN} />
       </div>
       <div className={styles.contentContainer}>
         <div className={styles.info}>

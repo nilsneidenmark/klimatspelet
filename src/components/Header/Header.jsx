@@ -103,7 +103,7 @@ export default function Header() {
         onClose={() => setOpenSettings(false)}
       >
         <>
-          <Settings />
+          <Settings handleClick={() => setOpenSettings(false)} />
         </>
       </Modal>
       {/* Modal for displaying HelpContact component */}
@@ -116,7 +116,7 @@ export default function Header() {
         onClose={() => setOpenHelp(false)}
       >
         <>
-          <HelpContact />
+          <HelpContact handleClick={() => setOpenHelp(false)} />
         </>
       </Modal>
     </>

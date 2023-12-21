@@ -35,9 +35,6 @@
       background-color: transparent;
       z-index: 1;
     }
-    > .active {
-      // font-weight: 600;
-    }
   }
   .slideBackground {
     position: absolute;
@@ -59,7 +56,16 @@
     transform: translateX(100%);
   }
 }
-
+.topSection {
+  width: 100%;
+  @include flex(row, space-between, center);
+  > h2 {
+    text-align: center;
+    flex-grow: 1;
+  }
+  > .closeBTN {
+  }
+}
 .active {
   opacity: 100% !important;
 }

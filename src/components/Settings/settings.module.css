@@ -251,6 +251,17 @@ input {
   transform: translateX(100%);
 }
 
+.topSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.topSection > h2 {
+  text-align: center;
+  flex-grow: 1;
+}
 .active {
   opacity: 100% !important;
 }
