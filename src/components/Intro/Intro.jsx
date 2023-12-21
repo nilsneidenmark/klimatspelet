@@ -21,7 +21,7 @@ const Slideshow = ({ children }) => {
     ease: "easeOut",
   };
 
-  // starts a timer that changes the index every five seconds, index is used for displaying which slide
+  // starts a timer that changes the index every five seconds, index is used for displaying different slides
   useEffect(() => {
     const startInterval = () => {
       intervalRef.current = setInterval(() => {

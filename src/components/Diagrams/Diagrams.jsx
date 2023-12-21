@@ -15,6 +15,10 @@ import sealevelData from "../../API/Dataset4_SeaLevel .json";
 import emissions from "../../API/Dataset1_GlobalCO2EmissionsfromFossilFuels.json";
 import temperatures from "../../API/Dataset2_GlobalTemperatureTimeSeries.json";
 
+// Recharts Diagram components using JSON data
+// Each diagram uses a responsive container
+
+// Areachart
 const SeaLevel = () => {
   return (
     <>
@@ -61,23 +65,18 @@ const SeaLevel = () => {
             fillOpacity={1}
             fill="url(#colorUv)"
           />
-          {/* <Area
-        type="monotone"
-        dataKey="GMSL uncertainty"
-        stroke="#82ca9d"
-        fillOpacity={1}
-        fill="url(#colorPv)"
-      /> */}
         </AreaChart>
       </ResponsiveContainer>
     </>
   );
 };
 
+// Linechart
 const GlobalTemperatures = () => {
   // reverses array to show oldest year first instead of last
   const array = temperatures.slice();
   const reversedArray = array.reverse();
+  //
   return (
     <>
       <h3>Global temperaturökning</h3>
@@ -125,6 +124,7 @@ const GlobalTemperatures = () => {
   );
 };
 
+// Lineachart
 const Co2Emissions = () => {
   return (
     <>

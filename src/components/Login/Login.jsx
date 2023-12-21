@@ -7,9 +7,10 @@ import { useAuthenticated } from "../../context/AuthenticatedContext";
 
 export default function Login() {
   const navigate = useNavigate();
-  const { authenticated, setAuthenticated } = useAuthenticated();
-  const { setDisplay } = useDisplay();
+  const { authenticated, setAuthenticated } = useAuthenticated(); // State for logged in status
+  const { setDisplay } = useDisplay(); /// State for conditional rendering
 
+  // on login submit, authenticates the user and redirects to profile page and sets avatar to header.
   function handleSubmit(e) {
     e.preventDefault();
     setAuthenticated(true);

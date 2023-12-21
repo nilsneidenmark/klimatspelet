@@ -9,6 +9,7 @@ import avatarRabbit from "../../assets/avatars/rabbit_60x60.webp";
 import avatarWalrus from "../../assets/avatars/walrus_60x60.webp";
 import styles from "./avatarpicker.module.scss";
 
+// Component for the avatar picker used in settings and signup form
 export default function AvatarPicker() {
   const avatars = [
     avatarBear,
@@ -20,6 +21,7 @@ export default function AvatarPicker() {
     avatarGreen,
     avatarPink,
   ];
+  // state to manage active styling
   const [active, setActive] = useState(0);
 
   function handleClick(index) {

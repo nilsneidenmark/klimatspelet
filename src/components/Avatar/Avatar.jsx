@@ -4,6 +4,8 @@ import styles from "./avatar.module.scss";
 import { useScore } from "../../context/ScoreContext";
 import { useScoreAnimation } from "../../hooks/useScoreAnimation";
 
+// component for the avatar menu when clicked toggles the Drawer component menu through props
+// also dynamically displays the score from context
 export default function Avatar({ handleShow }) {
   const { score } = useScore();
   const animate = useScoreAnimation(score);

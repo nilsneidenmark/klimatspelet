@@ -5,6 +5,7 @@ const ScoreContext = createContext();
 
 // Creates a provider component
 export const ScoreContextProvider = ({ children }) => {
+  // Context is used for the quiz score
   const [score, setScore] = useState(0);
 
   return (

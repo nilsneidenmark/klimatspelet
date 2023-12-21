@@ -5,6 +5,7 @@ const SettingsContext = createContext();
 
 // Creates a provider component
 export const SettingsProvider = ({ children }) => {
+  // Context is used for managing the different font settings
   const [active, setActive] = useState({
     text: {
       font: { poppins: true, roboto: false },

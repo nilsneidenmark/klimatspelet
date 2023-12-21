@@ -6,8 +6,9 @@ import { useSettings } from "../../context/SettingsContext";
 
 // Component for managing font settings, updates active style for clicked button and settings context for text
 const SettingsFont = () => {
-  const { active, setActive } = useSettings();
+  const { active, setActive } = useSettings(); // State for managing clicked setting, state is used to update CSS variables and for active styling
 
+  // Updates CSS variables of active setting.
   useEffect(() => {
     if (active.text.font.poppins) {
       document.documentElement.style.setProperty(
@@ -56,6 +57,7 @@ const SettingsFont = () => {
 
   return (
     <>
+      {/* Below buttons all update the active state of the clicked button to true. */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 0.75 } }}
