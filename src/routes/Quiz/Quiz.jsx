@@ -12,7 +12,6 @@ export default function Quiz() {
         <h1>{quizData.category.name}</h1>
       </div>
       <Questions quizData={quizData.questions} />
-      <button>Spara och avsluta</button>
     </section>
   );
 }

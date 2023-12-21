@@ -84,7 +84,6 @@ button {
   font-size: 1rem;
 }
 button:hover {
-  background-color: #292929;
   opacity: 100%;
   cursor: pointer;
 }

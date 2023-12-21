@@ -84,7 +84,6 @@ button {
   font-size: 1rem;
 }
 button:hover {
-  background-color: #292929;
   opacity: 100%;
   cursor: pointer;
 }
@@ -193,22 +192,18 @@ input {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .card {
-  margin: 0 2rem;
+  flex: 1 1 160px;
+  background-color: green;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 .card:hover {
   opacity: 50%;
-}
-
-h3 {
-  text-align: center;
-}
-
-img {
-  width: 150px;
-  margin: 0 auto 2rem auto;
-  display: block;
+  cursor: pointer;
 }/*# sourceMappingURL=services.module.css.map */
