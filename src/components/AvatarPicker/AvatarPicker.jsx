@@ -24,6 +24,7 @@ export default function AvatarPicker() {
   // state to manage active styling
   const [active, setActive] = useState(0);
 
+  // updates active avatar for styling
   function handleClick(index) {
     setActive(index);
     event.preventDefault();

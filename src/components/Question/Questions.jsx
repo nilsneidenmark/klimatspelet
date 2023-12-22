@@ -14,13 +14,16 @@ import { motion } from "framer-motion";
 import { useScore } from "../../context/ScoreContext";
 import { useScoreAnimation } from "../../hooks/useScoreAnimation";
 
+// component to render different media types depending on whats in the quizData.json
 const Media = ({ media }) => {
   let item = "";
+  // loops over the types of the media attribute and saves the one that is not false.
   for (let type in media) {
     if (media[type] != false) {
       item = media[type];
     }
   }
+  // Checks the media type and renders either different diagrams or the podcast
   switch (item) {
     case "emissions":
       return <Co2Emissions />;
