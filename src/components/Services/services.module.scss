@@ -10,13 +10,52 @@
 }
 
 .card {
+  position: relative;
+  width: 250px;
+  height: 200px;
   flex: 1 1 160px;
-  background-color: green;
-  padding: $medium;
+  color: white;
+  border: 3px red solid;
   border-radius: $small;
+}
+
+.cardOne::before {
+  content: "";
+  background-image: url("../../assets/services/arktis.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
+.cardTwo {
+  background-image: url("../../assets/services/nasa.jpg");
+}
+
+.cardThree {
+  background-image: url("../../assets/services/arktis.jpg");
+}
+
+.cardFour {
+  background-image: url("../../assets/services/arktis.jpg");
+}
+
+.cardFive {
+  background-image: url("../../assets/services/arktis.jpg");
+}
+
+.cardSex {
+  background-image: url("../../assets/services/arktis.jpg");
 }
 
 .card:hover {
   opacity: $opacity;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
