@@ -195,6 +195,7 @@ input {
   align-items: flex-start;
   gap: 1rem;
   max-width: 600px;
+  text-shadow: 1px 1px 5px #000000;
 }
 .login > div {
   width: 100%;

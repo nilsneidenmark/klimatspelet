@@ -2,6 +2,9 @@
 
 .about {
   gap: $medium;
+  h2 {
+    text-shadow: $textShadow;
+  }
   > div {
     max-width: 650px;
     background-color: $white;

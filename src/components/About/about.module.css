@@ -191,6 +191,9 @@ input {
 .about {
   gap: 1rem;
 }
+.about h2 {
+  text-shadow: 1px 1px 5px #000000;
+}
 .about > div {
   max-width: 650px;
   background-color: #eeeeee;

@@ -10,38 +10,38 @@ import { CardActionArea } from "@mui/material";
 
 export default function Services() {
   return (
-    <section>
+    <section className={styles.services}>
       <h2>Rekomenderade tjänster</h2>
-      <div className={styles.services}>
-         <div className={styles.card}>
+      <div>
+        <div className={styles.card}>
           <h3>Klimatkalkylatorn</h3>
           <p>Du kan beräkna din miljöpåverkan här</p>
-         </div>
+        </div>
 
-         <div className={styles.card}>
+        <div className={styles.card}>
           <h3>NASA ClimateKids</h3>
           <p>Lär dig mer om klimatet genom spel på NASA ClimateKids.</p>
-         </div>
+        </div>
 
-         <div className={styles.card}>
+        <div className={styles.card}>
           <h3>NASA ClimateKids</h3>
           <p>Lär dig mer om klimatet genom spel på NASA ClimateKids.</p>
-         </div>
+        </div>
 
-         <div className={styles.card}>
+        <div className={styles.card}>
           <h3>NASA ClimateKids</h3>
           <p>Lär dig mer om klimatet genom spel på NASA ClimateKids.</p>
-         </div>
+        </div>
 
-         <div className={styles.card}>
+        <div className={styles.card}>
           <h3>NASA ClimateKids</h3>
           <p>Lär dig mer om klimatet genom spel på NASA ClimateKids.</p>
-         </div>
+        </div>
 
-         <div className={styles.card}>
+        <div className={styles.card}>
           <h3>NASA ClimateKids</h3>
           <p>Lär dig mer om klimatet genom spel på NASA ClimateKids.</p>
-         </div>
+        </div>
       </div>
     </section>
   );

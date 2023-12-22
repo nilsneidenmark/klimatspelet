@@ -263,11 +263,12 @@ header > div > div > :first-child {
 .drawer > ul > li > button {
   background-color: transparent;
   width: auto;
+  text-shadow: 1px 1px 5px #000000;
   font-size: 1.25rem;
   color: #eeeeee;
 }
 .drawer > ul > li:hover {
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
 }
 

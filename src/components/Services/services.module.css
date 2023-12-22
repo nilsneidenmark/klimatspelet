@@ -189,10 +189,13 @@ input {
   }
 }
 .services {
+  text-shadow: 1px 1px 5px #000000;
+}
+.services > div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
 }

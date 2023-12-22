@@ -82,9 +82,9 @@ const Slideshow = ({ children }) => {
 const Slide = ({ header, text, img }) => {
   return (
     <>
-      <h1>{header}</h1>
       <div className={styles.container}>
         <img src={img} width="300px" height="300px" />
+        <h1>{header}</h1>
         <p>{text}</p>
       </div>
     </>

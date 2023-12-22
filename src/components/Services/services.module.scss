@@ -1,19 +1,22 @@
 @import "../../styles/index.scss";
 
 .services {
-    @include flex(row, center, center);
+  text-shadow: $textShadow;
+  > div {
+    @include flex(row, flex-start, flex-start);
     gap: $medium;
     flex-wrap: wrap;
+  }
 }
 
 .card {
-    flex: 1 1 160px;
-    background-color: green;
-    padding: $medium;
-    border-radius: $small;
+  flex: 1 1 160px;
+  background-color: green;
+  padding: $medium;
+  border-radius: $small;
 }
 
 .card:hover {
-    opacity: $opacity;
-    cursor: pointer;
+  opacity: $opacity;
+  cursor: pointer;
 }
