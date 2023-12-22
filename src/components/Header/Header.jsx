@@ -15,7 +15,7 @@ import HelpContact from "../HelpContact/HelpContact";
 
 export default function Header() {
   const { display, setDisplay } = useDisplay(); // State for conditional rendering
-  const { authenticated } = useAuthenticated(); // checks if user is authenticated
+  const { authenticated, setAuthenticated } = useAuthenticated(); // checks if user is authenticated
   const [openDrawer, setOpenDrawer] = useState(false); // for opening/closing the drawer menu
   const [openSettings, setOpenSettings] = useState(false); // state for opening/closing settings
   const [openHelp, setOpenHelp] = useState(false); // state for opening/closing help section
@@ -32,6 +32,14 @@ export default function Header() {
       setDisplay("intro");
       navigate("/");
     }
+  }
+
+  // function that logs out the user and redirects to homepage
+  function handleLogout() {
+    setDisplay("intro");
+    setAuthenticated(false);
+    setOpenDrawer(false);
+    navigate("/");
   }
 
   return (
@@ -88,7 +96,7 @@ export default function Header() {
             </li>
             <li>
               <img src={logout} alt="logout" />
-              <button>Logga ut</button>
+              <button onClick={() => handleLogout()}>Logga ut</button>
             </li>
           </ul>
         </div>
