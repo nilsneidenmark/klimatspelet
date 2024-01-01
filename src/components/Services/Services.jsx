@@ -2,7 +2,7 @@ import styles from "./services.module.scss";
 
 export default function Services() {
   return (
-    <section>
+    <section className={styles.services}>
       <h2>Rekomenderade tjänster</h2>
       <p>Vill du lära dig mer om klimatförändringarna och dess påverkan? 
         Klicka då på rutorna nedanför för att komma till andra sidor med, spel, tester och spännande fakta.</p>
