@@ -200,8 +200,7 @@ input {
 .card {
   padding: 1rem;
   position: relative;
-  width: 250px;
-  height: 200px;
+  height: 250px;
   flex: 1 1 160px;
   color: white;
   position: relative;
