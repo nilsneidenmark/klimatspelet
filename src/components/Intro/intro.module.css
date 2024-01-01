@@ -214,7 +214,9 @@ input {
   background-color: #eeeeee;
   border-radius: 2rem;
   width: 100%;
-  padding: 0.5rem;
+  gap: 0.5rem;
+  padding: 1rem;
+  color: black;
 }
 .intro > div:first-child > .container > img {
   max-width: 100%;
@@ -244,4 +246,8 @@ input {
 }
 .intro .circles > .active {
   opacity: 100%;
+}
+
+h1 {
+  color: black;
 }/*# sourceMappingURL=intro.module.css.map */

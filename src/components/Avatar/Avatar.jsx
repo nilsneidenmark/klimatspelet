@@ -1,5 +1,5 @@
 import avatarBear from "../../assets/avatars/bear_60x60.webp";
-import arrow from "../../assets/icons/chevron-down.svg";
+import hamburger from "../../assets/icons/menu.svg";
 import styles from "./avatar.module.scss";
 import { useScore } from "../../context/ScoreContext";
 import { useScoreAnimation } from "../../hooks/useScoreAnimation";
@@ -24,8 +24,8 @@ export default function Avatar({ handleShow }) {
       </div>
 
       <img width="60px" src={avatarBear} alt="avatar" />
-      <div className={styles.arrow}>
-        <img src={arrow} alt="down arrow" />
+      <div className={styles.menu}>
+        <img src={hamburger} alt="menu" />
       </div>
     </div>
   );

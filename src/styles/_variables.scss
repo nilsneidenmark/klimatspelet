@@ -32,6 +32,7 @@ $XXLarge: 6rem;
 // Borders and shadows
 $borderRadiusLarge: 20px;
 $borderRadiusSmall: 10px;
+$textShadow: 1px 1px 5px #000000;
 
 // Mixins
 @mixin flex($direction, $justify, $align) {

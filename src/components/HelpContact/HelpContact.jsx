@@ -3,10 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import bearAvatar from "../../assets/avatars/bear.webp";
 import rabbitAvatar from "../../assets/avatars/rabbit.webp";
 import gorillaAvatar from "../../assets/avatars/gorilla.webp";
-
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 // Imports for icons from React bootstrap
 import CloseButton from "react-bootstrap/CloseButton";
-import Accordion from "react-bootstrap/Accordion";
+// import Accordion from "react-bootstrap/Accordion";
 
 export default function HelpContact({ handleClick }) {
   return (
@@ -26,41 +29,66 @@ export default function HelpContact({ handleClick }) {
           </article>
           <article className={styles.faq}>
             <h3>Vanliga frågor</h3>
-            <Accordion className={styles.accordion}>
-              <Accordion.Item eventKey="0">
-                <Accordion.Header>Hur byter jag avatar?</Accordion.Header>
-                <Accordion.Body>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <p>Hur byter jag avatar?</p>
+              </AccordionSummary>
+              <AccordionDetails>
+                <p>
                   En meny visas om du trycker på din avatar i höger hörn. Under
                   inställningar finns knappen profilinställning hittar du olika
                   avatarer.
-                </Accordion.Body>
-              </Accordion.Item>
-
-              <Accordion.Item eventKey="1">
-                <Accordion.Header>Var ser jag mina poäng?</Accordion.Header>
-                <Accordion.Body>
+                </p>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <p>Var ser jag mina poäng?</p>
+              </AccordionSummary>
+              <AccordionDetails>
+                <p>
                   Du ser dina poäng uppe till höger bredvid din avatar. Du kan
                   även se dina poäng i topplistan på “mina sidor”.
-                </Accordion.Body>
-              </Accordion.Item>
-
-              <Accordion.Item eventKey="2">
-                <Accordion.Header>Kan jag byta lösenord?</Accordion.Header>
-                <Accordion.Body>
+                </p>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <p>Kan jag byta lösenord?</p>
+              </AccordionSummary>
+              <AccordionDetails>
+                <p>
                   Du kan byta lösenord på inställningar. Detta hittar du under
                   menyn i din avatar.
-                </Accordion.Body>
-              </Accordion.Item>
-
-              <Accordion.Item eventKey="3">
-                <Accordion.Header>
-                  Kan jag göra om ett quiz och få bättre poäng?
-                </Accordion.Header>
-                <Accordion.Body>
+                </p>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <p> Kan jag göra om ett quiz och få bättre poäng?</p>
+              </AccordionSummary>
+              <AccordionDetails>
+                <p>
                   Ja, det kan du. Du kan göra om ett quiz hur många gånger du
                   vill.
-                </Accordion.Body>
-              </Accordion.Item>
+                </p>
+              </AccordionDetails>
             </Accordion>
           </article>
 

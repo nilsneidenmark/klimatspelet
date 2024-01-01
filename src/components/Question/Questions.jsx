@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./questions.module.scss";
 import einstein from "../../assets/memes/einstein.webp";
@@ -14,13 +14,16 @@ import { motion } from "framer-motion";
 import { useScore } from "../../context/ScoreContext";
 import { useScoreAnimation } from "../../hooks/useScoreAnimation";
 
+// component to render different media types depending on whats in the quizData.json
 const Media = ({ media }) => {
   let item = "";
+  // loops over the types of the media attribute and saves the one that is not false.
   for (let type in media) {
     if (media[type] != false) {
       item = media[type];
     }
   }
+  // Checks the media type and renders either different diagrams or the podcast
   switch (item) {
     case "emissions":
       return <Co2Emissions />;
@@ -46,12 +49,17 @@ export default function Questions({ quizData }) {
   const { score, setScore } = useScore();
   const animate = useScoreAnimation(score);
   const navigate = useNavigate();
+  const ref = useRef(); // to track the top section for scroll
 
   if (quizData === undefined)
     return <p>Hittade ingen fråga, pröva att ladda om sidan!</p>;
 
   function handleclick(answer) {
     setDisplayFeedback(true);
+    // scrolls the user to the top of the seciton
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
     if (answer === "incorrect") {
       setCorrectAnswer(false);
       if (score != 0) {
@@ -83,6 +91,7 @@ export default function Questions({ quizData }) {
         className={styles.question}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 1 } }}
+        ref={ref}
       >
         {endQuiz ? (
           <motion.div

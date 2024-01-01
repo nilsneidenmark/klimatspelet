@@ -6,60 +6,65 @@ import buildings from "../../assets/categories/category_buildings_125x125.webp";
 import glacier from "../../assets/categories/category_glacier_125x125.webp";
 import desert from "../../assets/categories/category_desert_125x125.webp";
 import { useNavigate } from "react-router-dom";
-import { useState } from 'react';
+import { useState } from "react";
 
-import CategoryOverlay from "../CategoriesOverlay/CategoriesOverlay"
+import CategoryOverlay from "../CategoriesOverlay/CategoriesOverlay";
 
 export default function Categories() {
   const navigate = useNavigate();
-  const [buttonPopup, setButtonPopup] = useState(false)
-  
+  const [buttonPopup, setButtonPopup] = useState(false);
+
   return (
-    <section>
+    <section className={styles.categoriesSection}>
       <CategoryOverlay trigger={buttonPopup} setTrigger={setButtonPopup}>
-          <button onClick={() => navigate("/quiz")} className={styles.primarybtn}>Börja spela</button>
+        <button onClick={() => navigate("/quiz")} className={styles.primarybtn}>
+          Börja spela
+        </button>
       </CategoryOverlay>
       <h1>Kategorier</h1>
-      <div className={styles.categoriesSection}>
-        <button onClick={() => setButtonPopup(true)} className={styles.categories}>
+      <div className={styles.categoriesContainer}>
+        <button
+          onClick={() => setButtonPopup(true)}
+          className={styles.categories}
+        >
           <img className={styles.active} src={ocean} alt="category" />
           <p>Världens hav</p>
-          <small>0/12</small>
+          <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={mangrove} alt="category" />
           <p>Mangrovträsk</p>
           <p className={styles.comingSoon}>Kommer snart</p>
-          <small>0/12</small>
+          <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={pineTree} alt="category" />
           <p>Skogen</p>
           <p className={styles.comingSoon}>Kommer snart</p>
-          <small>0/12</small>
+          <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={buildings} alt="category" />
           <p>Människan</p>
           <p className={styles.comingSoon}>Kommer snart</p>
-          <small>0/12</small>
+          <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={glacier} alt="category" />
           <p>Glaciärer</p>
           <p className={styles.comingSoon}>Kommer snart</p>
-          <small>0/12</small>
+          <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={desert} alt="category" />
           <p>Öknen</p>
           <p className={styles.comingSoon}>Kommer snart</p>
-          <small>0/12</small>
+          <small>0/10</small>
         </button>
       </div>
     </section>

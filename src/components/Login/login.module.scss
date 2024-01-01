@@ -4,6 +4,7 @@
   @include flex(column, center, flex-start);
   gap: $medium;
   max-width: 600px;
+  text-shadow: $textShadow;
   > div {
     width: 100%;
     @include flex(row, space-between, flex-start);

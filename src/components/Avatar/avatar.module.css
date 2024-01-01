@@ -232,7 +232,7 @@ input {
 .avatar > img:hover {
   transform: scale(1.1);
 }
-.avatar > .arrow {
+.avatar > .menu {
   background-color: #353535;
   border-radius: 50%;
   margin: 0;
@@ -248,10 +248,10 @@ input {
   bottom: 5px;
   z-index: 2;
 }
-.avatar > .arrow > img {
-  width: 25px;
+.avatar > .menu > img {
+  width: 20px;
   margin: 0 auto;
 }
-.avatar > .arrow > img > svg {
+.avatar > .menu > img > svg {
   opacity: 100%;
 }/*# sourceMappingURL=avatar.module.css.map */

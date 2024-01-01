@@ -1,18 +1,23 @@
 @import "../../styles/index.scss";
 
 .categoriesSection {
-  @include flex(row, flex-start, center);
-  flex-wrap: wrap;
-  gap: $large;
+  > h1 {
+    color: $white;
+    text-shadow: $textShadow;
+  }
+  > .categoriesContainer {
+    @include flex(row, flex-start, center);
+    flex-wrap: wrap;
+    gap: $large;
+  }
 }
-
 .categories {
   @include flex(column, center, center);
   gap: $small;
   position: relative;
   background-color: transparent;
-  color: $white;
   min-width: 175px;
+  text-shadow: $textShadow;
   &:hover {
     background-color: transparent;
   }

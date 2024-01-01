@@ -197,6 +197,7 @@ input {
   gap: 1rem;
   width: 100%;
   max-width: 500px;
+  text-shadow: 1px 1px 5px #000000;
 }
 .leaderBoard > .myPlace > p {
   font-size: 3rem;

@@ -190,6 +190,7 @@ input {
 }
 .signup {
   max-width: 600px;
+  text-shadow: 1px 1px 5px #000000;
 }
 .signup > form > div {
   width: 100%;

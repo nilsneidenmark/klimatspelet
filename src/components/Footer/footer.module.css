@@ -218,6 +218,7 @@ footer > div > ul > li {
   padding: 0.25rem;
   cursor: pointer;
   color: #eeeeee;
+  text-shadow: 1px 1px 5px #000000;
 }
 
 @media screen and (max-width: 710px) {
