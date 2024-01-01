@@ -7,45 +7,52 @@
 }
 
 .card {
+    padding: $medium;
     position: relative; 
     width: 250px;
     height: 200px;
     flex: 1 1 160px;
     color: white;
-    border: 3px red solid;
-    border-radius: $small;
+    //border-radius: $small;
+    position: relative;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
 }
 
-
-.cardOne::before {
+.card::before {
     content: "";
-    background-image: url('../../assets/services/arktis.jpg');
     background-size: cover;
     position: absolute;
+    z-index: -999;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
-.cardTwo {
+
+.cardOne::before {
+    background-image: url('../../assets/services/arktis.jpg');
+    
+}
+
+.cardTwo::before {
     background-image: url('../../assets/services/nasa.jpg');
 } 
 
-.cardThree {
+.cardThree::before {
     background-image: url('../../assets/services/arktis.jpg');
 }
 
-.cardFour {
+.cardFour::before {
     background-image: url('../../assets/services/arktis.jpg');
 }
 
-.cardFive {
+.cardFive::before {
     background-image: url('../../assets/services/arktis.jpg');
 }
 
-.cardSex {
+.cardSex::before {
     background-image: url('../../assets/services/arktis.jpg');
 }
 
@@ -57,4 +64,6 @@
 
 a {
     text-decoration: none;
+    color: $white;
+    text-shadow: 1px 1px 2px black;
 }

@@ -198,13 +198,59 @@ input {
 }
 
 .card {
-  flex: 1 1 160px;
-  background-color: green;
   padding: 1rem;
-  border-radius: 0.5rem;
+  position: relative;
+  width: 250px;
+  height: 200px;
+  flex: 1 1 160px;
+  color: white;
+  position: relative;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
+}
+
+.card::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  z-index: -999;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.cardOne::before {
+  background-image: url("../../assets/services/arktis.jpg");
+}
+
+.cardTwo::before {
+  background-image: url("../../assets/services/nasa.jpg");
+}
+
+.cardThree::before {
+  background-image: url("../../assets/services/arktis.jpg");
+}
+
+.cardFour::before {
+  background-image: url("../../assets/services/arktis.jpg");
+}
+
+.cardFive::before {
+  background-image: url("../../assets/services/arktis.jpg");
+}
+
+.cardSex::before {
+  background-image: url("../../assets/services/arktis.jpg");
 }
 
 .card:hover {
   opacity: 50%;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #eeeeee;
+  text-shadow: 1px 1px 2px black;
 }/*# sourceMappingURL=services.module.css.map */
