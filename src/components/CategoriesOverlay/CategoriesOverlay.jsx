@@ -10,9 +10,9 @@ export default function CategoryOverlay(props) {
       <CloseButton className={styles.closeBTN} onClick={() => props.setTrigger(false)}/>
       <img src={ocean} alt="category" className={styles.categoryIcon}/>
         <h2>Världens hav</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur excepturi 
-              laborum aliquid nostrum doloribus a illum, provident autem ex dolores rem laudantium odio 
-              aspernatur voluptates animi vel perspiciatis labore dolore?
+          <p>Havet spelar en stor roll när det kommer till klimatförändingarna. 
+            En stor del av den globala uppvärmningen samlas i havet och vattentemperaturerna stiger. 
+            Även havsnivån ökar när isar och glaciärer smälter. Lär dig mer om klimatförändringar i quizzet!
           </p>
         { props.children }
       </div>
