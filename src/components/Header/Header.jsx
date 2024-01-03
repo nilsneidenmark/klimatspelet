@@ -12,6 +12,7 @@ import settings from "../../assets/icons/settings.svg";
 import Modal from "@mui/material/Modal";
 import Settings from "../Settings/Settings";
 import HelpContact from "../HelpContact/HelpContact";
+import logo from "../../assets/logo/logotyp_minst.png"
 
 export default function Header() {
   const { display, setDisplay } = useDisplay(); // State for conditional rendering
@@ -47,7 +48,7 @@ export default function Header() {
       {/* Shows avatar if user is authenticated otherwise login/signup buttons */}
       <header>
         <div>
-          <button onClick={handleClick}>EcoExplorer</button>
+          <button onClick={handleClick}><img src={logo} alt="logotype for EcoExplorer"/></button>
           {display === "avatar" ? (
             <Avatar handleShow={handleShow} />
           ) : (

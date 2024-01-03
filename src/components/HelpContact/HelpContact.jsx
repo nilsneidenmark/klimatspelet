@@ -1,15 +1,13 @@
 import styles from "./helpcontact.module.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import bearAvatar from "../../assets/avatars/bear.webp";
-import rabbitAvatar from "../../assets/avatars/rabbit.webp";
-import gorillaAvatar from "../../assets/avatars/gorilla.webp";
+import avatarOne from "../../assets/avatars/bear.webp";
+import avatarTwo from "../../assets/avatars/rabbit.webp";
+import avatarThree from "../../assets/avatars/gorilla.webp";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-// Imports for icons from React bootstrap
 import CloseButton from "react-bootstrap/CloseButton";
-// import Accordion from "react-bootstrap/Accordion";
 
 export default function HelpContact({ handleClick }) {
   return (
@@ -102,16 +100,16 @@ export default function HelpContact({ handleClick }) {
         </div>
 
         <div className={styles.avatars}>
-          <div className={styles.bearAvatar}>
-            <img src={bearAvatar} alt="Bear avatar" />
+          <div className={styles.avatarOne}>
+            <img src={avatarOne} alt="Bear avatar" />
             <p>???</p>
           </div>
-          <div className={styles.rabbitAvatar}>
-            <img src={rabbitAvatar} alt="Rabbit avatar" />
+          <div className={styles.avatarTwo}>
+            <img src={avatarTwo} alt="Rabbit avatar" />
             <p>?</p>
           </div>
-          <div className={styles.gorillaAvatar}>
-            <img src={gorillaAvatar} alt="Gorilla avatar" />
+          <div className={styles.avatarThree}>
+            <img src={avatarThree} alt="Gorilla avatar" />
             <p>??</p>
           </div>
         </div>

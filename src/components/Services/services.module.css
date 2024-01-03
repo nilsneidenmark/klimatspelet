@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
 :root {
   --font: "Poppins", serif;
@@ -189,64 +190,68 @@ input {
   }
 }
 .services {
-  text-shadow: 1px 1px 5px #000000;
-}
-.services > div {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  text-shadow: 2px 2px 5px black;
 }
 
 .card {
+  padding: 1rem;
   position: relative;
-  width: 250px;
-  height: 200px;
+  height: 250px;
   flex: 1 1 160px;
-  color: white;
-  border: 3px red solid;
-  border-radius: 0.5rem;
+  position: relative;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
 }
 
-.cardOne::before {
+.card::before {
   content: "";
-  background-image: url("../../assets/services/arktis.jpg");
   background-size: cover;
   position: absolute;
+  z-index: -999;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
-.cardTwo {
-  background-image: url("../../assets/services/nasa.jpg");
+.cardOne::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/services/klimatkalkylatorn.webp");
 }
 
-.cardThree {
-  background-image: url("../../assets/services/arktis.jpg");
+.cardTwo::before {
+  background-image: url("../../assets/services/nasa.webp");
 }
 
-.cardFour {
-  background-image: url("../../assets/services/arktis.jpg");
+.cardThree::before {
+  background-image: url("../../assets/services/golfströmmen.webp");
 }
 
-.cardFive {
-  background-image: url("../../assets/services/arktis.jpg");
+.cardFour::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/services/klimatflyktingar.webp");
 }
 
-.cardSex {
-  background-image: url("../../assets/services/arktis.jpg");
+.cardFive::before {
+  background-image: url("../../assets/services/arktis.webp");
+}
+
+.cardSex::before {
+  background-image: url("../../assets/services/sverigesklimatutsläpp.webp");
 }
 
 .card:hover {
   opacity: 50%;
+  box-shadow: 2px 2px 5px rgba(212, 212, 212, 0.788);
   cursor: pointer;
 }
 
-a {
+.serviceLink {
   text-decoration: none;
+  color: #eeeeee;
+  text-shadow: 2px 2px 5px black;
 }/*# sourceMappingURL=services.module.css.map */

@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./questions.module.scss";
 import einstein from "../../assets/memes/einstein.webp";
@@ -50,7 +50,28 @@ export default function Questions({ quizData }) {
   const animate = useScoreAnimation(score);
   const navigate = useNavigate();
   const ref = useRef(); // to track the top section for scroll
+  const [shuffledAnswers, setShuffledAnswers] = useState([]);
 
+  // creates an array of the incorrect and correct answers then randomizes the order of the array
+  useEffect(() => {
+    if (quizData && quizData[index]) {
+      const answers = [
+        ...quizData[index].incorrect_answers,
+        quizData[index].correct_answer,
+      ];
+      const shuffled = shuffleArray(answers);
+      setShuffledAnswers(shuffled);
+    }
+  }, [index]);
+
+  // randomizes the order of the array from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
   if (quizData === undefined)
     return <p>Hittade ingen fråga, pröva att ladda om sidan!</p>;
 
@@ -70,7 +91,7 @@ export default function Questions({ quizData }) {
       setScore((prevScore) => prevScore + 1);
     }
   }
-
+  // Removes the feedback dialog and checks if there are more questions in the quiz or not. If not then end the quiz otherwise increment the question by one.
   function nextQuestion() {
     setDisplayFeedback(false);
 
@@ -170,30 +191,22 @@ export default function Questions({ quizData }) {
             )}
             {!displayFeedback && (
               <div>
-                <button
-                  className={styles.primarybtn}
-                  onClick={() => handleclick("incorrect")}
-                >
-                  {quizData[index].incorrect_answers[0]}
-                </button>
-                <button
-                  className={styles.primarybtn}
-                  onClick={() => handleclick("incorrect")}
-                >
-                  {quizData[index].incorrect_answers[1]}
-                </button>
-                <button
-                  className={styles.primarybtn}
-                  onClick={() => handleclick("incorrect")}
-                >
-                  {quizData[index].incorrect_answers[2]}
-                </button>
-                <button
-                  className={styles.primarybtn}
-                  onClick={() => handleclick("correct")}
-                >
-                  {quizData[index].correct_answer}
-                </button>
+                {/* renders the shuffled array answers as buttons */}
+                {shuffledAnswers.map((answer, id) => (
+                  <button
+                    key={id}
+                    className={styles.primarybtn}
+                    onClick={() =>
+                      handleclick(
+                        answer === quizData[index].correct_answer
+                          ? "correct"
+                          : "incorrect"
+                      )
+                    }
+                  >
+                    {answer}
+                  </button>
+                ))}
               </div>
             )}
             {displayFeedback && (
