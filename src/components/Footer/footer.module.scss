@@ -16,11 +16,11 @@ footer {
     > ul {
       list-style: none;
       > li {
-        text-decoration: underline;
         padding: $Xsmall;
         cursor: pointer;
         color: $white;
         text-shadow: $textShadow;
+        
       }
     }
   }

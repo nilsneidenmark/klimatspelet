@@ -46,7 +46,7 @@
 .avatars {
   position: relative;
   @include flex(column, center, center);
-  gap: $XLarge;
+  gap: $medium;
   > div > p {
     position: absolute;
     top: 0;
@@ -55,13 +55,13 @@
     margin-top: -15px;
     font-weight: 600;
   }
-  .bearAvatar {
+  .avatarOne {
     transform: rotate(-20deg);
     > img {
       width: 100px;
     }
   }
-  > .rabbitAvatar {
+  > .avatarTwo {
     transform: rotate(20deg);
     > img {
       width: 115px;
@@ -72,7 +72,7 @@
       margin-left: 10px;
     }
   }
-  > .gorillaAvatar {
+  > .avatarThree {
     transform: rotate(-10deg);
     > img {
       width: 85px;
@@ -105,6 +105,5 @@
 
   .avatars {
     @include flex(row, space-around, space-between);
-    margin-top: 0;
   }
 }

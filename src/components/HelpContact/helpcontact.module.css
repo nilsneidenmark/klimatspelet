@@ -235,8 +235,11 @@ input {
 .helpContact > .contentContainer > .info > .faq {
   width: 100%;
 }
-.helpContact > .contentContainer > .info > .faq > .accordion {
-  border: 2px solid red;
+.helpContact > .contentContainer > .info > .faq > h3 {
+  text-shadow: 1px 1px 5px #000000;
+}
+.helpContact > .contentContainer > .info > .faq > * {
+  text-shadow: none;
 }
 
 .avatars {
@@ -245,7 +248,7 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 1rem;
 }
 .avatars > div > p {
   position: absolute;
@@ -255,27 +258,27 @@ input {
   margin-top: -15px;
   font-weight: 600;
 }
-.avatars .bearAvatar {
+.avatars .avatarOne {
   transform: rotate(-20deg);
 }
-.avatars .bearAvatar > img {
+.avatars .avatarOne > img {
   width: 100px;
 }
-.avatars > .rabbitAvatar {
+.avatars > .avatarTwo {
   transform: rotate(20deg);
 }
-.avatars > .rabbitAvatar > img {
+.avatars > .avatarTwo > img {
   width: 115px;
 }
-.avatars > .rabbitAvatar > p {
+.avatars > .avatarTwo > p {
   left: 0;
   font-size: 2.5rem;
   margin-left: 10px;
 }
-.avatars > .gorillaAvatar {
+.avatars > .avatarThree {
   transform: rotate(-10deg);
 }
-.avatars > .gorillaAvatar > img {
+.avatars > .avatarThree > img {
   width: 85px;
 }
 
@@ -310,6 +313,5 @@ input {
     flex-direction: row;
     justify-content: space-around;
     align-items: space-between;
-    margin-top: 0;
   }
 }/*# sourceMappingURL=helpcontact.module.css.map */

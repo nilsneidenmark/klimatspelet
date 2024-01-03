@@ -29,42 +29,42 @@ export default function Categories() {
         >
           <img className={styles.active} src={ocean} alt="category" />
           <p>Världens hav</p>
-          <small>0/12</small>
+          <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={mangrove} alt="category" />
           <p>Mangrovträsk</p>
           <p className={styles.comingSoon}>Kommer snart</p>
-          <small>0/12</small>
+          <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={pineTree} alt="category" />
           <p>Skogen</p>
           <p className={styles.comingSoon}>Kommer snart</p>
-          <small>0/12</small>
+          <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={buildings} alt="category" />
           <p>Människan</p>
           <p className={styles.comingSoon}>Kommer snart</p>
-          <small>0/12</small>
+          <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={glacier} alt="category" />
           <p>Glaciärer</p>
           <p className={styles.comingSoon}>Kommer snart</p>
-          <small>0/12</small>
+          <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={desert} alt="category" />
           <p>Öknen</p>
           <p className={styles.comingSoon}>Kommer snart</p>
-          <small>0/12</small>
+          <small>0/10</small>
         </button>
       </div>
     </section>
