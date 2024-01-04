@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
 :root {
   --font: "Poppins", serif;
   --fontSizeHeader: 2rem;
@@ -74,6 +73,7 @@ main > section {
   gap: 2rem;
   padding: 2rem;
   width: 80%;
+  text-shadow: 1px 1px 5px #000000;
 }
 
 button {
@@ -89,6 +89,7 @@ button:hover {
   opacity: 100%;
   cursor: pointer;
 }
+
 .primarybtn {
   background-color: #08594a;
 }
@@ -98,7 +99,7 @@ button:hover {
 
 h1,
 h2 {
-  font-family: "Preahvihear", sans-serif;
+  font-weight: 700;
   font-size: var(--fontSizeHeader);
 }
 
@@ -180,6 +181,7 @@ input {
   main {
     padding: 1rem;
     gap: 2rem;
+    text-align: center;
     min-height: 80dvh;
     max-width: 100vw;
   }

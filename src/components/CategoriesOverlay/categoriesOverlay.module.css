@@ -88,6 +88,7 @@ button:hover {
   opacity: 100%;
   cursor: pointer;
 }
+
 .primarybtn {
   background-color: #08594a;
 }
@@ -179,6 +180,7 @@ input {
   main {
     padding: 1rem;
     gap: 2rem;
+    text-align: center;
     min-height: 80dvh;
     max-width: 100vw;
   }

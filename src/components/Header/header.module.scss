@@ -73,8 +73,9 @@ header {
 @media screen and (max-width: 710px) {
   header {
     margin-bottom: $large;
-    > div {
-      padding: $medium;
+    padding: 0;
+    > .container {
+      padding: $small;
       > h2 {
         font-size: 2rem;
       }

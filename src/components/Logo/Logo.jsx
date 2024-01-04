@@ -5,7 +5,7 @@ import { useDisplay } from "../../context/DisplayLoginOrSignupContext";
 import logo from "../../assets/logo/logotyp_minst_utantext.png";
 
 export default function Logo() {
-  const { authenticated, setAuthenticated } = useAuthenticated(); // checks if user is authenticated
+  const { authenticated } = useAuthenticated(); // checks if user is authenticated
   const { setDisplay } = useDisplay(); // State for conditional rendering
   const navigate = useNavigate();
 

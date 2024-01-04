@@ -1,4 +1,3 @@
-
 html {
   @include flex(column, center, center);
 }
@@ -54,13 +53,8 @@ button {
   width: 125px;
   font-size: 1rem;
   &:hover {
-    // background-color: $secondaryHover;
     opacity: 100%;
     cursor: pointer;
-  }
-  &:disabled {
-    // opacity: $opacity;
-    // cursor: default;
   }
 }
 
@@ -151,6 +145,7 @@ input {
   main {
     padding: $medium;
     gap: $large;
+    text-align: center;
     // @include flex(column, center, center);
     min-height: 80dvh;
     max-width: 100vw;

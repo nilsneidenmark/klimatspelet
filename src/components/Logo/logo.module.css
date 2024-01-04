@@ -88,6 +88,7 @@ button:hover {
   opacity: 100%;
   cursor: pointer;
 }
+
 .primarybtn {
   background-color: #08594a;
 }
@@ -179,6 +180,7 @@ input {
   main {
     padding: 1rem;
     gap: 2rem;
+    text-align: center;
     min-height: 80dvh;
     max-width: 100vw;
   }
@@ -207,4 +209,19 @@ input {
   padding: 0;
   margin: 0;
   text-shadow: 1px 1px 5px #000000;
+}
+
+@media screen and (max-width: 710px) {
+  .logo {
+    gap: 0.5rem;
+  }
+  .logo > div > * {
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    text-shadow: 1px 1px 5px #000000;
+  }
+  .logo > div > p {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=logo.module.css.map */
