@@ -6,7 +6,6 @@
   gap: $medium;
   width: 100%;
   max-width: 500px;
-  text-shadow: $textShadow;
   > .myPlace {
     > p {
       font-size: 3rem;
@@ -15,7 +14,7 @@
   }
   > .topPlace ol {
     > li {
-      list-style-position: inside;
+      font-size: var(--fontSizeSubheader);
     }
   }
 }

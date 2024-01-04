@@ -5,8 +5,10 @@
   background-color: #eeeeee;
   border-radius: $borderRadiusLarge;
   position: absolute;
+  top: 2%;
   z-index: 9999999;
   color: black;
+  text-shadow:none;
 }
 
 .overlayWrapper {

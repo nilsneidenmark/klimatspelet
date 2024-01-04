@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
 
 html {
   @include flex(column, center, center);
@@ -42,6 +41,7 @@ main {
     gap: $large;
     padding: $large;
     width: 80%;
+    text-shadow: $textShadow;
   }
 }
 
@@ -73,8 +73,7 @@ button {
 
 h1,
 h2 {
-  font-family: "Preahvihear", sans-serif;
-  // font-weight: 700;
+  font-weight: 700;
   font-size: var(--fontSizeHeader);
 }
 
