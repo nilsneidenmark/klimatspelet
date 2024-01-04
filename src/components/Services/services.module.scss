@@ -4,7 +4,6 @@
     @include flex(row, center, center);
     gap: $medium;
     flex-wrap: wrap;
-    text-shadow: 2px 2px 5px black;
 }
 
 .card {
@@ -64,5 +63,4 @@
 .serviceLink {
     text-decoration: none;
     color: $white;
-    text-shadow: 2px 2px 5px black;
 }

@@ -3,7 +3,6 @@
 .categoriesSection {
   > h1 {
     color: $white;
-    text-shadow: $textShadow;
   }
   > .categoriesContainer {
     @include flex(row, flex-start, center);
@@ -17,7 +16,6 @@
   position: relative;
   background-color: transparent;
   min-width: 175px;
-  text-shadow: $textShadow;
   &:hover {
     background-color: transparent;
   }
