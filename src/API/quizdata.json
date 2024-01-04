@@ -62,7 +62,7 @@
       ],
       "sourceDescription": "Ändrat klimat driver människor på flykt.",
       "media": {
-        "diagram": "emissions",
+        "diagram": false,
         "video": false,
         "podcast": false,
         "image": false
@@ -160,7 +160,7 @@
       "correct_answer": "Det har ökat 65,2 mm",
       "feedback": "Den har ökat med 65,2 mm vilket motsvarar 6,52 cm",
       "source": null,
-      "sourceDescription": "hur medelhavsnivån har ändrat sig.",
+      "sourceDescription":"https://www.klimatanpassning.se/hur-klimatet-forandras/klimateffekter/vattenstand-1.21313",
       "media": {
         "diagram": "sealevel",
         "video": false,
