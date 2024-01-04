@@ -1,11 +1,10 @@
 import "../Footer/footer.module.scss";
-import logo from "../../assets/logo/logotyp_minst.png"
-
+import Logo from "../Logo/Logo";
 export default function Footer() {
   return (
     <footer>
       <div>
-      <img src={logo} alt="logotype for EcoExplorer"/>
+        <Logo />
         <ul>
           <li>Hjälp & kontakt</li>
           <li>Behandling av personuppgifter</li>

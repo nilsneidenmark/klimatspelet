@@ -4,7 +4,7 @@ header {
   @include glass();
   border-radius: 0;
   min-width: 100vw;
-  > div {
+  > .container {
     @include flex(row, space-between, center);
     padding: $medium 6rem $medium 6rem;
     margin: 0 auto;
@@ -24,7 +24,7 @@ header {
       > button {
         color: $white;
       }
-      > :first-child {
+      > .registerBtn {
         margin-right: $medium;
       }
     }

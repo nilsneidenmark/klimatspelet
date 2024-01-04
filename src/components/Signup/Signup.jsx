@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import AvatarPicker from "../AvatarPicker/AvatarPicker";
 import eyeClosed from "../../assets/icons/eye-off.svg";
 import eyeOpen from "../../assets/icons/eye.svg";
-import check from "../../assets/icons/check.svg";
 import x from "../../assets/icons/x.svg";
 
 export default function Signup() {

@@ -188,101 +188,22 @@ input {
     width: 95%;
   }
 }
-header {
-  background: rgba(0, 0, 0, 0);
-  border-radius: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-radius: 0;
-  min-width: 100vw;
-}
-header > .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 6rem 1rem 6rem;
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
-}
-header > .container > button {
-  color: #08594a;
-  cursor: pointer;
-  background-color: transparent;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-header > .container > button:hover {
-  background-color: transparent;
-}
-header > .container > div > button {
-  color: #eeeeee;
-}
-header > .container > div > .registerBtn {
-  margin-right: 1rem;
-}
-
-.drawer {
-  height: 100%;
-  padding: 4rem;
-  background: rgba(0, 0, 0, 0);
-  border-radius: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-radius: 0;
-}
-.drawer > ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 2rem;
-}
-.drawer > ul > li {
-  cursor: pointer;
+.logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.25rem;
-  padding: 0.5rem;
-  border: 2px solid transparent;
+  gap: 1rem;
 }
-.drawer > ul > li > img {
-  width: 25px;
+.logo > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.logo > div > * {
+  font-weight: 400;
   padding: 0;
   margin: 0;
-}
-.drawer > ul > li > img > svg > path {
-  stroke: #eeeeee;
-}
-.drawer > ul > li > button {
-  background-color: transparent;
-  width: auto;
   text-shadow: 1px 1px 5px #000000;
-  font-size: 1.25rem;
-  color: #eeeeee;
-}
-.drawer > ul > li:hover {
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 710px) {
-  header {
-    margin-bottom: 2rem;
-  }
-  header > div {
-    padding: 1rem;
-  }
-  header > div > h2 {
-    font-size: 2rem;
-  }
-  header > div > div > button {
-    display: none;
-  }
-}/*# sourceMappingURL=header.module.css.map */
+}/*# sourceMappingURL=logo.module.css.map */
