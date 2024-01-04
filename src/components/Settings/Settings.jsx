@@ -299,7 +299,9 @@ export default function Settings({ handleClick }) {
             {activeSetting === "profile" && <SettingsProfile />}
           </motion.div>
         </div>
-        <button className={styles.primarybtn}>Spara</button>
+        <button onClick={handleClick} className={styles.primarybtn}>
+          Spara
+        </button>
       </motion.section>
     </>
   );
