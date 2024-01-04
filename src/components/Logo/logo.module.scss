@@ -2,6 +2,7 @@
 .logo {
   @include flex(row, center, center);
   gap: $medium;
+  cursor: pointer;
   > div {
     @include flex(column, flex-start, flex-start);
     > * {

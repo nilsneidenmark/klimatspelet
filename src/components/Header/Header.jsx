@@ -16,7 +16,7 @@ import Logo from "../Logo/Logo";
 
 export default function Header() {
   const { display, setDisplay } = useDisplay(); // State for conditional rendering
-  const { authenticated, setAuthenticated } = useAuthenticated(); // checks if user is authenticated
+  const { setAuthenticated } = useAuthenticated(); // checks if user is authenticated
   const [openDrawer, setOpenDrawer] = useState(false); // for opening/closing the drawer menu
   const [openSettings, setOpenSettings] = useState(false); // state for opening/closing settings
   const [openHelp, setOpenHelp] = useState(false); // state for opening/closing help section
@@ -24,16 +24,6 @@ export default function Header() {
 
   // const handleClose = () => setOpenDrawer(false);
   const handleShow = () => setOpenDrawer(true);
-
-  // for logo click, if user is authenticated send user to profile page otherwise to homepage and display intro component
-  function handleClick() {
-    if (authenticated) {
-      navigate("/profile");
-    } else {
-      setDisplay("intro");
-      navigate("/");
-    }
-  }
 
   // function that logs out the user and redirects to homepage
   function handleLogout() {
