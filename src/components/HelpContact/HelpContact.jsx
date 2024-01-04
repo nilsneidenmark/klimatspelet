@@ -1,5 +1,4 @@
 import styles from "./helpcontact.module.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
 import avatarOne from "../../assets/avatars/bear.webp";
 import avatarTwo from "../../assets/avatars/rabbit.webp";
 import avatarThree from "../../assets/avatars/gorilla.webp";
@@ -7,14 +6,20 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import CloseButton from "react-bootstrap/CloseButton";
+import CloseButton from "../../assets/icons/x.svg";
 
 export default function HelpContact({ handleClick }) {
   return (
     <section className={styles.helpContact}>
       <div className={styles.topSection}>
         <h1>Hjälp & kontakt</h1>
-        <CloseButton onClick={handleClick} className={styles.closeBTN} />
+        <img
+          src={CloseButton}
+          alt="close"
+          onClick={handleClick}
+          className={styles.CloseButton}
+          style={{ cursor: "pointer" }}
+        />
       </div>
       <div className={styles.contentContainer}>
         <div className={styles.info}>

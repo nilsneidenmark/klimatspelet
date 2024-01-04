@@ -3,7 +3,8 @@ import styles from "./settings.module.scss";
 import { motion } from "framer-motion";
 import AvatarPicker from "../AvatarPicker/AvatarPicker";
 import { useSettings } from "../../context/SettingsContext";
-import CloseButton from "react-bootstrap/CloseButton";
+import CloseButton from "../../assets/icons/x.svg";
+
 // Component for managing font settings, updates active style for clicked button and settings context for text
 const SettingsFont = () => {
   const { active, setActive } = useSettings(); // State for managing clicked setting, state is used to update CSS variables and for active styling
@@ -261,7 +262,13 @@ export default function Settings({ handleClick }) {
         <div>
           <div className={styles.topSection}>
             <h2>Inställningar</h2>
-            <CloseButton onClick={handleClick} className={styles.closeBTN} />
+            <img
+              src={CloseButton}
+              alt="close"
+              onClick={handleClick}
+              className={styles.CloseButton}
+              style={{ cursor: "pointer" }}
+            />
           </div>
           <div className={styles.toggle}>
             <button
