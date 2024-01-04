@@ -5,7 +5,7 @@
     color: $white;
   }
   > .categoriesContainer {
-    @include flex(row, flex-start, center);
+    @include flex(row, center, center);
     flex-wrap: wrap;
     gap: $large;
   }
@@ -47,5 +47,22 @@
     width: 125px;
     margin: 0;
     opacity: $opacity;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .categories {
+    min-width: 125px;
+    > img {
+      width: 80px;
+      margin: 0;
+      opacity: $opacity;
+    }
+
+    > .comingSoon {
+      left: 5%;
+      width: 125px;
+      transform: rotate(10deg);
+    }
   }
 }
