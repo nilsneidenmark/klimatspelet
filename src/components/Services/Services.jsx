@@ -1,5 +1,6 @@
 import styles from "./services.module.scss";
 
+// offer the player more sources and information regarding the climate change. 
 export default function Services() {
   return (
     <section className={styles.services}>

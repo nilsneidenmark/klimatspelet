@@ -12,10 +12,12 @@ import CategoryOverlay from "../CategoriesOverlay/CategoriesOverlay";
 
 export default function Categories() {
   const navigate = useNavigate();
+  // Open or closes the < categoriesOverlay /> based on it states, deafult false = closed
   const [buttonPopup, setButtonPopup] = useState(false);
 
   return (
     <section className={styles.categoriesSection}>
+       {/* Triggers useState to show or close the overlay, and also redirect the user to route quiz */}
       <CategoryOverlay trigger={buttonPopup} setTrigger={setButtonPopup}>
         <button onClick={() => navigate("/quiz")} className={styles.primarybtn}>
           Börja spela
@@ -23,6 +25,7 @@ export default function Categories() {
       </CategoryOverlay>
       <h1>Kategorier</h1>
       <div className={styles.categoriesContainer}>
+        {/* Change useState to true = opening the < categoriesOverlay /> */}
         <button
           onClick={() => setButtonPopup(true)}
           className={styles.categories}

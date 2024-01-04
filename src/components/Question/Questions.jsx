@@ -180,7 +180,7 @@ export default function Questions({ quizData }) {
                   <p>{quizData[index].feedback}</p>
                   <div>
                     <p>
-                      Källa:{" "}
+                      Lär dig mer via länken:{" "}
                       <a target="blank" href={quizData[index].source}>
                         {quizData[index].sourceDescription}
                       </a>

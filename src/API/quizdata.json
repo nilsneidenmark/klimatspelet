@@ -159,8 +159,8 @@
       ],
       "correct_answer": "Det har ökat 65,2 mm",
       "feedback": "Den har ökat med 65,2 mm vilket motsvarar 6,52 cm",
-      "source": null,
-      "sourceDescription": "hur medelhavsnivån har ändrat sig.",
+      "source": "https://www.klimatanpassning.se/hur-klimatet-forandras/klimateffekter/vattenstand-1.21313",
+      "sourceDescription": "Hur medelhavsnivån har ändrat sig.",
       "media": {
         "diagram": "sealevel",
         "video": false,
