@@ -9,16 +9,13 @@ footer {
     padding: $medium 6rem $medium 6rem;
     margin: 0 auto;
     max-width: 1200px;
-    > h2 {
-      color: $primary;
-      cursor: pointer;
-    }
     > ul {
       list-style: none;
       > li {
         padding: $Xsmall;
         cursor: pointer;
-        color: $white;        
+        color: $white;
+        text-decoration: underline 1px solid white;
       }
     }
   }
@@ -28,9 +25,14 @@ footer {
   footer {
     margin-top: $large;
     > div {
-      padding: $small;
-      > h2 {
-        font-size: 1.5rem;
+      padding: $medium;
+      > ul {
+        text-align: end;
+        > li {
+          padding: $Xsmall;
+          cursor: pointer;
+          color: $white;
+        }
       }
     }
   }

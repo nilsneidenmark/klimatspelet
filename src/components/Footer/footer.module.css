@@ -208,10 +208,6 @@ footer > div {
   margin: 0 auto;
   max-width: 1200px;
 }
-footer > div > h2 {
-  color: #08594a;
-  cursor: pointer;
-}
 footer > div > ul {
   list-style: none;
 }
@@ -219,6 +215,8 @@ footer > div > ul > li {
   padding: 0.25rem;
   cursor: pointer;
   color: #eeeeee;
+  -webkit-text-decoration: underline 1px solid white;
+          text-decoration: underline 1px solid white;
 }
 
 @media screen and (max-width: 710px) {
@@ -226,9 +224,14 @@ footer > div > ul > li {
     margin-top: 2rem;
   }
   footer > div {
-    padding: 0.5rem;
+    padding: 1rem;
   }
-  footer > div > h2 {
-    font-size: 1.5rem;
+  footer > div > ul {
+    text-align: end;
+  }
+  footer > div > ul > li {
+    padding: 0.25rem;
+    cursor: pointer;
+    color: #eeeeee;
   }
 }/*# sourceMappingURL=footer.module.css.map */

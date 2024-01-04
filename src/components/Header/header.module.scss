@@ -73,6 +73,7 @@ header {
 @media screen and (max-width: 710px) {
   header {
     margin-bottom: $large;
+    // padding: 0 $large 0 $medium;
     padding: 0;
     > .container {
       padding: $small;
