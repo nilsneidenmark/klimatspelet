@@ -231,6 +231,7 @@ input {
 .question > div > div > img {
   margin: 0 auto;
   margin-bottom: 1rem;
+  border-radius: 0.5rem;
 }
 .question > div > div > button {
   width: 100%;
