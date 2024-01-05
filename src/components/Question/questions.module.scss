@@ -25,6 +25,10 @@
       @include flex(row, flex-start, center);
       gap: $small;
       flex-wrap: wrap;
+      > img {
+        margin: 0 auto;
+        margin-bottom: $medium;
+      }
       width: 100%;
       > button {
         width: 100%;

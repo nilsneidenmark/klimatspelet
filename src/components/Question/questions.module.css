@@ -228,6 +228,10 @@ input {
   flex-wrap: wrap;
   width: 100%;
 }
+.question > div > div > img {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
 .question > div > div > button {
   width: 100%;
 }
