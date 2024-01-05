@@ -232,6 +232,7 @@ input {
   margin: 0 auto;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
+  width: 80%;
 }
 .question > div > div > button {
   width: 100%;
