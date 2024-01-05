@@ -273,7 +273,7 @@ export default function Settings({ handleClick }) {
           <div className={styles.toggle}>
             <button
               className={`${styles.toggleButton} ${
-                activeSetting === "font" ? styles.active : ""
+                activeSetting === "font" ? styles.activeToggle : ""
               }`}
               onClick={() => setActiveSetting("font")}
             >
@@ -281,7 +281,7 @@ export default function Settings({ handleClick }) {
             </button>
             <button
               className={`${styles.toggleButton} ${
-                activeSetting === "profile" ? styles.active : ""
+                activeSetting === "profile" ? styles.activeToggle : ""
               }`}
               onClick={() => setActiveSetting("profile")}
             >
