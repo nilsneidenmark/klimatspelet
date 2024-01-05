@@ -234,6 +234,9 @@ input {
 .helpContact > .contentContainer > .info > article > p {
   margin: 0;
 }
+.helpContact > .contentContainer > .info > article > p > a {
+  color: rgb(101, 173, 255);
+}
 .helpContact > .contentContainer > .info > .faq {
   width: 100%;
 }
