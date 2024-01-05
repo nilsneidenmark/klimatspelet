@@ -13,6 +13,7 @@ import podcast from "../../assets/podcast.mp3";
 import { motion } from "framer-motion";
 import { useScore } from "../../context/ScoreContext";
 import { useScoreAnimation } from "../../hooks/useScoreAnimation";
+import corals from "../../assets/background/bild_korallrev2.webp";
 
 // component to render different media types depending on whats in the quizData.json
 const Media = ({ media }) => {
@@ -31,6 +32,8 @@ const Media = ({ media }) => {
       return <SeaLevel />;
     case "temperatures":
       return <GlobalTemperatures />;
+    case "image":
+      return <img src={corals} alt="corals" />;
     case "podcast":
       return (
         <audio controls>

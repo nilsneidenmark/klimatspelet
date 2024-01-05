@@ -165,7 +165,7 @@
         "diagram": false,
         "video": false,
         "podcast": false,
-        "image": false
+        "image": "image"
       }
     },
     {
