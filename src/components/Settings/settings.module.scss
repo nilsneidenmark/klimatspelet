@@ -29,7 +29,7 @@
     height: 80px;
     position: relative;
     margin: 0 auto;
-    background-color: #525252;
+    background-color: #5e5e5e;
     > button {
       width: 50%;
       border-radius: 50px;
@@ -68,8 +68,7 @@
 }
 .active {
   opacity: 100% !important;
-  background-color: #525252;
-  // background-color: $secondary !important;
+  background-color: $secondary !important;
 }
 
 .fontSection {
@@ -96,6 +95,7 @@
         > button {
           border-radius: 50px;
           height: 50px;
+          background-color: #5e5e5e;
           @include flex(row, center, center);
         }
       }

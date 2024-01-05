@@ -229,7 +229,7 @@ input {
   height: 80px;
   position: relative;
   margin: 0 auto;
-  background-color: #525252;
+  background-color: #5e5e5e;
 }
 .settingsSection > div > .toggle > button {
   width: 50%;
@@ -270,7 +270,7 @@ input {
 
 .active {
   opacity: 100% !important;
-  background-color: #525252;
+  background-color: #353535 !important;
 }
 
 .fontSection {
@@ -310,6 +310,7 @@ input {
 .fontSection > .fontButtons > div > div > button {
   border-radius: 50px;
   height: 50px;
+  background-color: #5e5e5e;
   display: flex;
   flex-direction: row;
   justify-content: center;
