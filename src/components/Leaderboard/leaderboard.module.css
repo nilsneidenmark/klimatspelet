@@ -205,6 +205,13 @@ input {
   font-size: 3rem;
   text-align: center;
 }
+.leaderBoard > .topPlace ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 40px;
+}
 .leaderBoard > .topPlace ol > li {
   font-size: var(--fontSizeSubheader);
 }/*# sourceMappingURL=leaderboard.module.css.map */

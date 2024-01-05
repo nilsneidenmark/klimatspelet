@@ -13,6 +13,8 @@
     }
   }
   > .topPlace ol {
+    @include flex(column, center, flex-start);
+    margin-left: 40px;
     > li {
       font-size: var(--fontSizeSubheader);
     }
