@@ -7,7 +7,7 @@
   "questions": [
     {
       "number": 1,
-      "introduction": "Medeltemperaturen har under de senaste 100 åren ökat med drygt 0,7 grader. I klimatsammanhang ses detta som en stor och snabb ökning. Havet har historiskt sett spelat en viktig roll i att stabilisera klimatet genom att lagra värme. Under de senaste 50 åren har haven absorberat över 90 procent av den temperaturökning som klimatförändringarna har orsakat. Detta gör nu att haven idag är under stor press och genomgår stora förändringar.",
+      "introduction": "Läs texten och titta på grafen Medeltemperaturen har under de senaste 100 åren ökat med drygt 0,7 grader. I klimatsammanhang ses detta som en stor och snabb ökning. Havet har historiskt sett spelat en viktig roll i att stabilisera klimatet genom att lagra värme. Under de senaste 50 åren har haven absorberat över 90 procent av den temperaturökning som klimatförändringarna har orsakat. Detta gör nu att haven idag är under stor press och genomgår stora förändringar.",
       "question": "Hur har havet historiskt sett hjälpt till att hålla klimatet stabilt på jorden?",
       "incorrect_answers": [
         "Havet kyler ner jorden när det behövs",
@@ -62,7 +62,7 @@
       ],
       "sourceDescription": "Ändrat klimat driver människor på flykt.",
       "media": {
-        "diagram": "emissions",
+        "diagram": "sealevel",
         "video": false,
         "podcast": false,
         "image": false
@@ -150,19 +150,19 @@
     },
     {
       "number": 8,
-      "introduction": null,
-      "question": "Hur mycket har medelhavsnivån ökat mellan år 1991 och 2003?",
+      "introduction": "Världshaven täcker drygt 70 procent av jordens yta. Därför är haven viktiga för att reglera världens klimat. När vattnet blir varmare i havet förändras livet i havet. De arter som vill ha kallare vatten flyttar norrut  medan arter som kräver varmare vatten breder ut sig mer och mer. Det förändrar hela ekosystemet i havet. Värmeböljor i havet blir allt vanligare, vilket bland annat drabbar de temperaturkänsliga korallerna i tropiska vatten särskilt hårt. Korallerna behöver leva tillsammans med en viss typ av alger för att må bra. Dessa alger trivs inte och dör när vattnet blir för varmt. Detta gör att korallerna blir bleka och svälter ihjäl. När korallerna dör hotas en stor del av havets ekosystem. Många fiskar och andra havsdjur bor i korallreven och trivs inte någon annanstans.",
+      "question": "Vad skulle hända om korallreven försvinner?",
       "incorrect_answers": [
-        "Den har ökat 65,2 cm",
-        "Den har sänkts med 65.2 mm",
-        "Den är oförändrad"
+        "Det skulle bli lättare att fiska med nät",
+        "Vattentemperaturen skulle sjunka",
+        "Fiskar och andra havsdjur skulle trivas bättre"
       ],
-      "correct_answer": "Det har ökat 65,2 mm",
-      "feedback": "Den har ökat med 65,2 mm vilket motsvarar 6,52 cm",
-      "source": "https://www.klimatanpassning.se/hur-klimatet-forandras/klimateffekter/vattenstand-1.21313",
-      "sourceDescription": "Hur medelhavsnivån har ändrat sig.",
+      "correct_answer": "Många fiskar och andra havsdjur skulle dö ut",
+      "feedback": "Om korallreven försvinner skulle många fiskar och havslevande djur bli utan sitt hem. Korallreven är ett av jordklotets största ekosystem. Forskarna försöker just nu få fram en mer värmetålig algart som kan trivas i varmt vatten. Detta skulle kunna rädda korallerna från att dö ut.",
+      "source": "https://www.naturskyddsforeningen.se/faktablad/haven-ar-viktiga-for-klimatet/",
+      "sourceDescription": "Haven är viktiga för klimatet",
       "media": {
-        "diagram": "sealevel",
+        "diagram": false,
         "video": false,
         "podcast": false,
         "image": false
@@ -171,20 +171,16 @@
     {
       "number": 9,
       "introduction": null,
-      "question": "Var låg nivån för koldioxidutsläpp globalt år 2005?",
+      "question": "Som du ser på grafen har koldioxidutsläppen ökat extremt mycket sedan 1900-talets mitt. Varför det?",
       "incorrect_answers": [
-        "2048 miljarder ton koldioxidekvivalenter",
-        "10 523 miljoner ton koldioxidekvivalenter",
-        "8093 miljarder ton koldioxidekvivalenter"
+        "Det är fler vulkanutbrott som släpper ut koldioxid",
+        "Medelhavsnivån har ökat",
+        "Ozonlagret har blivit tunnare"
       ],
-      "correct_answer": "8093 miljoner ton koldioxidekvivalenter",
-      "feedback": "År 2005 låg det globala koldioxidutsläppet på 8093 miljoner ton koldioxidekvivalenter. En stor del av utsläppen kommer från bilar, lastbilar, flyg och båttrafik. I Sverige låg utsläppen år 2005 på 66,54 och har minskat till 47,8 miljoner ton koldioxidekvivalenter år 2021.",
-      "source": [
-        "https://www.scb.se/hitta-statistik/sverige-i-siffror/miljo/utslapp-av-vaxthusgaser/",
-        "https://www.naturvardsverket.se/om-oss/aktuellt/nyheter-och-pressmeddelanden/2023/juni/s",
-        "veriges-klimatutslapp-minskade-med-fem-procent-under-2022/"
-      ],
-      "sourceDescription": "Utsläpp av växthusgaser.",
+      "correct_answer": "Stor förbränning av fossila bränslen",
+      "feedback": "Förbränningen av fossila bränslen som kol och olja leder till ökade halter växthusgaser. Ca 80 procent av världens energiförbrukning kommer idag från fossila bränslen.",
+      "source": "https://www.wwf.se/klimat/mansklig-paverkan/ ",
+      "sourceDescription": "Mänsklig påverkan.",
       "media": {
         "diagram": "emissions",
         "video": false,
