@@ -7,7 +7,7 @@
   }
   > div {
     // border: 2px solid red;
-    // @include flex(row, center, center);
+    @include flex(row, flex-start, center);
     flex-wrap: wrap;
     gap: $Xsmall;
     padding: $small;

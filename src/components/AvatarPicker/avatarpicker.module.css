@@ -199,6 +199,10 @@ input {
   margin-bottom: 0.25rem;
 }
 .avatarContainer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   gap: 0.25rem;
   padding: 0.5rem;
