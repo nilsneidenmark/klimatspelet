@@ -101,7 +101,7 @@ export default function Questions({ quizData }) {
       setIndex((prevIndex) => prevIndex + 1);
       setBtnText("Nästa fråga");
     }
-    if (index === 8) {
+    if (index === quizData.length - 2) {
       setBtnText("Avsluta quiz");
     }
   }
@@ -149,12 +149,13 @@ export default function Questions({ quizData }) {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { duration: 1 } }}
+                className={styles.questionContainer}
               >
                 <Media media={quizData[index].media} />
 
                 <p>{quizData[index].introduction}</p>
                 <p className={styles.thisQuestion}>
-                  Fråga: {quizData[index].question}
+                  {quizData[index].question}
                 </p>
               </motion.div>
             ) : (
@@ -180,7 +181,7 @@ export default function Questions({ quizData }) {
                   <p>{quizData[index].feedback}</p>
                   <div>
                     <p>
-                      Lär dig mer via länken:{" "}
+                      Källa:{" "}
                       <a target="blank" href={quizData[index].source}>
                         {quizData[index].sourceDescription}
                       </a>

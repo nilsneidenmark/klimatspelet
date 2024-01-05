@@ -6,10 +6,10 @@
   padding: $medium;
   max-width: 95%;
   color: black;
-  text-shadow:none;
+  text-shadow: none;
   > div {
     @include flex(column, flex-start, flex-start);
-    gap: $medium;
+    gap: $large;
     > .top_section {
       @include flex(row, space-between, flex-start);
       margin-bottom: $large;
@@ -17,6 +17,9 @@
 
     > div > audio {
       width: 100%;
+    }
+    > .questionContainer {
+      gap: $medium;
     }
     > div {
       @include flex(row, flex-start, center);
@@ -37,6 +40,8 @@
       }
       > div {
         width: 50%;
+        @include flex(column, flex-start, flex-start);
+        gap: $medium;
         // font-size: 1.25rem;
         > div {
           @include flex(row, flex-start, flex-start);

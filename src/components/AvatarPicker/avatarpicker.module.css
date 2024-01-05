@@ -145,6 +145,7 @@ form button:disabled {
 
 input {
   width: 100%;
+  height: 35px;
   margin-bottom: 1rem;
   border: 0;
   border-radius: 0.5rem;
@@ -198,10 +199,6 @@ input {
   margin-bottom: 0.25rem;
 }
 .avatarContainer > div {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
   flex-wrap: wrap;
   gap: 0.25rem;
   padding: 0.5rem;
