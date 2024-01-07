@@ -144,6 +144,7 @@ form button:disabled {
 
 input {
   width: 100%;
+  height: 35px;
   margin-bottom: 1rem;
   border: 0;
   border-radius: 0.5rem;
@@ -203,7 +204,7 @@ input {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
 }
 .question > div > .top_section {
   display: flex;
@@ -215,6 +216,9 @@ input {
 .question > div > div > audio {
   width: 100%;
 }
+.question > div > .questionContainer {
+  gap: 1rem;
+}
 .question > div > div {
   display: flex;
   flex-direction: row;
@@ -223,6 +227,12 @@ input {
   gap: 0.5rem;
   flex-wrap: wrap;
   width: 100%;
+}
+.question > div > div > img {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  width: 80%;
 }
 .question > div > div > button {
   width: 100%;
@@ -241,6 +251,11 @@ input {
 }
 .question > div > .feedback > div {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
 }
 .question > div > .feedback > div > div {
   display: flex;

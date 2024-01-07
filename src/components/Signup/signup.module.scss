@@ -11,7 +11,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        margin-top: 35px;
+        margin-top: 30px;
         margin-right: 10px;
         opacity: 50%;
         cursor: pointer;
@@ -56,5 +56,11 @@
   }
   > p {
     align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .signup {
+    text-align: left;
   }
 }

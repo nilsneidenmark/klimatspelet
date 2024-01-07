@@ -27,6 +27,9 @@
       > article {
         > p {
           margin: 0;
+          > a {
+            color: rgb(101, 173, 255);
+          }
         }
       }
       > .faq {

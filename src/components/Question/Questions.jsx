@@ -13,6 +13,7 @@ import podcast from "../../assets/podcast.mp3";
 import { motion } from "framer-motion";
 import { useScore } from "../../context/ScoreContext";
 import { useScoreAnimation } from "../../hooks/useScoreAnimation";
+import corals from "../../assets/background/bild_korallrev2.webp";
 
 // component to render different media types depending on whats in the quizData.json
 const Media = ({ media }) => {
@@ -31,6 +32,8 @@ const Media = ({ media }) => {
       return <SeaLevel />;
     case "temperatures":
       return <GlobalTemperatures />;
+    case "image":
+      return <img src={corals} alt="corals" />;
     case "podcast":
       return (
         <audio controls>
@@ -101,7 +104,7 @@ export default function Questions({ quizData }) {
       setIndex((prevIndex) => prevIndex + 1);
       setBtnText("Nästa fråga");
     }
-    if (index === 8) {
+    if (index === quizData.length - 2) {
       setBtnText("Avsluta quiz");
     }
   }
@@ -149,12 +152,13 @@ export default function Questions({ quizData }) {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { duration: 1 } }}
+                className={styles.questionContainer}
               >
                 <Media media={quizData[index].media} />
 
                 <p>{quizData[index].introduction}</p>
                 <p className={styles.thisQuestion}>
-                  Fråga: {quizData[index].question}
+                  {quizData[index].question}
                 </p>
               </motion.div>
             ) : (
@@ -180,7 +184,7 @@ export default function Questions({ quizData }) {
                   <p>{quizData[index].feedback}</p>
                   <div>
                     <p>
-                      Lär dig mer via länken:{" "}
+                      Källa:{" "}
                       <a target="blank" href={quizData[index].source}>
                         {quizData[index].sourceDescription}
                       </a>

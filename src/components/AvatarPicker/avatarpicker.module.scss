@@ -2,11 +2,11 @@
 
 .avatarContainer {
   width: 100%;
-  // border: 2px solid red;
   > p {
     margin-bottom: $Xsmall;
   }
   > div {
+    // border: 2px solid red;
     @include flex(row, flex-start, center);
     flex-wrap: wrap;
     gap: $Xsmall;
