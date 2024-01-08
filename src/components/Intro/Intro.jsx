@@ -1,6 +1,6 @@
-import slideImg1 from "../../assets/slider/SlideImg1.webp";
-import slideImg2 from "../../assets/slider/SlideImg2.webp";
-import slideImg3 from "../../assets/slider/SlideImg3.webp";
+import slide1 from "../../assets/slider/Slide1.png";
+import slide2 from "../../assets/slider/Slide2.png";
+import slide3 from "../../assets/slider/Slide3.png";
 import styles from "./intro.module.scss";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
@@ -97,17 +97,17 @@ export default function Intro({ handleClick }) {
       <Slideshow>
         <Slide
           header="Lär dig om klimatforändringar"
-          img={slideImg1}
+          img={slide1}
           text="Välj din favorit kategori på mina sidor och briljera för dina vänner."
         />
         <Slide
           header="Utforska det interaktiva quizet"
-          img={slideImg2}
+          img={slide2}
           text="Vad vill vi ha? Bilder, grafer, vidoes! Var hittar vi det? I quizen!"
         />
         <Slide
           header="Visa dina vänner vem som är bäst"
-          img={slideImg3}
+          img={slide3}
           text="Lär dig mest, svara rätt, vinn lätt!"
         />
       </Slideshow>
