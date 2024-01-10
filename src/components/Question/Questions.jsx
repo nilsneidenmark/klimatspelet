@@ -114,14 +114,14 @@ export default function Questions({ quizData }) {
       <motion.div
         className={styles.question}
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 1 } }}
+        animate={{ opacity: 1, transition: { duration: 0.4 } }}
         ref={ref}
       >
         {endQuiz ? (
           <motion.div
             className={styles.endQuiz}
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 1 } }}
+            animate={{ opacity: 1, transition: { duration: 0.4 } }}
           >
             <img src={celebrate} alt="ocean icon" />
             <h3>Grattis! du har precis genomfört Världens hav 😍</h3>
@@ -136,7 +136,7 @@ export default function Questions({ quizData }) {
         ) : (
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 1 } }}
+            animate={{ opacity: 1, transition: { duration: 0.4 } }}
           >
             <div className={styles.top_section}>
               <h3>Fråga {quizData[index].number} / 10</h3>
@@ -151,7 +151,7 @@ export default function Questions({ quizData }) {
             {!displayFeedback ? (
               <motion.div
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { duration: 1 } }}
+                animate={{ opacity: 1, transition: { duration: 0.4 } }}
                 className={styles.questionContainer}
               >
                 <Media media={quizData[index].media} />
@@ -165,17 +165,17 @@ export default function Questions({ quizData }) {
               <motion.div
                 className={styles.feedback}
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { duration: 1 } }}
+                animate={{ opacity: 1, transition: { duration: 0.4 } }}
               >
                 <motion.img
                   initial={{ opacity: 0 }}
-                  animate={{ opacity: 1, transition: { duration: 1 } }}
+                  animate={{ opacity: 1, transition: { duration: 0.4 } }}
                   src={correctAnswer ? einstein : greta}
                   alt="meme"
                 />
                 <motion.div
                   initial={{ opacity: 0 }}
-                  animate={{ opacity: 1, transition: { duration: 1 } }}
+                  animate={{ opacity: 1, transition: { duration: 0.4 } }}
                 >
                   <p>{correctAnswer ? "Rätt svar!" : "Tyvärr, fel svar."}</p>
                   {!correctAnswer && (
