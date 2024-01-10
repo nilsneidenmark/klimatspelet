@@ -23,7 +23,7 @@ export default function Login() {
     <motion.section
       className={styles.login}
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      animate={{ opacity: 1, transition: { duration: 0.4 } }}
     >
       <h2>Välkommen tillbaka</h2>
       <h2>Logga in</h2>

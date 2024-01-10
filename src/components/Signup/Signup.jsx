@@ -23,7 +23,7 @@ export default function Signup() {
     <motion.section
       className={styles.signup}
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      animate={{ opacity: 1, transition: { duration: 0.4 } }}
     >
       <h2>Skapa ett konto</h2>
       <form>

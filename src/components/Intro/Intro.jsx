@@ -17,7 +17,7 @@ const Slideshow = ({ children }) => {
     exit: { opacity: 0 },
   };
   const transition = {
-    duration: 1,
+    duration: 0.4,
     ease: "easeOut",
   };
 
