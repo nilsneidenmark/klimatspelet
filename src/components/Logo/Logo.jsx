@@ -19,7 +19,7 @@ export default function Logo() {
     }
   }
 
-  // opens the hamburger menu when focused on enter press
+  // Runs onClick function on enter press when focused
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       handleClick();
