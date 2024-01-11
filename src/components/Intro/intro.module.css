@@ -209,25 +209,25 @@ input {
   max-width: 80%;
 }
 .intro > div:first-child > .container {
-  margin-top: 2.5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #eeeeee;
-  border-radius: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
   width: 100%;
   gap: 0.5rem;
-  padding: 1rem;
+  padding: 0;
   color: black;
   text-shadow: none;
 }
+.intro > div:first-child > .container > h1 {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
 .intro > div:first-child > .container > img {
-  max-width: 100%;
-  max-height: 200px;
-  width: auto;
-  height: auto;
-  border-radius: 2rem 2rem 0 0;
+  min-width: 100%;
+  border-radius: 1rem 1rem 0 0;
   margin-bottom: 1%;
 }
 .intro > button {
@@ -244,14 +244,10 @@ input {
 .intro .circles > button {
   border-radius: 50%;
   width: 15px;
-  background-color: #353535;
+  background-color: gray;
   opacity: 50%;
   height: 15px;
 }
 .intro .circles > .active {
   opacity: 100%;
-}
-
-h1 {
-  color: black;
 }/*# sourceMappingURL=intro.module.css.map */

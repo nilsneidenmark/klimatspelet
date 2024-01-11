@@ -85,7 +85,6 @@ const Slide = ({ header, text, img }) => {
       <div className={styles.container}>
         <img src={img} width="300px" height="300px" />
         <h1>{header}</h1>
-        <p>{text}</p>
       </div>
     </>
   );

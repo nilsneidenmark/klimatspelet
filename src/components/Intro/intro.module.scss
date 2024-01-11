@@ -10,23 +10,23 @@
     @include flex(column, center, center);
     max-width: 80%;
     > .container {
-      margin-top: 2.5%;
       @include flex(column, center, center);
-      background-color: $white;
-      border-radius: $large;
+      background-color: #ffffff;
+      border-radius: $medium;
       width: 100%;
       gap: $small;
-      padding: $medium;
+      padding: 0;
       color: black;
-      text-shadow:none;
-
+      text-shadow: none;
+      > h1 {
+        padding: $medium;
+        margin-bottom: $medium;
+      }
       > img {
-        max-width: 100%;
-        max-height: 200px;
-        width: auto;
-        height: auto;
-        border-radius: $large $large 0 0;
+        min-width: 100%;
+        border-radius: $medium $medium 0 0;
         margin-bottom: 1%;
+        // border: 2px solid red;
       }
     }
   }
@@ -40,7 +40,7 @@
     > button {
       border-radius: 50%;
       width: 15px;
-      background-color: $secondary;
+      background-color: gray;
       opacity: $opacity;
       height: 15px;
     }
@@ -48,7 +48,4 @@
       opacity: 100%;
     }
   }
-}
-h1 {
-  color: black;
 }
