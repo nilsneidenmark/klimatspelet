@@ -18,8 +18,20 @@ export default function Logo() {
       navigate("/");
     }
   }
+
+  // opens the hamburger menu when focused on enter press
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleClick();
+    }
+  };
   return (
-    <div onClick={handleClick} className={styles.logo}>
+    <div
+      onKeyDown={handleKeyPress}
+      onClick={handleClick}
+      tabIndex={0}
+      className={styles.logo}
+    >
       <img width="50px" src={logo} alt="logotype"></img>
       <div>
         <h3>EcoExplorer</h3>
