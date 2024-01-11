@@ -10,8 +10,19 @@ export default function Avatar({ handleShow }) {
   const { score } = useScore();
   const animate = useScoreAnimation(score);
 
+  // opens the hamburger menu when focused on enter press
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleShow();
+    }
+  };
   return (
-    <div onClick={handleShow} tabIndex={0} className={styles.avatar}>
+    <div
+      onKeyDown={handleKeyPress}
+      onClick={handleShow}
+      tabIndex={0}
+      className={styles.avatar}
+    >
       <div className={styles.points}>
         <p className={styles.star}>⭐</p>
         <p
