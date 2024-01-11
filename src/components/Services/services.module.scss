@@ -1,66 +1,67 @@
 @import "../../styles/index.scss";
 
 .services {
-    @include flex(row, center, center);
-    gap: $medium;
-    flex-wrap: wrap;
+  @include flex(row, center, center);
+  gap: $medium;
+  flex-wrap: wrap;
 }
 
 .card {
-    padding: $medium;
-    position: relative; 
-    height: 250px;
-    flex: 1 1 160px;
-    position: relative;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
+  padding: $medium;
+  position: relative;
+  height: 250px;
+  flex: 1 1 160px;
+  position: relative;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
+  border-radius: $small;
 }
 
 .card::before {
-    content: "";
-    background-size: cover;
-    position: absolute;
-    z-index: -999;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.5;
+  content: "";
+  border-radius: $small;
+  background-size: cover;
+  position: absolute;
+  z-index: -999;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
 }
 
-
 .cardOne::before {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/services/klimatkalkylatorn.webp');
-    
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/services/klimatkalkylatorn.webp");
 }
 
 .cardTwo::before {
-    background-image: url('../../assets/services/nasa.webp');
-} 
+  background-image: url("../../assets/services/nasa.webp");
+}
 
 .cardThree::before {
-    background-image: url('../../assets/services/golfströmmen.webp');
+  background-image: url("../../assets/services/golfströmmen.webp");
 }
 
 .cardFour::before {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/services/klimatflyktingar.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/services/klimatflyktingar.webp");
 }
 
 .cardFive::before {
-    background-image: url('../../assets/services/arktis.webp');
+  background-image: url("../../assets/services/arktis.webp");
 }
 
 .cardSex::before {
-    background-image: url('../../assets/services/sverigesklimatutsläpp.webp');
+  background-image: url("../../assets/services/sverigesklimatutsläpp.webp");
 }
 
-
 .card:hover {
-    opacity: $opacity;
-    box-shadow: 2px 2px 5px rgba(212, 212, 212, 0.788);
-    cursor: pointer;
+  opacity: $opacity;
+  box-shadow: 2px 2px 5px rgba(212, 212, 212, 0.788);
+  cursor: pointer;
 }
 
 .serviceLink {
-    text-decoration: none;
-    color: $white;
+  text-decoration: none;
+  color: $white;
 }

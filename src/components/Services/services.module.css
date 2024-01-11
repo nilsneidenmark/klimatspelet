@@ -208,10 +208,12 @@ input {
   flex: 1 1 160px;
   position: relative;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
+  border-radius: 0.5rem;
 }
 
 .card::before {
   content: "";
+  border-radius: 0.5rem;
   background-size: cover;
   position: absolute;
   z-index: -999;
