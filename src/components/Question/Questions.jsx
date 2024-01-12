@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import styles from "./questions.module.scss";
 import einstein from "../../assets/memes/einstein.webp";
 import greta from "../../assets/memes/greta-min.webp";
@@ -117,6 +117,7 @@ export default function Questions({ quizData }) {
         animate={{ opacity: 1, transition: { duration: 0.4 } }}
         ref={ref}
       >
+        {/* Render end result  */}
         {endQuiz ? (
           <motion.div
             className={styles.endQuiz}
@@ -134,6 +135,7 @@ export default function Questions({ quizData }) {
             </button>
           </motion.div>
         ) : (
+          // Render top section of quiz
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.4 } }}
@@ -148,6 +150,7 @@ export default function Questions({ quizData }) {
                 Dina poäng: {score}
               </h3>
             </div>
+            {/* Render question */}
             {!displayFeedback ? (
               <motion.div
                 initial={{ opacity: 0 }}
@@ -162,6 +165,7 @@ export default function Questions({ quizData }) {
                 </p>
               </motion.div>
             ) : (
+              // Render feedback
               <motion.div
                 className={styles.feedback}
                 initial={{ opacity: 0 }}
@@ -193,6 +197,7 @@ export default function Questions({ quizData }) {
                 </motion.div>
               </motion.div>
             )}
+            {/* Render quiz buttons */}
             {!displayFeedback && (
               <div>
                 {/* renders the shuffled array answers as buttons */}
@@ -211,13 +216,26 @@ export default function Questions({ quizData }) {
                     {answer}
                   </button>
                 ))}
+                <Link className={styles.saveBtn} to="/profile">
+                  Spara och avsluta.
+                </Link>
               </div>
             )}
             {displayFeedback && (
               <div className={styles.nextQuestion}>
-                <button onClick={() => nextQuestion()} className="primarybtn">
-                  {btnText}
-                </button>
+                <div>
+                  <Link
+                    className={`${styles.saveBtn} ${
+                      btnText == "Avsluta quiz" ? styles.hideBtn : "none"
+                    }`}
+                    to="/profile"
+                  >
+                    Spara och avsluta.
+                  </Link>
+                  <button onClick={() => nextQuestion()} className="primarybtn">
+                    {btnText}
+                  </button>
+                </div>
               </div>
             )}
           </motion.div>

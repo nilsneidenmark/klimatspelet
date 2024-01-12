@@ -6,16 +6,19 @@
     @include flex(row, flex-start, center);
     gap: $large;
     width: 100%;
-    text-shadow:none;
+    text-shadow: none;
     > img {
       width: 85px;
       margin: 0;
+    }
+    > h1 {
+      text-shadow: $textShadow;
     }
   }
   > button {
     background-color: transparent;
     color: black;
-    text-shadow:none;
+    text-shadow: none;
     width: auto;
     align-self: flex-start;
   }

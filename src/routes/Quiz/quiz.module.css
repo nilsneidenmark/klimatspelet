@@ -210,6 +210,9 @@ input {
   width: 85px;
   margin: 0;
 }
+.quiz > .quizCategory > h1 {
+  text-shadow: 1px 1px 5px #000000;
+}
 .quiz > button {
   background-color: transparent;
   color: black;

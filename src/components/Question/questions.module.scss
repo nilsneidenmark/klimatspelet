@@ -60,8 +60,22 @@
     }
   }
   .nextQuestion {
-    align-self: flex-end;
-    width: 125px;
+    // align-self: flex-end;
+    @include flex(row, flex-end, center);
+    width: 100%;
+    flex-direction: row;
+    > div {
+      align-self: flex-end;
+      justify-self: flex-end;
+      @include flex(row, center, center);
+      gap: $medium;
+      > button {
+        width: 125px;
+      }
+      > a {
+        margin-top: 0;
+      }
+    }
   }
   > .endQuiz {
     @include flex(column, center, center);
@@ -78,6 +92,16 @@
 .thisQuestion {
   font-weight: bold;
   font-size: 1.25rem;
+}
+
+.saveBtn {
+  color: black;
+  text-decoration: underline;
+  margin-top: $medium;
+}
+
+.hideBtn {
+  display: none;
 }
 
 @media screen and (max-width: 985px) {
