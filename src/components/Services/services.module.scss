@@ -56,8 +56,8 @@
 }
 
 .card:hover {
-  opacity: $opacity;
-  box-shadow: 2px 2px 5px rgba(212, 212, 212, 0.788);
+  opacity: 100%;
+  filter: saturate(500%);
   cursor: pointer;
 }
 

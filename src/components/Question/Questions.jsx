@@ -46,7 +46,7 @@ const Media = ({ media }) => {
 export default function Questions({ quizData }) {
   const [displayFeedback, setDisplayFeedback] = useState(false);
   const [correctAnswer, setCorrectAnswer] = useState(false);
-  const [btnText, setBtnText] = useState("Nästa fråga");
+  const [btnText, setBtnText] = useState("Next question");
   const [index, setIndex] = useState(0);
   const [endQuiz, setEndQuiz] = useState(false);
   const { score, setScore } = useScore();
@@ -75,8 +75,6 @@ export default function Questions({ quizData }) {
     }
     return array;
   }
-  if (quizData === undefined)
-    return <p>Hittade ingen fråga, pröva att ladda om sidan!</p>;
 
   function handleclick(answer) {
     setDisplayFeedback(true);
@@ -102,10 +100,10 @@ export default function Questions({ quizData }) {
       setEndQuiz(true);
     } else {
       setIndex((prevIndex) => prevIndex + 1);
-      setBtnText("Nästa fråga");
+      setBtnText("Next question");
     }
     if (index === quizData.length - 2) {
-      setBtnText("Avsluta quiz");
+      setBtnText("End quiz");
     }
   }
 
@@ -125,13 +123,13 @@ export default function Questions({ quizData }) {
             animate={{ opacity: 1, transition: { duration: 0.4 } }}
           >
             <img src={celebrate} alt="ocean icon" />
-            <h3>Grattis! du har precis genomfört Världens hav 😍</h3>
-            <p>Du fick {score}/10 poäng</p>
+            <h3>Congratulations! You just completed Oceans 😍</h3>
+            <p>You got {score}/10 points</p>
             <button
               onClick={() => navigate("/profile")}
               className={styles.primarybtn}
             >
-              Spara och avsluta
+              Save & exit
             </button>
           </motion.div>
         ) : (
@@ -141,13 +139,13 @@ export default function Questions({ quizData }) {
             animate={{ opacity: 1, transition: { duration: 0.4 } }}
           >
             <div className={styles.top_section}>
-              <h3>Fråga {quizData[index].number} / 10</h3>
+              <h3>Question {quizData[index].number} / 10</h3>
               <h3
                 className={`${styles.score} ${
                   animate.increase ? styles.increase : ""
                 } ${animate.decrease ? styles.decrease : ""}`}
               >
-                Dina poäng: {score}
+                Score: {score}
               </h3>
             </div>
             {/* Render question */}
@@ -181,14 +179,16 @@ export default function Questions({ quizData }) {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, transition: { duration: 0.4 } }}
                 >
-                  <p>{correctAnswer ? "Rätt svar!" : "Tyvärr, fel svar."}</p>
+                  <p>{correctAnswer ? "You got it 🤩" : "Wrong answer 😟"}</p>
                   {!correctAnswer && (
-                    <p>Det rätta svaret är: {quizData[index].correct_answer}</p>
+                    <p>
+                      The correct answer is: {quizData[index].correct_answer}
+                    </p>
                   )}
                   <p>{quizData[index].feedback}</p>
                   <div>
                     <p>
-                      Källa:{" "}
+                      Source:{" "}
                       <a target="blank" href={quizData[index].source}>
                         {quizData[index].sourceDescription}
                       </a>
@@ -204,7 +204,6 @@ export default function Questions({ quizData }) {
                 {shuffledAnswers.map((answer, id) => (
                   <button
                     key={id}
-                    className={styles.primarybtn}
                     onClick={() =>
                       handleclick(
                         answer === quizData[index].correct_answer
@@ -217,7 +216,7 @@ export default function Questions({ quizData }) {
                   </button>
                 ))}
                 <Link className={styles.saveBtn} to="/profile">
-                  Spara och avsluta.
+                  Save & exit
                 </Link>
               </div>
             )}
@@ -230,7 +229,7 @@ export default function Questions({ quizData }) {
                     }`}
                     to="/profile"
                   >
-                    Spara och avsluta.
+                    Save & exit
                   </Link>
                   <button onClick={() => nextQuestion()} className="primarybtn">
                     {btnText}

@@ -2,7 +2,6 @@
 
 .helpContact {
   @include glass();
-  background: rgba(250, 250, 250, 0.13);
   width: 750px;
   max-width: 750px;
   max-width: 95vw;
@@ -13,9 +12,6 @@
   padding: $large;
   > .topSection {
     @include flex(row, space-between, space-between);
-    > h1 {
-      color: $white;
-    }
   }
   > .contentContainer {
     @include flex(row, flex-start, center);
@@ -28,14 +24,14 @@
         > p {
           margin: 0;
           > a {
-            color: rgb(101, 173, 255);
+            color: rgb(0, 84, 180);
+            text-decoration: underline;
           }
         }
       }
       > .faq {
         width: 100%;
-        > h3 {
-        }
+
         > * {
           text-shadow: none;
         }
@@ -55,6 +51,7 @@
     font-size: 2rem;
     margin-top: -15px;
     font-weight: 600;
+    color: white;
   }
   .avatarOne {
     transform: rotate(-20deg);

@@ -4,7 +4,6 @@ html {
 body {
   background-color: rgb(36, 36, 36);
   background-image: url(/src/assets/background/woods-min_1.webp);
-  // background-image: url(/src/assets/background/ocean3-min.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +13,7 @@ body {
   font-family: var(--font);
   letter-spacing: var(--letterSpacing);
   word-spacing: var(--wordSpacing);
-  color: $white;
+  color: black;
 }
 
 button {
@@ -40,7 +39,6 @@ main {
     gap: $large;
     padding: $large;
     width: 80%;
-    text-shadow: $textShadow;
   }
 }
 
@@ -50,10 +48,10 @@ button {
   padding: $small;
   background-color: $secondary;
   color: $white;
-  width: 125px;
+  width: 150px;
   font-size: 1rem;
   &:hover {
-    opacity: 100%;
+    background-color: $secondaryHover;
     cursor: pointer;
   }
 }
@@ -63,6 +61,20 @@ button {
   &:hover {
     background-color: $primaryHover;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+small,
+strong,
+span,
+ul,
+li {
+  color: black;
+  font-family: var(--font);
 }
 
 h1,
@@ -120,7 +132,6 @@ input {
   background-color: $secondary;
 }
 
-// Scrollbar
 ::-webkit-scrollbar {
   background: $secondary;
   width: 12.5px;
@@ -129,8 +140,6 @@ input {
   background: rgb(173, 173, 173);
   border-radius: 10px;
 }
-
-// for score animation
 
 .score {
   transition: color 1s ease-out;
@@ -147,13 +156,9 @@ input {
     padding: $medium;
     gap: $large;
     text-align: center;
-    // @include flex(column, center, center);
     min-height: 80dvh;
     max-width: 100vw;
-    // margin: 0 auto;
     > section {
-      // @include glass();
-      // @include flex(column, center, center);
       gap: $medium;
       padding: $medium;
       width: 95%;

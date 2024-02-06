@@ -79,7 +79,7 @@ const Slideshow = ({ children }) => {
 };
 
 // Markup for each slide
-const Slide = ({ header, text, img }) => {
+const Slide = ({ header, img }) => {
   return (
     <>
       <div className={styles.container}>
@@ -94,29 +94,17 @@ export default function Intro({ handleClick }) {
   return (
     <section className={styles.intro}>
       <Slideshow>
-        <Slide
-          header="Lär dig om klimatforändringar"
-          img={slide1}
-          text="Välj din favorit kategori på mina sidor och briljera för dina vänner."
-        />
-        <Slide
-          header="Utforska det interaktiva quizet"
-          img={slide2}
-          text="Vad vill vi ha? Bilder, grafer, vidoes! Var hittar vi det? I quizen!"
-        />
-        <Slide
-          header="Visa dina vänner vem som är bäst"
-          img={slide3}
-          text="Lär dig mest, svara rätt, vinn lätt!"
-        />
+        <Slide header="Learn about climate change" img={slide1} />
+        <Slide header="Explore the interactive quiz" img={slide2} />
+        <Slide header="Dominate the leaderboard" img={slide3} />
       </Slideshow>
       <button
         onClick={() => handleClick("login")}
         className={styles.primarybtn}
       >
-        Logga in
+        Sign in
       </button>
-      <button onClick={() => handleClick("signup")}>Skapa konto</button>
+      <button onClick={() => handleClick("signup")}>Create account</button>
     </section>
   );
 }

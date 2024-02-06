@@ -1,7 +1,6 @@
 import styles from "./login.module.scss";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 import { useDisplay } from "../../context/DisplayLoginOrSignupContext";
 import { useAuthenticated } from "../../context/AuthenticatedContext";
 
@@ -25,10 +24,10 @@ export default function Login() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.4 } }}
     >
-      <h2>Välkommen tillbaka</h2>
-      <h2>Logga in</h2>
+      <h2>Welcome back</h2>
+      <h2>Sign in</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="username">Användarnamn eller epost</label>
+        <label htmlFor="username">Username or email</label>
         <input
           readOnly
           value="Cr4zyfox09"
@@ -36,7 +35,7 @@ export default function Login() {
           type="text"
           minLength="2"
         />
-        <label htmlFor="password">Lösenord</label>
+        <label htmlFor="password">Password</label>
         <input
           readOnly
           value="Password123!"
@@ -49,21 +48,23 @@ export default function Login() {
           className={styles.primarybtn}
           type="submit"
         >
-          {authenticated ? "Loggar in..." : "Logga in"}
+          {authenticated ? "Signing in..." : "Sign in"}
         </button>
       </form>
       <div>
         <div>
           <input id="checkbox" type="checkbox" />
-          <label htmlFor="checkbox">Kom ihåg mig</label>
+          <label htmlFor="checkbox">Remember me</label>
         </div>
-        <p>Jag har glömt mitt lösenord</p>
+        <p style={{ textDecoration: "underline" }}>
+          I have forgotten my password
+        </p>
       </div>
-      <small>Eller</small>
+      <small>Or</small>
       <div className={styles.divider} />
-      <button>Logga in med student365</button>
+      <button>Sign in with student365</button>
       <p>
-        Har du inget konto? <strong> Skapa ett konto</strong>
+        Dont have an account yet? <strong> Create an account</strong>
       </p>
     </motion.section>
   );

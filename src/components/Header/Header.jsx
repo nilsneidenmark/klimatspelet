@@ -47,13 +47,13 @@ export default function Header() {
                 className={styles.registerBtn}
                 onClick={() => setDisplay("signup")}
               >
-                Skapa konto
+                Create account
               </button>
               <button
                 onClick={() => setDisplay("login")}
                 className="primarybtn"
               >
-                Logga in
+                Sign in
               </button>
             </div>
           )}
@@ -73,7 +73,7 @@ export default function Header() {
               <button
                 onClick={() => (navigate("/profile"), setOpenDrawer(false))}
               >
-                Mina sidor
+                Home
               </button>
             </li>
             <li>
@@ -81,18 +81,18 @@ export default function Header() {
               <button
                 onClick={() => (setOpenSettings(true), setOpenDrawer(false))}
               >
-                Inställningar
+                Settings
               </button>
             </li>
             <li>
               <img src={help} alt="help" />
               <button onClick={() => (setOpenHelp(true), setOpenDrawer(false))}>
-                Hjälp & kontakt
+                Help & Contact
               </button>
             </li>
             <li>
               <img src={logout} alt="logout" />
-              <button onClick={() => handleLogout()}>Logga ut</button>
+              <button onClick={() => handleLogout()}>Sign out</button>
             </li>
           </ul>
         </div>

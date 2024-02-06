@@ -35,7 +35,7 @@ body {
   font-family: var(--font);
   letter-spacing: var(--letterSpacing);
   word-spacing: var(--wordSpacing);
-  color: #eeeeee;
+  color: black;
 }
 
 button {
@@ -60,7 +60,7 @@ main {
   margin: 0 auto;
 }
 main > section {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(255, 255, 255, 0.425);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
@@ -72,7 +72,6 @@ main > section {
   gap: 2rem;
   padding: 2rem;
   width: 80%;
-  text-shadow: 1px 1px 5px #000000;
 }
 
 button {
@@ -81,19 +80,33 @@ button {
   padding: 0.5rem;
   background-color: #353535;
   color: #eeeeee;
-  width: 125px;
+  width: 150px;
   font-size: 1rem;
 }
 button:hover {
-  opacity: 100%;
+  background-color: #2b2a2a;
   cursor: pointer;
 }
 
 .primarybtn {
-  background-color: #08594a;
+  background-color: #2176ff;
 }
 .primarybtn:hover {
-  background-color: #063c32;
+  background-color: #215cff;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+small,
+strong,
+span,
+ul,
+li {
+  color: black;
+  font-family: var(--font);
 }
 
 h1,
@@ -191,9 +204,6 @@ input {
     width: 95%;
   }
 }
-.categoriesSection > h1 {
-  color: #eeeeee;
-}
 .categoriesSection > .categoriesContainer {
   display: flex;
   flex-direction: row;
@@ -230,17 +240,41 @@ input {
   left: 25%;
   width: 135px;
   transform: rotate(20deg);
-  background-color: #08594a;
-  color: #eeeeee;
   padding: 0.15rem 0.5rem;
   border-radius: 10px;
+  opacity: 1;
+}
+.categories > .color1 {
+  background-color: rgb(244, 255, 88);
+}
+.categories > .color2 {
+  background-color: rgb(250, 93, 93);
+}
+.categories > .color3 {
+  background-color: rgb(119, 246, 255);
+}
+.categories > .color4 {
+  background-color: rgb(205, 118, 255);
+}
+.categories > .color5 {
+  background-color: rgb(127, 253, 123);
+}
+.categories > .available {
   opacity: 100%;
+  cursor: pointer;
 }
 .categories > p {
   margin: 0;
   padding: 0;
+  opacity: 50%;
+  cursor: initial;
+}
+.categories > small {
+  cursor: initial;
+  opacity: 50%;
 }
 .categories > img {
+  cursor: initial;
   width: 125px;
   margin: 0;
   opacity: 25%;

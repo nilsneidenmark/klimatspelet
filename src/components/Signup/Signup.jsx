@@ -25,18 +25,18 @@ export default function Signup() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.4 } }}
     >
-      <h2>Skapa ett konto</h2>
+      <h2>Create an account</h2>
       <form>
         <div>
           <label htmlFor="mail">Studentmail</label>
           <input type="text" id="mail" minLength="2" />
         </div>
         <div>
-          <label htmlFor="signupUsername">Användarnamn</label>
+          <label htmlFor="signupUsername">Username</label>
           <input type="text" id="signupUsername" minLength="2" />
         </div>
         <div>
-          <label htmlFor="signupPassword">Lösenord</label>
+          <label htmlFor="signupPassword">Password</label>
           <input
             type={hidePW ? "password" : "text"}
             id="signupPassword"
@@ -51,22 +51,22 @@ export default function Signup() {
           <div className={styles.verifyInput}>
             <small>
               <img width="16px" height="16px" src={x} alt="check" />
-              Minst 8 tecken
+              Minimum 8 characters
             </small>
             <small>
               {" "}
               <img width="16px" height="16px" src={x} alt="check" />
-              Minst 1 specialtecken !#%&/?
+              Minimum 1 special character !#%&/?
             </small>
             <small>
               {" "}
               <img width="16px" height="16px" src={x} alt="check" />
-              Minst 1 STOR bokstav
+              Minimum 1 large character
             </small>
           </div>
         </div>
         <div>
-          <label htmlFor="repeatPassword">Repetera lösenord</label>
+          <label htmlFor="repeatPassword">Repeat password</label>
           <input
             type={hidePW2 ? "password" : "text"}
             id="repeatPassword"
@@ -82,18 +82,18 @@ export default function Signup() {
             <small>
               {" "}
               <img width="16px" height="16px" src={x} alt="check" />
-              Lösenorden stämmer överens
+              Passwords match
             </small>
           </div>
         </div>
         <AvatarPicker />
-        <button className="primarybtn">Skapa konto</button>
+        <button className="primarybtn">Create account</button>
       </form>
-      <small>Eller</small>
+      <small>Or</small>
       <div className="divider" />
-      <button>Skapa konto med Student 365+</button>
+      <button>Create account with Student 365+</button>
       <p>
-        Har du redan ett konto? <strong>Logga in</strong>
+        Already have an account? <strong>Sign in</strong>
       </p>
     </motion.section>
   );

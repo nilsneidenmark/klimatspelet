@@ -6,9 +6,9 @@ export default function Footer() {
       <div>
         <Logo />
         <ul>
-          <li>Hjälp & kontakt</li>
-          <li>Behandling av personuppgifter</li>
-          <li>Hantering av kakor</li>
+          <li>Help & contact</li>
+          <li>Terms & services</li>
+          <li>Cookies policy</li>
         </ul>
       </div>
     </footer>

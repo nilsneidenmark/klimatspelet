@@ -1,23 +1,23 @@
 {
   "category": {
     "number": 1,
-    "name": "Världens hav",
+    "name": "Oceans",
     "questions": 10
   },
   "questions": [
     {
       "number": 1,
-      "introduction": "Läs texten och titta på grafen Medeltemperaturen har under de senaste 100 åren ökat med drygt 0,7 grader. I klimatsammanhang ses detta som en stor och snabb ökning. Havet har historiskt sett spelat en viktig roll i att stabilisera klimatet genom att lagra värme. Under de senaste 50 åren har haven absorberat över 90 procent av den temperaturökning som klimatförändringarna har orsakat. Detta gör nu att haven idag är under stor press och genomgår stora förändringar.",
-      "question": "Hur har havet historiskt sett hjälpt till att hålla klimatet stabilt på jorden?",
+      "introduction": "Read the text and look at the graph. The average temperature has increased by over 0.7 degrees in the last 100 years. In the context of climate, this is considered a significant and rapid increase. Historically, the ocean has played a crucial role in stabilizing the climate by storing heat. Over the past 50 years, the oceans have absorbed over 90 percent of the temperature increase caused by climate change. This now puts the oceans under great pressure and undergoes significant changes.",
+      "question": "How has the ocean historically helped to keep the Earth's climate stable?",
       "incorrect_answers": [
-        "Havet kyler ner jorden när det behövs",
-        "Havet fryser till is på vintern",
-        "Det mesta av allt regn hamnar i havet"
+        "The ocean cools the Earth when needed.",
+        "The ocean freezes into ice in winter.",
+        "Most of all rain ends up in the ocean."
       ],
-      "correct_answer": "De ökade temperaturerna har lagrats i havet",
-      "feedback": "Havet har under de senaste 50 åren “sugit upp” över 90 procent av den ökade temperaturen klimatförändringarna orsakat.",
+      "correct_answer": "Increased temperatures have been stored in the ocean.",
+      "feedback": "Over the past 50 years, the ocean has 'absorbed' over 90 percent of the increased temperature caused by climate change.",
       "source": "https://www.havet.nu/klimat-i-forandring",
-      "sourceDescription": "Klimat i förändring.",
+      "sourceDescription": "Climate in change.",
       "media": {
         "diagram": "temperatures",
         "video": false,
@@ -27,17 +27,17 @@
     },
     {
       "number": 2,
-      "introduction": "I Norden beror vårt klimat  på att Golfströmmen för med sig varmare vatten från sydligare breddgrader och värmer upp våra länder här uppe i norr. På grund av klimatförändringarna i havet ser forskarna att Golfströmmen rör sig långsammare och hotar att sluta röra sig. Det skulle få stora konsekvenser, inte bara för havet i sig utan för alla som bor i närheten av Golfströmmen.",
-      "question": "Vad skulle hända hos oss i Norden om Golfströmmen slutade röra sig?",
+      "introduction": "In the Nordic region, our climate depends on the Gulf Stream bringing warmer water from southern latitudes and warming up our countries here in the north. Due to climate changes in the ocean, researchers see that the Gulf Stream is moving slower and threatens to stop moving. This would have significant consequences, not only for the ocean itself but for everyone living near the Gulf Stream.",
+      "question": "What would happen to us in the Nordic region if the Gulf Stream stopped moving?",
       "incorrect_answers": [
-        "Det skulle bli varmare temperaturer",
-        "Vattnet i åar skulle börja strömma åt andra hållet",
-        "Östersjön skulle få högre salthalt"
+        "It would become warmer temperatures.",
+        "Water in rivers would start flowing in the opposite direction.",
+        "The Baltic Sea would have higher salinity."
       ],
-      "correct_answer": "Det skulle bli kallare temperaturer",
-      "feedback": "Temperaturen i Norden skulle sjunka utan Golfströmmen, eftersom den för med sig varmt vatten upp till oss i norr. Det gör att vårt klimat blir varmare. Utan Golfströmmen skulle det kunna bli -50 grader på vintern i vissa delar av Sverige, och även torrare somrar.",
-      "source": "https://www.havet.nu/orovackande-rapport-om-golfstrommen- ",
-      "sourceDescription": "Oroväckande rapport om golfströmmen.",
+      "correct_answer": "It would become colder temperatures.",
+      "feedback": "The temperature in the Nordic region would decrease without the Gulf Stream, as it brings warm water to us in the north, making our climate warmer. Without the Gulf Stream, it could be -50 degrees Celsius in winter in some parts of Sweden, and also drier summers.",
+      "source": "https://www.havet.nu/orovackande-rapport-om-golfstrommen-",
+      "sourceDescription": "Alarming report on the Gulf Stream.",
       "media": {
         "diagram": false,
         "video": false,
@@ -47,20 +47,20 @@
     },
     {
       "number": 3,
-      "introduction": "Det är i haven som de mest påtagliga effekterna av klimatförändringarna syns. En av de mest påtagliga konsekvenserna är den stigande havsnivån. Uppvärmning av haven, ökad volym av havsvatten och avsmältning av glaciärer och inlandsisar är de främsta orsakerna till detta fenomen. Haven täcker 71 procent av jordens yta och skapar över hälften av allt syre i atmosfären, vilket är det vi behöver för att kunna andas. Haven tar upp cirka 30 procent av luftens koldioxid, vilket är det vi andas ut.",
-      "question": "Vad händer i havet när glaciärer och inlandsisar smälter?",
+      "introduction": "The most tangible effects of climate change are seen in the oceans. One of the most noticeable consequences is the rising sea level. Warming of the oceans, increased volume of seawater, and melting glaciers and ice caps are the main causes of this phenomenon. The oceans cover 71 percent of the Earth's surface and generate over half of all the oxygen in the atmosphere, which is what we need to breathe. The oceans absorb about 30 percent of the carbon dioxide in the air, which is what we exhale.",
+      "question": "What happens in the ocean when glaciers and ice caps melt?",
       "incorrect_answers": [
-        "Det blir fler vulkanutbrott på Island",
-        "Det blir för lite fisk i havet",
-        "Det blir kallare i vattnet"
+        "There are more volcanic eruptions in Iceland.",
+        "There is too little fish in the ocean.",
+        "The water becomes colder."
       ],
-      "correct_answer": "Havsnivån stiger",
-      "feedback": " Det blir mer havsvatten när isarna smälter, och det gör att havsnivån blir högre. Det i sin tur gör att människor och djur som bor nära havet kan bli tvingade att flytta eftersom deras hem och åkrar blir översvämmade. Isarna kyler också ner jordklotet. När de försvinner blir det varmare och vädret mer extremt. Detta är också en orsak till att människor måste fly från sina hem. Många klimatflyktingar har ingenstans att ta vägen",
+      "correct_answer": "Sea level rises.",
+      "feedback": "There is more seawater when the ice melts, causing the sea level to rise. This, in turn, forces people and animals living near the ocean to move as their homes and fields become flooded. The ice also cools the globe. When it disappears, it gets warmer, and the weather becomes more extreme. This is also a reason why people have to flee their homes. Many climate refugees have nowhere to go.",
       "source": [
         "https://www.naturskyddsforeningen.se/artiklar/andrat-klimat-driver-manniskor-pa-flykt/",
         "https://www.greenpeace.org/sweden/artiklar/hav/arktis-hot/"
       ],
-      "sourceDescription": "Ändrat klimat driver människor på flykt.",
+      "sourceDescription": "Changed climate drives people to flee.",
       "media": {
         "diagram": "sealevel",
         "video": false,
@@ -71,16 +71,16 @@
     {
       "number": 4,
       "introduction": null,
-      "question": "Hur mycket har den globala medeltemperaturen ökat under den senaste 100-årsperioden?",
+      "question": "How much has the global average temperature increased in the last 100 years?",
       "incorrect_answers": [
-        "Ungefär 2 grader",
-        "Ungefär 1,5 grader",
-        "Ungefär 0,2 grader"
+        "About 2 degrees",
+        "About 1.5 degrees",
+        "About 0.2 degrees"
       ],
-      "correct_answer": "Ungefär 0,7 grader",
-      "feedback": "Medeltemperaturen har ökat med drygt 0,7 grader, vilket är en stor och snabb ökning.",
+      "correct_answer": "About 0.7 degrees",
+      "feedback": "The average temperature has increased by over 0.7 degrees, which is a significant and rapid increase.",
       "source": "https://www.so-rummet.se/kategorier/geografi/klimat#",
-      "sourceDescription": "SO-rummet: Klimat.",
+      "sourceDescription": "SO-room: Climate.",
       "media": {
         "diagram": false,
         "video": false,
@@ -90,17 +90,17 @@
     },
     {
       "number": 5,
-      "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
-      "question": "1 av 3. Vad är växthuseffekten?",
+      "introduction": "Listen to the podcast (7 minutes). You can listen as many times as you like. You are to answer 3 questions: What is the greenhouse effect? What is the main cause of global warming? What can we do, among other things, to stop global warming? Tip! Use pen and paper to take notes while listening.",
+      "question": "1 of 3. What is the greenhouse effect?",
       "incorrect_answers": [
-        "Det som sker i molnen när det regnar",
-        "Det som gör att vi har klimatförändringar",
-        "Ett annat ord för sommarväder"
+        "What happens in the clouds when it rains.",
+        "What causes climate change.",
+        "Another word for summer weather."
       ],
-      "correct_answer": "En process som gör att all jordens värme inte åker ut i rymden",
-      "feedback": "Växthuseffekten är en naturlig process vi behöver på jorden för att inte all värme ska åka rakt ut i rymden utan istället stanna i vår atmosfär. Utan den skulle det vara så kallt på jorden att ingenting kunde leva här. Problemet är den förstärkta växthuseffekten som är skapad av oss människor. Den innebär att vi släpper ut för mycket växthusgaser i atmosfären, vilket gör att lagret växthusgaser blir för tjockt och för mycket värme stannar kvar på jorden.",
+      "correct_answer": "A process that prevents all of the Earth's heat from escaping into space.",
+      "feedback": "The greenhouse effect is a natural process needed on Earth so that not all heat escapes straight into space but stays in our atmosphere. Without it, it would be so cold on Earth that nothing could live here. The problem is the enhanced greenhouse effect created by us humans. It means that we release too many greenhouse gases into the atmosphere, causing the greenhouse gas layer to become too thick, and too much heat stays on Earth.",
       "source": "https://www.so-rummet.se/podcast/global-uppvarmning-orsaker-konsekvenser-och-losningar",
-      "sourceDescription": "Global uppvärmning, orsaker, konsekvenser och lösningar.",
+      "sourceDescription": "Global warming, causes, consequences, and solutions.",
       "media": {
         "diagram": false,
         "video": false,
@@ -110,17 +110,17 @@
     },
     {
       "number": 6,
-      "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
-      "question": "2 av 3. Vilken är den viktigaste orsaken till den globala uppvärmningen?",
+      "introduction": "Listen to the podcast (7 minutes). You can listen as many times as you like. You are to answer 3 questions: What is the greenhouse effect? What is the main cause of global warming? What can we do, among other things, to stop global warming? Tip! Use pen and paper to take notes while listening.",
+      "question": "2 of 3. What is the main cause of global warming?",
       "incorrect_answers": [
-        "Donald Trumps lögner",
-        "Havsnivån stiger",
-        "Solens strålar släpps igenom för mycket genom atmosfären"
+        "Donald Trump's lies.",
+        "Sea level rising.",
+        "Sun rays penetrate too much through the atmosphere."
       ],
-      "correct_answer": "Vi släpper ut för mycket växthusgaser",
-      "feedback": "Vi släpper ut för mycket växthusgaser i atmosfären. Dessa gaser är till exempel koldioxid och metangas. Detta gör vi genom bland annat genom en väldigt stor boskapsuppfödning, samt elda olja och naturgaser.",
+      "correct_answer": "We release too many greenhouse gases.",
+      "feedback": "We release too many greenhouse gases into the atmosphere. These gases include carbon dioxide and methane. We do this through, among other things, very large livestock farming and burning oil and natural gases.",
       "source": "https://www.so-rummet.se/podcast/global-uppvarmning-orsaker-konsekvenser-och-losningar",
-      "sourceDescription": "Global uppvärmning, orsaker, konsekvenser och lösningar.",
+      "sourceDescription": "Global warming, causes, consequences, and solutions.",
       "media": {
         "diagram": false,
         "video": false,
@@ -130,17 +130,17 @@
     },
     {
       "number": 7,
-      "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
-      "question": "3 av 3. Vad kan vi bland annat göra för att stoppa den globala uppvärmningen?",
+      "introduction": "Listen to the podcast (7 minutes). You can listen as many times as you like. You are to answer 3 questions: What is the greenhouse effect? What is the main cause of global warming? What can we do, among other things, to stop global warming? Tip! Use pen and paper to take notes while listening.",
+      "question": "3 of 3. What can we do, among other things, to stop global warming?",
       "incorrect_answers": [
-        "Kyla ner oss själva och inte bli för varma",
-        "Resa bara på sportlovet och inte på sommaren",
-        "Cykla istället för att springa"
+        "Cool ourselves down and not get too warm.",
+        "Travel only on winter holidays and not in the summer.",
+        "Cycle instead of running."
       ],
-      "correct_answer": "Gå över till förnyelsebar energi och minska köttkonsumtionen",
-      "feedback": "Vi kan minska våra utsläpp bl a genom att: Gå över till förnyelsebar energi istället för olja. Då släpper vi ut mycket mindre koldioxid, Äta mindre kött. Nötkreatur släpper ut väldigt mycket metangas, Sluta hugga ner skog. Träd binder koldioxid så den inte åker upp i atmosfären",
+      "correct_answer": "Switch to renewable energy and reduce meat consumption.",
+      "feedback": "We can reduce our emissions, among other things, by: Switching to renewable energy instead of oil. This way, we release much less carbon dioxide. Eating less meat. Livestock releases a lot of methane gas. Stop cutting down forests. Trees bind carbon dioxide, preventing it from going into the atmosphere.",
       "source": "https://www.so-rummet.se/podcast/global-uppvarmning-orsaker-konsekvenser-och-losningar",
-      "sourceDescription": "Global uppvärmning, orsaker, konsekvenser och lösningar.",
+      "sourceDescription": "Global warming, causes, consequences, and solutions.",
       "media": {
         "diagram": false,
         "video": false,
@@ -150,17 +150,17 @@
     },
     {
       "number": 8,
-      "introduction": "Världshaven täcker drygt 70 procent av jordens yta. Därför är haven viktiga för att reglera världens klimat. När vattnet blir varmare i havet förändras livet i havet. De arter som vill ha kallare vatten flyttar norrut  medan arter som kräver varmare vatten breder ut sig mer och mer. Det förändrar hela ekosystemet i havet. Värmeböljor i havet blir allt vanligare, vilket bland annat drabbar de temperaturkänsliga korallerna i tropiska vatten särskilt hårt. Korallerna behöver leva tillsammans med en viss typ av alger för att må bra. Dessa alger trivs inte och dör när vattnet blir för varmt. Detta gör att korallerna blir bleka och svälter ihjäl. När korallerna dör hotas en stor del av havets ekosystem. Många fiskar och andra havsdjur bor i korallreven och trivs inte någon annanstans.",
-      "question": "Vad skulle hända om korallreven försvinner?",
+      "introduction": "The world's oceans cover over 70 percent of the Earth's surface. Therefore, the oceans are important for regulating the world's climate. When the water becomes warmer in the ocean, life in the ocean changes. Species that prefer colder water move north, while species that require warmer water spread more and more. It changes the entire ecosystem in the ocean. Heatwaves in the ocean are becoming more common, affecting temperature-sensitive corals in tropical waters particularly hard. Corals need to live together with a specific type of algae to thrive. These algae do not thrive and die when the water becomes too warm. This makes corals pale and starve to death. When corals die, a large part of the ocean's ecosystem is threatened. Many fish and other marine animals live in coral reefs and do not thrive anywhere else.",
+      "question": "What would happen if coral reefs disappeared?",
       "incorrect_answers": [
-        "Det skulle bli lättare att fiska med nät",
-        "Vattentemperaturen skulle sjunka",
-        "Fiskar och andra havsdjur skulle trivas bättre"
+        "It would be easier to fish with nets.",
+        "Water temperature would decrease.",
+        "Fish and other marine animals would thrive better."
       ],
-      "correct_answer": "Många fiskar och andra havsdjur skulle dö ut",
-      "feedback": "Om korallreven försvinner skulle många fiskar och havslevande djur bli utan sitt hem. Korallreven är ett av jordklotets största ekosystem. Forskarna försöker just nu få fram en mer värmetålig algart som kan trivas i varmt vatten. Detta skulle kunna rädda korallerna från att dö ut.",
+      "correct_answer": "Many fish and other marine animals would die out.",
+      "feedback": "If coral reefs disappear, many fish and marine animals would be without their home. Coral reefs are one of the Earth's largest ecosystems. Researchers are currently trying to find a more heat-resistant type of algae that can thrive in warm water. This could save the corals from extinction.",
       "source": "https://www.naturskyddsforeningen.se/faktablad/haven-ar-viktiga-for-klimatet/",
-      "sourceDescription": "Haven är viktiga för klimatet",
+      "sourceDescription": "The oceans are important for the climate.",
       "media": {
         "diagram": false,
         "video": false,
@@ -171,16 +171,16 @@
     {
       "number": 9,
       "introduction": null,
-      "question": "Som du ser på grafen har koldioxidutsläppen ökat extremt mycket sedan 1900-talets mitt. Varför det?",
+      "question": "As you can see in the graph, carbon dioxide emissions have increased extremely since the mid-20th century. Why is that?",
       "incorrect_answers": [
-        "Det är fler vulkanutbrott som släpper ut koldioxid",
-        "Medelhavsnivån har ökat",
-        "Ozonlagret har blivit tunnare"
+        "There are more volcanic eruptions emitting carbon dioxide.",
+        "The Mediterranean Sea level has risen.",
+        "The ozone layer has become thinner."
       ],
-      "correct_answer": "Stor förbränning av fossila bränslen",
-      "feedback": "Förbränningen av fossila bränslen som kol och olja leder till ökade halter växthusgaser. Ca 80 procent av världens energiförbrukning kommer idag från fossila bränslen.",
-      "source": "https://www.wwf.se/klimat/mansklig-paverkan/ ",
-      "sourceDescription": "Mänsklig påverkan.",
+      "correct_answer": "Large combustion of fossil fuels.",
+      "feedback": "The combustion of fossil fuels such as coal and oil leads to increased levels of greenhouse gases. About 80 percent of the world's energy consumption today comes from fossil fuels.",
+      "source": "https://www.wwf.se/klimat/mansklig-paverkan/",
+      "sourceDescription": "Human impact.",
       "media": {
         "diagram": "emissions",
         "video": false,
@@ -191,19 +191,19 @@
     {
       "number": 10,
       "introduction": null,
-      "question": "Hur stor var ökningen av temperaturen år 2000?",
+      "question": "How much was the temperature increase in the year 2000?",
       "incorrect_answers": [
-        "ca 0,55 grader celsius",
-        "ca 0 grader celsius",
-        "ca 7 grader celsius"
+        "About 0.55 degrees Celsius",
+        "About 0 degrees Celsius",
+        "About 7 degrees Celsius"
       ],
-      "correct_answer": "ca 0,43 grader celsius",
-      "feedback": "År 2000 hade temperaturen ökat med 0,43 grader celsius. Idag år 2023 ligger vi på en ökning på 1,1 grader celsius. Konsekvenserna för världen vid en uppvärmning på 1,5 till 2 grader blir stora och kan då förväntas få extrema värmeböljor och stigande havsnivå.",
+      "correct_answer": "About 0.43 degrees Celsius",
+      "feedback": "In the year 2000, the temperature had increased by 0.43 degrees Celsius. Today in 2023, we are at an increase of 1.1 degrees Celsius. The consequences for the world at a warming of 1.5 to 2 degrees are significant and can be expected to include extreme heatwaves and rising sea levels.",
       "source": [
         "https://www.klimatpolitiskaradet.se/2023-klimatpolitiska-radets-rapport/",
         "https://www.naturskyddsforeningen.se/artiklar/den-globala-uppvarmningens-konsekvenser/"
       ],
-      "sourceDescription": "Den globala uppvärmningens konsekvenser.",
+      "sourceDescription": "Consequences of global warming.",
       "media": {
         "diagram": "temperatures",
         "video": false,

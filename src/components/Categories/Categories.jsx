@@ -17,13 +17,13 @@ export default function Categories() {
 
   return (
     <section className={styles.categoriesSection}>
-       {/* Triggers useState to show or close the overlay, and also redirect the user to route quiz */}
+      {/* Triggers useState to show or close the overlay, and also redirect the user to route quiz */}
       <CategoryOverlay trigger={buttonPopup} setTrigger={setButtonPopup}>
         <button onClick={() => navigate("/quiz")} className={styles.primarybtn}>
-          Börja spela
+          Start Quiz
         </button>
       </CategoryOverlay>
-      <h1>Kategorier</h1>
+      <h1>Categories</h1>
       <div className={styles.categoriesContainer}>
         {/* Change useState to true = opening the < categoriesOverlay /> */}
         <button
@@ -31,42 +31,42 @@ export default function Categories() {
           className={styles.categories}
         >
           <img className={styles.active} src={ocean} alt="category" />
-          <p>Världens hav</p>
-          <small>0/10</small>
+          <p className={styles.available}>Oceans</p>
+          <small className={styles.available}>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={mangrove} alt="category" />
-          <p>Mangrovträsk</p>
-          <p className={styles.comingSoon}>Kommer snart</p>
+          <p>Mangroves</p>
+          <p className={`${styles.comingSoon} ${styles.color1}`}>Coming soon</p>
           <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={pineTree} alt="category" />
-          <p>Skogen</p>
-          <p className={styles.comingSoon}>Kommer snart</p>
+          <p>Forrests</p>
+          <p className={`${styles.comingSoon} ${styles.color2}`}>Coming soon</p>
           <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={buildings} alt="category" />
-          <p>Människan</p>
-          <p className={styles.comingSoon}>Kommer snart</p>
+          <p>Humans</p>
+          <p className={`${styles.comingSoon} ${styles.color3}`}>Coming soon</p>
           <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={glacier} alt="category" />
-          <p>Glaciärer</p>
-          <p className={styles.comingSoon}>Kommer snart</p>
+          <p>Glaciers</p>
+          <p className={`${styles.comingSoon} ${styles.color4}`}>Coming soon</p>
           <small>0/10</small>
         </button>
 
         <button disabled className={styles.categories}>
           <img src={desert} alt="category" />
-          <p>Öknen</p>
-          <p className={styles.comingSoon}>Kommer snart</p>
+          <p>Deserts</p>
+          <p className={`${styles.comingSoon} ${styles.color5}`}>Coming soon</p>
           <small>0/10</small>
         </button>
       </div>

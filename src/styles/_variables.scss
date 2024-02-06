@@ -10,17 +10,15 @@
   --backgroundImage: url(/src/assets//background/pexels-matthew-leland-822528.jpg);
 }
 
-// Colors
-$primary: #08594a;
-$primaryHover: #063c32;
-$primaryInactive: #409b8a;
+$primary: #2176ff;
+$primaryHover: #215cff;
+$primaryInactive: #5193ff;
 $secondary: #353535;
-$secondaryHover: #292929;
+$secondaryHover: #2b2a2a;
 $secondaryInactive: #868585;
 $white: #eeeeee;
 $opacity: 50%;
 
-// Spacing
 $XXsmall: 0.15rem;
 $Xsmall: 0.25rem;
 $small: 0.5rem;
@@ -29,12 +27,9 @@ $large: 2rem;
 $XLarge: 4rem;
 $XXLarge: 6rem;
 
-// Borders and shadows
 $borderRadiusLarge: 20px;
 $borderRadiusSmall: 10px;
-$textShadow: 1px 1px 5px #000000;
 
-// Mixins
 @mixin flex($direction, $justify, $align) {
   display: flex;
   flex-direction: $direction;
@@ -43,8 +38,8 @@ $textShadow: 1px 1px 5px #000000;
 }
 
 @mixin glass() {
-  // background: rgba(255, 255, 255, 0.425);
-  background: rgba(0, 0, 0, 0);
+  background: rgba(255, 255, 255, 0.425);
+  // background: rgba(0, 0, 0, 0);
   border-radius: $borderRadiusLarge;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);

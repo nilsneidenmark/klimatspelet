@@ -1,9 +1,6 @@
 @import "../../styles/index.scss";
 
 .categoriesSection {
-  > h1 {
-    color: $white;
-  }
   > .categoriesContainer {
     @include flex(row, center, center);
     flex-wrap: wrap;
@@ -33,17 +30,41 @@
     left: 25%;
     width: 135px;
     transform: rotate(20deg);
-    background-color: $primary;
-    color: $white;
     padding: $XXsmall $small;
     border-radius: $borderRadiusSmall;
+    opacity: 1; // Corrected opacity value
+  }
+  > .color1 {
+    background-color: rgb(244, 255, 88);
+  }
+  > .color2 {
+    background-color: rgb(250, 93, 93);
+  }
+  > .color3 {
+    background-color: rgb(119, 246, 255);
+  }
+  > .color4 {
+    background-color: rgb(205, 118, 255);
+  }
+  > .color5 {
+    background-color: rgb(127, 253, 123);
+  }
+  > .available {
     opacity: 100%;
+    cursor: pointer;
   }
   > p {
     margin: 0;
     padding: 0;
+    opacity: 50%;
+    cursor: initial;
+  }
+  > small {
+    cursor: initial;
+    opacity: 50%;
   }
   > img {
+    cursor: initial;
     width: 125px;
     margin: 0;
     opacity: 25%;

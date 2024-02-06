@@ -1,7 +1,7 @@
 @import "../../styles/index.scss";
 
 .leaderBoard {
-  @include flex(row, space-around, center);
+  @include flex(row, space-around, flex-start);
   flex-wrap: wrap;
   gap: $medium;
   width: 100%;

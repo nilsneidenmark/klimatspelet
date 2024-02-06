@@ -35,7 +35,7 @@ body {
   font-family: var(--font);
   letter-spacing: var(--letterSpacing);
   word-spacing: var(--wordSpacing);
-  color: #eeeeee;
+  color: black;
 }
 
 button {
@@ -60,7 +60,7 @@ main {
   margin: 0 auto;
 }
 main > section {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(255, 255, 255, 0.425);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
@@ -72,7 +72,6 @@ main > section {
   gap: 2rem;
   padding: 2rem;
   width: 80%;
-  text-shadow: 1px 1px 5px #000000;
 }
 
 button {
@@ -81,19 +80,33 @@ button {
   padding: 0.5rem;
   background-color: #353535;
   color: #eeeeee;
-  width: 125px;
+  width: 150px;
   font-size: 1rem;
 }
 button:hover {
-  opacity: 100%;
+  background-color: #2b2a2a;
   cursor: pointer;
 }
 
 .primarybtn {
-  background-color: #08594a;
+  background-color: #2176ff;
 }
 .primarybtn:hover {
-  background-color: #063c32;
+  background-color: #215cff;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+small,
+strong,
+span,
+ul,
+li {
+  color: black;
+  font-family: var(--font);
 }
 
 h1,
@@ -192,7 +205,7 @@ input {
   }
 }
 header {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(255, 255, 255, 0.425);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
@@ -211,7 +224,7 @@ header > .container {
   width: 100%;
 }
 header > .container > button {
-  color: #08594a;
+  color: #2176ff;
   cursor: pointer;
   background-color: transparent;
   font-size: 1.5rem;
@@ -220,9 +233,6 @@ header > .container > button {
 header > .container > button:hover {
   background-color: transparent;
 }
-header > .container > div > button {
-  color: #eeeeee;
-}
 header > .container > div > .registerBtn {
   margin-right: 1rem;
 }
@@ -230,7 +240,7 @@ header > .container > div > .registerBtn {
 .drawer {
   height: 100%;
   padding: 4rem;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(255, 255, 255, 0.425);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
@@ -261,17 +271,16 @@ header > .container > div > .registerBtn {
   margin: 0;
 }
 .drawer > ul > li > img > svg > path {
-  stroke: #eeeeee;
+  stroke: black;
 }
 .drawer > ul > li > button {
   background-color: transparent;
   width: auto;
-  text-shadow: 1px 1px 5px #000000;
   font-size: 1.25rem;
-  color: #eeeeee;
+  color: black;
 }
 .drawer > ul > li:hover {
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
 }
 

@@ -22,7 +22,7 @@ import temperatures from "../../API/Dataset2_GlobalTemperatureTimeSeries.json";
 const SeaLevel = () => {
   return (
     <>
-      <h3>Medelhavsnivå</h3>
+      <h3>Sealevel</h3>
       <ResponsiveContainer width="100%" height={400}>
         <AreaChart
           width={730}
@@ -41,11 +41,11 @@ const SeaLevel = () => {
             </linearGradient>
           </defs>
           <XAxis dataKey="Time" tick={{ stroke: "black", strokeWidth: 0.5 }}>
-            <Label value="Datum" offset={-15} position="insideBottom" />
+            <Label value="Date" offset={-15} position="insideBottom" />
           </XAxis>
           <YAxis
             label={{
-              value: "Skillnad i millimeter från medel",
+              value: "Differenec in millimeters from mean",
               angle: -90,
               position: "insideBottomLeft",
             }}
@@ -79,7 +79,7 @@ const GlobalTemperatures = () => {
   //
   return (
     <>
-      <h3>Global temperaturökning</h3>
+      <h3>Temperature increase</h3>
       <ResponsiveContainer
         width="100%"
         height={400}
@@ -90,11 +90,11 @@ const GlobalTemperatures = () => {
           margin={{ top: 0, right: 0, left: 10, bottom: 15 }}
         >
           <XAxis dataKey="Year" tick={{ stroke: "black", strokeWidth: 0.5 }}>
-            <Label value="År" offset={-15} position="insideBottom" />
+            <Label value="Year" offset={-15} position="insideBottom" />
           </XAxis>
           <YAxis
             label={{
-              value: "Temperaturskillnad från medelnivå",
+              value: "Temperature difference from mean",
               angle: -90,
               position: "insideBottomLeft",
             }}
@@ -128,7 +128,7 @@ const GlobalTemperatures = () => {
 const Co2Emissions = () => {
   return (
     <>
-      <h3>Globala Koldioxidutsläpp</h3>
+      <h3>Global Co2 emissions</h3>
       <ResponsiveContainer
         width="100%"
         height={400}
@@ -142,11 +142,11 @@ const Co2Emissions = () => {
         >
           <CartesianGrid vertical={false} strokeDasharray="0" />
           <XAxis dataKey="Year" tick={{ stroke: "black", strokeWidth: 0.5 }}>
-            <Label value="År" offset={-15} position="insideBottom" />
+            <Label value="Year" offset={-15} position="insideBottom" />
           </XAxis>
           <YAxis
             label={{
-              value: "Miljoner ton koldioxidekvivalenter",
+              value: "Megatotonnes of carbon dioxide",
               angle: -90,
               position: "insideBottomLeft",
               offset: -7.5,

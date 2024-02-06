@@ -17,13 +17,13 @@ export default function CategoryOverlay(props) {
           style={{ cursor: "pointer" }}
         />
         <img src={ocean} alt="category" className={styles.categoryIcon} />
-        <h2>Världens hav</h2>
+        <h2>Oceans</h2>
         <p>
-          Havet spelar en stor roll när det kommer till klimatförändingarna. En
-          stor del av den globala uppvärmningen samlas i havet och
-          vattentemperaturerna stiger. Även havsnivån ökar när isar och
-          glaciärer smälter. Lär dig mer om klimatförändringar i quizzet!
+          The ocean plays a major role in regulating the worlds climate. A lot
+          of the rising temperatures are stored in the ocean and that has a huge
+          affect on its ecosystems.
         </p>
+        <p>Learn more by taking the quiz!</p>
         {/* Rendering more information connected to < categoriesOverlay /> in < categories /> */}
         {props.children}
       </div>
